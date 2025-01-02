@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ALL_CHECKERS_SUCCESSFULL" xml:space="preserve">
+    <value>Kontrolcülerin sonuçları başarılı. </value>
+  </data>
+  <data name="ALL_CHECKERS_UNSUCCESSFULL" xml:space="preserve">
+    <value>Kontrolcülerin sonuçları başarısız. </value>
+  </data>
+  <data name="ARCHIVE_TIMESTAMP_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Arşiv Zaman Damgası Özelliği Kontrolcüsü </value>
+  </data>
+  <data name="ARCHIVE_TIMESTAMP_V2_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Arşiv Zaman Damgası V2 Özelliği Kontrolcüsü </value>
+  </data>
+  <data name="ARCHIVE_TSA_CHECK_SUCCESSFUL" xml:space="preserve">
+    <value>Arşiv zaman damgası özelliği kontrolü başarılı. </value>
+  </data>
+  <data name="ARCHIVE_TSA_CHECK_UNSUCCESSFUL" xml:space="preserve">
+    <value>Arşiv zaman damgası özelliği kontrolü başarısız. </value>
+  </data>
+  <data name="ARCHIVE_TSA_DECODE_ERROR" xml:space="preserve">
+    <value>Arşiv zaman damgası özelliği decode edilemedi. </value>
+  </data>
+  <data name="ARCHIVE_TSA_V2_CHECK_SUCCESSFUL" xml:space="preserve">
+    <value>Arşiv zaman damgası V2 özelliği kontrolü başarılı. </value>
+  </data>
+  <data name="ARCHIVE_TSA_V2_CHECK_UNSUCCESSFUL" xml:space="preserve">
+    <value>Arşiv zaman damgası V2 özelliği kontrolü başarısız. </value>
+  </data>
+  <data name="ARCHIVE_TSA_V2_DECODE_ERROR" xml:space="preserve">
+    <value>Arşiv zaman damgası V2 özelliği decode edilemedi. </value>
+  </data>
+  <data name="CADESC_TSA_CHECK_SUCCESSFUL" xml:space="preserve">
+    <value>CAdES_C zaman damgası özelliği kontrolü başarılı. </value>
+  </data>
+  <data name="CADESC_TSA_CHECK_UNSUCCESSFUL" xml:space="preserve">
+    <value>CAdES_C zaman damgası özelliği kontrolü başarısız. </value>
+  </data>
+  <data name="CADESC_TSA_DECODE_ERROR" xml:space="preserve">
+    <value>CAdES_C zaman damgası özelliği decode edilemedi. </value>
+  </data>
+  <data name="CADES_C_TIMESTAMP_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>CAdES_C Zaman Damgası Özelliği Kontrolcüsü </value>
+  </data>
+  <data name="CertificateRefsValuesMatchChecker_SUCCESSFUL" xml:space="preserve">
+    <value>Sertifika referansları ve değerleri eşleştirme kontrolü başarılı. </value>
+  </data>
+  <data name="CertificateRefsValuesMatchChecker_UNSUCCESSFUL" xml:space="preserve">
+    <value>Sertifika referansları ve değerleri eşleştirme kontrolü başarısız. </value>
+  </data>
+  <data name="CERTIFICATE_REFERENCES_VALUES_MATCH_CHECKER" xml:space="preserve">
+    <value>Sertifika Referans - Değer Uyumluluk Kontrolcüsü </value>
+  </data>
+  <data name="CERTIFICATE_VALIDATION_CHECKER" xml:space="preserve">
+    <value>Sertifika Geçerlilik Kontrolcüsü </value>
+  </data>
+  <data name="CERTIFICATE_VALIDATION_SUCCESSFUL" xml:space="preserve">
+    <value>İmzacı sertifikası doğrulaması başarılı. </value>
+  </data>
+  <data name="CERTIFICATE_VALIDATION_UNSUCCESSFUL" xml:space="preserve">
+    <value>İmzacı sertifikası doğrulaması başarısız. Doğrulama durumu: {0} </value>
+  </data>
+  <data name="CERTIFICATE_VALUES_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>Sertifika değerleri özelliği decode edilemedi. </value>
+  </data>
+  <data name="CERT_HASH_DOESNOT_MATCH" xml:space="preserve">
+    <value>Özellikteki sertifika özet alanı, imzacı sertifikanın özetiyle aynı değil. </value>
+  </data>
+  <data name="CHECK_ALL_CHECKER" xml:space="preserve">
+    <value>Kontrolcü Topluluğu </value>
+  </data>
+  <data name="CHECK_ONE_CHECKER" xml:space="preserve">
+    <value>Tek Kontrolcü </value>
+  </data>
+  <data name="COMPLETE_CERTIFICATE_REFERENCES_DECODE_ERROR" xml:space="preserve">
+    <value>Sertifika referansları özelliği decode edilemedi. </value>
+  </data>
+  <data name="CONTENT_TIMESTAMP_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>İçerik Zaman Damgası Özelliği Kontrolcüsü </value>
+  </data>
+  <data name="CONTENT_TIMESTAMP_ATTRIBUTE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>İçerik Zaman Damgası özelliği kontrolü başarılı. </value>
+  </data>
+  <data name="CONTENT_TIMESTAMP_ATTRIBUTE_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>İçerik Zaman Damgası özelliği kontrolü başarısız. </value>
+  </data>
+  <data name="CONTENT_TIMESTAMP_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>İçerik Zaman Damgası özelliği decode edilemedi. </value>
+  </data>
+  <data name="CONTENT_TYPE_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>İçerik Tipi Özelliği Kontrolcüsü </value>
+  </data>
+  <data name="CONTENT_TYPE_ATTRIBUTE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>İçerik Tipi özelliği kontrolcüsü başarılı. </value>
+  </data>
+  <data name="CONTENT_TYPE_ATTRIBUTE_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>İçerik Tipi, EncapsulatedContentInfo daki içerik tipiyle aynı değil.Kontrolcü sonucu başarısız. </value>
+  </data>
+  <data name="CONTENT_TYPE_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>İçerik Tipi özelliği decode edilemedi. </value>
+  </data>
+  <data name="COUNTER_SIGNATURE_CHECKED" xml:space="preserve">
+    <value>. seri imza kontrol edildi:@</value>
+  </data>
+  <data name="COUNTER_SIGNATURE_VERIFICATION_RESULTS" xml:space="preserve">
+    <value>Imzaya Ait Seri Imza Dogrulama Sonuclari:@</value>
+  </data>
+  <data name="ISSUER_SERIAL_DOESNOT_MATCH_SIGNER_IDENTIFIER" xml:space="preserve">
+    <value>Özellikteki issuer serial alanı, signerinfo daki signeridentifier alanı ile eşleşmiyor. </value>
+  </data>
+  <data name="MESSAGE_DIGEST_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>İçerik Özet Özelliği Kontrolcüsü </value>
+  </data>
+  <data name="MESSAGE_DIGEST_ATTRIBUTE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>İçerik özeti özelliği kontrolcüsü başarılı. </value>
+  </data>
+  <data name="MESSAGE_DIGEST_ATTRIBUTE_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>İçerik özeti özelliğindeki değer hesaplanan değerle aynı değil.Kontrolcü sonucu başarısız. </value>
+  </data>
+  <data name="MESSAGE_DIGEST_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>İçerik özeti özelliği decode edilemedi. </value>
+  </data>
+  <data name="MESSAGE_DIGEST_CHECKER_ERROR" xml:space="preserve">
+    <value>İçerik özeti kontrolcüsünde hata oluştu. </value>
+  </data>
+  <data name="NO_ARCHIVE_TSA_IN_SIGNEDDATA" xml:space="preserve">
+    <value>Arşiv zaman damgası özelliği imza yapısında bulunamadı. </value>
+  </data>
+  <data name="NO_ARCHIVE_TSA_V2_IN_SIGNEDDATA" xml:space="preserve">
+    <value>Arşiv zaman damgası V2 özelliği imza yapısında bulunamadı. </value>
+  </data>
+  <data name="NO_CADESC_TSA_IN_SIGNEDDATA" xml:space="preserve">
+    <value>CAdES_C zaman damgası özelliği imza yapısında bulunamadı. </value>
+  </data>
+  <data name="NO_CERTIFICATE_VALUES_ATTRIBUTE_IN_SIGNEDDATA" xml:space="preserve">
+    <value>Sertifika değerleri özelliği imza yapısında bulunamadı. </value>
+  </data>
+  <data name="NO_CHECKER_SUCCESSFULL" xml:space="preserve">
+    <value>Zorunlu kontrolcülerden hiç biri çalıştırılamadı. </value>
+  </data>
+  <data name="NO_COMPLETE_CERTIFICATE_REFERENCES_IN_SIGNEDDATA" xml:space="preserve">
+    <value>Sertifika referansları özelliği imza yapısında bulunamadı. </value>
+  </data>
+  <data name="NO_CONTENT_TIMESTAMP_ATTRIBUTE_IN_SIGNEDDATA" xml:space="preserve">
+    <value>İçerik Zaman Damgası özelliği imza yapısında bulunamadı. </value>
+  </data>
+  <data name="NO_CONTENT_TYPE_ATTRIBUTE_IN_SIGNED_DATA" xml:space="preserve">
+    <value>İçerik Tipi özelliği bulunamadı. </value>
+  </data>
+  <data name="NO_MESSAGE_DIGEST_ATTRIBUTE_FOUND" xml:space="preserve">
+    <value>İçerik özeti özelliği bulunamadı. </value>
+  </data>
+  <data name="NO_MUST_ATTRIBUTE_IN_SIGNED_DATA" xml:space="preserve">
+    <value>Zorunlu özellik imza yapısında bulunamadı. </value>
+  </data>
+  <data name="NO_OPTIONAL_ATTRIBUTE_IN_SIGNED_DATA" xml:space="preserve">
+    <value>Zorunlu olmayan özellik(CADES_C veya referans zaman damgası) imza yapısında bulunamadı. </value>
+  </data>
+  <data name="NO_SIGNER_CERTIFICATE_FOUND" xml:space="preserve">
+    <value>İmza sertifikası bulunamadı. </value>
+  </data>
+  <data name="NO_SIGNING_TIME" xml:space="preserve">
+    <value>İmzalama zamanı alınırken hata oluştu. </value>
+  </data>
+  <data name="NO_SIGNING_TIME_ATTRIBUTE" xml:space="preserve">
+    <value>Beyan edilen imza zamanı özelliği bulunamadı. </value>
+  </data>
+  <data name="PRE_VERIFICATION_DONE" xml:space="preserve">
+    <value>Ön doğrulama yapılmıştır.@</value>
+  </data>
+  <data name="REVOCATION_REFERENCES_AND_VALUES_MATCH_CHECKER" xml:space="preserve">
+    <value>İptal Bilgisi Referans - Değer Uyumluluk Kontrolcüsü </value>
+  </data>
+  <data name="REVOCATION_REFERENCES_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>İptal referansları özelliği decode edilemedi. </value>
+  </data>
+  <data name="REVOCATION_REFERENCES_ATTRIBUTE_NOT_FOUND" xml:space="preserve">
+    <value>İptal referansları özelliği imza yapısında bulunamadı. </value>
+  </data>
+  <data name="REVOCATION_REFS_VALUES_MATCH_SUCCESSFUL" xml:space="preserve">
+    <value>İptal referansları ve değerleri eşleştirme kontrolü başarılı. </value>
+  </data>
+  <data name="REVOCATION_REFS_VALUES_MATCH_UNSUCCESSFUL" xml:space="preserve">
+    <value>İptal referansları ve değerleri eşleştirme kontrolü başarısız.. </value>
+  </data>
+  <data name="REVOCATION_VALUES_ATTRIBUTE_NOT_FOUND" xml:space="preserve">
+    <value>İptal değerleri özelliği imza yapısında bulunamadı. </value>
+  </data>
+  <data name="REVOCATION_VALUES_DECODE_ERROR" xml:space="preserve">
+    <value>İptal değerleri özelliği decode edilemedi. </value>
+  </data>
+  <data name="SIGNATURETIMESTAMP_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>İmza Zaman Damgası Kontrolcüsü </value>
+  </data>
+  <data name="SIGNATURE_CHECKED_RESULTS" xml:space="preserve">
+    <value>. İmza kontrol edildi. @Sonuclar:@</value>
+  </data>
+  <data name="SIGNATURE_CHECKER" xml:space="preserve">
+    <value>İmza Matematiksel Doğrulama Kontrolcüsü </value>
+  </data>
+  <data name="SIGNATURE_CHECKER_RESULTS" xml:space="preserve">
+    <value>Imza Kontrolcu Sonuclari:@</value>
+  </data>
+  <data name="SIGNATURE_POLICY_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>İmza Politikası Özelliği Kontrolcüsü </value>
+  </data>
+  <data name="SIGNATURE_POLICY_ATTRIBUTE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>İmza politikası özelliğindeki özet değeri hesaplanan değerle aynı. Kontrolcü sonucu başarılı. </value>
+  </data>
+  <data name="SIGNATURE_POLICY_ATTRIBUTE_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>İmza politikası özelliğindeki özet değeri hesaplanan değerden farklı.Kontrolcü sonucu başarısız. </value>
+  </data>
+  <data name="SIGNATURE_POLICY_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>İmza politikası özelliği decode edilemedi. </value>
+  </data>
+  <data name="SIGNATURE_POLICY_ATTRIBUTE_DIGEST_CALCULATION_ERROR" xml:space="preserve">
+    <value>İmza politikası kontrolünde özet işleminde hata oluştu. </value>
+  </data>
+  <data name="SIGNATURE_POLICY_ATTRIBUTE_NOT_FOUND" xml:space="preserve">
+    <value>İmza politikası özelliği bulunamadı. </value>
+  </data>
+  <data name="SIGNATURE_TS_CHECK_SUCCESSFUL" xml:space="preserve">
+    <value>İmza zaman damgası özelliği kontrolü başarılı. </value>
+  </data>
+  <data name="SIGNATURE_TS_CHECK_UNSUCCESSFUL" xml:space="preserve">
+    <value>İmza zaman damgası özelliği kontrolü başarısız. </value>
+  </data>
+  <data name="SIGNATURE_TS_DECODE_ERROR" xml:space="preserve">
+    <value>İmza zaman damgası özelliği decode edilemedi. </value>
+  </data>
+  <data name="SIGNATURE_TS_NOT_FOUND" xml:space="preserve">
+    <value>İmza zaman damgası özelliği bulunamadı. </value>
+  </data>
+  <data name="SIGNATURE_VERIFICATION_ERROR" xml:space="preserve">
+    <value>İmza matematiksel doğrulamada hata oluştu. </value>
+  </data>
+  <data name="SIGNATURE_VERIFICATION_SUCCESSFUL" xml:space="preserve">
+    <value>İmza matematiksel doğrulandı. </value>
+  </data>
+  <data name="SIGNATURE_VERIFICATION_UNSUCCESSFUL" xml:space="preserve">
+    <value>İmza matematiksel doğrulanamadı. </value>
+  </data>
+  <data name="SIGNED_ATTRIBUTES_ENCODE_ERROR" xml:space="preserve">
+    <value>İmzalı özellikler encode edilirken hata oluştu. </value>
+  </data>
+  <data name="SIGNER_CERTIFICATE" xml:space="preserve">
+    <value>İmzacı Sertifika: </value>
+  </data>
+  <data name="SIGNER_DIGEST_ALGORITHM_UNKNOWN" xml:space="preserve">
+    <value>İmzacı özet algoritması bilinmiyor. </value>
+  </data>
+  <data name="SIGNING_CERTIFICATE_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>İmzacı Sertifikası Özelliği Kontrolcüsü </value>
+  </data>
+  <data name="SIGNING_CERTIFICATE_ATTRIBUTE_CHECK_SUCCESSFUL" xml:space="preserve">
+    <value>İmzacı sertifikası özelliği kontrolü başarılı. </value>
+  </data>
+  <data name="SIGNING_CERTIFICATE_ATTRIBUTE_HASH_CALCULATION_ERROR" xml:space="preserve">
+    <value>İmzacı sertifikası özelliği özet kontrolünde hata. </value>
+  </data>
+  <data name="SIGNING_CERTIFICATE_DECODE_ERROR" xml:space="preserve">
+    <value>İmzacı sertifikası özelliği decode edilemedi. </value>
+  </data>
+  <data name="SIGNING_CERTIFICATE_V2_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>İmzacı Sertifikası Özelliği V2 Kontrolcüsü </value>
+  </data>
+  <data name="SIGNING_TIME_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>Beyan edilen imza zamanı özelliği decode edilemedi. </value>
+  </data>
+  <data name="SIGNING_TIME_CHECKER" xml:space="preserve">
+    <value>Beyan Edilen Zaman Kontrolcüsü </value>
+  </data>
+  <data name="SIGNING_TIME_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Beyan edilen imza zamanı, zaman damgasındaki zamandan önce. Kontrolcü sonucu başarılı. </value>
+  </data>
+  <data name="SIGNING_TIME_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Beyan edilen imza zamanı, zaman damgasındaki zamandan sonra olamaz. Beyan edilen zaman: {0}. Zaman Damgası: {1}. </value>
+  </data>
+  <data name="SUB_CHECKER_RESULTS" xml:space="preserve">
+    <value>Alt Kontrolcu Sonuclari:</value>
+  </data>
+  <data name="TIMESTAMPED_CERTS_CRLS_REFS_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Referanslar Zaman Damgası Özelliği Kontrolcüsü </value>
+  </data>
+  <data name="TIMESTAMPED_CERTS_CRLS_REFS_ATTRIBUTE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Referanslar zaman damgası özelliği kontrolü başarılı. </value>
+  </data>
+  <data name="TIMESTAMPED_CERTS_CRLS_REFS_ATTRIBUTE_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Referanslar zaman damgası özelliği kontrolü başarısız. </value>
+  </data>
+  <data name="TIMESTAMPED_CERTS_CRLS_REFS_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>Referanslar zaman damgası özelliği decode edilemedi. </value>
+  </data>
+  <data name="TIMESTAMPED_CERTS_CRLS_REFS_ATTRIBUTE_NOT_FOUND" xml:space="preserve">
+    <value>Referanslar zaman damgası özelliği bulunamadı. </value>
+  </data>
+  <data name="TIMESTAMP_CERTIFICATE_CHECKER" xml:space="preserve">
+    <value>Zaman Damgası Sertifikası Kontrolcüsü </value>
+  </data>
+  <data name="TIMESTAMP_MESSAGE_DIGEST_CHECKER" xml:space="preserve">
+    <value>Zaman Damgası Özet Kontrolcüsü </value>
+  </data>
+  <data name="TIMESTAMP_SIGNATURE_CHECKER" xml:space="preserve">
+    <value>Zaman Damgası İmza Kontrolcüsü </value>
+  </data>
+  <data name="TIMESTAMP_TIME_CHECKER" xml:space="preserve">
+    <value>Zaman Damgası Zaman Kontrolcüsü </value>
+  </data>
+  <data name="TS_CERTIFICATE_NOT_FOUND" xml:space="preserve">
+    <value>Zaman damgası sunucu sertifikası bulunamadı. </value>
+  </data>
+  <data name="TS_CERTIFICATE_NOT_QUALIFIED" xml:space="preserve">
+    <value>Sertifika, zaman damgası sunucu sertifikası olamaz. </value>
+  </data>
+  <data name="TS_MESSAGE_DIGEST_CHECKER_DECODE_ERROR" xml:space="preserve">
+    <value>Zaman damgasından TSTInfo yapısı decode edilemedi. </value>
+  </data>
+  <data name="TS_MESSAGE_DIGEST_CHECKER_DIGEST_CALCULATION_ERROR" xml:space="preserve">
+    <value>Zaman damgası özet değeri hesaplanırken hata oluştu. </value>
+  </data>
+  <data name="TS_MESSAGE_DIGEST_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Zaman damgası özet değeri kontrolü başarılı. </value>
+  </data>
+  <data name="TS_MESSAGE_DIGEST_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Zaman damgasından hesaplanan özet değeri ve imzadan hesaplanan özet değeri aynı değil.Kontrolcü sonucu başarısız. </value>
+  </data>
+  <data name="TS_SIGNATURE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Zaman damgası imzası doğrulandı. </value>
+  </data>
+  <data name="TS_SIGNATURE_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Zaman damgası imzası doğrulanamadı. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_ARCHIVE_BEFORE_ESC" xml:space="preserve">
+    <value>Arşiv zaman damgasının tarihi, ESC zaman damgasınınkinden önce. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_ARCHIVE_BEFORE_EST" xml:space="preserve">
+    <value>Arşiv zaman damgasının tarihi, imza zaman damgasınınkinden önce. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_ARCHIVE_BEFORE_REFS" xml:space="preserve">
+    <value>Arşiv zaman damgasının tarihi, Referanslar zaman damgasınınkinden önce. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_COMPARISON_ERROR" xml:space="preserve">
+    <value>Zaman damgalarının, zaman sırası karşılaştırılırken hata oluştu. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_SIGNATURE_TS_NOT_FOUND" xml:space="preserve">
+    <value>İmza zaman damgası özelliği bulunamadı. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Zaman damgalarının tarihleri doğru sıralı. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_TIME_ERROR" xml:space="preserve">
+    <value>Zaman damgasından zaman bilgisi alınırken hata oluştu. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Zaman damgalarının tarihleri sıralı değil. </value>
+  </data>
+  <data name="_0_MISSING_PARAMETER" xml:space="preserve">
+    <value>{0} parametresi eksik. </value>
+  </data>
+  <data name="_0_WRONG_PARAMETER_TYPE_1_" xml:space="preserve">
+    <value>{0} parametresinin {1} tipinde olması gerekiyor. </value>
+  </data>
+  <data name="CERT_EXPIRED_ERROR_IN_TS" xml:space="preserve">
+    <value>Sertifika süresi dolmuş. Bu imza için zaman damgası alınamıyor.</value>
+  </data>
+  <data name="CONTENT_AND_SIGNER_DOESNT_MATCH" xml:space="preserve">
+    <value>Eklenmek istenen veri ile imzacının imzaladığı veri uyuşmuyor.</value>
+  </data>
+  <data name="EXTERNAL_CONTENT_CANT_ATTACH" xml:space="preserve">
+    <value>İmzalanan içerik imzaya eklenemedi.</value>
+  </data>
+  <data name="CONTENT_NULL" xml:space="preserve">
+    <value>ContentInfo null.</value>
+  </data>
+  <data name="PARENT_SIGNER_ESA" xml:space="preserve">
+    <value>Üst imzacı arşiv tipi imza.</value>
+  </data>
+  <data name="PROFILE_REVOCATION_VALUE_MATCHER_CHECKER" xml:space="preserve">
+    <value>Profil-İptal Bilgisi Uyumluluk Kontrolcüsü</value>
+  </data>
+  <data name="PROFILE_REVOCATION_VALUE_MATCHER_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Profil ve iptal verisi uyumlu.</value>
+  </data>
+  <data name="PROFILE_REVOCATION_VALUE_MATCHER_CHECKER_SUCPROFILE_REVOCATION_VALUE_MATCHER_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Profil ve iptal verisi uyumsuz.</value>
+  </data>
+  <data name="SIGNATURE_POLICY_VALUE_NOT_FOUND" xml:space="preserve">
+    <value>İmza politikası bulunamadı.</value>
+  </data>
+  <data name="TS_DECODE_ERROR" xml:space="preserve">
+    <value>Zaman damgası verisini çözmede hata.</value>
+  </data>
+  <data name="PROFILE_REVOCATION_VALUE_MATCHER_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Profil ve iptal verisi uyumsuz.</value>
+  </data>
+  <data name="PROFILE_AND_SIGNATURE_TYPE_MATCH_UNSUCCESSFUL" xml:space="preserve">
+    <value>Profil {0} ve imza tipi {1}.</value>
+  </data>
+  <data name="PROFILE_P3_DOESNOT_USE_CRL" xml:space="preserve">
+    <value>Profil P3 olmasına rağmen CRL kullanılmamış.</value>
+  </data>
+  <data name="PROFILE_P4_DOESNOT_USE_OCSP" xml:space="preserve">
+    <value>Profil P4 olmasına rağmen OCSP kullanılmamış.</value>
+  </data>
+  <data name="CERTIFICATE_REVOCATION_MAP_INCOMPLETE" xml:space="preserve">
+    <value>Bazı referanslar veya değerler eksik.</value>
+  </data>
+  <data name="TURKISH_PROFILE_ATTRIBUTES_CHECKER" xml:space="preserve">
+    <value>Türk Profilleri Özellikleri Kontrolcüsü</value>
+  </data>
+  <data name="TURKISH_PROFILE_ATTRIBUTES_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Profil özellikleri Türk standartlarına uygun.</value>
+  </data>
+  <data name="SIGNATURE_TIME_ERROR" xml:space="preserve">
+    <value>İmzadan zaman bilgileri alınırken hata oluştu.</value>
+  </data>
+  <data name="SIGNING_CERTIFICATE_V2_ATTRIBUTE_MISSING" xml:space="preserve">
+    <value>İmzacı Sertifikası Özelliği V2 bulunamadı.</value>
+  </data>
+  <data name="SIGNING_TIME_ATTRIBUTE_MISSING" xml:space="preserve">
+    <value>Beyan edilen zamanı özelliği bulunamadı.</value>
+  </data>
+  <data name="TS_TIME_NOT_AFTER_2H" xml:space="preserve">
+    <value>İmza zaman damgası, beyan edilen zamandan sonraki 2 saat içinde alınmamış.</value>
+  </data>
+  <data name="PROFILE_POLICY_HASH_NOT_SHA256" xml:space="preserve">
+    <value>Politika özet algoritması SHA-256 değil.</value>
+  </data>
+  <data name="NOT_A_TURKISH_PROFILE" xml:space="preserve">
+    <value>Türk profillerinden biri değil.Herhangi bir kontrol yapılmadı.</value>
+  </data>
+  <data name="ARCHIVE_TIMESTAMP_INVALID" xml:space="preserve">
+    <value>Alınan arşiv zaman damgası geçersiz.</value>
+  </data>
+  <data name="CADES_C_TIMESTAMP_INVALID" xml:space="preserve">
+    <value>Alınan CaDES-C zaman damgası geçersiz.</value>
+  </data>
+  <data name="CERTSCRLS_TIMESTAMP_INVALID" xml:space="preserve">
+    <value>Alınan referans zaman damgası geçersiz.</value>
+  </data>
+  <data name="SIGNATURE_TIMESTAMP_INVALID" xml:space="preserve">
+    <value>Alınan imza zaman damgası geçersiz.</value>
+  </data>
+  <data name="ISSUER_SERIAL_DOESNOT_EXISTS" xml:space="preserve">
+    <value>Özellik issuer serial alanı içermiyor.</value>
+  </data>
+  <data name="ARCHIVE_TIMESTAMP_V3_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Arşiv Zaman Damgası V3 Özelliği Kontrolcüsü</value>
+  </data>
+  <data name="ARCHIVE_TSA_V3_CHECK_SUCCESSFUL" xml:space="preserve">
+    <value>Arşiv zaman damgası V3 özelliği kontrolü başarılı.</value>
+  </data>
+  <data name="ARCHIVE_TSA_V3_CHECK_UNSUCCESSFUL" xml:space="preserve">
+    <value>Arşiv zaman damgası V2 özelliği kontrolü başarısız.</value>
+  </data>
+  <data name="ARCHIVE_TSA_V3_DECODE_ERROR" xml:space="preserve">
+    <value>Arşiv zaman damgası V2 özelliği decode edilemedi.</value>
+  </data>
+  <data name="ATS_HASH_INDEX_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Arşiv Zaman Damgası V3 Kapsam Kontrolcüsü</value>
+  </data>
+  <data name="ATS_HASH_INDEX_ATTRIBUTE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Arşiv Zaman Damgası V3 Kapsam Kontrolcüsü başarılı.</value>
+  </data>
+  <data name="NO_ARCHIVE_TSA_V3_IN_SIGNEDDATA" xml:space="preserve">
+    <value>Arşiv zaman damgası V2 özelliği imza yapısında bulunamadı.</value>
+  </data>
+  <data name="PARENT_SIGNER_ESAv2" xml:space="preserve">
+    <value>Üst imzacılardan biri arşiv zaman damgası V2 özelliği olan arşiv tipi imza.</value>
+  </data>
+  <data name="PARENT_SIGNER_ESAv3" xml:space="preserve">
+    <value>Üst imzacılardan biri arşiv zaman damgası V3 özelliği olan arşiv tipi imza.</value>
+  </data>
+  <data name="UNSIGNED_ATTRIBUTE_MISSING" xml:space="preserve">
+    <value>İmzasız özelliklerden biri çıkarılmış.</value>
+  </data>
+  <data name="UNSIGNED_ATTRIBUTE_NOT_INCLUDED" xml:space="preserve">
+    <value>İmzasız özelliklerden biri arşiv zaman damgasına dahil değil.</value>
+  </data>
+  <data name="CERTIFICATE_EXPLANATION" xml:space="preserve">
+    <value>Sertifika: {0}.</value>
+  </data>
+  <data name="GETTING_TS_CERTIFICATE_VALIDATION_DATA_ERROR" xml:space="preserve">
+    <value>Zaman damgası sertifikasının doğrulama verilerinin alınmasında hata oluştu.</value>
+  </data>
+  <data name="CERTIFICATE_CHECKER_FAIL" xml:space="preserve">
+    <value>{0} başarısız</value>
+  </data>
+  <data name="CERTIFICATE_NO_PATH_FOUND" xml:space="preserve">
+    <value>Güvendiğiniz bir sertifika zinciri oluşturulamadı. Sertifikanın kök sertifikası güvenilir sertifikalarınızdan biri olmayabilir</value>
+  </data>
+  <data name="UNKNOWN_COMMITMENT_TYPE" xml:space="preserve">
+    <value>Bilinmeyen imza amacı.</value>
+  </data>
+</root>

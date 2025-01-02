@@ -1,0 +1,9 @@
+The present document specifies the use of container structures, to bind
+together a number of signed objects (e.g. documents, XML structured data,
+spreadsheet, multimedia content) with either detached advanced electronic
+signatures or time-stamp tokens into one single digital container based on
+ZIP [8] and supporting the following signature and time-stamp token formats:
+
+• CAdES (TS 101 733 [1]);
+• XAdES (TS 101 903 [2]);
+• RFC 3161 [3] time-stamp tokens.

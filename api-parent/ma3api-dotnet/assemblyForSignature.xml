@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<assembly
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+	<id>signature</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<files>
+		<file>
+			<source>..\resources\ReadMe\DotNet\lib\BENI_OKU.txt</source>
+			<outputDirectory>lib</outputDirectory>
+		</file>
+		<file>
+			<source>..\resources\ReadMe\DotNet\BENI_OKU.txt</source>
+			<outputDirectory>.</outputDirectory>
+		</file>
+		<file>
+			<source>..\resources\profiller\Elektronik_Imza_Kullanim_Profilleri_Rehberi.pdf</source>
+			<outputDirectory>config\profiller</outputDirectory>
+		</file>
+		<file>
+			<source>..\docs\manual\MA3 API Kullanim Kilavuzu.pdf</source>
+			<outputDirectory>doc</outputDirectory>
+		</file>
+		<file>
+			<source>..\docs\manual\Zaman Damgasi Istemcisi Kullanim Kilavuzu.pdf</source>
+			<outputDirectory>doc</outputDirectory>
+		</file>
+		<file>
+			<source>..\docs\manual\MA3 API KULLANICI LISANS SOZLESMESI.txt</source>
+			<outputDirectory>.</outputDirectory>
+		</file>
+		<file>
+			<source>..\resources\Log\log4net.xml</source>
+			<outputDirectory>config</outputDirectory>
+		</file>
+		<file>
+			<source>..\dlls\x64\System.Data.SQLite.dll</source>
+			<outputDirectory>lib/x64</outputDirectory>
+		</file>
+		<file>
+			<source>..\dlls\System.Data.SQLite.dll</source>
+			<outputDirectory>lib/x86</outputDirectory>
+		</file>
+	</files>
+	<fileSets>
+		<fileSet>
+			<directory>${project.basedir}/bin/Release</directory>
+			<outputDirectory>lib/AnyCPU</outputDirectory>
+			<includes>
+				<include>*.dll</include>
+				<include>./tr-TR/**</include>
+				<include>./en-US/**</include>
+			</includes>
+			<excludes>
+				<exclude>*cmsenvelope*.*</exclude>
+				<exclude>ma3api-*.dll</exclude>
+				<exclude>ImzaApiTest.dll</exclude>
+				<exclude>System.Data.SQLite.dll</exclude>
+				<exclude>*.config</exclude>
+				<exclude>*.pdb</exclude>
+			</excludes>
+		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}/obfuscated_signature</directory>
+			<outputDirectory>lib/AnyCPU</outputDirectory>
+			<includes>
+				<include>*.dll</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>..\docs\Harici Lisanslar Dotnet</directory>
+			<outputDirectory>lib\_Harici Lisanslar</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}/target/csharp/netdoc</directory>
+			<outputDirectory>netdoc</outputDirectory>
+			<includes>
+				<include>*.chm</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>..\resources\sample-policy</directory>
+			<outputDirectory>config</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>..\resources\test-root-cert</directory>
+			<outputDirectory>sertifika deposu\test kok sertifika
+			</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>.</directory>
+			<outputDirectory>ornekler\API</outputDirectory>
+			<includes>
+				<include>./Properties/**</include>
+				<include>./src/**</include>
+				<include>api-dist.csproj</include>
+				<include>App.config</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>..\..\api-cmssignature\api-mssclient\examples\DotNet</directory>
+			<outputDirectory>ornekler\MobilImza</outputDirectory>
+            <excludes>
+                <exclude>**/lib/**</exclude>
+                <exclude>**/bin/**</exclude>
+                <exclude>**/obj/**</exclude>
+            </excludes>
+		</fileSet>
+		<fileSet>
+			<directory>..\resources\pfx</directory>
+			<outputDirectory>sertifika deposu</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>..\resources\testdata</directory>
+			<outputDirectory>testVerileri</outputDirectory>
+		</fileSet>		
+	</fileSets>
+</assembly>

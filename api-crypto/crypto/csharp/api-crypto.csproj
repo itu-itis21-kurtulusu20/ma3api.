@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82649E95-07E4-4166-9D55-B4705CC80836}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ma3api-crypto</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>tr.gov.tubitak.uekae.esya.api.crypto</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ma3api-crypto.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>C:\Documents and Settings\bilen.ogretmen\My Documents\Visual Studio 2010\Projects\API_GUI\WindowsFormsApplication1\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ma3api-crypto.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\..\api-parent\ma3api-dotnet\ma3api.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ma3api-crypto.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;E:\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ma3api-crypto.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;E:\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="asn1rtcs">
+      <HintPath>..\..\..\api-parent\dlls\asn1rtcs.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\api-parent\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.postbuild" />
+    <None Include="Doxyfile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\alg\AgreementAlg.cs" />
+    <Compile Include="src\alg\AsymmetricAlg.cs" />
+    <Compile Include="src\alg\CipherAlg.cs" />
+    <Compile Include="src\alg\DerivationFunctionAlg.cs" />
+    <Compile Include="src\alg\DerivationFunctionType.cs" />
+    <Compile Include="src\alg\DigestAlg.cs" />
+    <Compile Include="src\alg\IAlgorithm.cs" />
+    <Compile Include="src\alg\KeyAgreementAlg.cs" />
+    <Compile Include="src\alg\MACAlg.cs" />
+    <Compile Include="src\alg\MGF.cs" />
+    <Compile Include="src\alg\Mod.cs" />
+    <Compile Include="src\alg\OAEPPadding.cs" />
+    <Compile Include="src\alg\Padding.cs" />
+    <Compile Include="src\alg\PBEAlg.cs" />
+    <Compile Include="src\alg\SignatureAlg.cs" />
+    <Compile Include="src\alg\WrapAlg.cs" />
+    <Compile Include="src\BlockBuffer.cs" />
+    <Compile Include="src\BlockNoBuffer.cs" />
+    <Compile Include="src\BufferedCipher.cs" />
+    <Compile Include="src\Cipher.cs" />
+    <Compile Include="src\Crypto.cs" />
+    <Compile Include="src\DTBSRetrieverSigner.cs" />
+    <Compile Include="src\exceptions\AlreadyInitializedException.cs" />
+    <Compile Include="src\exceptions\ArgErrorException.cs" />
+    <Compile Include="src\exceptions\CMSException.cs" />
+    <Compile Include="src\exceptions\CryptoException.cs" />
+    <Compile Include="src\exceptions\CryptoRuntimeException.cs" />
+    <Compile Include="src\exceptions\UnknownElement.cs" />
+    <Compile Include="src\HashInfo.cs" />
+    <Compile Include="src\IDigester.cs" />
+    <Compile Include="src\IDTBSRetrieverSigner.cs" />
+    <Compile Include="src\IKeyAgreement.cs" />
+    <Compile Include="src\IKeyFactory.cs" />
+    <Compile Include="src\IKeyPairGenerator.cs" />
+    <Compile Include="src\IMAC.cs" />
+    <Compile Include="src\IPfxParser.cs" />
+    <Compile Include="src\IRandomGenerator.cs" />
+    <Compile Include="src\IVerifier.cs" />
+    <Compile Include="src\IWrapper.cs" />
+    <Compile Include="src\ec\NamedCurve.cs" />
+    <Compile Include="src\parameters\IAlgorithmParams.cs" />
+    <Compile Include="src\parameters\IKeySpec.cs" />
+    <Compile Include="src\parameters\ParamsWithAlgorithmIdentifier.cs" />
+    <Compile Include="src\parameters\ParamsWithECParameterSpec.cs" />
+    <Compile Include="src\parameters\ParamsWithGCMSpec.cs" />
+    <Compile Include="src\parameters\ParamsWithIV.cs" />
+    <Compile Include="src\parameters\ParamsWithLength.cs" />
+    <Compile Include="src\parameters\ParamsWithOctetString.cs" />
+    <Compile Include="src\parameters\ParamsWithSharedInfo.cs" />
+    <Compile Include="src\parameters\PBEKeySpec.cs" />
+    <Compile Include="src\parameters\RSAPSSParams.cs" />
+    <Compile Include="src\provider\core\baseTypes\IKey.cs" />
+    <Compile Include="src\provider\core\baseTypes\IPBEKey.cs" />
+    <Compile Include="src\provider\core\baseTypes\IPrivateKey.cs" />
+    <Compile Include="src\provider\core\baseTypes\IPublicKey.cs" />
+    <Compile Include="src\provider\core\baseTypes\ISecretKey.cs" />
+    <Compile Include="src\provider\core\baseTypes\KeyPair.cs" />
+    <Compile Include="src\provider\core\baseTypes\PBEKey.cs" />
+    <Compile Include="src\provider\core\baseTypes\PrivateKey.cs" />
+    <Compile Include="src\provider\core\baseTypes\PublicKey.cs" />
+    <Compile Include="src\provider\ICryptoProvider.cs" />
+    <Compile Include="src\Signer.cs" />
+    <Compile Include="src\util\CipherUtil.cs" />
+    <Compile Include="src\util\DigestUtil.cs" />
+    <Compile Include="src\util\ECUtil.cs" />
+    <Compile Include="src\util\KeyUtil.cs" />
+    <Compile Include="src\util\PfxParser.cs" />
+    <Compile Include="src\util\RandomUtil.cs" />
+    <Compile Include="src\util\SignUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\api-asn\csharp\api-asn.csproj">
+      <Project>{307F1CDC-084E-4A9D-9208-0943DE95DA0F}</Project>
+      <Name>api-asn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-common\csharp\api-common.csproj">
+      <Project>{CA8572D2-2D3C-42F0-9A07-6261B00BD5F6}</Project>
+      <Name>api-common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.Targets" />
+  <Import Project="..\..\..\api-parent\ma3api-dotnet\BuildCommon.targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{038D74BD-D861-4880-8B8A-2413AB145709}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestMSSPClients</RootNamespace>
+    <AssemblyName>TestMSSPClients</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="asn1rt, Version=6.0.4153.34382, Culture=neutral, PublicKeyToken=e419c4ffbcc12130, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\asn1rt.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-asn, Version=1.4.9.0, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\ma3api-asn.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-cmssignature, Version=1.4.9.0, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL" />
+    <Reference Include="ma3api-common, Version=1.4.9.0, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\ma3api-common.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-crypto-bouncyprovider, Version=1.4.9.0, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\ma3api-crypto-bouncyprovider.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-infra, Version=1.4.9.0, Culture=neutral, PublicKeyToken=4d1d81e4a0cd6187, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\ma3api-infra.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EMSSPClientConnector.cs" />
+    <Compile Include="TestMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestMainForm.Designer.cs">
+      <DependentUpon>TestMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="TestMainForm.resx">
+      <DependentUpon>TestMainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\turktelekommssprovider\csharp\api-turktelekommssclient.csproj">
+      <Project>{538B5538-A2DE-4D8E-8B5D-649B2DEFAA93}</Project>
+      <Name>api-turktelekommssclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mssclient\csharp\api-mssclient.csproj">
+      <Project>{34358B27-80A6-4DD0-A890-856CA1473C56}</Project>
+      <Name>api-mssclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\turkcellmssprovider\csharp\api-turkcellmssclient.csproj">
+      <Project>{EF9CEF88-E6F0-443B-AC85-A5918E7BE747}</Project>
+      <Name>api-turkcellmssclient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="example.txt" />
+    <Content Include="lib\asn1rt.dll" />
+    <Content Include="lib\en-US\ma3api-cmssignature.resources.dll" />
+    <Content Include="lib\en-US\ma3api-common.resources.dll" />
+    <Content Include="lib\en-US\ma3api-smartcard.resources.dll" />
+    <Content Include="lib\en-US\ma3api-xmlsignature.resources.dll" />
+    <Content Include="lib\log4net.dll" />
+    <Content Include="lib\ma3api-asn.dll" />
+    <Content Include="lib\ma3api-certstore.dll" />
+    <Content Include="lib\ma3api-certvalidation.dll" />
+    <Content Include="lib\ma3api-cmssignature.dll" />
+    <Content Include="lib\ma3api-common.dll" />
+    <Content Include="lib\ma3api-crypto-bouncyprovider.dll" />
+    <Content Include="lib\ma3api-crypto.dll" />
+    <Content Include="lib\ma3api-iaik_wrapper.dll" />
+    <Content Include="lib\ma3api-infra.dll" />
+    <Content Include="lib\ma3api-managedPkcs11.dll" />
+    <Content Include="lib\ma3api-mssclient-turkcellprovider.dll" />
+    <Content Include="lib\ma3api-mssclient.dll" />
+    <Content Include="lib\ma3api-pkcs11net.dll" />
+    <Content Include="lib\ma3api-smartcard.dll" />
+    <Content Include="lib\ma3api-xmlsignature.dll" />
+    <Content Include="lib\nunit.framework.dll" />
+    <Content Include="lib\System.Data.SQLite.dll" />
+    <Content Include="lib\tr-TR\ma3api-cmssignature.resources.dll" />
+    <Content Include="lib\tr-TR\ma3api-common.resources.dll" />
+    <Content Include="lib\tr-TR\ma3api-smartcard.resources.dll" />
+    <Content Include="lib\tr-TR\ma3api-xmlsignature.resources.dll" />
+    <Content Include="lib\x64\ma3api-managedPkcs11.dll" />
+    <Content Include="lib\x64\System.Data.SQLite.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

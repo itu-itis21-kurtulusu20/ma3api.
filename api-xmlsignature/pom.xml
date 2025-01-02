@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>ma3api-parent</artifactId>
+		<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+		<version>2.3.25-SNAPSHOT</version>
+		<relativePath>../api-parent/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>ma3api-xmlsignature</artifactId>
+	<name>MA3 Api XML Signature Module</name>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-asn</artifactId>			
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-crypto</artifactId>			
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-certstore</artifactId>			
+			<exclusions>
+				<exclusion>
+					<groupId>sqlite</groupId>
+					<artifactId>system-data-sqlite</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-certvalidation</artifactId>			
+		</dependency>
+		<!--dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-smartcard-android</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-smartcard-android-acs</artifactId>
+			<version>${project.version}</version>
+		</dependency-->		
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-smartcard</artifactId>			
+			<exclusions>
+				<exclusion>
+					<artifactId>ma3api-managedPkcs11</artifactId>
+					<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-signature</artifactId>			
+            <exclusions>
+                <exclusion>
+                    <artifactId>ma3api-managedPkcs11</artifactId>
+                    <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+                </exclusion>
+            </exclusions>
+		</dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <scope>test</scope>
+            <type>test-jar</type>
+            <artifactId>ma3api-signature</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-cmssignature</artifactId>			
+			<exclusions>
+				<exclusion>
+					<groupId>sqlite</groupId>
+					<artifactId>system-data-sqlite</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-cmssignature</artifactId>
+			<type>test-jar</type>
+			<version>${project.version}</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>sqlite</groupId>
+					<artifactId>system-data-sqlite</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+
+		<!-- remove dependency
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-turkcellmssprovider</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-turktelekommssprovider</artifactId>
+			<version>${project.version}</version>
+		</dependency-->		
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-crypto-sunprovider</artifactId>
+		<!--  	<scope>test</scope>  -->
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-crypto-gnuprovider</artifactId>			
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-infra</artifactId>			
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+		</dependency>
+
+		<!--LOGLAMA START-->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.32</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+			<scope>test</scope>
+		</dependency>
+		<!--Slf4j Adapter for JAVA LOGGING-->
+		<!--<dependency>-->
+		<!--<groupId>org.slf4j</groupId>-->
+		<!--<artifactId>slf4j-jdk14</artifactId>-->
+		<!--<version>1.7.25</version>-->
+		<!--<scope>test</scope>-->
+		<!--</dependency>-->
+		<!--LOGLAMA END-->
+
+	</dependencies>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>testsrc</testSourceDirectory>
+		<testResources>
+			<testResource>
+				<directory>testresources</directory>
+			</testResource>
+		</testResources>
+		<resources>
+			<resource>
+				<directory>src</directory>
+				<includes>
+					<include>**/*.xml</include>
+					<include>**/*.properties</include>
+					<include>**/*.gif</include>
+					<include>**/*.dll</include>
+					<include>**/*.sql</include>
+					<include>**/*.jpg</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+	<profiles>
+		<profile>
+			<id>testing-profile</id>
+			<!--make test if skipTests parameter is not specified. -->
+			<!-- <activation> <property> <name>skipTests</name> <value>false</value>
+				</property> </activation> -->
+			<build>
+				<plugins>
+					<plugin>
+						<!--Here is test data constructions with maven-ant plugin. -->
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<version>1.3</version>
+						<executions>
+							<execution>
+								<id>pre-test-extract</id>
+								<phase>generate-test-resources</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<!-- How it works: * it removes T: drive * determine viewpath as 
+										view root directory(2 up from pom.xml) * creates T: drive with viewpath * 
+										unzip nist_data.zip into test directory. -->
+									<tasks>
+										<delete dir="T:\api-xmlsignature\testdata\pt2010" />
+										<unzip src="T:\api-xmlsignature\testdata\pt2010.zip"
+											dest="T:\api-xmlsignature\testdata\" />
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

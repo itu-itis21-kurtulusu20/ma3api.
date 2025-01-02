@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ma3api-parent</artifactId>
+        <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+        <version>1.2.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>tr.gov.tubitak.uekae.ekds.asn</groupId>
+    <artifactId>ekds-asn</artifactId>
+    <version>1.1.0</version>
+    <name>MA3 Api Asn EKDS Module</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-asn</artifactId>
+            <version>1.1.11</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+        </plugins>
+    </build>
+    <distributionManagement>
+        <!--These directories put in here only intended to work in CI server.
+         it wont work in ur local builds ♪♪♪ -->
+        <repository>
+            <id>ma3releases</id>
+            <url>${ma3publicreleases}</url>
+        </repository>
+        <snapshotRepository>
+            <id>ma3snapshots</id>
+            <url>${ma3snapshots}</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+</project>

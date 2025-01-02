@@ -1,0 +1,76 @@
+etsiqc { itu-t(0) identified-organization(4) etsi(0) id-qc-profile(1862) id-mod(0) id-mod-qcprofile-2(02) }
+
+DEFINITIONS EXPLICIT TAGS::=
+
+BEGIN
+-- EXPORTS All --
+
+-- IMPORTS
+
+id-etsi-qcs OBJECT IDENTIFIER ::= { itu-t(0) identified-organization(4) etsi(0)
+id-qc-profile(1862) 1 }
+
+
+-- statements
+
+id-etsi-qcs-QcCompliance OBJECT IDENTIFIER ::= { id-etsi-qcs 1 }
+
+--esi4-qcStatement-1 QC-STATEMENT ::= { IDENTIFIED
+--BY id-etsi-qcs-QcCompliance }
+-- This statement is a statement by the issuer that this
+-- certificate is issued as a Qualified Certificate according
+-- Annex I and II of the Directive 1999/93/EC of the European Parliament
+-- and of the Council of 13 December 1999 on a Community framework
+-- for electronic signatures, as implemented in the law of the country
+-- specified in the issuer field of this certificate.
+
+
+
+
+id-etsi-qcs-QcLimitValue OBJECT IDENTIFIER ::= { id-etsi-qcs 2 }
+
+--esi4-qcStatement-2 QC-STATEMENT ::= { SYNTAX QcEuLimitValue IDENTIFIED
+--BY id-etsi-qcs-QcLimitValue }
+-- This statement is a statement by the issuer which impose a
+-- limitation on the value of transaction for which this certificate
+-- can be used to the specified amount (MonetaryValue), according to
+-- the Directive 1999/93/EC of the European Parliament and of the
+-- Council of 13 December 1999 on a Community framework for
+-- electronic signatures, as implemented in the law of the country
+-- specified in the issuer field of this certificate.
+
+	QcEuLimitValue ::= MonetaryValue
+
+	MonetaryValue::= SEQUENCE {
+		currency Iso4217CurrencyCode,
+		amount INTEGER,
+		exponent INTEGER}
+		-- value = amount * 10^exponent
+
+	Iso4217CurrencyCode ::= CHOICE {
+		alphabetic PrintableString (SIZE (3)), -- Recommended
+		numeric INTEGER (1..999) }
+		-- Alphabetic or numeric currency code as defined in ISO 4217
+		-- It is recommended that the Alphabetic form is used
+
+
+
+
+id-etsi-qcs-QcRetentionPeriod OBJECT IDENTIFIER ::= { id-etsi-qcs 3 }
+
+--esi4-qcStatement-3 QC-STATEMENT ::= { SYNTAX QcEuRetentionPeriod IDENTIFIED
+--BY id-etsi-qcs-QcRetentionPeriod }
+-- This statement is a statement by which the issuer guarantees
+-- that for the certificate where this extension appears that the
+-- information received from the subscriber at the time of
+-- registration will be archived and can be made available upon
+-- request beyond the end of the validity period of the certificate
+-- for the number of years as indicated in this statement.
+
+-- 	QcEuRetentionPeriod ::= INTEGER
+
+
+
+
+
+END

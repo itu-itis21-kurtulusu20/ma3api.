@@ -1,0 +1,15 @@
+DESTEKLENMEYEN OZELLIKLER
+
+- QulifyingPropertiesReference destegi yok.
+- BES'te Qualifying properties olmaksızın kabul.
+- SignaturePolicy destegi yok.
+- TimestampToken'larda CMS tipi destekleniyor, XML tipinde Timestamp destegi yok.
+- XPath2 transform
+
+
+
+TODO
+
+- Sertifika bulucu/dogrulayıcı entegrasyonu.
+- Timestamp verilerinin birbirine göre kontrolu
+- Verify the signature present within the time-stamp token.

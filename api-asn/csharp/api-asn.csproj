@@ -1,0 +1,858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{307F1CDC-084E-4A9D-9208-0943DE95DA0F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ma3api-asn</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>tr.gov.tubitak.uekae.esya</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ma3api-asn.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ma3api-asn.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\api-parent\ma3api-dotnet\ma3api.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="asn1rtcs">
+      <HintPath>..\..\api-parent\dlls\asn1rtcs.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\api-parent\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SQLite, Version=1.0.82.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\api-parent\dlls\x64\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.postbuild" />
+    <None Include="Doxyfile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\api\asn\algorithms\EECParameters.cs" />
+    <Compile Include="src\api\asn\attrcert\EAttributeCertificate.cs" />
+    <Compile Include="src\api\asn\attrcert\EHolder.cs" />
+    <Compile Include="src\api\asn\BaseASNWrapper.cs" />
+    <Compile Include="src\api\asn\cmp\ECertStatus.cs" />
+    <Compile Include="src\api\asn\cms\EATSHashIndex.cs" />
+    <Compile Include="src\api\asn\cms\EAttribute.cs" />
+    <Compile Include="src\api\asn\cms\EContentInfoWithSignedData.cs" />
+    <Compile Include="src\api\asn\cms\EMessageDigestAttr.cs" />
+    <Compile Include="src\api\asn\cms\EMimeType.cs" />
+    <Compile Include="src\api\asn\cms\envelope\EAuthenticatedEnvelopedData.cs" />
+    <Compile Include="src\api\asn\cms\ECertificateChoices.cs" />
+    <Compile Include="src\api\asn\cms\ECertificateSet.cs" />
+    <Compile Include="src\api\asn\cms\ECertificateValues.cs" />
+    <Compile Include="src\api\asn\cms\EClaimedAttributes.cs" />
+    <Compile Include="src\api\asn\cms\ECommitmentTypeIndication.cs" />
+    <Compile Include="src\api\asn\cms\ECompleteCertificateReferences.cs" />
+    <Compile Include="src\api\asn\cms\ECompleteRevocationReferences.cs" />
+    <Compile Include="src\api\asn\cms\EContentHints.cs" />
+    <Compile Include="src\api\asn\cms\EContentInfo.cs" />
+    <Compile Include="src\api\asn\cms\EContentReference.cs" />
+    <Compile Include="src\api\asn\cms\ECrlOcspRef.cs" />
+    <Compile Include="src\api\asn\cms\ECrlValidatedID.cs" />
+    <Compile Include="src\api\asn\cms\EEncapsulatedContentInfo.cs" />
+    <Compile Include="src\api\asn\cms\EEncryptedContentInfo.cs" />
+    <Compile Include="src\api\asn\cms\envelope\EEnvelopedData.cs" />
+    <Compile Include="src\api\asn\cms\EESSCertIDv2.cs" />
+    <Compile Include="src\api\asn\cms\EIssuerAndSerialNumber.cs" />
+    <Compile Include="src\api\asn\cms\envelope\EnvelopeASNWrapper.cs" />
+    <Compile Include="src\api\asn\cms\EOcspResponsesID.cs" />
+    <Compile Include="src\api\asn\cms\EOtherCertID.cs" />
+    <Compile Include="src\api\asn\cms\EOtherHashAlgAndValue.cs" />
+    <Compile Include="src\api\asn\cms\ERevocationInfoChoice.cs" />
+    <Compile Include="src\api\asn\cms\ERevocationInfoChoices.cs" />
+    <Compile Include="src\api\asn\cms\ERevocationValues.cs" />
+    <Compile Include="src\api\asn\cms\ESignaturePolicy.cs" />
+    <Compile Include="src\api\asn\cms\ESignaturePolicyId.cs" />
+    <Compile Include="src\api\asn\cms\ESignedAttributes.cs" />
+    <Compile Include="src\api\asn\cms\ESignedData.cs" />
+    <Compile Include="src\api\asn\cms\ESignerAttribute.cs" />
+    <Compile Include="src\api\asn\cms\ESignerAttribute_element.cs" />
+    <Compile Include="src\api\asn\cms\ESignerIdentifier.cs" />
+    <Compile Include="src\api\asn\cms\ESignerInfo.cs" />
+    <Compile Include="src\api\asn\cms\ESignerLocation.cs" />
+    <Compile Include="src\api\asn\cms\ESigningCertificate.cs" />
+    <Compile Include="src\api\asn\cms\ESigningCertificateV2.cs" />
+    <Compile Include="src\api\asn\cms\ESigPolicyQualifierInfo.cs" />
+    <Compile Include="src\api\asn\cms\EUnsignedAttributes.cs" />
+    <Compile Include="src\api\asn\cms\envelope\IEnvelopeData.cs" />
+    <Compile Include="src\api\asn\Constants.cs" />
+    <Compile Include="src\api\asn\cvc\EAlgId.cs" />
+    <Compile Include="src\api\asn\cvc\ECar.cs" />
+    <Compile Include="src\api\asn\cvc\ECed.cs" />
+    <Compile Include="src\api\asn\cvc\ECha.cs" />
+    <Compile Include="src\api\asn\cvc\EChr.cs" />
+    <Compile Include="src\api\asn\cvc\ECpi.cs" />
+    <Compile Include="src\api\asn\cvc\ECVCValues.cs" />
+    <Compile Include="src\api\asn\cvc\ECxd.cs" />
+    <Compile Include="src\api\asn\cvc\EHeaderList.cs" />
+    <Compile Include="src\api\asn\cvc\ENonSelfDescCVC.cs" />
+    <Compile Include="src\api\asn\cvc\ENonSelfDescCVCwithHeader.cs" />
+    <Compile Include="src\api\asn\cvc\EPuKRemainder.cs" />
+    <Compile Include="src\api\asn\cvc\ERsaPuK.cs" />
+    <Compile Include="src\api\asn\cvc\ESelfDescCVC.cs" />
+    <Compile Include="src\api\asn\cvc\ESignatureAndPukRemainder.cs" />
+    <Compile Include="src\api\asn\cvc\SignatureAndPukRemainder.cs" />
+    <Compile Include="src\api\asn\EAsnUtil.cs" />
+    <Compile Include="src\api\asn\esya\EESYACardSerialNumber.cs" />
+    <Compile Include="src\api\asn\esya\EESYAOID.cs" />
+    <Compile Include="src\api\asn\esya\EESYAParametre.cs" />
+    <Compile Include="src\api\asn\esya\EESYAParametreleri.cs" />
+    <Compile Include="src\api\asn\esya\EESYASDOHash.cs" />
+    <Compile Include="src\api\asn\esya\EESYASertifikaIptalTalep.cs" />
+    <Compile Include="src\api\asn\esya\EESYASertifikaIptalTalep_islemTipi.cs" />
+    <Compile Include="src\api\asn\esya\EESYASertifikaIptalTalep_kartSeriNo.cs" />
+    <Compile Include="src\api\asn\esya\EESYASifreliVeri.cs" />
+    <Compile Include="src\api\asn\esya\EESYASimAnahtari.cs" />
+    <Compile Include="src\api\asn\esya\EESYASimAnahtarlari.cs" />
+    <Compile Include="src\api\asn\esya\EESYASimetrikAnahtar.cs" />
+    <Compile Include="src\api\asn\esya\EESYAVTVeri.cs" />
+    <Compile Include="src\api\asn\exception\InvalidContentTypeException.cs" />
+    <Compile Include="src\api\asn\ocsp\EResponderID.cs" />
+    <Compile Include="src\api\asn\profile\ElektronikImzaKullanimProfilleriRehberiDocInfo.cs" />
+    <Compile Include="src\api\asn\profile\ProfileDocInfo.cs" />
+    <Compile Include="src\api\asn\profile\TurkishESigProfile.cs" />
+    <Compile Include="src\api\asn\algorithms\ERSASSA_PSS_params.cs" />
+    <Compile Include="src\asn\algorithms\GCMParameters.cs" />
+    <Compile Include="src\asn\cmp\SuppLangTagsValue.cs" />
+    <Compile Include="src\asn\cms\ArchiveTimeStamp.cs" />
+    <Compile Include="src\asn\cms\ArchiveTimeStampChain.cs" />
+    <Compile Include="src\asn\cms\ArchiveTimeStampSequence.cs" />
+    <Compile Include="src\asn\cms\ArchiveTimeStampToken.cs" />
+    <Compile Include="src\asn\cms\ATSHashIndex.cs" />
+    <Compile Include="src\asn\cms\ATSHashIndex_certificatesHashIndex.cs" />
+    <Compile Include="src\asn\cms\ATSHashIndex_crlsHashIndex.cs" />
+    <Compile Include="src\asn\cms\ATSHashIndex_unsignedAttrsHashIndex.cs" />
+    <Compile Include="src\asn\cms\AttributeCertificateRefs.cs" />
+    <Compile Include="src\asn\cms\AttributeRevocationRefs.cs" />
+    <Compile Include="src\asn\cms\Attributes.cs" />
+    <Compile Include="src\asn\cms\AuthAttributes.cs" />
+    <Compile Include="src\asn\cms\AuthenticatedData.cs" />
+    <Compile Include="src\asn\cms\AuthEnvelopedData.cs" />
+    <Compile Include="src\asn\cms\CertificateChoices.cs" />
+    <Compile Include="src\asn\cms\CertificateSet.cs" />
+    <Compile Include="src\asn\cms\CertificateValues.cs" />
+    <Compile Include="src\asn\cms\ClaimedAttributes.cs" />
+    <Compile Include="src\asn\cms\CMSVersion.cs" />
+    <Compile Include="src\asn\cms\CommitmentTypeIndication.cs" />
+    <Compile Include="src\asn\cms\CommitmentTypeIndication_commitmentTypeQualifier.cs" />
+    <Compile Include="src\asn\cms\CommitmentTypeQualifier.cs" />
+    <Compile Include="src\asn\cms\CompleteCertificateRefs.cs" />
+    <Compile Include="src\asn\cms\CompleteRevocationRefs.cs" />
+    <Compile Include="src\asn\cms\ContentHints.cs" />
+    <Compile Include="src\asn\cms\ContentInfo.cs" />
+    <Compile Include="src\asn\cms\ContentReference.cs" />
+    <Compile Include="src\asn\cms\ContentTimestamp.cs" />
+    <Compile Include="src\asn\cms\Countersignature.cs" />
+    <Compile Include="src\asn\cms\CrlIdentifier.cs" />
+    <Compile Include="src\asn\cms\CRLListID.cs" />
+    <Compile Include="src\asn\cms\CrlOcspRef.cs" />
+    <Compile Include="src\asn\cms\CrlValidatedID.cs" />
+    <Compile Include="src\asn\cms\CryptoInfos.cs" />
+    <Compile Include="src\asn\cms\DigestAlgorithmIdentifiers.cs" />
+    <Compile Include="src\asn\cms\DigestedData.cs" />
+    <Compile Include="src\asn\cms\DigestInfo.cs" />
+    <Compile Include="src\asn\cms\DisplayText.cs" />
+    <Compile Include="src\asn\cms\ECC_CMS_SharedInfo.cs" />
+    <Compile Include="src\asn\cms\EncapsulatedContentInfo.cs" />
+    <Compile Include="src\asn\cms\EncryptedContentInfo.cs" />
+    <Compile Include="src\asn\cms\EncryptedData.cs" />
+    <Compile Include="src\asn\cms\EncryptionInfo.cs" />
+    <Compile Include="src\asn\cms\EnvelopedData.cs" />
+    <Compile Include="src\asn\cms\ESCTimeStampToken.cs" />
+    <Compile Include="src\asn\cms\ESSCertID.cs" />
+    <Compile Include="src\asn\cms\ESSCertIDv2.cs" />
+    <Compile Include="src\asn\cms\EvidenceRecord.cs" />
+    <Compile Include="src\asn\cms\EvidenceRecord_version.cs" />
+    <Compile Include="src\asn\cms\ExtendedCertificate.cs" />
+    <Compile Include="src\asn\cms\ExtendedCertificateInfo.cs" />
+    <Compile Include="src\asn\cms\ExtendedCertificateOrCertificate.cs" />
+    <Compile Include="src\asn\cms\IssuerAndSerialNumber.cs" />
+    <Compile Include="src\asn\cms\IssuerSerial.cs" />
+    <Compile Include="src\asn\cms\KEKIdentifier.cs" />
+    <Compile Include="src\asn\cms\KEKRecipientInfo.cs" />
+    <Compile Include="src\asn\cms\KeyAgreeRecipientIdentifier.cs" />
+    <Compile Include="src\asn\cms\KeyAgreeRecipientInfo.cs" />
+    <Compile Include="src\asn\cms\KeyTransRecipientInfo.cs" />
+    <Compile Include="src\asn\cms\LongTermValidation.cs" />
+    <Compile Include="src\asn\cms\LongTermValidation_poeValue.cs" />
+    <Compile Include="src\asn\cms\MessageDigest.cs" />
+    <Compile Include="src\asn\cms\MimeType.cs" />
+    <Compile Include="src\asn\cms\NoticeReference.cs" />
+    <Compile Include="src\asn\cms\NoticeReference_noticeNumbers.cs" />
+    <Compile Include="src\asn\cms\OcspIdentifier.cs" />
+    <Compile Include="src\asn\cms\OcspListID.cs" />
+    <Compile Include="src\asn\cms\OcspResponsesID.cs" />
+    <Compile Include="src\asn\cms\OriginatorIdentifierOrKey.cs" />
+    <Compile Include="src\asn\cms\OriginatorInfo.cs" />
+    <Compile Include="src\asn\cms\OriginatorPublicKey.cs" />
+    <Compile Include="src\asn\cms\OtherCertID.cs" />
+    <Compile Include="src\asn\cms\OtherCertificateFormat.cs" />
+    <Compile Include="src\asn\cms\OtherHash.cs" />
+    <Compile Include="src\asn\cms\OtherHashAlgAndValue.cs" />
+    <Compile Include="src\asn\cms\OtherKeyAttribute.cs" />
+    <Compile Include="src\asn\cms\OtherRecipientInfo.cs" />
+    <Compile Include="src\asn\cms\OtherRevocationInfoFormat.cs" />
+    <Compile Include="src\asn\cms\OtherRevRefs.cs" />
+    <Compile Include="src\asn\cms\OtherRevRefs_otherRevRefs.cs" />
+    <Compile Include="src\asn\cms\OtherRevVals.cs" />
+    <Compile Include="src\asn\cms\OtherRevVals_otherRevVals.cs" />
+    <Compile Include="src\asn\cms\OtherSigningCertificate.cs" />
+    <Compile Include="src\asn\cms\PartialHashtree.cs" />
+    <Compile Include="src\asn\cms\PasswordRecipientInfo.cs" />
+    <Compile Include="src\asn\cms\PostalAddress.cs" />
+    <Compile Include="src\asn\cms\RecipientEncryptedKey.cs" />
+    <Compile Include="src\asn\cms\RecipientEncryptedKeys.cs" />
+    <Compile Include="src\asn\cms\RecipientIdentifier.cs" />
+    <Compile Include="src\asn\cms\RecipientInfo.cs" />
+    <Compile Include="src\asn\cms\RecipientInfos.cs" />
+    <Compile Include="src\asn\cms\RecipientKeyIdentifier.cs" />
+    <Compile Include="src\asn\cms\RevocationInfoChoice.cs" />
+    <Compile Include="src\asn\cms\RevocationInfoChoices.cs" />
+    <Compile Include="src\asn\cms\RevocationValues.cs" />
+    <Compile Include="src\asn\cms\SignaturePolicy.cs" />
+    <Compile Include="src\asn\cms\SignaturePolicyId.cs" />
+    <Compile Include="src\asn\cms\SignaturePolicyId_sigPolicyQualifiers.cs" />
+    <Compile Include="src\asn\cms\SignatureTimeStampToken.cs" />
+    <Compile Include="src\asn\cms\SignedAttributes.cs" />
+    <Compile Include="src\asn\cms\SignedData.cs" />
+    <Compile Include="src\asn\cms\SignerAttribute.cs" />
+    <Compile Include="src\asn\cms\SignerAttribute_element.cs" />
+    <Compile Include="src\asn\cms\SignerIdentifier.cs" />
+    <Compile Include="src\asn\cms\SignerInfo.cs" />
+    <Compile Include="src\asn\cms\SignerInfos.cs" />
+    <Compile Include="src\asn\cms\SignerLocation.cs" />
+    <Compile Include="src\asn\cms\SigningCertificate.cs" />
+    <Compile Include="src\asn\cms\SigningCertificateV2.cs" />
+    <Compile Include="src\asn\cms\SigPolicyQualifierInfo.cs" />
+    <Compile Include="src\asn\cms\SMIMECapabilities.cs" />
+    <Compile Include="src\asn\cms\SMIMECapability.cs" />
+    <Compile Include="src\asn\cms\SMIMEEncryptionKeyPreference.cs" />
+    <Compile Include="src\asn\cms\SPuri.cs" />
+    <Compile Include="src\asn\cms\SPUserNotice.cs" />
+    <Compile Include="src\asn\cms\TimestampedCertsCRLs.cs" />
+    <Compile Include="src\asn\cms\UnauthAttributes.cs" />
+    <Compile Include="src\asn\cms\UnprotectedAttributes.cs" />
+    <Compile Include="src\asn\cms\UnsignedAttributes.cs" />
+    <Compile Include="src\asn\cms\_SeqOfCrlValidatedID.cs" />
+    <Compile Include="src\asn\cms\_SeqOfESSCertID.cs" />
+    <Compile Include="src\asn\cms\_SeqOfESSCertIDv2.cs" />
+    <Compile Include="src\asn\cms\_SeqOfOcspResponsesID.cs" />
+    <Compile Include="src\asn\cms\_SeqOfOtherCertID.cs" />
+    <Compile Include="src\asn\cms\_SeqOfPartialHashtree.cs" />
+    <Compile Include="src\asn\cms\_SeqOfPolicyInformation.cs" />
+    <Compile Include="src\asn\cms\_SeqOfAlgorithmIdentifier.cs" />
+    <Compile Include="src\asn\esya\ESYACAControlRepMsg.cs" />
+    <Compile Include="src\asn\esya\ESYACAControlRepMsg_cevapislemtipi.cs" />
+    <Compile Include="src\asn\esya\ESYACAControlRepMsg_donuskodu.cs" />
+    <Compile Include="src\asn\esya\ESYACAControlReqMsg.cs" />
+    <Compile Include="src\asn\esya\ESYACAControlReqMsg_islemtipi.cs" />
+    <Compile Include="src\asn\esya\ESYACardSerialNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\api\asn\ocsp\EBasicOCSPResponse.cs" />
+    <Compile Include="src\api\asn\ocsp\ECertID.cs" />
+    <Compile Include="src\api\asn\ocsp\EOCSPResponse.cs" />
+    <Compile Include="src\api\asn\ocsp\EResponseData.cs" />
+    <Compile Include="src\api\asn\ocsp\ESingleResponse.cs" />
+    <Compile Include="src\api\asn\pkcs1pkcs8\EPrivateKeyInfo.cs" />
+    <Compile Include="src\api\asn\pkcs1pkcs8\ERSAPrivateKey.cs" />
+    <Compile Include="src\api\asn\pkcs1pkcs8\ERSAPublicKey.cs" />
+    <Compile Include="src\api\asn\pkixtsp\ETimeStampResponse.cs" />
+    <Compile Include="src\api\asn\pkixtsp\ETSTInfo.cs" />
+    <Compile Include="src\api\asn\pqixqualified\EQCStatement.cs" />
+    <Compile Include="src\api\asn\pqixqualified\EQCStatements.cs" />
+    <Compile Include="src\api\asn\x509\AddressType.cs" />
+    <Compile Include="src\api\asn\x509\EAccessDescription.cs" />
+    <Compile Include="src\api\asn\x509\EAlgorithmIdentifier.cs" />
+    <Compile Include="src\api\asn\x509\EAttributeTypeAndValue.cs" />
+    <Compile Include="src\api\asn\x509\EAuthorityInfoAccessSyntax.cs" />
+    <Compile Include="src\api\asn\x509\EAuthorityKeyIdentifier.cs" />
+    <Compile Include="src\api\asn\x509\EBasicConstraints.cs" />
+    <Compile Include="src\api\asn\x509\ECertificate.cs" />
+    <Compile Include="src\api\asn\x509\ECertificateIssuer.cs" />
+    <Compile Include="src\api\asn\x509\ECertificateList.cs" />
+    <Compile Include="src\api\asn\x509\ECertificatePolicies.cs" />
+    <Compile Include="src\api\asn\x509\ECRL.cs" />
+    <Compile Include="src\api\asn\x509\ECRLDistributionPoint.cs" />
+    <Compile Include="src\api\asn\x509\ECRLDistributionPoints.cs" />
+    <Compile Include="src\api\asn\x509\EDistributionPointName.cs" />
+    <Compile Include="src\api\asn\x509\EExtendedKeyUsage.cs" />
+    <Compile Include="src\api\asn\x509\EExtension.cs" />
+    <Compile Include="src\api\asn\x509\EExtensions.cs" />
+    <Compile Include="src\api\asn\x509\EGeneralName.cs" />
+    <Compile Include="src\api\asn\x509\EGeneralNames.cs" />
+    <Compile Include="src\api\asn\x509\EGeneralSubtree.cs" />
+    <Compile Include="src\api\asn\x509\EGeneralSubtrees.cs" />
+    <Compile Include="src\api\asn\x509\EIssuingDistributionPoint.cs" />
+    <Compile Include="src\api\asn\x509\EKeyUsage.cs" />
+    <Compile Include="src\api\asn\x509\EName.cs" />
+    <Compile Include="src\api\asn\x509\ENameConstraints.cs" />
+    <Compile Include="src\api\asn\x509\EPolicyConstraints.cs" />
+    <Compile Include="src\api\asn\x509\EPolicyMappingElement.cs" />
+    <Compile Include="src\api\asn\x509\EPolicyMappings.cs" />
+    <Compile Include="src\api\asn\x509\EReasonFlags.cs" />
+    <Compile Include="src\api\asn\x509\ERelativeDistinguishedName.cs" />
+    <Compile Include="src\api\asn\x509\ERevokedCertificateElement.cs" />
+    <Compile Include="src\api\asn\x509\ERoleSyntax.cs" />
+    <Compile Include="src\api\asn\x509\ESubjectAltName.cs" />
+    <Compile Include="src\api\asn\x509\ESubjectDirectoryAttributes.cs" />
+    <Compile Include="src\api\asn\x509\ESubjectKeyIdentifier.cs" />
+    <Compile Include="src\api\asn\x509\ESubjectPublicKeyInfo.cs" />
+    <Compile Include="src\api\asn\x509\ETBSCertificate.cs" />
+    <Compile Include="src\api\asn\x509\ETBSCertList.cs" />
+    <Compile Include="src\api\asn\x509\ETime.cs" />
+    <Compile Include="src\api\asn\x509\EVersion.cs" />
+    <Compile Include="src\api\asn\x509\ExtensionType.cs" />
+    <Compile Include="src\asn\algorithms\CFBParameters.cs" />
+    <Compile Include="src\asn\algorithms\Characteristic_two.cs" />
+    <Compile Include="src\asn\algorithms\Curve.cs" />
+    <Compile Include="src\asn\algorithms\DiffieHellmanPublicNumber.cs" />
+    <Compile Include="src\asn\algorithms\DomainParameters.cs" />
+    <Compile Include="src\asn\algorithms\Dss_Parms.cs" />
+    <Compile Include="src\asn\algorithms\Dss_Sig_Value.cs" />
+    <Compile Include="src\asn\algorithms\ECDSA_Sig_Value.cs" />
+    <Compile Include="src\asn\algorithms\ECParameters.cs" />
+    <Compile Include="src\asn\algorithms\EcpkParameters.cs" />
+    <Compile Include="src\asn\algorithms\ECPVer.cs" />
+    <Compile Include="src\asn\algorithms\EncodingParameters.cs" />
+    <Compile Include="src\asn\algorithms\FieldID.cs" />
+    <Compile Include="src\asn\algorithms\KEA_Parms_Id.cs" />
+    <Compile Include="src\asn\algorithms\Pentanomial.cs" />
+    <Compile Include="src\asn\algorithms\Prime_p.cs" />
+    <Compile Include="src\asn\algorithms\RSAES_OAEP_params.cs" />
+    <Compile Include="src\asn\algorithms\RSASSA_PSS_params.cs" />
+    <Compile Include="src\asn\algorithms\SHA1Parameters.cs" />
+    <Compile Include="src\asn\algorithms\Trinomial.cs" />
+    <Compile Include="src\asn\algorithms\ValidationParms.cs" />
+    <Compile Include="src\asn\algorithms\_aesValues.cs" />
+    <Compile Include="src\asn\algorithms\_algorithmsValues.cs" />
+    <Compile Include="src\asn\attrcert\AAControls.cs" />
+    <Compile Include="src\asn\attrcert\ACClearAttrs.cs" />
+    <Compile Include="src\asn\attrcert\AttCertIssuer.cs" />
+    <Compile Include="src\asn\attrcert\AttCertValidityPeriod.cs" />
+    <Compile Include="src\asn\attrcert\AttCertVersion.cs" />
+    <Compile Include="src\asn\attrcert\AttCertVersionV1.cs" />
+    <Compile Include="src\asn\attrcert\AttributeCertificate.cs" />
+    <Compile Include="src\asn\attrcert\AttributeCertificateInfo.cs" />
+    <Compile Include="src\asn\attrcert\AttributeCertificateInfoV1.cs" />
+    <Compile Include="src\asn\attrcert\AttributeCertificateInfoV1_subject.cs" />
+    <Compile Include="src\asn\attrcert\AttributeCertificateV1.cs" />
+    <Compile Include="src\asn\attrcert\AttrSpec.cs" />
+    <Compile Include="src\asn\attrcert\ClassList.cs" />
+    <Compile Include="src\asn\attrcert\Clearance.cs" />
+    <Compile Include="src\asn\attrcert\Holder.cs" />
+    <Compile Include="src\asn\attrcert\IetfAttrSyntax.cs" />
+    <Compile Include="src\asn\attrcert\IetfAttrSyntax_values_element.cs" />
+    <Compile Include="src\asn\attrcert\IssuerSerial.cs" />
+    <Compile Include="src\asn\attrcert\ObjectDigestInfo.cs" />
+    <Compile Include="src\asn\attrcert\ObjectDigestInfo_digestedObjectType.cs" />
+    <Compile Include="src\asn\attrcert\ProxyInfo.cs" />
+    <Compile Include="src\asn\attrcert\RoleSyntax.cs" />
+    <Compile Include="src\asn\attrcert\SecurityCategory.cs" />
+    <Compile Include="src\asn\attrcert\SvceAuthInfo.cs" />
+    <Compile Include="src\asn\attrcert\Target.cs" />
+    <Compile Include="src\asn\attrcert\TargetCert.cs" />
+    <Compile Include="src\asn\attrcert\Targets.cs" />
+    <Compile Include="src\asn\attrcert\V2Form.cs" />
+    <Compile Include="src\asn\attrcert\_attrcertValues.cs" />
+    <Compile Include="src\asn\attrcert\_SeqOfAttribute.cs" />
+    <Compile Include="src\asn\attrcert\_SeqOfIetfAttrSyntax_values_element.cs" />
+    <Compile Include="src\asn\attrcert\_SetOfSecurityCategory.cs" />
+    <Compile Include="src\asn\cmp\CAKeyUpdAnnContent.cs" />
+    <Compile Include="src\asn\cmp\CertConfirmContent.cs" />
+    <Compile Include="src\asn\cmp\CertifiedKeyPair.cs" />
+    <Compile Include="src\asn\cmp\CertOrEncCert.cs" />
+    <Compile Include="src\asn\cmp\CertRepMessage.cs" />
+    <Compile Include="src\asn\cmp\CertRepMessage_caPubs.cs" />
+    <Compile Include="src\asn\cmp\CertResponse.cs" />
+    <Compile Include="src\asn\cmp\CertStatus.cs" />
+    <Compile Include="src\asn\cmp\Challenge.cs" />
+    <Compile Include="src\asn\cmp\CMPCertificate.cs" />
+    <Compile Include="src\asn\cmp\CRLAnnContent.cs" />
+    <Compile Include="src\asn\cmp\DHBMParameter.cs" />
+    <Compile Include="src\asn\cmp\ErrorMsgContent.cs" />
+    <Compile Include="src\asn\cmp\GenMsgContent.cs" />
+    <Compile Include="src\asn\cmp\GenRepContent.cs" />
+    <Compile Include="src\asn\cmp\InfoTypeAndValue.cs" />
+    <Compile Include="src\asn\cmp\KeyRecRepContent.cs" />
+    <Compile Include="src\asn\cmp\KeyRecRepContent_caCerts.cs" />
+    <Compile Include="src\asn\cmp\KeyRecRepContent_keyPairHist.cs" />
+    <Compile Include="src\asn\cmp\OOBCert.cs" />
+    <Compile Include="src\asn\cmp\OOBCertHash.cs" />
+    <Compile Include="src\asn\cmp\PBMParameter.cs" />
+    <Compile Include="src\asn\cmp\PKIBody.cs" />
+    <Compile Include="src\asn\cmp\PKIFailureInfo.cs" />
+    <Compile Include="src\asn\cmp\PKIFreeText.cs" />
+    <Compile Include="src\asn\cmp\PKIHeader.cs" />
+    <Compile Include="src\asn\cmp\PKIHeader_generalInfo.cs" />
+    <Compile Include="src\asn\cmp\PKIHeader_pvno.cs" />
+    <Compile Include="src\asn\cmp\PKIMessage.cs" />
+    <Compile Include="src\asn\cmp\PKIMessages.cs" />
+    <Compile Include="src\asn\cmp\PKIMessage_extraCerts.cs" />
+    <Compile Include="src\asn\cmp\PKIStatus.cs" />
+    <Compile Include="src\asn\cmp\PKIStatusInfo.cs" />
+    <Compile Include="src\asn\cmp\PollRepContent.cs" />
+    <Compile Include="src\asn\cmp\PollRepContent_element.cs" />
+    <Compile Include="src\asn\cmp\PollReqContent.cs" />
+    <Compile Include="src\asn\cmp\PollReqContent_element.cs" />
+    <Compile Include="src\asn\cmp\POPODecKeyChallContent.cs" />
+    <Compile Include="src\asn\cmp\POPODecKeyRespContent.cs" />
+    <Compile Include="src\asn\cmp\ProtectedPart.cs" />
+    <Compile Include="src\asn\cmp\RevAnnContent.cs" />
+    <Compile Include="src\asn\cmp\RevDetails.cs" />
+    <Compile Include="src\asn\cmp\RevRepContent.cs" />
+    <Compile Include="src\asn\cmp\RevRepContent_crls.cs" />
+    <Compile Include="src\asn\cmp\RevRepContent_revCerts.cs" />
+    <Compile Include="src\asn\cmp\RevRepContent_status.cs" />
+    <Compile Include="src\asn\cmp\RevReqContent.cs" />
+    <Compile Include="src\asn\cmp\_cmpValues.cs" />
+    <Compile Include="src\asn\cmp\_SeqOfCertResponse.cs" />
+    <Compile Include="src\asn\cms\_cmsValues.cs" />
+    <Compile Include="src\asn\cms\_dercmsValues.cs" />
+    <Compile Include="src\asn\cms\_etsi101733Values.cs" />
+    <Compile Include="src\asn\cms\_SeqOfBasicOCSPResponse.cs" />
+    <Compile Include="src\asn\cms\_SeqOfCertificateList.cs" />
+    <Compile Include="src\asn\crmf\CertId.cs" />
+    <Compile Include="src\asn\crmf\CertReqMessages.cs" />
+    <Compile Include="src\asn\crmf\CertReqMsg.cs" />
+    <Compile Include="src\asn\crmf\CertReqMsg_regInfo.cs" />
+    <Compile Include="src\asn\crmf\CertRequest.cs" />
+    <Compile Include="src\asn\crmf\CertTemplate.cs" />
+    <Compile Include="src\asn\crmf\Controls.cs" />
+    <Compile Include="src\asn\crmf\EncryptedValue.cs" />
+    <Compile Include="src\asn\crmf\OptionalValidity.cs" />
+    <Compile Include="src\asn\crmf\PKIPublicationInfo.cs" />
+    <Compile Include="src\asn\crmf\PKIPublicationInfo_action.cs" />
+    <Compile Include="src\asn\crmf\PKIPublicationInfo_pubInfos.cs" />
+    <Compile Include="src\asn\crmf\PKMACValue.cs" />
+    <Compile Include="src\asn\crmf\POPOPrivKey.cs" />
+    <Compile Include="src\asn\crmf\POPOSigningKey.cs" />
+    <Compile Include="src\asn\crmf\POPOSigningKeyInput.cs" />
+    <Compile Include="src\asn\crmf\POPOSigningKeyInput_authInfo.cs" />
+    <Compile Include="src\asn\crmf\ProofOfPossession.cs" />
+    <Compile Include="src\asn\crmf\SinglePubInfo.cs" />
+    <Compile Include="src\asn\crmf\SinglePubInfo_pubMethod.cs" />
+    <Compile Include="src\asn\crmf\SubsequentMessage.cs" />
+    <Compile Include="src\asn\crmf\_crmfValues.cs" />
+    <Compile Include="src\asn\cvc\AlgId.cs" />
+    <Compile Include="src\asn\cvc\Car.cs" />
+    <Compile Include="src\asn\cvc\Ced.cs" />
+    <Compile Include="src\asn\cvc\CertContentTemplate.cs" />
+    <Compile Include="src\asn\cvc\Cha.cs" />
+    <Compile Include="src\asn\cvc\Chat.cs" />
+    <Compile Include="src\asn\cvc\Chr.cs" />
+    <Compile Include="src\asn\cvc\Cpi.cs" />
+    <Compile Include="src\asn\cvc\Cxd.cs" />
+    <Compile Include="src\asn\cvc\ElcPuK.cs" />
+    <Compile Include="src\asn\cvc\Exponent.cs" />
+    <Compile Include="src\asn\cvc\HeaderList.cs" />
+    <Compile Include="src\asn\cvc\Modulus.cs" />
+    <Compile Include="src\asn\cvc\NonSelfDescCVC.cs" />
+    <Compile Include="src\asn\cvc\NonSelfDescCVCwithHeader.cs" />
+    <Compile Include="src\asn\cvc\PuKRemainder.cs" />
+    <Compile Include="src\asn\cvc\RsaPuK.cs" />
+    <Compile Include="src\asn\cvc\SelfDescCVC.cs" />
+    <Compile Include="src\asn\cvc\_cvcalgorithmsValues.cs" />
+    <Compile Include="src\asn\cvc\_cvcValues.cs" />
+    <Compile Include="src\asn\depo\DepoASNEklenecekKokSertifika.cs" />
+    <Compile Include="src\asn\depo\DepoASNImza.cs" />
+    <Compile Include="src\asn\depo\DepoASNImzalar.cs" />
+    <Compile Include="src\asn\depo\DepoASNKokSertifika.cs" />
+    <Compile Include="src\asn\depo\DepoASNKokSertifikalar.cs" />
+    <Compile Include="src\asn\depo\DepoASNRawImza.cs" />
+    <Compile Include="src\asn\depo\DepoASNSilinecekKokSertifika.cs" />
+    <Compile Include="src\asn\depo\KOKGuvenSeviyesi.cs" />
+    <Compile Include="src\asn\depo\KokSertifikaTipi.cs" />
+    <Compile Include="src\asn\depo\_depoValues.cs" />
+    <Compile Include="src\asn\esya\crlfinder\CRLHash.cs" />
+    <Compile Include="src\asn\esya\crlfinder\CRLRequest.cs" />
+    <Compile Include="src\asn\esya\crlfinder\CRLRequestType.cs" />
+    <Compile Include="src\asn\esya\crlfinder\CRLResponse.cs" />
+    <Compile Include="src\asn\esya\crlfinder\CRLResponseStatus.cs" />
+    <Compile Include="src\asn\esya\crlfinder\CRLResponse_responseBytes.cs" />
+    <Compile Include="src\asn\esya\crlfinder\_crlfinderValues.cs" />
+    <Compile Include="src\asn\esya\ESYACAStatus.cs" />
+    <Compile Include="src\asn\esya\ESYACAStatus_certificationServiceStatus.cs" />
+    <Compile Include="src\asn\esya\ESYACAStatus_crlServiceStatus.cs" />
+    <Compile Include="src\asn\esya\ESYACAStatus_initializationStatus.cs" />
+    <Compile Include="src\asn\esya\ESYAKartAnahtar.cs" />
+    <Compile Include="src\asn\esya\ESYAKartAnahtarlari.cs" />
+    <Compile Include="src\asn\esya\ESYAParametre.cs" />
+    <Compile Include="src\asn\esya\ESYAParametreleri.cs" />
+    <Compile Include="src\asn\esya\ESYAPasswordRecipientInfo.cs" />
+    <Compile Include="src\asn\esya\ESYASDOHash.cs" />
+    <Compile Include="src\asn\esya\ESYASertifikaIptalTalep.cs" />
+    <Compile Include="src\asn\esya\ESYASertifikaIptalTalep_islemTipi.cs" />
+    <Compile Include="src\asn\esya\ESYASertifikaIptalTalep_kartSeriNo.cs" />
+    <Compile Include="src\asn\esya\ESYAServiceConfigType.cs" />
+    <Compile Include="src\asn\esya\ESYAServiceConfigType_configType.cs" />
+    <Compile Include="src\asn\esya\ESYASifreliVeri.cs" />
+    <Compile Include="src\asn\esya\ESYASimAnahtari.cs" />
+    <Compile Include="src\asn\esya\ESYASimAnahtarlari.cs" />
+    <Compile Include="src\asn\esya\ESYASimetrikAnahtar.cs" />
+    <Compile Include="src\asn\esya\ESYATekIstekHatadaTumIstekGeriAl.cs" />
+    <Compile Include="src\asn\esya\ESYAVTVeri.cs" />
+    <Compile Include="src\asn\esya\ESYAYeniSertifikaDurumu.cs" />
+    <Compile Include="src\asn\esya\ESYAYeniSertifikaDurumu_durum.cs" />
+    <Compile Include="src\asn\esya\_esyaValues.cs" />
+    <Compile Include="src\asn\etsiqc\Iso4217CurrencyCode.cs" />
+    <Compile Include="src\asn\etsiqc\MonetaryValue.cs" />
+    <Compile Include="src\asn\etsiqc\QcEuLimitValue.cs" />
+    <Compile Include="src\asn\etsiqc\_etsiqcValues.cs" />
+    <Compile Include="src\asn\ocsp\AcceptableResponses.cs" />
+    <Compile Include="src\asn\ocsp\ArchiveCutoff.cs" />
+    <Compile Include="src\asn\ocsp\BasicOCSPResponse.cs" />
+    <Compile Include="src\asn\ocsp\CertID.cs" />
+    <Compile Include="src\asn\ocsp\CertStatus.cs" />
+    <Compile Include="src\asn\ocsp\CrlID.cs" />
+    <Compile Include="src\asn\ocsp\OCSPRequest.cs" />
+    <Compile Include="src\asn\ocsp\OCSPResponse.cs" />
+    <Compile Include="src\asn\ocsp\OCSPResponseStatus.cs" />
+    <Compile Include="src\asn\ocsp\PreferredSignatureAlgorithm.cs" />
+    <Compile Include="src\asn\ocsp\PreferredSignatureAlgorithms.cs" />
+    <Compile Include="src\asn\ocsp\Request.cs" />
+    <Compile Include="src\asn\ocsp\ResponderID.cs" />
+    <Compile Include="src\asn\ocsp\ResponseBytes.cs" />
+    <Compile Include="src\asn\ocsp\ResponseData.cs" />
+    <Compile Include="src\asn\ocsp\RevokedInfo.cs" />
+    <Compile Include="src\asn\ocsp\ServiceLocator.cs" />
+    <Compile Include="src\asn\ocsp\Signature.cs" />
+    <Compile Include="src\asn\ocsp\SingleResponse.cs" />
+    <Compile Include="src\asn\ocsp\TBSRequest.cs" />
+    <Compile Include="src\asn\ocsp\Version.cs" />
+    <Compile Include="src\asn\ocsp\_ocspValues.cs" />
+    <Compile Include="src\asn\ocsp\_SeqOfCertificate.cs" />
+    <Compile Include="src\asn\ocsp\_SeqOfRequest.cs" />
+    <Compile Include="src\asn\ocsp\_SeqOfSingleResponse.cs" />
+    <Compile Include="src\asn\pkcs10\Attributes.cs" />
+    <Compile Include="src\asn\pkcs10\CertificationRequest.cs" />
+    <Compile Include="src\asn\pkcs10\CertificationRequestInfo.cs" />
+    <Compile Include="src\asn\pkcs10\_pkcs10Values.cs" />
+    <Compile Include="src\asn\pkcs12\AuthenticatedSafe.cs" />
+    <Compile Include="src\asn\pkcs12\CertBag.cs" />
+    <Compile Include="src\asn\pkcs12\CRLBag.cs" />
+    <Compile Include="src\asn\pkcs12\KeyBag.cs" />
+    <Compile Include="src\asn\pkcs12\MacData.cs" />
+    <Compile Include="src\asn\pkcs12\PFX.cs" />
+    <Compile Include="src\asn\pkcs12\PFX_version.cs" />
+    <Compile Include="src\asn\pkcs12\PKCS12Attribute.cs" />
+    <Compile Include="src\asn\pkcs12\PKCS12Attribute_attrValues.cs" />
+    <Compile Include="src\asn\pkcs12\PKCS12PbeParams.cs" />
+    <Compile Include="src\asn\pkcs12\PKCS8ShroudedKeyBag.cs" />
+    <Compile Include="src\asn\pkcs12\SafeBag.cs" />
+    <Compile Include="src\asn\pkcs12\SafeContents.cs" />
+    <Compile Include="src\asn\pkcs12\SecretBag.cs" />
+    <Compile Include="src\asn\pkcs12\_pkcs12Values.cs" />
+    <Compile Include="src\asn\pkcs12\_SetOfPKCS12Attribute.cs" />
+    <Compile Include="src\asn\pkcs1pkcs8\ECPrivateKey.cs" />
+    <Compile Include="src\asn\pkcs1pkcs8\ECPrivateKey_version.cs" />
+    <Compile Include="src\asn\pkcs1pkcs8\EncryptedPrivateKeyInfo.cs" />
+    <Compile Include="src\asn\pkcs1pkcs8\PrivateKeyInfo.cs" />
+    <Compile Include="src\asn\pkcs1pkcs8\RSAPrivateKey.cs" />
+    <Compile Include="src\asn\pkcs1pkcs8\RSAPublicKey.cs" />
+    <Compile Include="src\asn\pkcs1pkcs8\_pkcs1pkcs8Values.cs" />
+    <Compile Include="src\asn\pkcs9\_pkcs9Values.cs" />
+    <Compile Include="src\asn\PKIXqualified\BiometricData.cs" />
+    <Compile Include="src\asn\PKIXqualified\BiometricSyntax.cs" />
+    <Compile Include="src\asn\PKIXqualified\CountryOfCitizenship.cs" />
+    <Compile Include="src\asn\PKIXqualified\CountryOfResidence.cs" />
+    <Compile Include="src\asn\PKIXqualified\DateOfBirth.cs" />
+    <Compile Include="src\asn\PKIXqualified\Gender.cs" />
+    <Compile Include="src\asn\PKIXqualified\NameRegistrationAuthorities.cs" />
+    <Compile Include="src\asn\PKIXqualified\PlaceOfBirth.cs" />
+    <Compile Include="src\asn\PKIXqualified\PredefinedBiometricType.cs" />
+    <Compile Include="src\asn\PKIXqualified\QCStatement.cs" />
+    <Compile Include="src\asn\PKIXqualified\QCStatements.cs" />
+    <Compile Include="src\asn\PKIXqualified\SemanticsInformation.cs" />
+    <Compile Include="src\asn\PKIXqualified\TypeOfBiometricData.cs" />
+    <Compile Include="src\asn\PKIXqualified\_PKIXqualifiedValues.cs" />
+    <Compile Include="src\asn\pkixtsp\Accuracy.cs" />
+    <Compile Include="src\asn\pkixtsp\ESYAReqEx.cs" />
+    <Compile Include="src\asn\pkixtsp\MessageImprint.cs" />
+    <Compile Include="src\asn\pkixtsp\PKIFailureInfo.cs" />
+    <Compile Include="src\asn\pkixtsp\PKIStatus.cs" />
+    <Compile Include="src\asn\pkixtsp\PKIStatusInfo.cs" />
+    <Compile Include="src\asn\pkixtsp\TimeStampReq.cs" />
+    <Compile Include="src\asn\pkixtsp\TimeStampReq_version.cs" />
+    <Compile Include="src\asn\pkixtsp\TimeStampResp.cs" />
+    <Compile Include="src\asn\pkixtsp\TSTInfo.cs" />
+    <Compile Include="src\asn\pkixtsp\TSTInfo_version.cs" />
+    <Compile Include="src\asn\pkixtsp\_pkixtspValues.cs" />
+    <Compile Include="src\asn\signaturepolicies\AcceptablePolicySet.cs" />
+    <Compile Include="src\asn\signaturepolicies\AlgAndLength.cs" />
+    <Compile Include="src\asn\signaturepolicies\AlgorithmConstraints.cs" />
+    <Compile Include="src\asn\signaturepolicies\AlgorithmConstraintSet.cs" />
+    <Compile Include="src\asn\signaturepolicies\AttributeConstraints.cs" />
+    <Compile Include="src\asn\signaturepolicies\AttributeTrustCondition.cs" />
+    <Compile Include="src\asn\signaturepolicies\AttributeTypeConstraints.cs" />
+    <Compile Include="src\asn\signaturepolicies\AttributeValueConstraints.cs" />
+    <Compile Include="src\asn\signaturepolicies\CertificateTrustPoint.cs" />
+    <Compile Include="src\asn\signaturepolicies\CertificateTrustTrees.cs" />
+    <Compile Include="src\asn\signaturepolicies\CertInfoReq.cs" />
+    <Compile Include="src\asn\signaturepolicies\CertRefReq.cs" />
+    <Compile Include="src\asn\signaturepolicies\CertRevReq.cs" />
+    <Compile Include="src\asn\signaturepolicies\CMSAttrs.cs" />
+    <Compile Include="src\asn\signaturepolicies\CommitmentRule.cs" />
+    <Compile Include="src\asn\signaturepolicies\CommitmentRules.cs" />
+    <Compile Include="src\asn\signaturepolicies\CommitmentType.cs" />
+    <Compile Include="src\asn\signaturepolicies\CommonRules.cs" />
+    <Compile Include="src\asn\signaturepolicies\DeltaTime.cs" />
+    <Compile Include="src\asn\signaturepolicies\EnuRevReq.cs" />
+    <Compile Include="src\asn\signaturepolicies\GeneralSubtree.cs" />
+    <Compile Include="src\asn\signaturepolicies\GeneralSubtrees.cs" />
+    <Compile Include="src\asn\signaturepolicies\HowCertAttribute.cs" />
+    <Compile Include="src\asn\signaturepolicies\NameConstraints.cs" />
+    <Compile Include="src\asn\signaturepolicies\PolicyConstraints.cs" />
+    <Compile Include="src\asn\signaturepolicies\RevReq.cs" />
+    <Compile Include="src\asn\signaturepolicies\SelectedCommitmentTypes.cs" />
+    <Compile Include="src\asn\signaturepolicies\SelectedCommitmentTypes_element.cs" />
+    <Compile Include="src\asn\signaturepolicies\SignaturePolicy.cs" />
+    <Compile Include="src\asn\signaturepolicies\SignatureValidationPolicy.cs" />
+    <Compile Include="src\asn\signaturepolicies\SignerAndVerifierRules.cs" />
+    <Compile Include="src\asn\signaturepolicies\SignerRules.cs" />
+    <Compile Include="src\asn\signaturepolicies\SigningCertTrustCondition.cs" />
+    <Compile Include="src\asn\signaturepolicies\SigningPeriod.cs" />
+    <Compile Include="src\asn\signaturepolicies\SignPolExtensions.cs" />
+    <Compile Include="src\asn\signaturepolicies\SignPolExtn.cs" />
+    <Compile Include="src\asn\signaturepolicies\SignPolicyInfo.cs" />
+    <Compile Include="src\asn\signaturepolicies\TimestampTrustCondition.cs" />
+    <Compile Include="src\asn\signaturepolicies\VerifierRules.cs" />
+    <Compile Include="src\asn\signaturepolicies\_signaturepoliciesValues.cs" />
+    <Compile Include="src\asn\util\AsnIO.cs" />
+    <Compile Include="src\asn\util\IkiliAttributeTandV.cs" />
+    <Compile Include="src\asn\util\OIDESYA.cs" />
+    <Compile Include="src\asn\util\OID_tipEslestirmeleri.cs" />
+    <Compile Include="src\asn\util\UtilAtav.cs" />
+    <Compile Include="src\asn\util\UtilBCD.cs" />
+    <Compile Include="src\asn\util\UtilCMS.cs" />
+    <Compile Include="src\asn\util\UtilEsitlikler.cs" />
+    <Compile Include="src\asn\util\UtilName.cs" />
+    <Compile Include="src\asn\util\UtilOpenType.cs" />
+    <Compile Include="src\asn\util\UtilRDN.cs" />
+    <Compile Include="src\asn\util\UtilSubjectDirectoryAttr.cs" />
+    <Compile Include="src\asn\util\UtilTime.cs" />
+    <Compile Include="src\asn\x509\AccessDescription.cs" />
+    <Compile Include="src\asn\x509\AdministrationDomainName.cs" />
+    <Compile Include="src\asn\x509\AlgorithmIdentifier.cs" />
+    <Compile Include="src\asn\x509\AnotherName.cs" />
+    <Compile Include="src\asn\x509\Attribute.cs" />
+    <Compile Include="src\asn\x509\AttributeTypeAndValue.cs" />
+    <Compile Include="src\asn\x509\AuthorityInfoAccessSyntax.cs" />
+    <Compile Include="src\asn\x509\AuthorityKeyIdentifier.cs" />
+    <Compile Include="src\asn\x509\BaseCRLNumber.cs" />
+    <Compile Include="src\asn\x509\BasicConstraints.cs" />
+    <Compile Include="src\asn\x509\BuiltInDomainDefinedAttribute.cs" />
+    <Compile Include="src\asn\x509\BuiltInDomainDefinedAttributes.cs" />
+    <Compile Include="src\asn\x509\BuiltInStandardAttributes.cs" />
+    <Compile Include="src\asn\x509\Certificate.cs" />
+    <Compile Include="src\asn\x509\CertificateIssuer.cs" />
+    <Compile Include="src\asn\x509\CertificateList.cs" />
+    <Compile Include="src\asn\x509\CertificatePolicies.cs" />
+    <Compile Include="src\asn\x509\CommonName.cs" />
+    <Compile Include="src\asn\x509\CountryName.cs" />
+    <Compile Include="src\asn\x509\CRLDistributionPoints.cs" />
+    <Compile Include="src\asn\x509\CRLReason.cs" />
+    <Compile Include="src\asn\x509\DirectoryString.cs" />
+    <Compile Include="src\asn\x509\DisplayText.cs" />
+    <Compile Include="src\asn\x509\DistributionPoint.cs" />
+    <Compile Include="src\asn\x509\DistributionPointName.cs" />
+    <Compile Include="src\asn\x509\DomainComponent.cs" />
+    <Compile Include="src\asn\x509\EDIPartyName.cs" />
+    <Compile Include="src\asn\x509\EmailAddress.cs" />
+    <Compile Include="src\asn\x509\ExtendedNetworkAddress.cs" />
+    <Compile Include="src\asn\x509\ExtendedNetworkAddress_e163_4_address.cs" />
+    <Compile Include="src\asn\x509\Extension.cs" />
+    <Compile Include="src\asn\x509\ExtensionAttribute.cs" />
+    <Compile Include="src\asn\x509\ExtensionAttributes.cs" />
+    <Compile Include="src\asn\x509\ExtensionORAddressComponents.cs" />
+    <Compile Include="src\asn\x509\ExtensionPhysicalDeliveryAddressComponents.cs" />
+    <Compile Include="src\asn\x509\Extensions.cs" />
+    <Compile Include="src\asn\x509\ExtKeyUsageSyntax.cs" />
+    <Compile Include="src\asn\x509\FreshestCRL.cs" />
+    <Compile Include="src\asn\x509\GeneralName.cs" />
+    <Compile Include="src\asn\x509\GeneralNames.cs" />
+    <Compile Include="src\asn\x509\GeneralSubtree.cs" />
+    <Compile Include="src\asn\x509\GeneralSubtrees.cs" />
+    <Compile Include="src\asn\x509\HoldInstructionCode.cs" />
+    <Compile Include="src\asn\x509\InhibitAnyPolicy.cs" />
+    <Compile Include="src\asn\x509\InvalidityDate.cs" />
+    <Compile Include="src\asn\x509\IssuerAltName.cs" />
+    <Compile Include="src\asn\x509\IssuingDistributionPoint.cs" />
+    <Compile Include="src\asn\x509\KeyUsage.cs" />
+    <Compile Include="src\asn\x509\KRB5PrincipalName.cs" />
+    <Compile Include="src\asn\x509\LocalPostalAttributes.cs" />
+    <Compile Include="src\asn\x509\Name.cs" />
+    <Compile Include="src\asn\x509\NameConstraints.cs" />
+    <Compile Include="src\asn\x509\NoticeReference.cs" />
+    <Compile Include="src\asn\x509\NoticeReference_noticeNumbers.cs" />
+    <Compile Include="src\asn\x509\ORAddress.cs" />
+    <Compile Include="src\asn\x509\OrganizationalUnitNames.cs" />
+    <Compile Include="src\asn\x509\PDSName.cs" />
+    <Compile Include="src\asn\x509\PDSParameter.cs" />
+    <Compile Include="src\asn\x509\PersonalName.cs" />
+    <Compile Include="src\asn\x509\PhysicalDeliveryCountryName.cs" />
+    <Compile Include="src\asn\x509\PhysicalDeliveryOfficeName.cs" />
+    <Compile Include="src\asn\x509\PhysicalDeliveryOfficeNumber.cs" />
+    <Compile Include="src\asn\x509\PhysicalDeliveryOrganizationName.cs" />
+    <Compile Include="src\asn\x509\PhysicalDeliveryPersonalName.cs" />
+    <Compile Include="src\asn\x509\PolicyConstraints.cs" />
+    <Compile Include="src\asn\x509\PolicyInformation.cs" />
+    <Compile Include="src\asn\x509\PolicyInformation_policyQualifiers.cs" />
+    <Compile Include="src\asn\x509\PolicyMappings.cs" />
+    <Compile Include="src\asn\x509\PolicyMappings_element.cs" />
+    <Compile Include="src\asn\x509\PolicyQualifierInfo.cs" />
+    <Compile Include="src\asn\x509\PostalCode.cs" />
+    <Compile Include="src\asn\x509\PosteRestanteAddress.cs" />
+    <Compile Include="src\asn\x509\PostOfficeBoxAddress.cs" />
+    <Compile Include="src\asn\x509\PresentationAddress.cs" />
+    <Compile Include="src\asn\x509\PresentationAddress_nAddresses.cs" />
+    <Compile Include="src\asn\x509\PrincipalName.cs" />
+    <Compile Include="src\asn\x509\PrivateDomainName.cs" />
+    <Compile Include="src\asn\x509\Qualifier.cs" />
+    <Compile Include="src\asn\x509\RDNSequence.cs" />
+    <Compile Include="src\asn\x509\ReasonFlags.cs" />
+    <Compile Include="src\asn\x509\RelativeDistinguishedName.cs" />
+    <Compile Include="src\asn\x509\RoleSyntax.cs" />
+    <Compile Include="src\asn\x509\StreetAddress.cs" />
+    <Compile Include="src\asn\x509\SubjectAltName.cs" />
+    <Compile Include="src\asn\x509\SubjectDirectoryAttributes.cs" />
+    <Compile Include="src\asn\x509\SubjectInfoAccessSyntax.cs" />
+    <Compile Include="src\asn\x509\SubjectKeyIdentifier.cs" />
+    <Compile Include="src\asn\x509\SubjectPublicKeyInfo.cs" />
+    <Compile Include="src\asn\x509\TBSCertificate.cs" />
+    <Compile Include="src\asn\x509\TBSCertList.cs" />
+    <Compile Include="src\asn\x509\TBSCertList_revokedCertificates_element.cs" />
+    <Compile Include="src\asn\x509\TeletexCommonName.cs" />
+    <Compile Include="src\asn\x509\TeletexDomainDefinedAttribute.cs" />
+    <Compile Include="src\asn\x509\TeletexDomainDefinedAttributes.cs" />
+    <Compile Include="src\asn\x509\TeletexOrganizationalUnitNames.cs" />
+    <Compile Include="src\asn\x509\TeletexOrganizationName.cs" />
+    <Compile Include="src\asn\x509\TeletexPersonalName.cs" />
+    <Compile Include="src\asn\x509\TerminalType.cs" />
+    <Compile Include="src\asn\x509\Time.cs" />
+    <Compile Include="src\asn\x509\UnformattedPostalAddress.cs" />
+    <Compile Include="src\asn\x509\UnformattedPostalAddress_printable_address.cs" />
+    <Compile Include="src\asn\x509\UniquePostalName.cs" />
+    <Compile Include="src\asn\x509\UserNotice.cs" />
+    <Compile Include="src\asn\x509\Validity.cs" />
+    <Compile Include="src\asn\x509\Version.cs" />
+    <Compile Include="src\asn\x509\X520CommonName.cs" />
+    <Compile Include="src\asn\x509\X520countryName.cs" />
+    <Compile Include="src\asn\x509\X520CountrySerialUTF8liUcubeName.cs" />
+    <Compile Include="src\asn\x509\X520LocalityName.cs" />
+    <Compile Include="src\asn\x509\X520name.cs" />
+    <Compile Include="src\asn\x509\X520OrganizationalUnitName.cs" />
+    <Compile Include="src\asn\x509\X520OrganizationIdentifier.cs" />
+    <Compile Include="src\asn\x509\X520OrganizationName.cs" />
+    <Compile Include="src\asn\x509\X520Pseudonym.cs" />
+    <Compile Include="src\asn\x509\X520SerialNumber.cs" />
+    <Compile Include="src\asn\x509\X520StateOrProvinceName.cs" />
+    <Compile Include="src\asn\x509\X520Title.cs" />
+    <Compile Include="src\asn\x509\_ExplicitValues.cs" />
+    <Compile Include="src\asn\x509\_ImplicitValues.cs" />
+    <Compile Include="src\asn\x509\_KerberosValues.cs" />
+    <Compile Include="src\asn\x509\_SeqOfKerberosString.cs" />
+    <Compile Include="src\asn\x509\_SeqOfTBSCertList_revokedCertificates_element.cs" />
+    <Compile Include="src\asn\x509\_SetOfAttributeValue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\api-common\csharp\api-common.csproj">
+      <Project>{CA8572D2-2D3C-42F0-9A07-6261B00BD5F6}</Project>
+      <Name>api-common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.Targets" />
+  <Import Project="..\..\api-parent\ma3api-dotnet\BuildCommon.targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

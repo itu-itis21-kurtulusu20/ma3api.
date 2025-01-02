@@ -1,0 +1,158 @@
+EkdsRemoteAuthenticationApp 
+
+DEFINITIONS IMPLICIT TAGS ::=
+
+BEGIN
+
+IMPORTS
+  DataObjectVersionNumber           FROM EkdsCommonDataObjectDefs
+  CardSerialNumber                  FROM EkdsBaseDataDefs
+  CardAccessDeviceSerialNumber      FROM EkdsBaseDataDefs
+  ServiceProviderApplicationLabel   FROM EkdsBaseDataDefs
+  ServiceRequestorRole              FROM EkdsBaseDataDefs
+  TimeStamp                         FROM EkdsBaseDataDefs; 
+
+--
+-- APPLICATION DEF
+--
+
+RemoteAuthenticationApplication ::= SET
+{
+  ivIdentification  IdentityIdentificationDataObject,
+  ivPolicy          IdentityVerificationPolicyDataObject,
+  ivAssertion       IdentityVerificationAssertionDataObject
+}
+
+--
+-- DATA OBJECTS
+--
+
+IdentityIdentificationDataObject ::= [APPLICATION 7] SEQUENCE
+{
+  version             [0] DataObjectVersionNumber,
+  cardHolderID        [1] CardHolderIdentifier, 
+  cardSerialNumber    [2] CardSerialNumber,
+  deviceSerialNumber  [3] CardAccessDeviceSerialNumber,
+  appLabel            [4] ServiceProviderApplicationLabel,
+  requestorRole       [5] ServiceRequestorRole
+}
+
+IdentityVerificationPolicyDataObject ::= [APPLICATION 8] SEQUENCE
+{
+  policyData [0] IdentityVerificationPolicy,
+  signData   [1] DataObjectDigitalSignature
+}
+
+IdentityVerificationAssertionDataObject ::= [APPLICATION 9] SEQUENCE
+{
+  ivaData       [0] IVAData,
+  samSignature  [1] DataObjectDigitalSignature,
+  cardSignature [2] DataObjectDigitalSignature
+}
+
+IVAData ::= SEQUENCE
+{
+  version          [0] DataObjectVersionNumber,
+  creationData     [1] IdentityVerificationAssertionCreationData,
+  staticData       [2] IdentityVerificationAssertionStaticData,
+  credentialCheck  [3] CredentialsCheckStatus
+}
+
+--
+-- SUB DATA DEFS
+--
+
+ProxyClientAllowed ::= BOOLEAN
+ProxyClientParticipation ::= BOOLEAN
+ParticipantConfirmationAllowed ::= BOOLEAN
+ParticipantVerified ::= BOOLEAN
+
+CredentialsCheckStatus ::= BIT STRING
+{
+  cardAuthCert   (0),
+  cardIssuerCert (1)
+}
+
+IdentityVerificationAssertionTimeout ::= INTEGER
+IdentityVerificationAssertionNumber ::= OCTET STRING (SIZE(2))
+
+IdentityVerificationAssertionCreationData ::= SEQUENCE
+{
+  assertionNumber   [0] IdentityVerificationAssertionNumber,
+  assertionTimeout  [1] IdentityVerificationAssertionTimeout,
+  creationTime      [2] IdentityVerificationAssertionCreationDate
+}
+
+IdentityVerificationAssertionCreationDate ::= UTCTime
+
+
+IdentityVerificationAssertionStaticData ::= SEQUENCE
+{
+  cardDesc              [0] VerifiedCardHolder,
+  proxyClient           [1] ProxyClientParticipation,
+  proxyCardDesc         [2] VerifiedCardHolder,
+  participantVerified   [3] ParticipantVerified,
+  participantCardDesc   [4] VerifiedCardHolder,
+  bioVerificationStatus [5] BiometricVerificationStatus,
+  appLabel              [6] ServiceProviderApplicationLabel,
+  identityAssurance     [7] IdentityVerificationAssurance,
+  serviceProviderMark   [8] ServiceProviderMark,
+  deviceSerialNumber    [9] CardAccessDeviceSerialNumber,
+  samSerialNumber       [10] SecureAccessModuleSerialNumber,
+  serviceRequestorRole  [11] ServiceRequestorRole,
+  deviceSoftwareVersion [12] DataObjectVersionNumber,
+  serviceInstitutionID  [13] ServiceInstitutionID
+}
+
+VerifiedCardHolder ::= SEQUENCE
+{
+  chuidData        [0] CHUIDData,
+  digitalSignature [1] DataObjectDigitalSignature
+}
+
+ServiceInstitutionID ::= NumericString (SIZE(1..12))
+
+IdentityVerificationPolicy ::= SEQUENCE
+{
+  version              [0] DataObjectVersionNumber,
+  dateAndTime          [1] UTCTime,
+  serviceProviderMark  [2] ServiceProviderMark,
+  policyDesc           [3] IdentityVerificationPolicyDescriptor,
+  policyData           [4] IdentityVerificationPolicyData
+}
+
+IdentityVerificationPolicyValidationTimeout ::= INTEGER
+
+IdentityVerificationPolicyDescriptor ::= SEQUENCE
+{
+  applicationLabel  [0] ServiceProviderApplicationLabel,
+  requestorRole     [1] ServiceRequestorRole,
+  cardHolderID      [2] CardHolderIdentifier
+}
+
+
+IdentityVerificationPolicyData ::= SEQUENCE
+{
+  authAssurance           [0] IdentityVerificationAssurance,
+  failureResponse         [1] IdentityVerificationFailureResponse,
+  authConstraint          [2] IdentityVerificationConstraint,
+  proxyAllowed            [3] ProxyClientAllowed,
+  participantConfAllowed  [4] ParticipantConfirmationAllowed,
+  fingerprintQualityLevel [5] FingerPrintQualityLevel,
+  policyTimeout           [6] IdentityVerificationPolicyValidationTimeout,
+  assertionTimeout        [7] IdentityVerificationAssertionTimeout
+}
+
+IdentityVerificationTime ::= UTCTime
+
+FingerPrintQualityLevel ::= ENUMERATED
+{
+  level_0 (0),
+  level_1 (1),
+  level_2 (2),
+  level_3 (3),
+  level_4 (4)
+}
+
+
+END

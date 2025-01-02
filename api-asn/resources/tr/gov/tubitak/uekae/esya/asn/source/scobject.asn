@@ -1,0 +1,19 @@
+scobject
+
+DEFINITIONS IMPLICIT TAGS ::=
+
+BEGIN
+
+-- EXPORTS ALL --
+
+SCObjectBag ::= SEQUENCE OF SCObject
+
+SCObject ::= SEQUENCE OF SCObjectAttribute
+
+SCObjectAttribute ::= SEQUENCE
+{
+ 	type  	 [0] OCTET STRING,
+ 	value    [1] OCTET STRING
+}
+
+END

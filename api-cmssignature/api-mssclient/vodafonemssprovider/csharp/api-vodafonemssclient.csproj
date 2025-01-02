@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6AF0DB6B-B14A-4C18-B4B5-658B22B3273E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tr.gov.tubitak.uekae.esya.api.webservice.mssclient.vodafone</RootNamespace>
+    <AssemblyName>ma3api-mssclient-vodafoneprovider</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\api-parent\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MobilImzaYapilari">
+      <HintPath>..\..\..\..\api-parent\dlls\MobilImzaYapilari.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VodafoneMobilImza, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\api-parent\dlls\VodafoneMobilImza.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\profile\VodafoneProfileRequest.cs" />
+    <Compile Include="src\profile\VodafoneProfileResponse.cs" />
+    <Compile Include="src\provider\VodafoneMSSProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\signature\VodafoneSignatureRequest.cs" />
+    <Compile Include="src\signature\VodafoneSignatureResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\api-asn\csharp\api-asn.csproj">
+      <Project>{307f1cdc-084e-4a9d-9208-0943de95da0f}</Project>
+      <Name>api-asn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mssclient\csharp\api-mssclient.csproj">
+      <Project>{34358b27-80a6-4dd0-a890-856ca1473c56}</Project>
+      <Name>api-mssclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\api-common\csharp\api-common.csproj">
+      <Project>{CA8572D2-2D3C-42F0-9A07-6261B00BD5F6}</Project>
+      <Name>api-common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\api-crypto\crypto\csharp\api-crypto.csproj">
+      <Project>{82649E95-07E4-4166-9D55-B4705CC80836}</Project>
+      <Name>api-crypto</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

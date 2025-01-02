@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{541FAB38-2515-41F9-8856-0CA083597F92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ma3api-smartcard</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>tr.gov.tubitak.uekae.esya.api.smartcard</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ma3api-smartcard.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ma3api-smartcard.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\..\api-parent\ma3api-dotnet\ma3api.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ma3api-smartcard.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;E:\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ma3api-smartcard.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;E:\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="asn1rtcs">
+      <HintPath>..\..\..\api-parent\dlls\asn1rtcs.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\api-parent\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-pkcs11-interop">
+      <HintPath>..\..\..\api-parent\dlls\ma3api-pkcs11-interop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.postbuild" />
+    <None Include="Doxyfile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assemblyForCsharp.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resource.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource.en-US.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\api-asn\csharp\api-asn.csproj">
+      <Project>{307F1CDC-084E-4A9D-9208-0943DE95DA0F}</Project>
+      <Name>api-asn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-common\csharp\api-common.csproj">
+      <Project>{CA8572D2-2D3C-42F0-9A07-6261B00BD5F6}</Project>
+      <Name>api-common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-crypto\bouncyprovider\csharp\bouncyprovider.csproj">
+      <Project>{64916A9E-4971-4FF2-9DAF-65AB1FBD2048}</Project>
+      <Name>bouncyprovider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-crypto\crypto\csharp\api-crypto.csproj">
+      <Project>{82649E95-07E4-4166-9D55-B4705CC80836}</Project>
+      <Name>api-crypto</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\bundle\SmartCardI18n.cs" />
+    <Compile Include="src\config\CardTypeConfig.cs" />
+    <Compile Include="src\config\SmartCardConfigParser.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\TokenException.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\TokenRuntimeException.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\CK_ATTRIBUTE.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\CK_DATE.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\CK_MECHANISM.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\CK_NOTIFY.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\CK_RSA_PKCS_OAEP_PARAMS.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\CK_RSA_PKCS_PSS_PARAMS.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\CK_SESSION_INFO.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\CK_SLOT_INFO.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\CK_TOKEN_INFO.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\CK_VERSION.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\Constants.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\Functions.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\PKCS11Constants.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\PKCS11Exception.cs" />
+    <Compile Include="src\iaik\pkcs\pkcs11\wrapper\PKCS11RuntimeException.cs" />
+    <Compile Include="src\iaik\SupportClass.cs" />
+    <Compile Include="src\keyfinder\KeyFinder.cs" />
+    <Compile Include="src\keyfinder\ModulusFinderFromObjectId.cs" />
+    <Compile Include="src\keyfinder\PublicKeyFinderWithLabel.cs" />
+    <Compile Include="src\pkcs11\BaseSmartCard.cs" />
+    <Compile Include="src\pkcs11\cardobject\P11Object.cs" />
+    <Compile Include="src\pkcs11\CardType.cs" />
+    <Compile Include="src\pkcs11\card\KeyTemplate.cs" />
+    <Compile Include="src\pkcs11\card\keytemplate\symmetric\AESKeyTemplate.cs" />
+    <Compile Include="src\pkcs11\card\keytemplate\symmetric\SecretKeyTemplate.cs" />
+    <Compile Include="src\pkcs11\card\ops\AEPOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\AkisOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\AladdinOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\CardosOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\DataKeyOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\DirakHSMOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\DirakLibOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\EPkcs11Library.cs" />
+    <Compile Include="src\pkcs11\card\ops\GemPlusOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\IPKCS11Ops.cs" />
+    <Compile Include="src\pkcs11\card\ops\KeyCorpOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\key\SecretKey.cs" />
+    <Compile Include="src\pkcs11\card\ops\modifications\CK_ATTRIBUTE_NET.cs" />
+    <Compile Include="src\pkcs11\card\ops\NCipherOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\PKCS11Ops.cs" />
+    <Compile Include="src\pkcs11\card\ops\SafenetOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\SafeSignOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\SefirotOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\TKartOps.cs" />
+    <Compile Include="src\pkcs11\card\ops\UtimacoOps.cs" />
+    <Compile Include="src\pkcs11\card\template\AEPTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\AkisTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\AladdinTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\CardosTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\CardTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\DataKeyTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\DefaultCardTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\DirakHSMTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\GemPlusTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\ICardTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\KeyCorpTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\NCipherTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\SafenetTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\SafeSignTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\SefirotTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\TKartTemplate.cs" />
+    <Compile Include="src\pkcs11\card\template\UtimacoTemplate.cs" />
+    <Compile Include="src\pkcs11\LoginException.cs" />
+    <Compile Include="src\pkcs11\P11SmartCard.cs" />
+    <Compile Include="src\pkcs11\scheme\ECDSA_SS.cs" />
+    <Compile Include="src\pkcs11\scheme\ISignatureScheme.cs" />
+    <Compile Include="src\pkcs11\scheme\Iso9796_2_SC1.cs" />
+    <Compile Include="src\pkcs11\scheme\RSAOAEP_ES.cs" />
+    <Compile Include="src\pkcs11\scheme\RSAPSS_SS.cs" />
+    <Compile Include="src\pkcs11\scheme\Rsa_SS.cs" />
+    <Compile Include="src\pkcs11\scheme\SignatureSchemeFactory.cs" />
+    <Compile Include="src\pkcs11\SmartCard.cs" />
+    <Compile Include="src\pkcs11\SmartCardException.cs" />
+    <Compile Include="src\pkcs11\SmartOp.cs" />
+    <Compile Include="src\util\AttributeUtil.cs" />
+    <Compile Include="src\util\Constants.cs" />
+    <Compile Include="src\util\ConstantsUtil.cs" />
+    <Compile Include="src\util\ECSignatureTLVUtil.cs" />
+    <Compile Include="src\util\HSMPool.cs" />
+    <Compile Include="src\util\MultiSlotHSMPoolContainer.cs" />
+    <Compile Include="src\util\SCCipherWithCertSerialNo.cs" />
+    <Compile Include="src\util\SCCipherWithKeyLabel.cs" />
+    <Compile Include="src\util\SCSignerWithCertSerialNo.cs" />
+    <Compile Include="src\util\SCSignerWithKeyLabel.cs" />
+    <Compile Include="src\util\SmartCardSeed.cs" />
+    <Compile Include="src\util\TLV.cs" />
+    <Compile Include="src\winscard\ATR.cs" />
+    <Compile Include="src\winscard\HexUtil.cs" />
+    <Compile Include="src\winscard\SCard.cs" />
+    <Compile Include="src\winscard\Smart.cs" />
+    <Compile Include="src\winscard\WinsCard.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.Targets" />
+  <Import Project="..\..\..\api-parent\ma3api-dotnet\BuildCommon.targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

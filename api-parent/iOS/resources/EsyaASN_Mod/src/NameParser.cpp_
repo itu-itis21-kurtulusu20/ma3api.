@@ -1,0 +1,61 @@
+#include "NameParser.h"
+NAMESPACE_BEGIN(esya)
+NameParser::NameParser(const QString & iNameStr)
+	{
+		mNameStr = iNameStr ;
+		_constructTokens();
+	}
+
+NameParser::NameParser(const Name &iName)
+	{
+		mNameStr = iName.toString();
+		_constructTokens();
+	}
+
+void NameParser::_constructTokens()
+	{
+		QStringList lEntryList = mNameStr.split(",");
+		foreach(QString lEntry,lEntryList)
+			{
+				QStringList lKeyAndValue = lEntry.split("=");
+				QString lKey="";
+				QString lValue="";
+				if(lKeyAndValue.size()>0)
+					lKey = lKeyAndValue.at(0);
+				if (lKeyAndValue.size()>1)
+					lValue= lKeyAndValue.at(1);
+				mNameTokenHash.insert(lKey.toUpper(),lValue);
+			}
+	}
+
+QString NameParser::getValue(const QString &iNameKey)
+	{
+		return mNameTokenHash[iNameKey];
+	}
+
+QStringList NameParser::getAllValueKey()
+	{
+		QStringList lRetList;
+		QHashIterator<QString,QString> lDegerIterator(mNameTokenHash);
+		while (lDegerIterator.hasNext())
+		{
+			lDegerIterator.next();
+			lRetList<<lDegerIterator.key()+"="+lDegerIterator.value();			
+		}
+		return lRetList;
+	}
+
+QStringList NameParser::getAllKeys()
+	{
+		return mNameTokenHash.keys();
+	}
+
+QStringList NameParser::getAllValues()
+	{								 
+		return mNameTokenHash.values();
+	}
+
+NameParser::~NameParser(void)
+	{
+	}
+NAMESPACE_END

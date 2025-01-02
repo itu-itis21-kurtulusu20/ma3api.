@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{856B40B5-22CD-45AF-8C49-531804219B26}</ProjectGuid>
+    <RootNamespace>CMSLibrary_Test</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\built\$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\built\$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\..\..\EsyaASN_Mod\include\rtbersrc;.\..\..\EsyaASN_Mod\include\rtxsrc;.\..\..\EsyaASN_Mod\include\rtsrc;.\..\..\EsyaASN_Mod\include;.\..\..\EsyaOrtakDLL_Mod\src;.\..\..\EsyaOrtakLIB_Mod\src;.\..\..\EsyaASN_Mod\src\generated_ASN;.\..\..\EsyaASN_Mod\src\kriptoasn;.\..\..\EsyaASN_Mod\src\Wrapped_Classes;.\..\test;.\..\src;.\..\src\cms_asn;..\..\EsyaKripto_Mod\src;..\..\EsyaKripto_Mod\include\crypto++;..\..\EsyaPKCS11_Mod\src;.\GeneratedFiles;.;$(QTDIR)\include;.\..\test\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtXML;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_SQL_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>qtmain.lib;QtCore4.lib;QtTest4.lib;QtGui4.lib;QtSql4.lib;EsyaASN.lib;EsyaKripto.lib;EsyaCMS.lib;EsyaOrtakLIB.lib;EsyaOrtakDLL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\..\EsyaKripto_Mod\built\release;..\..\EsyaOrtakDLL_Mod\built\release;..\..\EsyaOrtakLIB_Mod\built\release;..\..\EsyaASN_Mod\built\release;..\built\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\..\..\EsyaASN_Mod\include\rtbersrc;.\..\..\EsyaASN_Mod\include\rtxsrc;.\..\..\EsyaASN_Mod\include\rtsrc;.\..\..\EsyaASN_Mod\include;.\..\..\EsyaOrtakDLL_Mod\src;.\..\..\EsyaOrtakLIB_Mod\src;.\..\..\EsyaASN_Mod\src\Generated_ASN;.\..\..\EsyaASN_Mod\src\kriptoasn;.\..\..\EsyaASN_Mod\src\Wrapped_Classes;.\..\test;.\..\src;.\..\src\cms_asn;..\..\EsyaKripto_Mod\src;..\..\EsyaKripto_Mod\include;..\..\EsyaPKCS11_Mod\src;.\GeneratedFiles;.;$(QTDIR)\include;.\..\test\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtXML;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_SQL_LIB;USEDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;QtTestd4.lib;QtGuid4.lib;EsyaASND.lib;EsyaKriptoD.lib;EsyaCMSD.lib;EsyaOrtakDLLD.lib;EsyaPKCS11D.lib;QtSqld4.lib;asn1rt.lib;asn1ber.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\..\EsyaKripto_Mod\built\debug;..\..\EsyaASN_Mod\libs\debug;..\..\EsyaASN_Mod\built\debug;..\built\debug;..\..\EsyaOrtakDLL_Mod\built\debug;..\..\EsyaPKCS11_Mod\built\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\test\cms_test.cpp" />
+    <ClCompile Include="..\test\main.cpp" />
+    <ClCompile Include="..\test\generatedfiles\debug\moc_cms_test.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\test\generatedfiles\release\moc_cms_test.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\test\cms_test.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing cms_test.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_SQL_LIB -DUSEDLL -D_VC80_UPGRADE=0x0710  -I".\..\..\EsyaASN_Mod\include\rtbersrc\." -I".\..\..\EsyaASN_Mod\include\rtxsrc\." -I".\..\..\EsyaASN_Mod\include\rtsrc\." -I".\..\..\EsyaASN_Mod\include\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaASN_Mod\src\Generated_ASN\." -I".\..\..\EsyaASN_Mod\src\kriptoasn\." -I".\..\..\EsyaASN_Mod\src\Wrapped_Classes\." -I".\..\test\." -I".\..\src\." -I".\..\src\cms_asn\." -I".\..\..\EsyaKripto_Mod\src\." -I".\..\..\EsyaKripto_Mod\include\." -I".\..\..\EsyaPKCS11_Mod\src\." -I".\GeneratedFiles\." -I".\." -I"$(QTDIR)\include\." -I".\..\test\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtXML\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtGui\." -I"$(QTDIR)\include\QtSql\." "..\test\cms_test.h" -o ".\..\test\GeneratedFiles\$(Configuration)\moc_cms_test.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\test\cms_test.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\test\GeneratedFiles\$(Configuration)\moc_cms_test.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing cms_test.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_SQL_LIB -D_VC80_UPGRADE=0x0710  -I".\..\..\EsyaASN_Mod\include\rtbersrc\." -I".\..\..\EsyaASN_Mod\include\rtxsrc\." -I".\..\..\EsyaASN_Mod\include\rtsrc\." -I".\..\..\EsyaASN_Mod\include\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaASN_Mod\src\generated_ASN\." -I".\..\..\EsyaASN_Mod\src\kriptoasn\." -I".\..\..\EsyaASN_Mod\src\Wrapped_Classes\." -I".\..\test\." -I".\..\src\." -I".\..\src\cms_asn\." -I".\..\..\EsyaKripto_Mod\src\." -I".\..\..\EsyaKripto_Mod\include\crypto++\." -I".\..\..\EsyaPKCS11_Mod\src\." -I".\GeneratedFiles\." -I".\." -I"$(QTDIR)\include\." -I".\..\test\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtXML\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtGui\." -I"$(QTDIR)\include\QtSql\." "..\test\cms_test.h" -o ".\..\test\GeneratedFiles\$(Configuration)\moc_cms_test.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\test\cms_test.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\test\GeneratedFiles\$(Configuration)\moc_cms_test.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\..\test\GeneratedFiles\$(ConfigurationName)" QtVersion="4.5.0" QtVersion_x0020_Win32="$(DefaultQtVersion)" UicDir=".\..\test\GeneratedFiles" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

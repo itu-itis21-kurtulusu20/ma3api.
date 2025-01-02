@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+        <artifactId>ma3api-parent</artifactId>
+        <version>2.3.23</version>
+        <relativePath>../../api-parent/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>ma3api-asn-mamsis</artifactId>
+    <version>2.3.24-MAMSIS-700</version>
+    <name>MA3 Api MAMSIS Asn Module</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.objsys.asn1j.runtime</groupId>
+            <artifactId>asn1rt</artifactId>
+            <version>7.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-common</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <!--Here is test data constructions with maven-ant plugin. -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                 <execution>
+                        <id>pre-test-extract</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <delete dir ="src\tr\gov\tubitak\uekae\esya\api"/>
+                                <delete dir ="src\tr\gov\tubitak\uekae\esya\asn\util"/>
+                                <copy todir="src\tr\gov\tubitak\uekae\esya\api">
+                                    <fileset dir="${basedir}\..\src\tr\gov\tubitak\uekae\esya\api">
+                                    </fileset>
+                                </copy>
+                                <copy todir="src\tr\gov\tubitak\uekae\esya\asn\util">
+                                    <fileset dir="${basedir}\..\src\tr\gov\tubitak\uekae\esya\asn\util">
+                                    </fileset>
+                                </copy>
+                                <delete dir ="src\tr\gov\tubitak\uekae\esya\api\asn\passport"/>
+                                <delete dir ="src\tr\gov\tubitak\uekae\esya\api\asn\scobject"/>
+                                <delete dir ="src\tr\gov\tubitak\uekae\esya\api\asn\scencryptedpackage"/>
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

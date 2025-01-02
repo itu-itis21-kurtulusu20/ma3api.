@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ma3api-parent</artifactId>
+        <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+        <version>2.3.25-SNAPSHOT</version>
+        <relativePath>../api-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ma3api-asn1viewer</artifactId>
+    <name>MA3 Api Asn Viewer</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-asn</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.11</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.modules</groupId>
+            <artifactId>org-netbeans-libs-ini4j</artifactId>
+            <version>1.9.1</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+       <plugin>
+            <groupId>tr.gov.tubitak.uekae.esya.ci</groupId>
+            <artifactId>obfuscation</artifactId>
+            <version>1.0.7</version>
+        </plugin>
+        <plugin>
+            <artifactId>maven-shade-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>make-assembly</id>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>shade</goal>
+                    </goals>
+                    <configuration>
+                        <shadedArtifactAttached>true</shadedArtifactAttached>
+                        <transformers>
+                            <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <mainClass>tr.gov.tubitak.uekae.esya.api.asn1viewer.Program</mainClass>
+                            </transformer>
+                        </transformers>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+
+</build>
+<profiles>
+    <profile>
+        <id>obfuscate</id>
+        <activation>
+            <activeByDefault>false</activeByDefault>
+            <property>
+                <name>enableObfuscate</name>
+                <value>true</value>
+            </property>
+        </activation>
+        <build>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.7</version>
+                    <executions>
+                        <execution>
+                            <id>copyObfJar</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>run</goal>
+                            </goals>
+                            <configuration>
+                                <target>
+                                    <copy file="${project.build.directory}\zkm\${project.build.finalName}.jar"
+                                          tofile="${project.build.directory}\${project.build.finalName}.jar" />
+                                </target>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+</profiles>
+
+</project>

@@ -1,0 +1,186 @@
+esya { 1 3 6 1 4 1 11311 10 100 }
+
+DEFINITIONS EXPLICIT TAGS ::= BEGIN
+
+-- EXPORTS All;
+
+-- IMPORTS 
+
+IMPORTS
+	AlgorithmIdentifier
+             FROM Explicit {iso(1) identified-organization(3)
+             dod(6) internet(1) security(5) mechanisms(5) pkix(7)
+             id-mod(0) id-pkix1-explicit-88(1)}
+
+	DigestInfo 
+		FROM Cms { iso(1) member-body(2) us(840) rsadsi(113549)
+       pkcs(1) pkcs-9(9) smime(16) modules(0) cms-2004(24) }
+       
+       
+    CRLReason 
+    	FROM Implicit {iso(1) identified-organization(3)
+             dod(6) internet(1) security(5) mechanisms(5) pkix(7)
+             id-mod(0) id-pkix1-implicit-88(2)}
+;
+
+	ESYASifreliVeri ::=  SEQUENCE  {
+		sifreliAnahtar OCTET STRING,
+    	sifreliVeri OCTET STRING
+	}
+	
+	ESYASimetrikAnahtar ::= SEQUENCE {
+		algorithm AlgorithmIdentifier,
+		simetrikAnahtar OCTET STRING
+	}
+	
+	id-uekae OBJECT IDENTIFIER ::= { 1 3 6 1 4 1 11311 }
+	id-esya OBJECT IDENTIFIER ::= { id-uekae 10 }
+	
+	id-servisler OBJECT IDENTIFIER ::= { id-esya 1 }
+	id-refno OBJECT IDENTIFIER ::= { id-servisler 1 }
+	id-kartSeriNo OBJECT IDENTIFIER ::= { id-servisler 2 }
+	id-kartUreticiNo OBJECT IDENTIFIER ::= { id-servisler 3 }
+	id-sablonNo OBJECT IDENTIFIER ::= { id-servisler 4 }
+	id-sertTalepNo OBJECT IDENTIFIER ::= { id-servisler 5 }
+	id-siparisDetayNo OBJECT IDENTIFIER ::= { id-servisler 6 }
+	id-cvcSablonTipi OBJECT IDENTIFIER ::= { id-servisler 7 }
+	id-cmpResponseWaitTime OBJECT IDENTIFIER ::= { id-servisler 8 }
+	id-cmpYeniSertifikaDurumu OBJECT IDENTIFIER ::= { id-servisler 9 }
+	id-cmpTekIstekHataDurumundaTumIstekGeriAl OBJECT IDENTIFIER ::= { id-servisler 10 }
+	id-cmpCAControlMsg OBJECT IDENTIFIER ::= { id-servisler 11 }
+
+	id-ESYAyonetici OBJECT IDENTIFIER ::= { id-esya 2 1 }
+	id-ESYAkayitci OBJECT IDENTIFIER ::= { id-esya 2 2 }
+	id-ESYAdenetci OBJECT IDENTIFIER ::= { id-esya 2 3 }
+
+	id-TK-nesoid OBJECT IDENTIFIER ::= { 2 16 792 1 61 0 1 5070 1 1 }
+
+    id-ESYA-SDO OBJECT IDENTIFIER ::= { 2 16 792 1 2 1 1 5 2 200 1 }
+    
+    id-ESYA-CardSerialNumber OBJECT IDENTIFIER ::= { 2 16 792 1 2 1 1 5 2 200 2}
+
+	ESYASimAnahtarlari ::= SEQUENCE OF ESYASimAnahtari
+	-- ESYASimAnahtarlari icindeki her ESYASimAnahtari'nin anahNo degeri farkli olmalidir.
+
+	ESYASimAnahtari ::= SEQUENCE {
+		anahNo			INTEGER,
+		--Bu simetrik anahtari tekil olarak belirten no
+		hashAlg			AlgorithmIdentifier,
+		simetrikAlg		AlgorithmIdentifier,
+		anahtarBytes	OCTET STRING }
+
+	ESYAVTVeri ::= SEQUENCE {
+		anahNo	INTEGER,
+		--Imzalamada veya sifrelemede kullanilan simetrik anahtar.
+		veri	OCTET STRING }
+
+
+	id-istemci 	OBJECT IDENTIFIER ::= { id-esya 3 }
+	id-kripto 	OBJECT IDENTIFIER ::= { id-istemci 1 }
+	id-esyapwri OBJECT IDENTIFIER ::= { id-kripto 1 }
+
+	ESYAPasswordRecipientInfo ::= SEQUENCE {
+	     	version INTEGER,   -- always set to 0
+     		keyDerivationAlgorithm [0] AlgorithmIdentifier
+                                OPTIONAL,
+     		keyEncryptionAlgorithm AlgorithmIdentifier,
+     		encryptedKey OCTET STRING,
+		keyHash	 DigestInfo --Bu alan ContentEncryptionKey in hash degeridir.
+						--Minimum SHA_256 kullanilmasi onerilir
+	}
+
+	ESYAParametreleri::= SEQUENCE OF ESYAParametre
+
+	ESYAParametre ::= SEQUENCE {
+		paramName PrintableString,
+		paramValue OCTET STRING
+	}
+
+	ESYAKartAnahtarlari ::= SEQUENCE OF ESYAKartAnahtar
+
+	ESYAKartAnahtar ::= SEQUENCE {
+		anahtarKarti UTF8String,
+		anahtarID UTF8String,
+		anahtar OCTET STRING
+	}
+
+    ESYACAStatus ::= SEQUENCE {
+           initializationStatus  ENUMERATED {
+                        notinitialized(0),
+                       	initialized(1)},
+           certificationServiceStatus  ENUMERATED {
+                                notstarted(0),
+                               	started(1),
+                               	stopped(2)},
+           crlServiceStatus  ENUMERATED {
+                                notstarted(0),
+                              	started(1),
+                               	stopped(2)}
+
+    }
+
+	ESYACAControlReqMsg ::= SEQUENCE {
+	    islemtipi  ENUMERATED {
+	        initCA(0),
+            startCA(1),
+            stopCA(2),
+            startCRLService(3),
+            stopCRLService(4),
+            getStatus(5),
+            onaylandi(6),
+            reddedildi(7)},
+        params ESYAParametreleri OPTIONAL
+	}
+
+	ESYACAControlRepMsg ::= SEQUENCE {
+	    donuskodu  ENUMERATED {
+	        success(0),
+          	failure(1),
+        	needmoreinfo(2)},
+        cevapislemtipi  ENUMERATED {
+            sifrecozme(0),
+            slotsecparolagir(1),
+            mesajGoster(2),
+            onayIste(3)} OPTIONAL,
+        message UTF8String OPTIONAL,
+        errorStr UTF8String OPTIONAL,
+        status ESYACAStatus OPTIONAL,
+        params ESYAParametreleri OPTIONAL
+    }
+
+	ESYASertifikaIptalTalep ::= SEQUENCE {
+		kartSeriNo SEQUENCE OF OCTET STRING,
+		kayitciAdi UTF8String,
+		islemTipi  ENUMERATED {
+  								askiyaAl(0),
+  								askidanIndir(1),
+								iptal(2)}
+	}
+
+    ESYASDOHash ::= SEQUENCE {
+           hashAlgorithm AlgorithmIdentifier,
+           hashValue OCTET STRING
+    }
+    
+    ESYACardSerialNumber ::= OCTET STRING
+
+    ESYAYeniSertifikaDurumu ::= SEQUENCE {
+    		durum  ENUMERATED {
+      					askida(0),
+      					gecerli(1)}
+    }
+
+    ESYAServiceConfigType ::= SEQUENCE {
+         configType  ENUMERATED {
+                undefined(0),
+                esya(1),
+                mobil(2),
+                ekk(3)
+         }
+    }
+
+    ESYATekIstekHatadaTumIstekGeriAl ::= BOOLEAN
+    --CMP Protokolüne gelen isteklerden birinin hatalı olması durumunda tüm istekler hatalı kabul edilip geri alınacak.
+    --TCKK'da CVC protokolünde kullanılıyor.(EKK modunda CVC oluyor.
+
+END

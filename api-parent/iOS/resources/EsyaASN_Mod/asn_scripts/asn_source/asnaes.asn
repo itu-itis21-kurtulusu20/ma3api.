@@ -1,0 +1,68 @@
+asnaes { joint-iso-ccitt(2) country(16) us(840) organization(1) gov(101) csor(3)
+nistalgorithm(4) modules (0) aes (1) }
+
+DEFINITIONS IMPLICIT TAGS ::= BEGIN
+
+-- IMPORTS None --
+
+-- EXPORTS All --
+
+
+-- Parameter definitions --
+
+CFBParameters ::= SEQUENCE {
+   aes-IV        AES-IV,
+   numberOfBits	 NumberOfBits
+}
+
+AES-IV ::= OCTET STRING (SIZE(16))
+
+NumberOfBits ::= INTEGER(1..128)
+
+
+-- AES information object identifiers --
+
+csor OBJECT IDENTIFIER ::= {
+   joint-iso-itu-t(2) country(16) us(840) organization(1) gov(101) 3 }
+
+nistAlgorithms OBJECT IDENTIFIER ::= { csor nistAlgorithm(4) }
+
+aes OBJECT IDENTIFIER ::= { nistAlgorithms  1 }
+
+-- 128 bit AES information object identifiers --
+
+id-aes128-ECB OBJECT IDENTIFIER ::= { aes 1 }
+id-aes128-CBC OBJECT IDENTIFIER ::= { aes 2 }
+id-aes128-OFB OBJECT IDENTIFIER ::= { aes 3 }
+id-aes128-CFB OBJECT IDENTIFIER ::= { aes 4 }
+
+-- 192 bit AES information object identifiers --
+
+id-aes192-ECB OBJECT IDENTIFIER ::= { aes 21 }
+id-aes192-CBC OBJECT IDENTIFIER ::= { aes 22 }
+id-aes192-OFB OBJECT IDENTIFIER ::= { aes 23 }
+id-aes192-CFB OBJECT IDENTIFIER ::= { aes 24 }
+
+-- 256 bit AES information object identifiers --
+
+id-aes256-ECB OBJECT IDENTIFIER ::= { aes 41 }
+id-aes256-CBC OBJECT IDENTIFIER ::= { aes 42 }
+id-aes256-OFB OBJECT IDENTIFIER ::= { aes 43 }
+id-aes256-CFB OBJECT IDENTIFIER ::= { aes 44 }
+
+
+-- AES Wrap oids --
+
+id-aes128-wrap OBJECT IDENTIFIER ::= { aes 5 }
+id-aes192-wrap OBJECT IDENTIFIER ::= { aes 25 }
+id-aes256-wrap OBJECT IDENTIFIER ::= { aes 45 }
+
+
+END  -- aes --
+
+--
+-- Last update: Friday, October 6, 2000
+--
+-- Tim Polk, NIST
+-- syntax not verified!
+--

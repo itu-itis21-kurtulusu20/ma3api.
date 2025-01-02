@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9027F91B-5DEB-47E7-A6FB-4C34219917F0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobilSignatureService</RootNamespace>
+    <AssemblyName>MobilSignatureService</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="asn1rtcs, Version=6.0.7639.28535, Culture=neutral, PublicKeyToken=e419c4ffbcc12130, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\api-parent\dlls\asn1rtcs.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\api-parent\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MobilImzaYapilari, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\api-parent\dlls\MobilImzaYapilari.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\..\..\..\api-parent\dlls\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SQLite, Version=1.0.82.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\api-parent\dlls\x64\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="VodafoneMobilImza, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\api-parent\dlls\VodafoneMobilImza.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SignatureService.asmx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SignatureService.asmx.cs">
+      <DependentUpon>SignatureService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="lib\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\api-asn\csharp\api-asn.csproj">
+      <Project>{307f1cdc-084e-4a9d-9208-0943de95da0f}</Project>
+      <Name>api-asn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\api-certstore\csharp\api-certstore.csproj">
+      <Project>{4844d59f-aca3-43a1-8598-448b4eb3de90}</Project>
+      <Name>api-certstore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\api-certvalidation\csharp\api-certvalidation.csproj">
+      <Project>{278f201b-5d46-43d3-a40d-a2f11ba934f2}</Project>
+      <Name>api-certvalidation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\api-common\csharp\api-common.csproj">
+      <Project>{ca8572d2-2d3c-42f0-9a07-6261b00bd5f6}</Project>
+      <Name>api-common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\api-crypto\bouncyprovider\csharp\bouncyprovider.csproj">
+      <Project>{64916a9e-4971-4ff2-9daf-65ab1fbd2048}</Project>
+      <Name>bouncyprovider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\api-crypto\crypto\csharp\api-crypto.csproj">
+      <Project>{82649e95-07e4-4166-9d55-b4705cc80836}</Project>
+      <Name>api-crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\api-infra\csharp\api-infra.csproj">
+      <Project>{98c61cef-1ee1-4594-941a-b364dd57ea90}</Project>
+      <Name>api-infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\api-xmlsignature\csharp\api-xmlsignature.csproj">
+      <Project>{de4fb845-23ad-4f03-99c2-4b93b2dea909}</Project>
+      <Name>api-xmlsignature</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\csharp\api-cmssignature.csproj">
+      <Project>{5a16f873-c904-4feb-a383-a905e133b238}</Project>
+      <Name>api-cmssignature</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\turktelekommssprovider\csharp\api-turktelekommssclient.csproj">
+      <Project>{538b5538-a2de-4d8e-8b5d-649b2defaa93}</Project>
+      <Name>api-turktelekommssclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mssclient\csharp\api-mssclient.csproj">
+      <Project>{34358b27-80a6-4dd0-a890-856ca1473c56}</Project>
+      <Name>api-mssclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\turkcellmssprovider\csharp\api-turkcellmssclient.csproj">
+      <Project>{ef9cef88-e6f0-443b-ac85-a5918e7be747}</Project>
+      <Name>api-turkcellmssclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\vodafonemssprovider\csharp\api-vodafonemssclient.csproj">
+      <Project>{6af0db6b-b14a-4c18-b4b5-658b22b3273e}</Project>
+      <Name>api-vodafonemssclient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53235</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+﻿using System.Collections.Generic;
+using tr.gov.tubitak.uekae.esya.api.asn.x509;
+
+namespace tr.gov.tubitak.uekae.esya.api.signature.certval
+{
+    public interface ReferencedCertificateFinder
+    {
+        List<ECertificate> find(CertificateSearchCriteria aCriteria);
+    }
+}

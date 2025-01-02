@@ -1,0 +1,34 @@
+EkdsMediaDefs 
+
+DEFINITIONS ::=
+
+BEGIN
+
+
+IMPORTS
+   ElectronicIdentityCardApplication FROM EkdsElectronicIdentityCardApp
+   EmergencyDataApplication          FROM EkdsEmergencyDataApp;
+
+
+ElectronicIdentityCardData ::= SET
+{
+  -- appKASU [0] CardAuthenticationApplication,
+  appEKKU [1] ElectronicIdentityCardApplication,
+  appASBU [2] EmergencyDataApplication
+}
+/*
+SecureAcessModuleData ::= SET
+{
+  -- appGEMU [0] SecureAccessModuleApplication,
+  -- appCSIU [1] DeviceSignatureApplication
+}
+
+CertificateCardData ::= CHOICE
+{
+  -- appKSIU [0] InstitutionalSignatureApplication,
+  -- appSSLU [1] SSLCertificateApplication
+}
+*/
+
+
+END

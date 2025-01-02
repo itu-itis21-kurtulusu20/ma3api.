@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ALL_CHECKERS_SUCCESSFULL" xml:space="preserve">
+    <value>All checker results are successful. </value>
+  </data>
+  <data name="ALL_CHECKERS_UNSUCCESSFULL" xml:space="preserve">
+    <value>All checker results are unsuccessful. </value>
+  </data>
+  <data name="ARCHIVE_TIMESTAMP_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Archive TimeStamp Attribute Checker </value>
+  </data>
+  <data name="ARCHIVE_TIMESTAMP_V2_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Archive TimeStamp V2 Attribute Checker </value>
+  </data>
+  <data name="ARCHIVE_TSA_CHECK_SUCCESSFUL" xml:space="preserve">
+    <value>Archive Time Stamp attribute check is successful. </value>
+  </data>
+  <data name="ARCHIVE_TSA_CHECK_UNSUCCESSFUL" xml:space="preserve">
+    <value>Archive Time Stamp attribute check is unsuccessful. </value>
+  </data>
+  <data name="ARCHIVE_TSA_DECODE_ERROR" xml:space="preserve">
+    <value>Archive Time Stamp attribute can not be decoded in Signed Data. </value>
+  </data>
+  <data name="ARCHIVE_TSA_V2_CHECK_SUCCESSFUL" xml:space="preserve">
+    <value>Archive Time Stamp V2 attribute check is successful. </value>
+  </data>
+  <data name="ARCHIVE_TSA_V2_CHECK_UNSUCCESSFUL" xml:space="preserve">
+    <value>Archive Time Stamp V2 attribute check is unsuccessful. </value>
+  </data>
+  <data name="ARCHIVE_TSA_V2_DECODE_ERROR" xml:space="preserve">
+    <value>Archive Time Stamp V2 attribute can not be decoded in Signed Data. </value>
+  </data>
+  <data name="CADESC_TSA_CHECK_SUCCESSFUL" xml:space="preserve">
+    <value>CAdES_C Time Stamp attribute check is successful. </value>
+  </data>
+  <data name="CADESC_TSA_CHECK_UNSUCCESSFUL" xml:space="preserve">
+    <value>CAdES_C Time Stamp attribute check is unsuccessful. </value>
+  </data>
+  <data name="CADESC_TSA_DECODE_ERROR" xml:space="preserve">
+    <value>CAdES_C Time Stamp attribute can not be decoded in Signed Data. </value>
+  </data>
+  <data name="CADES_C_TIMESTAMP_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>CAdES_C_TimeStamp Attribute Checker </value>
+  </data>
+  <data name="CertificateRefsValuesMatchChecker_SUCCESSFUL" xml:space="preserve">
+    <value>Certificate References and Values matching is successful. </value>
+  </data>
+  <data name="CertificateRefsValuesMatchChecker_UNSUCCESSFUL" xml:space="preserve">
+    <value>Certificate References and Values matching is unsuccessful. </value>
+  </data>
+  <data name="CERTIFICATE_CHECKER_FAIL" xml:space="preserve">
+    <value>{0} failed</value>
+  </data>
+  <data name="CERTIFICATE_NO_PATH_FOUND" xml:space="preserve">
+    <value>No trusted path found. Certificate's root sertificate may not be one of your trusted certificates.</value>
+  </data>
+  <data name="CERTIFICATE_REFERENCES_VALUES_MATCH_CHECKER" xml:space="preserve">
+    <value>Certificate References Values Match Checker </value>
+  </data>
+  <data name="CERTIFICATE_VALIDATION_CHECKER" xml:space="preserve">
+    <value>Certificate Validation Checker </value>
+  </data>
+  <data name="CERTIFICATE_VALIDATION_SUCCESSFUL" xml:space="preserve">
+    <value>Signer Certificate validation is successful </value>
+  </data>
+  <data name="CERTIFICATE_VALIDATION_UNSUCCESSFUL" xml:space="preserve">
+    <value>Signer Certificate validation is unsuccessful. Validation status : {0} </value>
+  </data>
+  <data name="CERTIFICATE_VALUES_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>Certificate Values attribute can not be decoded in Signed Data. </value>
+  </data>
+  <data name="CERT_HASH_DOESNOT_MATCH" xml:space="preserve">
+    <value>Certificate hash value in attribute is not same as signer certificate hash value. </value>
+  </data>
+  <data name="CHECK_ALL_CHECKER" xml:space="preserve">
+    <value>Check All Checker </value>
+  </data>
+  <data name="CHECK_ONE_CHECKER" xml:space="preserve">
+    <value>Check One Checker </value>
+  </data>
+  <data name="COMPLETE_CERTIFICATE_REFERENCES_DECODE_ERROR" xml:space="preserve">
+    <value>Complete Certificate References attribute can not be decoded in Signed Data. </value>
+  </data>
+  <data name="CONTENT_TIMESTAMP_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Content TimeStamp Attribute Checker </value>
+  </data>
+  <data name="CONTENT_TIMESTAMP_ATTRIBUTE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Content Timestamp check is successful. </value>
+  </data>
+  <data name="CONTENT_TIMESTAMP_ATTRIBUTE_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Content Timestamp check is unsuccessful. </value>
+  </data>
+  <data name="CONTENT_TIMESTAMP_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>Content Timestamp can not be decoded. </value>
+  </data>
+  <data name="CONTENT_TYPE_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Content Type Attribute Checker </value>
+  </data>
+  <data name="CONTENT_TYPE_ATTRIBUTE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Content Type attribute check is successful. </value>
+  </data>
+  <data name="CONTENT_TYPE_ATTRIBUTE_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Content Type,is not same with the one in EncapsulatedContentInfo.Check is unsuccessful. </value>
+  </data>
+  <data name="CONTENT_TYPE_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>Content Type attribute can not be decoded. </value>
+  </data>
+  <data name="COUNTER_SIGNATURE_CHECKED" xml:space="preserve">
+    <value>. counter signature is checked:@</value>
+  </data>
+  <data name="COUNTER_SIGNATURE_VERIFICATION_RESULTS" xml:space="preserve">
+    <value>Verification Results of Counter Signatures of the Signature:@</value>
+  </data>
+  <data name="ISSUER_SERIAL_DOESNOT_MATCH_SIGNER_IDENTIFIER" xml:space="preserve">
+    <value>IssuerSerial field in attribute does not match with signeridentifier field of signerinfo. </value>
+  </data>
+  <data name="MESSAGE_DIGEST_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Message Digest Attribute Checker </value>
+  </data>
+  <data name="MESSAGE_DIGEST_ATTRIBUTE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Message digest check is successful. </value>
+  </data>
+  <data name="MESSAGE_DIGEST_ATTRIBUTE_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Value in message digest attribute does not match with the one calculated.Check is unsuccessful. </value>
+  </data>
+  <data name="MESSAGE_DIGEST_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>Message Digest attribute can not be decoded. </value>
+  </data>
+  <data name="MESSAGE_DIGEST_CHECKER_ERROR" xml:space="preserve">
+    <value>Error in message digest attribute checker. </value>
+  </data>
+  <data name="NO_ARCHIVE_TSA_IN_SIGNEDDATA" xml:space="preserve">
+    <value>Archive Time Stamp attribute not found in Signed Data. </value>
+  </data>
+  <data name="NO_ARCHIVE_TSA_V2_IN_SIGNEDDATA" xml:space="preserve">
+    <value>Archive Time Stamp V2 attribute not found in Signed Data. </value>
+  </data>
+  <data name="NO_CADESC_TSA_IN_SIGNEDDATA" xml:space="preserve">
+    <value>CAdES_C Time Stamp attribute not found in Signed Data. </value>
+  </data>
+  <data name="NO_CERTIFICATE_VALUES_ATTRIBUTE_IN_SIGNEDDATA" xml:space="preserve">
+    <value>Certificate Values attribute not found in Signed Data. </value>
+  </data>
+  <data name="NO_CHECKER_SUCCESSFULL" xml:space="preserve">
+    <value>No checker is found. </value>
+  </data>
+  <data name="NO_COMPLETE_CERTIFICATE_REFERENCES_IN_SIGNEDDATA" xml:space="preserve">
+    <value>Complete Certificate References attribute not found in Signed Data. </value>
+  </data>
+  <data name="NO_CONTENT_TIMESTAMP_ATTRIBUTE_IN_SIGNEDDATA" xml:space="preserve">
+    <value>Content Timestamp not found in signed data. </value>
+  </data>
+  <data name="NO_CONTENT_TYPE_ATTRIBUTE_IN_SIGNED_DATA" xml:space="preserve">
+    <value>Content Type attribute not found in signed data. </value>
+  </data>
+  <data name="NO_MESSAGE_DIGEST_ATTRIBUTE_FOUND" xml:space="preserve">
+    <value>Message Digest attribute not found in signed data. </value>
+  </data>
+  <data name="NO_MUST_ATTRIBUTE_IN_SIGNED_DATA" xml:space="preserve">
+    <value>Must attribute not found in signed data. </value>
+  </data>
+  <data name="NO_OPTIONAL_ATTRIBUTE_IN_SIGNED_DATA" xml:space="preserve">
+    <value>Optional attribute(CADES_C or Reference Timestamp) not found in signed data. </value>
+  </data>
+  <data name="NO_SIGNER_CERTIFICATE_FOUND" xml:space="preserve">
+    <value>Signer certificate not found. </value>
+  </data>
+  <data name="NO_SIGNING_TIME" xml:space="preserve">
+    <value>Error in getting signing time. </value>
+  </data>
+  <data name="NO_SIGNING_TIME_ATTRIBUTE" xml:space="preserve">
+    <value>No signing time attribute to compare times. </value>
+  </data>
+  <data name="PRE_VERIFICATION_DONE" xml:space="preserve">
+    <value>Pre-verification is done.@</value>
+  </data>
+  <data name="REVOCATION_REFERENCES_AND_VALUES_MATCH_CHECKER" xml:space="preserve">
+    <value>Revocation References and Values Match Checker </value>
+  </data>
+  <data name="REVOCATION_REFERENCES_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>Complete Revocation References attribute can not be decoded. </value>
+  </data>
+  <data name="REVOCATION_REFERENCES_ATTRIBUTE_NOT_FOUND" xml:space="preserve">
+    <value>Complete Revocation References attribute not found. </value>
+  </data>
+  <data name="REVOCATION_REFS_VALUES_MATCH_SUCCESSFUL" xml:space="preserve">
+    <value>Revocation References and Values matching is successful. </value>
+  </data>
+  <data name="REVOCATION_REFS_VALUES_MATCH_UNSUCCESSFUL" xml:space="preserve">
+    <value>Revocation References and Values matching is unsuccessful. </value>
+  </data>
+  <data name="REVOCATION_VALUES_ATTRIBUTE_NOT_FOUND" xml:space="preserve">
+    <value>Revocation Values attribute not found. </value>
+  </data>
+  <data name="REVOCATION_VALUES_DECODE_ERROR" xml:space="preserve">
+    <value>Revocation Values attribute can not be decoded. </value>
+  </data>
+  <data name="SIGNATURETIMESTAMP_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>SignatureTimeStamp Attribute Checker </value>
+  </data>
+  <data name="SIGNATURE_CHECKED_RESULTS" xml:space="preserve">
+    <value>. Signature is checked. @Results:@</value>
+  </data>
+  <data name="SIGNATURE_CHECKER" xml:space="preserve">
+    <value>Signature Checker </value>
+  </data>
+  <data name="SIGNATURE_CHECKER_RESULTS" xml:space="preserve">
+    <value>Signature Checker Results:@</value>
+  </data>
+  <data name="SIGNATURE_POLICY_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Signature Policy Attribute Checker </value>
+  </data>
+  <data name="SIGNATURE_POLICY_ATTRIBUTE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Hash in signature policy attribute is same as the calculated one.Check is successful. </value>
+  </data>
+  <data name="SIGNATURE_POLICY_ATTRIBUTE_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Hash in signature policy attribute is not same as the calculated one.Check is unsuccessful. </value>
+  </data>
+  <data name="SIGNATURE_POLICY_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>Signature Policy Identifier attribute can not be decoded. </value>
+  </data>
+  <data name="SIGNATURE_POLICY_ATTRIBUTE_DIGEST_CALCULATION_ERROR" xml:space="preserve">
+    <value>Error in signature policy attribute hash control. </value>
+  </data>
+  <data name="SIGNATURE_POLICY_ATTRIBUTE_NOT_FOUND" xml:space="preserve">
+    <value>Signature Policy Identifier attribute not found. </value>
+  </data>
+  <data name="SIGNATURE_TS_CHECK_SUCCESSFUL" xml:space="preserve">
+    <value>Signature Timestamp attribute check is successful. </value>
+  </data>
+  <data name="SIGNATURE_TS_CHECK_UNSUCCESSFUL" xml:space="preserve">
+    <value>Signature Timestamp attribute check is unsuccessful. </value>
+  </data>
+  <data name="SIGNATURE_TS_DECODE_ERROR" xml:space="preserve">
+    <value>Signature Timestamp attribute can not be decoded. </value>
+  </data>
+  <data name="SIGNATURE_TS_NOT_FOUND" xml:space="preserve">
+    <value>Signature Timestamp attribute not found. </value>
+  </data>
+  <data name="SIGNATURE_VERIFICATION_ERROR" xml:space="preserve">
+    <value>Crypto error in signature verification. </value>
+  </data>
+  <data name="SIGNATURE_VERIFICATION_SUCCESSFUL" xml:space="preserve">
+    <value>Signature crypto verification is successful. </value>
+  </data>
+  <data name="SIGNATURE_VERIFICATION_UNSUCCESSFUL" xml:space="preserve">
+    <value>Signature crypto verification is unsuccessful. </value>
+  </data>
+  <data name="SIGNED_ATTRIBUTES_ENCODE_ERROR" xml:space="preserve">
+    <value>Signed attributes can not be encoded. </value>
+  </data>
+  <data name="SIGNER_CERTIFICATE" xml:space="preserve">
+    <value>Signer Certificate: </value>
+  </data>
+  <data name="SIGNER_DIGEST_ALGORITHM_UNKNOWN" xml:space="preserve">
+    <value>Signer digest algorithm is unknown. </value>
+  </data>
+  <data name="SIGNING_CERTIFICATE_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Signing Certificate Attribute Checker </value>
+  </data>
+  <data name="SIGNING_CERTIFICATE_ATTRIBUTE_CHECK_SUCCESSFUL" xml:space="preserve">
+    <value>Signing certificate attribute check is successful. </value>
+  </data>
+  <data name="SIGNING_CERTIFICATE_ATTRIBUTE_HASH_CALCULATION_ERROR" xml:space="preserve">
+    <value>Error in hash calculation of signer certificate. </value>
+  </data>
+  <data name="SIGNING_CERTIFICATE_DECODE_ERROR" xml:space="preserve">
+    <value>Signing certificate attribute can not be decoded. </value>
+  </data>
+  <data name="SIGNING_CERTIFICATE_V2_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Signing Certificate V2 Attribute Checker </value>
+  </data>
+  <data name="SIGNING_TIME_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>SigningTime attribute can not be decoded. </value>
+  </data>
+  <data name="SIGNING_TIME_CHECKER" xml:space="preserve">
+    <value>Signing Time Checker </value>
+  </data>
+  <data name="SIGNING_TIME_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Time in signaturetimestamp attribute is after time in signingtime attribute </value>
+  </data>
+  <data name="SIGNING_TIME_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Time in signaturetimestamp attribute is before time in signingtime attribute. Declared Time: {0}. TimeStamp: {1}.</value>
+  </data>
+  <data name="SUB_CHECKER_RESULTS" xml:space="preserve">
+    <value>Sub Checker Results:</value>
+  </data>
+  <data name="TIMESTAMPED_CERTS_CRLS_REFS_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Timestamped-Certs-Crls-Refs Attribute Checker </value>
+  </data>
+  <data name="TIMESTAMPED_CERTS_CRLS_REFS_ATTRIBUTE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Time-stamped-certs-crls-references attribute check is successful. </value>
+  </data>
+  <data name="TIMESTAMPED_CERTS_CRLS_REFS_ATTRIBUTE_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Time-stamped-certs-crls-references attribute check is unsuccessful. </value>
+  </data>
+  <data name="TIMESTAMPED_CERTS_CRLS_REFS_ATTRIBUTE_DECODE_ERROR" xml:space="preserve">
+    <value>Time-stamped-certs-crls-references attribute can not be decoded. </value>
+  </data>
+  <data name="TIMESTAMPED_CERTS_CRLS_REFS_ATTRIBUTE_NOT_FOUND" xml:space="preserve">
+    <value>Time-stamped-certs-crls-references attribute not found. </value>
+  </data>
+  <data name="TIMESTAMP_CERTIFICATE_CHECKER" xml:space="preserve">
+    <value>TimeStamp Certificate Checker </value>
+  </data>
+  <data name="TIMESTAMP_MESSAGE_DIGEST_CHECKER" xml:space="preserve">
+    <value>TimeStamp Message Digest Checker </value>
+  </data>
+  <data name="TIMESTAMP_SIGNATURE_CHECKER" xml:space="preserve">
+    <value>TimeStamp Signature Checker </value>
+  </data>
+  <data name="TIMESTAMP_TIME_CHECKER" xml:space="preserve">
+    <value>TimeStamp Time Checker </value>
+  </data>
+  <data name="TS_CERTIFICATE_NOT_FOUND" xml:space="preserve">
+    <value>Certificate of timestamp server not found. </value>
+  </data>
+  <data name="TS_CERTIFICATE_NOT_QUALIFIED" xml:space="preserve">
+    <value>Certificate is not authorized for timestamping. //TODO duzelt</value>
+  </data>
+  <data name="TS_MESSAGE_DIGEST_CHECKER_DECODE_ERROR" xml:space="preserve">
+    <value>Error while decoding TSTInfo from timestamp attribute. </value>
+  </data>
+  <data name="TS_MESSAGE_DIGEST_CHECKER_DIGEST_CALCULATION_ERROR" xml:space="preserve">
+    <value>Error while calculating digest value. </value>
+  </data>
+  <data name="TS_MESSAGE_DIGEST_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Digest check is successful. </value>
+  </data>
+  <data name="TS_MESSAGE_DIGEST_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Digest value in timestamp is not same as the calculated one.Check is unsuccessful. </value>
+  </data>
+  <data name="TS_SIGNATURE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Signature of timestamp is verified. </value>
+  </data>
+  <data name="TS_SIGNATURE_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Signature of timestamp is not verified. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_ARCHIVE_BEFORE_ESC" xml:space="preserve">
+    <value>Date of archive timestamp is before date of CAdES_C_TimeStamp. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_ARCHIVE_BEFORE_EST" xml:space="preserve">
+    <value>Date of archive timestamp is before date of signature timestamp. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_ARCHIVE_BEFORE_REFS" xml:space="preserve">
+    <value>Date of archive timestamp is before date of references timestamp. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_COMPARISON_ERROR" xml:space="preserve">
+    <value>Error while comparing dates of timestamps. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_SIGNATURE_TS_NOT_FOUND" xml:space="preserve">
+    <value>Signature timestamp not found. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Dates of timestamps are ordered. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_TIME_ERROR" xml:space="preserve">
+    <value>Error while getting time info from timestamp. </value>
+  </data>
+  <data name="TS_TIME_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Dates of timestamps are not ordered. </value>
+  </data>
+  <data name="UNKNOWN_COMMITMENT_TYPE" xml:space="preserve">
+    <value>Unknown commitment type. </value>
+  </data>
+  <data name="_0_MISSING_PARAMETER" xml:space="preserve">
+    <value>{0} parameter is missing. </value>
+  </data>
+  <data name="_0_WRONG_PARAMETER_TYPE_1_" xml:space="preserve">
+    <value>{0} parameter is not of type {1} </value>
+  </data>
+  <data name="CERT_EXPIRED_ERROR_IN_TS" xml:space="preserve">
+    <value>Certificate expired. Can not get time stampt to that signature.</value>
+  </data>
+  <data name="CONTENT_AND_SIGNER_DOESNT_MATCH" xml:space="preserve">
+    <value>The content that wants to be added to sign and the content that is signed by signer does not match.</value>
+  </data>
+  <data name="EXTERNAL_CONTENT_CANT_ATTACH" xml:space="preserve">
+    <value>External content could not added to signed data.</value>
+  </data>
+  <data name="CONTENT_NULL" xml:space="preserve">
+    <value>ContentInfo is null.</value>
+  </data>
+  <data name="PARENT_SIGNER_ESA" xml:space="preserve">
+    <value>One of parent signer type is ESA.</value>
+  </data>
+  <data name="PROFILE_REVOCATION_VALUE_MATCHER_CHECKER" xml:space="preserve">
+    <value>Profile and Revocation Values Match Checker</value>
+  </data>
+  <data name="PROFILE_REVOCATION_VALUE_MATCHER_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Profile and revocation values match is successful.</value>
+  </data>
+  <data name="PROFILE_REVOCATION_VALUE_MATCHER_CHECKER_SUCPROFILE_REVOCATION_VALUE_MATCHER_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Error in matching of profile and revocation values.</value>
+  </data>
+  <data name="SIGNATURE_POLICY_VALUE_NOT_FOUND" xml:space="preserve">
+    <value>Signature policy could not be found.</value>
+  </data>
+  <data name="TS_DECODE_ERROR" xml:space="preserve">
+    <value>Error at decoding time stamp.</value>
+  </data>
+  <data name="PROFILE_REVOCATION_VALUE_MATCHER_CHECKER_UNSUCCESSFUL" xml:space="preserve">
+    <value>Profile and revocation values match is unsuccessful.</value>
+  </data>
+  <data name="CERTIFICATE_REVOCATION_MAP_INCOMPLETE" xml:space="preserve">
+    <value>Some references or values are missing.</value>
+  </data>
+  <data name="TURKISH_PROFILE_ATTRIBUTES_CHECKER" xml:space="preserve">
+    <value>Turkish Profile Attributes Checker</value>
+  </data>
+  <data name="TURKISH_PROFILE_ATTRIBUTES_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Profile attributes compatible with turkish standards.</value>
+  </data>
+  <data name="SIGNATURE_TIME_ERROR" xml:space="preserve">
+    <value>Error while getting times from signature.</value>
+  </data>
+  <data name="SIGNING_CERTIFICATE_V2_ATTRIBUTE_MISSING" xml:space="preserve">
+    <value>Signing Certificate V2 Attribute missing.</value>
+  </data>
+  <data name="SIGNING_TIME_ATTRIBUTE_MISSING" xml:space="preserve">
+    <value>SigningTime attribute missing.</value>
+  </data>
+  <data name="TS_TIME_NOT_AFTER_2H" xml:space="preserve">
+    <value>Signature time stamp must be taken within 2 hours after signing time.</value>
+  </data>
+  <data name="PROFILE_POLICY_HASH_NOT_SHA256" xml:space="preserve">
+    <value>Policy digest algorithm is not SHA-256.</value>
+  </data>
+  <data name="NOT_A_TURKISH_PROFILE" xml:space="preserve">
+    <value>Not one of Turkish profile.No check done.</value>
+  </data>
+  <data name="ARCHIVE_TIMESTAMP_INVALID" xml:space="preserve">
+    <value>Taken ArchiveTimeStampAttr is invalid.</value>
+  </data>
+  <data name="CADES_C_TIMESTAMP_INVALID" xml:space="preserve">
+    <value>Taken CAdES_C_TimeStampAttr is invalid.</value>
+  </data>
+  <data name="CERTSCRLS_TIMESTAMP_INVALID" xml:space="preserve">
+    <value>Taken TimeStampedCertsCrlsAttr is invalid.</value>
+  </data>
+  <data name="SIGNATURE_TIMESTAMP_INVALID" xml:space="preserve">
+    <value>Taken signaturetimestamp is invalid.</value>
+  </data>
+  <data name="ISSUER_SERIAL_DOESNOT_EXISTS" xml:space="preserve">
+    <value>Attribute does not contain issuerSerial field.</value>
+  </data>
+  <data name="ARCHIVE_TIMESTAMP_V3_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Archive TimeStamp V3 Attribute Checker</value>
+  </data>
+  <data name="ARCHIVE_TSA_V3_CHECK_SUCCESSFUL" xml:space="preserve">
+    <value>Archive Time Stamp V3 attribute check is successful.</value>
+  </data>
+  <data name="ARCHIVE_TSA_V3_CHECK_UNSUCCESSFUL" xml:space="preserve">
+    <value>Archive Time Stamp V3 attribute check is unsuccessful.</value>
+  </data>
+  <data name="ARCHIVE_TSA_V3_DECODE_ERROR" xml:space="preserve">
+    <value>Archive Time Stamp V3 attribute can not be decoded in Signed Data.</value>
+  </data>
+  <data name="ATS_HASH_INDEX_ATTRIBUTE_CHECKER" xml:space="preserve">
+    <value>Archive TimeStamp V3 Component Checker</value>
+  </data>
+  <data name="ATS_HASH_INDEX_ATTRIBUTE_CHECKER_SUCCESSFUL" xml:space="preserve">
+    <value>Archive TimeStamp V3 Component Checker is successful.</value>
+  </data>
+  <data name="NO_ARCHIVE_TSA_V3_IN_SIGNEDDATA" xml:space="preserve">
+    <value>Archive Time Stamp V3 attribute not found in Signed Data.</value>
+  </data>
+  <data name="PARENT_SIGNER_ESAv2" xml:space="preserve">
+    <value>One of parent signer type is ESA with v2.</value>
+  </data>
+  <data name="PARENT_SIGNER_ESAv3" xml:space="preserve">
+    <value>One of parent signer type is ESA with v3.</value>
+  </data>
+  <data name="UNSIGNED_ATTRIBUTE_MISSING" xml:space="preserve">
+    <value>One of unsigned attributes missing.</value>
+  </data>
+  <data name="UNSIGNED_ATTRIBUTE_NOT_INCLUDED" xml:space="preserve">
+    <value>One of unsigned attributes not included to archive timestamp.</value>
+  </data>
+  <data name="CERTIFICATE_EXPLANATION" xml:space="preserve">
+    <value>Certificate: {0}.</value>
+  </data>
+  <data name="GETTING_TS_CERTIFICATE_VALIDATION_DATA_ERROR" xml:space="preserve">
+    <value>Error while getting timestamp certificate validation data.</value>
+  </data>
+  <data name="PROFILE_AND_SIGNATURE_TYPE_MATCH_UNSUCCESSFUL" xml:space="preserve">
+    <value>Profile is "{0}" and signature type is "{1}".</value>
+  </data>
+  <data name="PROFILE_P3_DOESNOT_USE_CRL" xml:space="preserve">
+    <value>Profile is P3 and CRL is not used.</value>
+  </data>
+  <data name="PROFILE_P4_DOESNOT_USE_OCSP" xml:space="preserve">
+    <value>Profile is P4 and OCSP is not used.</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+</root>

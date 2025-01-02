@@ -1,0 +1,54 @@
+<asn1config>
+  <module>
+    <name>cvc</name>
+    <sourceFile>cvc.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.cvc</pkgName>	
+	
+	<production name="HeaderList">
+	<isPDU/>
+    </production>
+	
+	<production name="Car">
+	<isPDU/>
+    </production>
+	
+	<production name="Chr">
+	<isPDU/>
+    </production>
+	<production name="Cpi">
+	<isPDU/>
+    </production>
+	<production name="AlgId">
+	<isPDU/>
+    </production>
+	<production name="Cha">
+	<isPDU/>
+    </production>
+	
+	<production name="PuKRemainder">
+	<isPDU/>
+    </production>
+	
+	
+	<production name="Ced">
+	<isPDU/>
+    </production>
+	<production name="Cxd">
+	<isPDU/>
+    </production>		
+	
+	<production name="Modulus">
+	<isPDU/>
+    </production>
+	
+	<production name="Exponent">
+	<isPDU/>
+    </production>
+  </module>
+  
+  <module>
+	<name>cvcalgorithms</name>
+    <sourceFile>cvcalgorithms.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.cvc</pkgName>
+  </module>
+</asn1config>

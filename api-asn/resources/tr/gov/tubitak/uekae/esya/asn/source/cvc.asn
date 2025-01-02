@@ -1,0 +1,101 @@
+-- CVC data types according to EN 14890-1:2008(E)
+cvc DEFINITIONS IMPLICIT TAGS ::= BEGIN
+
+HeaderList ::= [APPLICATION 13] OCTET STRING
+
+
+Modulus ::= [1] OCTET STRING	--IMPLICIT tanimlanmasina gerek yok IMPLICIT TAGS bunu zaten yapiyor
+Exponent ::= [2] OCTET STRING -- (SIZE(4))
+
+AlgRef ::= [0] OCTET STRING
+
+--according to ISO 7816-8 p.4 
+RsaPuK ::= [APPLICATION 73] SEQUENCE{
+	oid AlgId OPTIONAL,	
+	algRef AlgRef OPTIONAL,
+	modulus Modulus,
+	exponent Exponent
+}
+
+NonSelfDescCVC ::= [APPLICATION 33] SEQUENCE{
+	signature Signature,
+	puKRemainder PuKRemainder OPTIONAL,
+	car Car
+}
+
+Signature ::= [APPLICATION 55] OCTET STRING
+PuKRemainder ::= [APPLICATION 56] OCTET STRING
+Car ::= [APPLICATION 2] OCTET STRING -- (SIZE(8))
+
+Cpi ::= [APPLICATION 41] OCTET STRING (SIZE(1))
+
+Chr ::= [APPLICATION 32] OCTET STRING -- (SIZE(12))
+Cha ::= [APPLICATION 76] OCTET STRING
+--AlgId ::= OBJECT IDENTIFIER
+AlgId ::= [UNIVERSAL 6] OCTET STRING
+
+Ced ::= [APPLICATION 37] OCTET STRING (SIZE(6))
+Cxd ::= [APPLICATION 36] OCTET STRING (SIZE(6))
+
+
+NonSelfDescCVCwithHeader ::= [APPLICATION 34] SEQUENCE{
+	cvc NonSelfDescCVC,
+	header HeaderList
+}
+-- ELC certificate
+
+SelfDescCVC ::= [APPLICATION 33] SEQUENCE{
+	certContentTemplate CertContentTemplate,
+	signature Signature
+}
+
+CertContentTemplate ::= [APPLICATION 78] SEQUENCE{	
+	cpi Cpi,
+	car Car,
+	puk ElcPuK,
+	chr Chr,
+	--cha Cha,
+	chat Chat,	
+	ced Ced OPTIONAL,
+	cxd Cxd OPTIONAL
+}
+
+Chat ::= [APPLICATION 76] SEQUENCE{
+	algId AlgId,
+	discretionaryDO DiscretionaryDO
+}
+DiscretionaryDO ::= [APPLICATION 19] OCTET STRING (SIZE(1))
+
+
+
+
+--Prime modulus Integer p 0x81
+--First coefficient Integer a 0x82  +
+--Second coefficient Integer b 0x83  +
+--Base point Point G 0x84   +
+--Order of the base point Integer n 0x85  +
+--Public Key Point P 0x86   +
+--Cofactor Integer h 0x87   +
+
+ElcPuK ::= [APPLICATION 73] SEQUENCE{
+	oid AlgId OPTIONAL,
+	algRef AlgRef OPTIONAL,
+	p P OPTIONAL,
+	a A OPTIONAL,
+	b B OPTIONAL,
+	g G OPTIONAL,
+	n N OPTIONAL,
+	q Q,
+	h H OPTIONAL
+}
+P ::= [1] OCTET STRING
+A ::= [2] OCTET STRING
+B ::= [3] OCTET STRING
+G ::= [4] OCTET STRING
+N ::= [5] OCTET STRING
+Q ::= [6] OCTET STRING
+H ::= [7] OCTET STRING
+
+
+
+END

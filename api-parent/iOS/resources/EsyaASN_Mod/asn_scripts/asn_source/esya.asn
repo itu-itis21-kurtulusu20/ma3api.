@@ -1,0 +1,95 @@
+esya { 1 3 6 1 4 1 11311 10 100 }
+
+DEFINITIONS EXPLICIT TAGS ::= BEGIN
+
+-- EXPORTS All;
+
+-- IMPORTS 
+
+IMPORTS
+	AlgorithmIdentifier
+             FROM Explicit {iso(1) identified-organization(3)
+             dod(6) internet(1) security(5) mechanisms(5) pkix(7)
+             id-mod(0) id-pkix1-explicit-88(1)}
+
+	DigestInfo 
+		FROM pkcs7 {iso(1) member-body(2) us(840) rsadsi(113549) pkcs(1)
+				pkcs-7(7) modules(1) pkcs-7(1)}
+;
+
+	ESYASifreliVeri ::=  SEQUENCE  {
+		sifreliAnahtar OCTET STRING,
+    	sifreliVeri OCTET STRING
+	}
+	
+	ESYASimetrikAnahtar ::= SEQUENCE {
+		algorithm AlgorithmIdentifier,
+		simetrikAnahtar OCTET STRING
+	}
+	
+	id-uekae OBJECT IDENTIFIER ::= { 1 3 6 1 4 1 11311 }
+	id-esya OBJECT IDENTIFIER ::= { id-uekae 10 }
+	
+	id-servisler OBJECT IDENTIFIER ::= { id-esya 1 }
+	id-refno OBJECT IDENTIFIER ::= { id-servisler 1 }
+	id-kartSeriNo OBJECT IDENTIFIER ::= { id-servisler 2 }
+	id-kartUreticiNo OBJECT IDENTIFIER ::= { id-servisler 3 }
+	id-sablonNo OBJECT IDENTIFIER ::= { id-servisler 4 }
+
+	id-ESYAyonetici OBJECT IDENTIFIER ::= { id-esya 2 1 }
+	id-ESYAkayitci OBJECT IDENTIFIER ::= { id-esya 2 2 }
+
+
+	
+	
+	ESYASimImzAnahtarlari ::= SEQUENCE OF ESYASimImzAnahtari
+	-- ESYASimAnahtarlari icindeki her ESYASimAnahtari'nin anahNo deðeri farklý olmalýdýr.
+
+	ESYASimImzAnahtari ::= SEQUENCE {
+		anahNo		INTEGER, 
+		--Bu simetrik anahtarý tekil olarak belirten no
+		hashAlg		AlgorithmIdentifier,
+		simetrikAlg		AlgorithmIdentifier,
+		anahtarBytes		OCTET STRING }
+		
+	ESYAVTImza ::= SEQUENCE {
+		anahNo	INTEGER,
+		--Imzalamada kullanilan simetrik anahtar.
+		imzaliVeri	OCTET STRING }
+		
+
+	id-istemci 	OBJECT IDENTIFIER ::= { id-esya 3 }
+	id-kripto 	OBJECT IDENTIFIER ::= { id-istemci 1 }
+	id-esyapwri OBJECT IDENTIFIER ::= { id-kripto 1 }
+	id-esyafiri OBJECT IDENTIFIER ::= { id-kripto 2 }
+	id-esyagrri OBJECT IDENTIFIER ::= { id-kripto 3 }
+
+	ESYAPasswordRecipientInfo ::= SEQUENCE {
+	     	version INTEGER,   -- always set to 0
+     		keyDerivationAlgorithm [0] AlgorithmIdentifier
+                                OPTIONAL,
+     		keyEncryptionAlgorithm AlgorithmIdentifier,
+     		encryptedKey OCTET STRING,
+		keyHash	 DigestInfo --Bu alan ContentEncryptionKey in hash degeridir.
+						--Minimum SHA_256 kullanilmasi onerilir
+	}
+
+	 EsyaGroupRecipientInfo ::= SEQUENCE {
+     gid INTEGER, 
+	 groupIndex INTEGER,
+	 groupSize  INTEGER,
+     rid RecipientIdentifier,
+     keyEncryptionAlgorithm KeyEncryptionAlgorithmIdentifier,
+     encryptedKey EncryptedKey }
+	
+	
+	ESYAGizlilikBilgisi ::= INTEGER  { tanimlanmamis(0), tasnifDisi(1), hizmeteOzel(2), ozel(3), gizli(4) }
+
+	ESYAFileInfoRecipientInfo ::= SEQUENCE {
+		gizlilikBilgisi ESYAGizlilikBilgisi
+	}
+
+
+
+
+END

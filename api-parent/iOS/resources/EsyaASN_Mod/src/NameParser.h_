@@ -1,0 +1,23 @@
+#ifndef __NAME_PARSE__H__
+#define __NAME_PARSE__H__
+#include <QHash>
+#include <QStringList>
+#include "Name.h"
+NAMESPACE_BEGIN(esya)
+class NameParser
+	{
+		QHash<QString,QString> mNameTokenHash;
+		QString mNameStr;
+		void _constructTokens();
+		public:
+			QString getValue(const QString & iNameKey);
+			QStringList getAllValueKey();
+			QStringList getAllKeys();
+			QStringList getAllValues();
+			NameParser(const QString & iNameStr);
+			NameParser(const Name & iName);
+			~NameParser(void);
+	};
+NAMESPACE_END
+#endif
+

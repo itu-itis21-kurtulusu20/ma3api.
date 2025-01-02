@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+        <artifactId>ma3api-smartcard-parent</artifactId>
+        <version>2.3.25-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>ma3api-smartcard-android</artifactId>
+    <name>MA3 Api SmartCard Android Module</name>
+
+    <dependencies>
+
+    </dependencies>
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>testsrc</testSourceDirectory>
+        <plugins>
+            <!-- Bu modül için obfuscation plugini çalışmasın. <phase/> boş verince çalışmıyor. -->
+            <plugin>
+                <groupId>tr.gov.tubitak.uekae.esya.ci</groupId>
+                <artifactId>obfuscation</artifactId>
+                <version>1.0.7</version>
+                <executions>
+                    <execution>
+                        <id>obfuscate</id>
+                        <phase/>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.3</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadoc</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <skip>true</skip>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

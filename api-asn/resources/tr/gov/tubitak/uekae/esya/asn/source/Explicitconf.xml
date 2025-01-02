@@ -1,0 +1,22 @@
+<asn1config>
+  <module>
+    <name>Explicit</name>
+    <sourceFile>Explicit.asn</sourceFile>
+    <include types="X520SerialNumber,X520countryName"/>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.x509</pkgName>
+  </module>
+
+  <module>
+    <name>Implicit</name>
+    <sourceFile>Implicit.asn</sourceFile>
+    <include types="SubjectKeyIdentifier,SubjectAltName"/>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.x509</pkgName>
+  </module>
+
+  <module>
+    <name>pasaport_masterlist</name>
+    <sourceFile>PasaportMasterlist.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.passport</pkgName>
+  </module>
+
+</asn1config>

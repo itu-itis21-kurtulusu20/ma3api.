@@ -1,0 +1,150 @@
+EkdsEmergencyDataApp 
+
+DEFINITIONS IMPLICIT TAGS ::=
+
+BEGIN
+
+--
+-- Emergency Data Definitions
+-- See ISO 21549-3:2004(E)
+--
+
+IMPORTS
+   CodedData            FROM EkdsBaseDataDefs
+   DataObjectIssuerInfo FROM EkdsCommonDataObjectDefs
+   DataObjectAuthorInfo FROM EkdsCommonDataObjectDefs;
+
+
+EmergencyDataApplication ::= SET
+{
+  emergencyHealthDataObject EmergencyHealthDataObject
+}
+
+EmergencyHealthDataObject ::= [APPLICATION 10] SEQUENCE
+{
+  cardDesc             [0] CardDescriptor,
+  issuanceInfo         [1] EmergencyDataIssuanceInfo,
+  limEmergencyData     [2] LimitedEmergencyData,
+  immunDetails         [3] ImmunizationDetails,
+  bloodGroupingData    [4] BloodGroupingAndTransfusionData,
+  dataObjectAttributes [5] DataObjectAttributes,
+  errDetectionCode     [6] DataObjectErrorDetectionCode
+}
+
+EmergencyDataIssuanceInfo ::= SEQUENCE
+{
+  issuanceDate       [0] DataObjectIssuanceDate,
+  validFrom          [1] DataObjectValidationStartDate,
+  validThru          [2] DataObjectValidationEndDate,
+  issuerInstitution  [3] DataObjectIssuerInstitutionName,
+  cardAccessDevice   [4] CardAccessDeviceSerialNumber,
+  authorInfo         [5] DataObjectAuthorInfo,
+  issuerInfo         [6] DataObjectIssuerInfo
+}
+
+ImmunizationDetails ::= SET
+{
+  immunizationsReceived SEQUENCE OF Immunization
+}
+
+Immunization ::= SEQUENCE
+{
+  immunizationEmergencyCategory [0] INTEGER,
+  immunizationIndicator         [1] ENUMERATED {
+                                      never           (0),
+                                      oneOrMore       (1),
+                                      unknown         (2),
+                                      adverseReaction (3),
+									  notInitialized  (4)
+                                    },
+  immunizationStatus            [2] ENUMERATED {
+                                      unspecified (0),
+                                      firstDose (1),
+                                      secondDose (2),
+                                      thirdDose (3),
+                                      completedCourse (4),
+                                      booster (5),
+									  notInitialized(6)
+                                    },
+  lastDateImmunized             [3] UTCTime OPTIONAL,
+  immunizationCode              [4] CodedData
+}
+
+BloodGroupingAndTransfusionData ::= SET
+{
+  bloodGrouping        [0] BloodGrouping,
+  bloodTransfusionData [1] BloodTransfusionData
+}
+
+BloodGrouping ::= SEQUENCE
+{
+  bloodGroup            [0] ENUMERATED {
+                              group_O(0),
+							  group_A(1),
+							  group_B(2),
+							  group_AB(3),
+							  notInitialized (4)
+							},
+  rhesusFactor          [1] ENUMERATED {
+                              positive(0),
+							  negative(1),
+							  notInitialized(2)
+							},
+  dateLastBloodGrouping [2] UTCTime,
+  bloodGroupingFreeText [3] OCTET STRING (SIZE(0..30))
+}
+
+BloodTransfusionData ::= SEQUENCE
+{
+  bloodTransfusionIndicator [0] ENUMERATED { 
+								  never(0), 
+								  once(1), 
+								  moreThanOnce(2),
+								  notInitialized(3)
+								},
+  lastBloodTransfusionDate  [1] UTCTime,
+  bloodProductGiven         [2] CodedData
+}
+
+LimitedEmergencyData ::= BIT STRING
+{
+  asthma                         (0),
+  heartDisease                   (1),
+  cardiovascularDisease          (2),
+  epilepsyFits                   (3),
+  neurologicalDisorder           (4),
+  coagulationDisorder            (5),
+  diabetes                       (6),
+  glaucoma                       (7),
+  dialysisTreatment              (8),
+  transplantedOrgan              (9),
+  missingOrgan                   (10),
+  removableProsthesis            (11),
+  pacemakerInSitu                (12),
+  slowAcetylator                 (13),
+  takingAntipsychoticMedication  (14),
+  takingAnticonvulsants          (15),
+  takingAntiarrythmics           (16),
+  takingBloodPressureDrugs       (17),
+  takingAnticoagulants           (18),
+  takingAntidiabeticAgents       (19),
+  takingAntihistamines           (20),
+  receivedStreptokinase          (21),
+  allergicToAnalgesics           (22),
+  allergicToAnimalHair           (23),
+  allergicToAntibiotics          (24),
+  allergicToCitrusFruits         (25),
+  allergicToHouseDust            (26),
+  allergicToEggs                 (27),
+  allergicToFish-Shellfish       (28),
+  allergicToIodine               (29),
+  allergicToMilk                 (30),
+  allergicToNuts                 (31),
+  allergicToPollens              (32),
+  allergicToOtherAgent           (33),
+  otherData                      (34)
+}
+
+
+
+END

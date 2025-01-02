@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B605CCB1-25F1-4829-B5B5-54E268FE8192}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tr.gov.tubitak.uekae.esya.api</RootNamespace>
+    <AssemblyName>ImzaApiTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ImzaApiTest.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ImzaApiTest.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ImzaApiTest.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ImzaApiTest.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="asn1rtcs">
+      <HintPath>..\dlls\asn1rtcs.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\dlls\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MobilImzaYapilari">
+      <HintPath>..\dlls\MobilImzaYapilari.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.82.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VodafoneMobilImza">
+      <HintPath>..\dlls\VodafoneMobilImza.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\asic\example\AsicSampleBase.cs" />
+    <Compile Include="src\asic\example\sign\Extend.cs" />
+    <Compile Include="src\asic\example\sign\Generate.cs" />
+    <Compile Include="src\asic\example\sign\Overwrite.cs" />
+    <Compile Include="src\asic\example\upgrades\Upgrade.cs" />
+    <Compile Include="src\cades\example\attributes\AttributeTest.cs" />
+    <Compile Include="src\cades\example\CadesSampleBase.cs" />
+    <Compile Include="src\cades\example\convert\Converts.cs" />
+    <Compile Include="src\cades\example\mergesignature\MergeSignatures.cs" />
+    <Compile Include="src\cades\example\pfx\PfxSignTest.cs" />
+    <Compile Include="src\cades\example\removesignature\RemoveSignature.cs" />
+    <Compile Include="src\cades\example\sign\BESSign.cs" />
+    <Compile Include="src\cades\example\sign\ESTSign.cs" />
+    <Compile Include="src\cades\example\sign\ESXLongSign.cs" />
+    <Compile Include="src\cades\example\sign\ExternalContentSign.cs" />
+    <Compile Include="src\cades\example\sign\ParallelSign.cs" />
+    <Compile Include="src\cades\example\sign\profil\P1.cs" />
+    <Compile Include="src\cades\example\sign\profil\P2.cs" />
+    <Compile Include="src\cades\example\sign\profil\P3.cs" />
+    <Compile Include="src\cades\example\sign\profil\P4.cs" />
+    <Compile Include="src\cades\example\sign\SerialSign.cs" />
+    <Compile Include="src\cades\example\util\SignerManager.cs" />
+    <Compile Include="src\cades\example\util\TestSignerManager.cs" />
+    <Compile Include="src\cades\example\validation\CadesSignatureValidation.cs" />
+    <Compile Include="src\cades\example\validation\GetSignatureType.cs" />
+    <Compile Include="src\cades\example\validation\GetSignerCertificate.cs" />
+    <Compile Include="src\cades\example\validation\GetTime.cs" />
+    <Compile Include="src\cades\example\validation\SignerAndValidationResult.cs" />
+    <Compile Include="src\cades\example\validation\ValidateOnlyOneSignature.cs" />
+    <Compile Include="src\certificate\example\TrustedCertTests.cs" />
+    <Compile Include="src\certificate\example\ValidateCertificate.cs" />
+    <Compile Include="src\SampleBase.cs" />
+    <Compile Include="src\smartcard\example\ATR.cs" />
+    <Compile Include="src\smartcard\example\DirakTest.cs" />
+    <Compile Include="src\smartcard\example\SmartCardManager.cs" />
+    <Compile Include="src\smartcard\example\SmartCardTest.cs" />
+    <Compile Include="src\smartcard\gui\SelectorGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\smartcard\gui\SelectorGUI.Designer.cs">
+      <DependentUpon>SelectorGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\smartcard\pfx\LoadPfx.cs" />
+    <Compile Include="src\Test.cs" />
+    <Compile Include="src\timestamp\example\TSUpgrade.cs" />
+    <Compile Include="src\xades\example\attributes\AllDataObjectsTimeStampAttribute.cs" />
+    <Compile Include="src\xades\example\attributes\CommitmentTypeIndicationAttribute.cs" />
+    <Compile Include="src\xades\example\attributes\IndividualDataObjectsTimeStampAttribute.cs" />
+    <Compile Include="src\xades\example\attributes\SignatureProductionPlaceAttribute.cs" />
+    <Compile Include="src\xades\example\attributes\SignerRoleAttribute.cs" />
+    <Compile Include="src\xades\example\attributes\SigningTimeAttribute.cs" />
+    <Compile Include="src\xades\example\multiple\CounterDetached.cs" />
+    <Compile Include="src\xades\example\multiple\CounterParallel.cs" />
+    <Compile Include="src\xades\example\multiple\ParallelDetached.cs" />
+    <Compile Include="src\xades\example\multiple\ParallelEnveloped.cs" />
+    <Compile Include="src\xades\example\pfx\PfxExample.cs" />
+    <Compile Include="src\xades\example\profiles\P1.cs" />
+    <Compile Include="src\xades\example\profiles\P2.cs" />
+    <Compile Include="src\xades\example\profiles\P3.cs" />
+    <Compile Include="src\xades\example\profiles\P4.cs" />
+    <Compile Include="src\xades\example\sign\A.cs" />
+    <Compile Include="src\xades\example\sign\BES.cs" />
+    <Compile Include="src\xades\example\sign\T.cs" />
+    <Compile Include="src\xades\example\sign\XL.cs" />
+    <Compile Include="src\xades\example\structures\Detached.cs" />
+    <Compile Include="src\xades\example\structures\Enveloped.cs" />
+    <Compile Include="src\xades\example\structures\EnvelopedTransform.cs" />
+    <Compile Include="src\xades\example\structures\Enveloping.cs" />
+    <Compile Include="src\xades\example\upgrades\bes\UpgradeToA.cs" />
+    <Compile Include="src\xades\example\upgrades\bes\UpgradeToT.cs" />
+    <Compile Include="src\xades\example\upgrades\bes\UpgradeToXL.cs" />
+    <Compile Include="src\xades\example\upgrades\enveloped\UpgradeToT.cs" />
+    <Compile Include="src\xades\example\upgrades\parallel\UpgradeToT.cs" />
+    <Compile Include="src\xades\example\upgrades\t\UpgradeToA.cs" />
+    <Compile Include="src\xades\example\upgrades\t\UpgradeToXL.cs" />
+    <Compile Include="src\xades\example\upgrades\xl\UpgradeToA.cs" />
+    <Compile Include="src\xades\example\validation\CertValidation.cs" />
+    <Compile Include="src\xades\example\validation\CertValidationBeforeSign.cs" />
+    <Compile Include="src\xades\example\validation\CertValidationBeforeSignPfx.cs" />
+    <Compile Include="src\xades\example\validation\XadesSignatureValidation.cs" />
+    <Compile Include="src\xades\example\XadesSampleBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\api-asic\csharp\api-asic.csproj">
+      <Project>{48f5a556-dd77-4f36-b128-08cacf219ffb}</Project>
+      <Name>api-asic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-asn\csharp\api-asn.csproj">
+      <Project>{307f1cdc-084e-4a9d-9208-0943de95da0f}</Project>
+      <Name>api-asn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-certstore\csharp\api-certstore.csproj">
+      <Project>{4844d59f-aca3-43a1-8598-448b4eb3de90}</Project>
+      <Name>api-certstore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-certvalidation\csharp\api-certvalidation.csproj">
+      <Project>{278f201b-5d46-43d3-a40d-a2f11ba934f2}</Project>
+      <Name>api-certvalidation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-cmssignature\api-mssclient\turktelekommssprovider\csharp\api-turktelekommssclient.csproj">
+      <Project>{538b5538-a2de-4d8e-8b5d-649b2defaa93}</Project>
+      <Name>api-turktelekommssclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-cmssignature\api-mssclient\mssclient\csharp\api-mssclient.csproj">
+      <Project>{34358b27-80a6-4dd0-a890-856ca1473c56}</Project>
+      <Name>api-mssclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-cmssignature\api-mssclient\turkcellmssprovider\csharp\api-turkcellmssclient.csproj">
+      <Project>{ef9cef88-e6f0-443b-ac85-a5918e7be747}</Project>
+      <Name>api-turkcellmssclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-cmssignature\api-mssclient\vodafonemssprovider\csharp\api-vodafonemssclient.csproj">
+      <Project>{6af0db6b-b14a-4c18-b4b5-658b22b3273e}</Project>
+      <Name>api-vodafonemssclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-cmssignature\csharp\api-cmssignature.csproj">
+      <Project>{5a16f873-c904-4feb-a383-a905e133b238}</Project>
+      <Name>api-cmssignature</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-common\csharp\api-common.csproj">
+      <Project>{ca8572d2-2d3c-42f0-9a07-6261b00bd5f6}</Project>
+      <Name>api-common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-crypto\bouncyprovider\csharp\bouncyprovider.csproj">
+      <Project>{64916a9e-4971-4ff2-9daf-65ab1fbd2048}</Project>
+      <Name>bouncyprovider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-crypto\crypto\csharp\api-crypto.csproj">
+      <Project>{82649e95-07e4-4166-9d55-b4705cc80836}</Project>
+      <Name>api-crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-infra\csharp\api-infra.csproj">
+      <Project>{98c61cef-1ee1-4594-941a-b364dd57ea90}</Project>
+      <Name>api-infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-signature\csharp\api-signature.csproj">
+      <Project>{9229c786-6088-4913-accd-dde35aee0662}</Project>
+      <Name>api-signature</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-smartcard\ma3api-smartcard\csharp\api-smartcard.csproj">
+      <Project>{541fab38-2515-41f9-8856-0ca083597f92}</Project>
+      <Name>api-smartcard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-xmlsignature\csharp\api-xmlsignature.csproj">
+      <Project>{de4fb845-23ad-4f03-99c2-4b93b2dea909}</Project>
+      <Name>api-xmlsignature</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="src\smartcard\gui\SelectorGUI.resx">
+      <DependentUpon>SelectorGUI.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

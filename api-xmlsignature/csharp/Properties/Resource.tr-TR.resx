@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="validation.policy.cantFind" xml:space="preserve">
+    <value>İmza politikası (SignaturePolicy) bulunamadı.</value>
+  </data>
+  <data name="validation.timestamp.cantFind" xml:space="preserve">
+    <value>"{0}" içinde zaman damgası bulunamadı.</value>
+  </data>
+  <data name="core.verified" xml:space="preserve">
+    <value>Temel doğrulama başarılı.</value>
+  </data>
+  <data name="config.validatorClassNotFound" xml:space="preserve">
+    <value>Doğrulayıcı sınıfı "{0}" bulunamadı.</value>
+  </data>
+  <data name="validation.certificate.cantFound" xml:space="preserve">
+    <value>İmzacı sertifika belirlenemedi.</value>
+  </data>
+  <data name="validation.policy.valid" xml:space="preserve">
+    <value>İmza politikası geçerli.</value>
+  </data>
+  <data name="core.referencesAreValid" xml:space="preserve">
+    <value>Referanslar geçerli.</value>
+  </data>
+  <data name="config.invalidValidator" xml:space="preserve">
+    <value>"{1}" profili için "{0}" sınıfı geçerli bir doğrulayıcı değil.</value>
+  </data>
+  <data name="config.cyclicInheritanceForProfileValidators" xml:space="preserve">
+    <value>Doğrulama profilleri çözümsüz bağımlılık gösteriyor.</value>
+  </data>
+  <data name="errors.cantDecode" xml:space="preserve">
+    <value>{0}, {1}  decode edilemedi.</value>
+  </data>
+  <data name="validation.signingTime.notWithinCertificatePeriod" xml:space="preserve">
+    <value>İmza zamanı (SigningTime) anında sertifika geçerli değil.</value>
+  </data>
+  <data name="OCSP" xml:space="preserve">
+    <value>ÇiSDuP</value>
+  </data>
+  <data name="validation.references.certRefs.extraCert" xml:space="preserve">
+    <value>Sertifika referanslarında doğrulamada kullanılmayan sertifika var!</value>
+  </data>
+  <data name="core.timestamp.cantExtractDigestAlg" xml:space="preserve">
+    <value>Zaman damgasından özet algoritması alınamadı.</value>
+  </data>
+  <data name="validation.references.certRefs.missingCert" xml:space="preserve">
+    <value>Doğrulamada kullanılan bir sertifika, sertifika referanslarında yok!</value>
+  </data>
+  <data name="validation.dataObjectFormat.mimeMismatch" xml:space="preserve">
+    <value>DataObjectFormat/Referans MIME tipi uyumsuzluğu! Beklenen: "{0}", bulunan "{1}".</value>
+  </data>
+  <data name="transform.unsupported" xml:space="preserve">
+    <value>Desteklenmeyen dönüşüm: "{0}".</value>
+  </data>
+  <data name="resolver.xpointerSupportLimited" xml:space="preserve">
+    <value>XPointer desteği yalnızca  '/' veya Id için geçerli. "{0}" çözülemedi.</value>
+  </data>
+  <data name="validation.references.revRefs.missing" xml:space="preserve">
+    <value>Doğrulamada kullanılan {0}, iptal bilgisi referanslarında yok!</value>
+  </data>
+  <data name="validation.timestamp.notWithinCertificatePeriod" xml:space="preserve">
+    <value>{0}[{1}] zaman damgası tarihi "{2}", sertifika geçerlilik periyodu içerisinde değil.</value>
+  </data>
+  <data name="validation.timestamp.certificateNotValidated" xml:space="preserve">
+    <value>Zaman damgası imzacı sertifikası doğrulanamadı.</value>
+  </data>
+  <data name="core.model.missingDataObjectFormatContent" xml:space="preserve">
+    <value>Description, ObjectIdentifier ve/veya MIME tipinden en az biri DataObjectFormat içinde yer almalı.</value>
+  </data>
+  <data name="error.formatAlreadyEvolved" xml:space="preserve">
+    <value>İmza zaten {0} formatında.</value>
+  </data>
+  <data name="core.cantVerify.reference" xml:space="preserve">
+    <value>Referans "{0}" doğrulanamadı.</value>
+  </data>
+  <data name="validation.signingCertificate.serialMismatch" xml:space="preserve">
+    <value>Geçersiz sertifika seri numarası. Bulunan: "{0}", beklenen: "{1}".</value>
+  </data>
+  <data name="validation.timestamp.valid" xml:space="preserve">
+    <value>{0} geçerli.</value>
+  </data>
+  <data name="core.timestamp.cantExtractTSTInfo" xml:space="preserve">
+    <value>Zaman damgasından TSTInfo alınamadı.</value>
+  </data>
+  <data name="CRL" xml:space="preserve">
+    <value>SİL</value>
+  </data>
+  <data name="core.cantResolve.signingCertificateAttribute" xml:space="preserve">
+    <value>SigningCertificate özniteliğinden sertifika çözümlenemedi.</value>
+  </data>
+  <data name="errors.cantDigest" xml:space="preserve">
+    <value>"{0}" özeti alınamadı.</value>
+  </data>
+  <data name="transform.enveloped.cantFindSignature" xml:space="preserve">
+    <value>Zarflanmış imza dönüşümüne ait imza bulunamadı.</value>
+  </data>
+  <data name="errors.kripto.hash" xml:space="preserve">
+    <value>"{0}" özet algoritması kullanılırken bir hata oluştu.</value>
+  </data>
+  <data name="validation.certificate.validatedSigner" xml:space="preserve">
+    <value>İmzacı sertifikası doğrulandı.</value>
+  </data>
+  <data name="validation.certificate.cantValidateSigner" xml:space="preserve">
+    <value>İmzacı sertifikası doğrulanamadı: {0}</value>
+  </data>
+  <data name="validation.signingTime.notFound" xml:space="preserve">
+    <value>İmza zamanı(SigningTime) bulunamadi.</value>
+  </data>
+  <data name="validation.timestamp.signature.invalid" xml:space="preserve">
+    <value>Zaman damgası imzası geçersiz.</value>
+  </data>
+  <data name="config.missingAncestorToInheritProfiles" xml:space="preserve">
+    <value>"{0}" doğrulama profili çözümlenemeyen "{1}" profilinden doğrulayıcıları miras alamaz.</value>
+  </data>
+  <data name="config.invalidProfile" xml:space="preserve">
+    <value>Doğrulama konfigürasyonu için "{0}" imza profili çözülemedi.</value>
+  </data>
+  <data name="validation.data.resolutionMismatch" xml:space="preserve">
+    <value>Çözülen {0} [uri:'{1}'] ile {2} : {3} uyuşmuyor.</value>
+  </data>
+  <data name="validation.signingCertificate.valid" xml:space="preserve">
+    <value>SigningCertificate özelliği geçerli.</value>
+  </data>
+  <data name="encode" xml:space="preserve">
+    <value>encode</value>
+  </data>
+  <data name="validation.policy.invalidDigest" xml:space="preserve">
+    <value>İmza politikası özeti geçersiz.</value>
+  </data>
+  <data name="validation.timestamp.cantBeBeforeSigningTime" xml:space="preserve">
+    <value>{0}[{1}] tarihi "{2}", beyan edilen imza zamanı "{3}" özelliğinden önce.</value>
+  </data>
+  <data name="validation.dataObjectFormat.valid" xml:space="preserve">
+    <value>DataObjectFormat özelliği geçerli.</value>
+  </data>
+  <data name="validation.timestamp.invalidDigest" xml:space="preserve">
+    <value>{0}[{1}] geçersiz özet değerine sahip.</value>
+  </data>
+  <data name="signer" xml:space="preserve">
+    <value>imzacı</value>
+  </data>
+  <data name="core.model.invalidResponderId" xml:space="preserve">
+    <value>Geçersiz ResponderId. Anahtar yada isim değerleri tanımlı olmalı.</value>
+  </data>
+  <data name="validation.references.certRefs.valid" xml:space="preserve">
+    <value>Sertifika referansları tutarlı.</value>
+  </data>
+  <data name="errors.base64" xml:space="preserve">
+    <value>Base64 çeviriminde hata.</value>
+  </data>
+  <data name="validation.references.revRefs.valid" xml:space="preserve">
+    <value>İptal bilgisi referansları tutarlı.</value>
+  </data>
+  <data name="validation.signingTime.valid" xml:space="preserve">
+    <value>İmza sertifikası imza zamanı(SigningTime) anında geçerli.</value>
+  </data>
+  <data name="validation.timestamp.vdata.cantResolveByURI" xml:space="preserve">
+    <value>Zaman damgası doğrulama verisine ait zaman damgası (uri:{0}) bulunamadı.</value>
+  </data>
+  <data name="errors.cantAddDocument" xml:space="preserve">
+    <value>"{0}" dökümanı XML imzaya eklenemedi.</value>
+  </data>
+  <data name="unknown.encoding" xml:space="preserve">
+    <value>Bilinmeyen encoding tipi "{0}"</value>
+  </data>
+  <data name="errors.null" xml:space="preserve">
+    <value>{0} 'null' olamaz.</value>
+  </data>
+  <data name="validation.signingCertificate.invalidDigest" xml:space="preserve">
+    <value>Geçersiz sertifika özeti.</value>
+  </data>
+  <data name="errors.cantInit" xml:space="preserve">
+    <value>"{0}" ilklendirilemedi.</value>
+  </data>
+  <data name="validation.timestamp.signature.verificationError" xml:space="preserve">
+    <value>Zaman damgası imzası doğrulanırken hata oluştu.</value>
+  </data>
+  <data name="core.invalid.secretkey" xml:space="preserve">
+    <value>Geçersiz gizli anahtar: "{0}"</value>
+  </data>
+  <data name="errors.cantFindCertificate" xml:space="preserve">
+    <value>Sertifika bulunamadı.</value>
+  </data>
+  <data name="core.cantVerify.signatureValue" xml:space="preserve">
+    <value>Tutarsız imza değeri.</value>
+  </data>
+  <data name="errors.verify" xml:space="preserve">
+    <value>Doğrulama hatası.</value>
+  </data>
+  <data name="errors.cantEncode" xml:space="preserve">
+    <value>{0}, {1}  encode edilemedi.</value>
+  </data>
+  <data name="errors.cantUpdate" xml:space="preserve">
+    <value>"{0}" güncellenemedi.</value>
+  </data>
+  <data name="transform.isNotApplicableFor" xml:space="preserve">
+    <value>"{0}" dönüşümü "{1}"'e uygulanamaz.</value>
+  </data>
+  <data name="xml.WrongElement" xml:space="preserve">
+    <value>{1} elementinden {0} yaratılamadı.</value>
+  </data>
+  <data name="transform.error" xml:space="preserve">
+    <value>{0} dönüşümü uygulanamdı.</value>
+  </data>
+  <data name="error.formatCantEvolveMultiple" xml:space="preserve">
+    <value>{0} - {1} format yükseltemesi desteklenmiyor. Önce {2} formatına yükseltin.</value>
+  </data>
+  <data name="core.invalidKeyInfo" xml:space="preserve">
+    <value>KeyInfo'dan Sertifika çözülemedi.</value>
+  </data>
+  <data name="transform.errorApplyingTo" xml:space="preserve">
+    <value>"{0}" dönüşümü "{1}"'e uygulanamadı.</value>
+  </data>
+  <data name="config.notDefined" xml:space="preserve">
+    <value>"{0}" XML imza konfigürasyonunda tanımlı değil.</value>
+  </data>
+  <data name="validation.timestamp.invalidFormat" xml:space="preserve">
+    <value>{0}[{1}] zaman damgası formatında değil.</value>
+  </data>
+  <data name="validation.references.revRefs.extra" xml:space="preserve">
+    <value>İptal bilgisi referanslarında doğrulamada kullanılmayan kaynak var!</value>
+  </data>
+  <data name="errors.cantOutputXml" xml:space="preserve">
+    <value>XML imza çıktısı elde edilemedi.</value>
+  </data>
+  <data name="validation.timestamp.error" xml:space="preserve">
+    <value>{0}[{1}] doğrulanırken hata oluştu.</value>
+  </data>
+  <data name="errors.cantCanonicalize" xml:space="preserve">
+    <value>{0} canonical forma dönüştürülemedi.</value>
+  </data>
+  <data name="core.invalid.publickey" xml:space="preserve">
+    <value>{0} açık anahtarı "{1}" geçersiz.</value>
+  </data>
+  <data name="error.formatCantAddArchiveTS" xml:space="preserve">
+    <value>Ekstra arşiv zaman damgası eklemeden önce imzayı XAdES A formatına yükseltin..</value>
+  </data>
+  <data name="validation.signingCertificate.issuerMismatch" xml:space="preserve">
+    <value>Geçersiz sertifika yayıncı değeri. Bulunan: "{0}", beklenen: "{1}".</value>
+  </data>
+  <data name="validation.timestamp.vdata.cantResolveI" xml:space="preserve">
+    <value>Zaman damgası doğrulama verisine ait zaman damgası bulunamadı.</value>
+  </data>
+  <data name="validation.timestamp.signature.verified" xml:space="preserve">
+    <value>Zaman damgası imzası doğrulandı.</value>
+  </data>
+  <data name="core.invalid.privatekey" xml:space="preserve">
+    <value>{0} özel anahtarı "{1}" geçersiz.</value>
+  </data>
+  <data name="config.cantFind" xml:space="preserve">
+    <value>İlklendirme için "{0}" bulunamadı!</value>
+  </data>
+  <data name="resolver.cantFindResolverForUri" xml:space="preserve">
+    <value>URI: "{0}" için geçerli bir çözücü bulunamadı.</value>
+  </data>
+  <data name="core.timestamp.cantTimestamp" xml:space="preserve">
+    <value>"{0}" için zaman damgası oluşturulamadı.</value>
+  </data>
+  <data name="validation.policy.cantFindByUri" xml:space="preserve">
+    <value>SPURI tarafından işaret edilen imza politikası bulunamadı.</value>
+  </data>
+  <data name="validation.timestamp.vdata.orderError" xml:space="preserve">
+    <value>Zaman damgası, doğrulama verisinden hemen önce yer almalıdır</value>
+  </data>
+  <data name="core.cantVerify" xml:space="preserve">
+    <value>Temel doğrulama başarısız.</value>
+  </data>
+  <data name="core.timestamp.cantExtractTime" xml:space="preserve">
+    <value>Zaman damgasından zaman bilgisi alınamadı.</value>
+  </data>
+  <data name="certificate" xml:space="preserve">
+    <value>sertifika</value>
+  </data>
+  <data name="unknown.algorithm" xml:space="preserve">
+    <value>Bilinmeyen algoritma: "{0}".</value>
+  </data>
+  <data name="errors.convert" xml:space="preserve">
+    <value>{0}, {1} çeviriminde hata.</value>
+  </data>
+  <data name="core.cantCalculateSignatureValue" xml:space="preserve">
+    <value>İmza değeri hesaplanamadı.</value>
+  </data>
+  <data name="core.timestamp.cantEncode" xml:space="preserve">
+    <value>Zaman damgası encode edilemedi.</value>
+  </data>
+  <data name="config.cantLoad" xml:space="preserve">
+    <value>İlklendirme için "{0}" yüklenemedi!</value>
+  </data>
+  <data name="validation.timestamp.certificateNotFound" xml:space="preserve">
+    <value>{0} zaman damgası imzacı sertifikası bulunamadı.</value>
+  </data>
+  <data name="signature" xml:space="preserve">
+    <value>imza</value>
+  </data>
+  <data name="xml.WrongContent" xml:space="preserve">
+    <value>{1} içinde {0} bulunamadı.</value>
+  </data>
+  <data name="error.formatCantEvolve" xml:space="preserve">
+    <value>{0} - {1} format yükseltemesi desteklenmiyor.</value>
+  </data>
+  <data name="validation.signingCertificate.notFound" xml:space="preserve">
+    <value>SigningCertificate özelliği bulunamadı.</value>
+  </data>
+  <data name="validation.data.cantConstruct" xml:space="preserve">
+    <value>{2} içerisindeki {0}. {1} oluşurulamadı.</value>
+  </data>
+  <data name="unknown.keyValue" xml:space="preserve">
+    <value>Bilinmeyen anahtar değeri.</value>
+  </data>
+  <data name="resolver.cantResolveUri" xml:space="preserve">
+    <value>URI: "{0}" çözülemedi.</value>
+  </data>
+  <data name="core.ocsp.cantResolveProducedAt" xml:space="preserve">
+    <value>OCSP cevabında üretim tarihi çözülemedi.</value>
+  </data>
+  <data name="errors.sign" xml:space="preserve">
+    <value>İmzalama hatası.</value>
+  </data>
+  <data name="core.invalidRetrievalMethod" xml:space="preserve">
+    <value>RetrivealMethod DOM elemanı döndürmeli, fakat "{0}" döndürdü.</value>
+  </data>
+  <data name="validation.policy.invalidDigestByUri" xml:space="preserve">
+    <value>SPURI tarafından işaret edilen imza politikasının özet değeri hatalı.</value>
+  </data>
+  <data name="validation.timestamp.cantBeBeforeTimestamp" xml:space="preserve">
+    <value>{0}[{1}] zaman damgası tarihi "{2}", {3} zaman damgası tarihi "{4}"'den önce.</value>
+  </data>
+  <data name="errors.cantFind" xml:space="preserve">
+    <value>"{0}" bulunamadı.</value>
+  </data>
+  <data name="core.invalid.formatOf" xml:space="preserve">
+    <value>{1} için geçersiz {0} formatı.</value>
+  </data>
+  <data name="errors.nullElement" xml:space="preserve">
+    <value>{0} elementi beklenirken 'null' geldi.</value>
+  </data>
+  <data name="core.model.individualDataObjectsCantReferenceQP" xml:space="preserve">
+    <value>SignedProperties tipli Referans IndividualDataObjectsTimeStamp elemanına eklenemez.</value>
+  </data>
+  <data name="core.timestamp.cantAddBeforeSignatureValue" xml:space="preserve">
+    <value>Imza zaman damgası oluşturulamıyor. Önce dökümanı imzalayın.</value>
+  </data>
+  <data name="core.etsiRequiresCertificate" xml:space="preserve">
+    <value>ETSI imza profilleri anahtar bilgisi Açık Anahtar tipinde olmalı.</value>
+  </data>
+  <data name="errors.invalid.certificate" xml:space="preserve">
+    <value>Geçersiz sertifika.</value>
+  </data>
+  <data name="validation.policy.cantFindId" xml:space="preserve">
+    <value>SignaturePolicy ima edilmemiş ve SignaturePolicyId bulunamadı.</value>
+  </data>
+  <data name="core.signedDocumentVerified" xml:space="preserve">
+    <value>İmzali döküman doğrulandı.</value>
+  </data>
+  <data name="validation.dataObjectFormat.noReference" xml:space="preserve">
+    <value>DataObjectFormat'ta referans tanımlanmamış.</value>
+  </data>
+  <data name="publicKey" xml:space="preserve">
+    <value>açık anahtar</value>
+  </data>
+  <data name="decode" xml:space="preserve">
+    <value>decode</value>
+  </data>
+  <data name="core.model.invalidEncapsulatedEncoding" xml:space="preserve">
+    <value>Encapsulated {0} 'nin encoding tipi 'DER' olmalı.</value>
+  </data>
+  <data name="core.model.commitmentNeedObjectReferences" xml:space="preserve">
+    <value>Ya nesne referansları olmalı, yada CommitmentIndication tüm imzalı objeler için tanımlanmalı.</value>
+  </data>
+  <data name="validation.certificate.error" xml:space="preserve">
+    <value>İmzacı sertifikası doğrulanırken hata oluştu: {0}</value>
+  </data>
+  <data name="unsupported.operation" xml:space="preserve">
+    <value>Desteklenmeyen işlem: "{0}".</value>
+  </data>
+  <data name="errors.duplicate" xml:space="preserve">
+    <value>Birden fazla "{0}".</value>
+  </data>
+  <data name="config.inconsistentGracePeriod" xml:space="preserve">
+    <value>Son iptal kabul periyodu, grace period değerinden büyük olmalıdır!</value>
+  </data>
+  <data name="configFile" xml:space="preserve">
+    <value>xml imza konfigürasyon dosyası(xmlsignature-config.xml)</value>
+  </data>
+  <data name="core.cantCreateBuffer" xml:space="preserve">
+    <value>{0} arabelleği "{1}" için yaratılamadı.</value>
+  </data>
+  <data name="core.cantResolve.verificationKey" xml:space="preserve">
+    <value>Doğrulama için anahtar çözülemedi.</value>
+  </data>
+  <data name="core.timestamp.cantExtractSignedData" xml:space="preserve">
+    <value>Zaman damgasından SignedData alınamadı.</value>
+  </data>
+  <data name="validation.dataObjectFormat.encodingMismatch" xml:space="preserve">
+    <value>DataObjectFormat/Referans Encoding uyumsuzluğu! Beklenen: "{0}", bulunan "{1}".</value>
+  </data>
+  <data name="core.cantGeneratePublicKey" xml:space="preserve">
+    <value>{0} açık anahtar oluşturulamadı.</value>
+  </data>
+  <data name="validation.timestamp.incoherent" xml:space="preserve">
+    <value>Timestamp time incoherent.</value>
+  </data>
+  <data name="errors.cantConstructSignature" xml:space="preserve">
+    <value>"{0}" dökümanından XML imza elde edilemedi.</value>
+  </data>
+  <data name="core.ocsp.cantResolveResponderId" xml:space="preserve">
+    <value>OCSP cevabında ResponderId çözülemedi.</value>
+  </data>
+  <data name="core.cantResolveRetrievalMethod" xml:space="preserve">
+    <value>RetrievalMethod: "{0}" çözülemedi.</value>
+  </data>
+  <data name="config.missingValidationProfile" xml:space="preserve">
+    <value>Doğrulama profili "{0}" konfigürasyon dosyasında tanımlı değil.</value>
+  </data>
+  <data name="core.verified.signatureValue" xml:space="preserve">
+    <value>İmza değeri doğrulandı.</value>
+  </data>
+  <data name="validation.values.certVals.countMismatch" xml:space="preserve">
+    <value>Sertifika referansları ile değerlerinin sayıları birbirini tutmuyor!</value>
+  </data>
+  <data name="validation.values.certVals.missingValue" xml:space="preserve">
+    <value>Sertifika değerlerinde karşılığı olmayan referans var!</value>
+  </data>
+  <data name="validation.values.certVals.valid" xml:space="preserve">
+    <value>Sertifika değerleri tutarlı.</value>
+  </data>
+  <data name="validation.values.revVals.countMismatch" xml:space="preserve">
+    <value>İptal bilgisi referansları ile değerlerinin {0} sayıları birbirini tutmuyor!</value>
+  </data>
+  <data name="validation.values.revVals.missingValue" xml:space="preserve">
+    <value>İptal bilgisi değerlerinde karşılığı olmayan {0} referansı var!</value>
+  </data>
+  <data name="validation.values.revVals.valid" xml:space="preserve">
+    <value>İptal bilgisi değerleri tutarlı.</value>
+  </data>
+  <data name="validation.policy.cantValidatePolicy" xml:space="preserve">
+    <value>İmza politikası doğrulanamadı.</value>
+  </data>
+  <data name="validation.policy.not2h" xml:space="preserve">
+    <value>İmza zaman damgası, beyan edilen zamandan sonraki 2 saat içinde alınmamış.</value>
+  </data>
+  <data name="validation.policy.notsha2" xml:space="preserve">
+    <value>Politika özet algoritması SHA-256 değil.</value>
+  </data>
+  <data name="validation.policy.notTurkishProfile" xml:space="preserve">
+    <value>İmza Türk imza profilleri içermiyor.</value>
+  </data>
+  <data name="validation.policy.signaturePolicyAttributes" xml:space="preserve">
+    <value>İmza politikası özellik kontrolü</value>
+  </data>
+  <data name="validation.policy.successful" xml:space="preserve">
+    <value>Profil özellikleri standartlara uygun.</value>
+  </data>
+  <data name="validation.timestamp.failed" xml:space="preserve">
+    <value>Zaman damgası {0} doğrulanamadı, çünkü {1}.</value>
+  </data>
+  <data name="validation.policy.invalidRevocationDataType" xml:space="preserve">
+    <value>Iptal bilgisi tipi profile uygun degil.</value>
+  </data>
+  <data name="validation.policy.invalidSignatureType" xml:space="preserve">
+    <value>Imza formati profile uygun degil.</value>
+  </data>
+  <data name="validation.policy.cantcheck" xml:space="preserve">
+    <value>Profil var ama tanimlanamadi.</value>
+  </data>
+  <data name="validation.policy.noCRL" xml:space="preserve">
+    <value>Profile has to have CRL as revocation data for signer's certificate.</value>
+  </data>
+  <data name="validation.policy.noOCSP" xml:space="preserve">
+    <value>Profile gore imzaci sertifikasinin iptal bilgisi olarak CiSDuP kullanmaliydi.</value>
+  </data>
+  <data name="validation.policy.timeStampCheckError" xml:space="preserve">
+    <value>Imza zaman damgasi imza profili uygunlugu kontrol edilirken hata olustu.</value>
+  </data>
+  <data name="validation.signingCertificate.notSha2" xml:space="preserve">
+    <value>Imzaci sertifikasi ozet algoritmasi SHA-256 degil.</value>
+  </data>
+  <data name="validation.timestamp.certificateValue.noRootCert" xml:space="preserve">
+    <value>Zaman damgasi dogrulama bilgisi icinde kok sertifikasini icermiyor.</value>
+  </data>
+  <data name="validation.timestamp.notAfterSigningTime" xml:space="preserve">
+    <value>Imza zaman damgasi, imza zamanindan sonra olmali.</value>
+  </data>
+  <data name="validation.timestamp.notWithin2HoursOfSigningTime" xml:space="preserve">
+    <value>Imza zaman damgasi, imza zamanindan sonra 2 saat icinde alinmali.</value>
+  </data>
+  <data name="validation.timestamp.revocationValue.noCRL" xml:space="preserve">
+    <value>Zaman damgasi iptal bilgisi olarak CRL icermiyor.</value>
+  </data>
+  <data name="validation.check.reference" xml:space="preserve">
+    <value>Referans Kontrolü</value>
+  </data>
+  <data name="validation.check.certificate" xml:space="preserve">
+    <value>Sertifika Doğrulama</value>
+  </data>
+  <data name="validation.check.certRefs" xml:space="preserve">
+    <value>Sertifika Referanslar Kontrolü</value>
+  </data>
+  <data name="validation.check.certValues" xml:space="preserve">
+    <value>Sertifika Değerleri Kontrolü</value>
+  </data>
+  <data name="validation.check.dataObjectFormat" xml:space="preserve">
+    <value>Veri Nesne Formatı Kontrolü</value>
+  </data>
+  <data name="validation.check.encapsulatedTS" xml:space="preserve">
+    <value>Dahili Zaman Damgası Kontrolü</value>
+  </data>
+  <data name="validation.check.keyInfo" xml:space="preserve">
+    <value>Anahtar Bilgisi Kontrolü</value>
+  </data>
+  <data name="validation.check.revocationRefs" xml:space="preserve">
+    <value>İptal Bilgisi Referanslar Kontrolü</value>
+  </data>
+  <data name="validation.check.revocationValues" xml:space="preserve">
+    <value>İptal Bilgileri Kontrolü</value>
+  </data>
+  <data name="validation.check.signaturePolicy" xml:space="preserve">
+    <value>İmza Politikası Kontrolü</value>
+  </data>
+  <data name="validation.check.signaturePolicyAttributes" xml:space="preserve">
+    <value>İmza Politikası Özellik Kontrolü</value>
+  </data>
+  <data name="validation.check.signatureValue" xml:space="preserve">
+    <value>İmza Değeri Kontrolü</value>
+  </data>
+  <data name="validation.check.signedDoc" xml:space="preserve">
+    <value>İmzalı Doküman Kontrolü</value>
+  </data>
+  <data name="validation.check.signingCertificate" xml:space="preserve">
+    <value>İmzacı Sertifika Kontrolü</value>
+  </data>
+  <data name="validation.check.signingTime" xml:space="preserve">
+    <value>İmza Zamanı Kontrolü</value>
+  </data>
+  <data name="validation.check.timestamp" xml:space="preserve">
+    <value>{0} Zaman Damgası Kontrolü</value>
+  </data>
+  <data name="validation.check.xmlSignature" xml:space="preserve">
+    <value>XML İmza Kontrolü</value>
+  </data>
+  <data name="validation.signatureAlgorithm.notSha2" xml:space="preserve">
+    <value>Imza algoritmasi SHA-256 degil.</value>
+  </data>
+</root>

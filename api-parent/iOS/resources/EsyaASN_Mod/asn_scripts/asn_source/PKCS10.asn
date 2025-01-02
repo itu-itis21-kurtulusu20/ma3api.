@@ -1,0 +1,49 @@
+pkcs10 {iso(1) member-body(2) us(840) rsadsi(113549) pkcs(1)
+pkcs-10(10) modules(1) pkcs-10(1)}
+DEFINITIONS IMPLICIT TAGS ::=
+BEGIN
+
+-- EXPORTS All --
+	-- All types and values defined in this module are exported for use
+	-- in other ASN.1 modules.
+
+IMPORTS
+	Name, AlgorithmIdentifier, SubjectPublicKeyInfo, Attribute
+	FROM Explicit;
+
+CertificationRequest ::= SEQUENCE {
+	certificationRequestInfo CertificationRequestInfo,
+	signatureAlgorithm AlgorithmIdentifier,
+	signature BIT STRING
+}
+
+CertificationRequestInfo ::= SEQUENCE {
+	version INTEGER ,
+	subject Name,
+	subjectPKInfo SubjectPublicKeyInfo,
+	attributes [0] Attributes
+	}
+
+
+Attributes ::= SET OF Attribute
+
+
+
+--Attribute  ::= SEQUENCE {
+	--type ATTRIBUTE.&id,
+	--values SET SIZE(1..MAX) OF ATTRIBUTE.&Type({@type})
+	--}
+
+
+
+
+-- Attribute  ::= SEQUENCE {
+--	type OBJECT IDENTIFIER,
+	--values SET SIZE(1..MAX) OF ATTRIBUTE.&Type
+--	values SET SIZE(1..MAX) OF ANY
+--	}
+
+
+
+
+END

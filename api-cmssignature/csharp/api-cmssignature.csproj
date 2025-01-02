@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A16F873-C904-4FEB-A383-A905E133B238}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ma3api-cmssignature</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>tr.gov.tubitak.uekae.esya.api.cmssignature</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ma3api-cmssignature.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ma3api-cmssignature.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\api-parent\ma3api-dotnet\ma3api.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="asn1rtcs">
+      <HintPath>..\..\api-parent\dlls\asn1rtcs.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\api-parent\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SQLite, Version=1.0.82.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\api-parent\dlls\x64\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="config.postbuild" />
+    <None Include="Doxyfile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\attribute\ArchiveTimeStampV2Attr.cs" />
+    <Compile Include="src\attribute\AtsHashIndexAttr.cs" />
+    <Compile Include="src\attribute\MimeTypeAttr.cs" />
+    <Compile Include="src\signature\ESAv2.cs" />
+    <Compile Include="src\validation\ATSHashIndexCollector.cs" />
+    <Compile Include="src\attribute\AllEParameters.cs" />
+    <Compile Include="src\attribute\ArchiveTimeStampAttr.cs" />
+    <Compile Include="src\attribute\AttributeCertRefAttr.cs" />
+    <Compile Include="src\attribute\AttributeOIDs.cs" />
+    <Compile Include="src\attribute\AttributeRevRefAttr.cs" />
+    <Compile Include="src\attribute\AttributeUtil.cs" />
+    <Compile Include="src\attribute\AttributeValue.cs" />
+    <Compile Include="src\attribute\CAdES_C_TimeStampAttr.cs" />
+    <Compile Include="src\attribute\CertificateExpiredException.cs" />
+    <Compile Include="src\attribute\CertValuesAttr.cs" />
+    <Compile Include="src\attribute\CommitmentType.cs" />
+    <Compile Include="src\attribute\CommitmentTypeIndicationAttr.cs" />
+    <Compile Include="src\attribute\CompleteCertRefAttr.cs" />
+    <Compile Include="src\attribute\CompleteRevRefAttr.cs" />
+    <Compile Include="src\attribute\ContentHintsAttr.cs" />
+    <Compile Include="src\attribute\ContentIdentifierAttr.cs" />
+    <Compile Include="src\attribute\ContentRefAttr.cs" />
+    <Compile Include="src\attribute\ContentTimeStampAttr.cs" />
+    <Compile Include="src\attribute\ContentTypeAttr.cs" />
+    <Compile Include="src\attribute\CounterSignatureAttr.cs" />
+    <Compile Include="src\attribute\EParameters.cs" />
+    <Compile Include="src\attribute\IAttribute.cs" />
+    <Compile Include="src\attribute\MessageDigestAttr.cs" />
+    <Compile Include="src\attribute\RevocationValuesAttr.cs" />
+    <Compile Include="src\attribute\SignaturePolicyIdentifierAttr.cs" />
+    <Compile Include="src\attribute\SignatureTimeStampAttr.cs" />
+    <Compile Include="src\attribute\SignerAttributesAttr.cs" />
+    <Compile Include="src\attribute\SignerLocationAttr.cs" />
+    <Compile Include="src\attribute\SigningCertificateAttr.cs" />
+    <Compile Include="src\attribute\SigningCertificateV2Attr.cs" />
+    <Compile Include="src\attribute\SigningTimeAttr.cs" />
+    <Compile Include="src\attribute\TimeStampedCertsCrlsAttr.cs" />
+    <Compile Include="src\bundle\Msg.cs" />
+    <Compile Include="src\CertRevocationInfoFinder.cs" />
+    <Compile Include="src\CMSSignatureException.cs" />
+    <Compile Include="src\CMSSignatureUtil.cs" />
+    <Compile Include="src\ISignable.cs" />
+    <Compile Include="src\NotSignedDataException.cs" />
+    <Compile Include="src\NullParameterException.cs" />
+    <Compile Include="src\provider\CMSSignableImpl.cs" />
+    <Compile Include="src\provider\CMSSignatureContainer.cs" />
+    <Compile Include="src\provider\CMSSignatureImpl.cs" />
+    <Compile Include="src\provider\CMSSigProviderUtil.cs" />
+    <Compile Include="src\provider\SDValidationData.cs" />
+    <Compile Include="src\provider\SignableISignable.cs" />
+    <Compile Include="src\SignableByteArray.cs" />
+    <Compile Include="src\SignableFile.cs" />
+    <Compile Include="src\signature\BaseSignedData.cs" />
+    <Compile Include="src\signature\BES.cs" />
+    <Compile Include="src\signature\EPES.cs" />
+    <Compile Include="src\signature\ESA.cs" />
+    <Compile Include="src\signature\ESC.cs" />
+    <Compile Include="src\signature\ESignatureType.cs" />
+    <Compile Include="src\signature\EST.cs" />
+    <Compile Include="src\signature\ESX1.cs" />
+    <Compile Include="src\signature\ESX2.cs" />
+    <Compile Include="src\signature\ESXLong.cs" />
+    <Compile Include="src\signature\ESXLong1.cs" />
+    <Compile Include="src\signature\ESXLong2.cs" />
+    <Compile Include="src\signature\SignatureParser.cs" />
+    <Compile Include="src\signature\Signer.cs" />
+    <Compile Include="src\validation\CertificateRevocationInfoCollector.cs" />
+    <Compile Include="src\validation\CertificateValidationException.cs" />
+    <Compile Include="src\validation\check\ArchiveTimeStampAttrChecker.cs" />
+    <Compile Include="src\validation\check\ArchiveTimeStampV2AttrChecker.cs" />
+    <Compile Include="src\validation\check\ArchiveTimeStampV3AttrChecker.cs" />
+    <Compile Include="src\validation\check\ATSHashIndexAttrChecker.cs" />
+    <Compile Include="src\validation\check\BaseArchieveTimeStampAttrChecker.cs" />
+    <Compile Include="src\validation\check\BaseChecker.cs" />
+    <Compile Include="src\validation\check\CAdES_C_TimeStampAttrChecker.cs" />
+    <Compile Include="src\validation\check\CertificateChecker.cs" />
+    <Compile Include="src\validation\check\CertificateCheckerResultObject.cs" />
+    <Compile Include="src\validation\check\CertificateRefsValuesMatchChecker.cs" />
+    <Compile Include="src\validation\check\CheckAllChecker.cs" />
+    <Compile Include="src\validation\check\Checker.cs" />
+    <Compile Include="src\validation\check\CheckerResult.cs" />
+    <Compile Include="src\validation\check\CheckOneChecker.cs" />
+    <Compile Include="src\validation\check\ContentTimeStampAttrChecker.cs" />
+    <Compile Include="src\validation\check\ContentTypeAttrChecker.cs" />
+    <Compile Include="src\validation\check\CryptoChecker.cs" />
+    <Compile Include="src\validation\check\MessageDigestAttrChecker.cs" />
+    <Compile Include="src\validation\check\TurkishProfileAttributesChecker.cs" />
+    <Compile Include="src\validation\check\ProfileRevocationValueMatcherChecker.cs" />
+    <Compile Include="src\validation\check\RevocationRefsValuesMatchChecker.cs" />
+    <Compile Include="src\validation\check\SignaturePolicyChecker.cs" />
+    <Compile Include="src\validation\check\SignatureTimeStampAttrChecker.cs" />
+    <Compile Include="src\validation\check\SigningCertificateAttrChecker.cs" />
+    <Compile Include="src\validation\check\SigningCertificateV2AttrChecker.cs" />
+    <Compile Include="src\validation\check\SigningTimeChecker.cs" />
+    <Compile Include="src\validation\check\TimeStampCertificateChecker.cs" />
+    <Compile Include="src\validation\check\TimeStampedCertsCrlsRefsAttrChecker.cs" />
+    <Compile Include="src\validation\check\TimeStampMessageDigestChecker.cs" />
+    <Compile Include="src\validation\check\TimeStampSignatureChecker.cs" />
+    <Compile Include="src\validation\check\TimeStampTimeChecker.cs" />
+    <Compile Include="src\validation\check\ValidationState.cs" />
+    <Compile Include="src\validation\IValidationResult.cs" />
+    <Compile Include="src\validation\SignatureValidationResult.cs" />
+    <Compile Include="src\validation\SignatureValidator.cs" />
+    <Compile Include="src\validation\SignedDataValidation.cs" />
+    <Compile Include="src\validation\SignedDataValidationResult.cs" />
+    <Compile Include="src\validation\SignedData_Status.cs" />
+    <Compile Include="src\validation\Types.cs" />
+    <Compile Include="src\validation\ValidationMessage.cs" />
+    <Compile Include="src\ValueFinder.cs" />
+    <Compile Include="src\ValueFinderFromElsewhere.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resource.en-US.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\api-asn\csharp\api-asn.csproj">
+      <Project>{307f1cdc-084e-4a9d-9208-0943de95da0f}</Project>
+      <Name>api-asn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-certstore\csharp\api-certstore.csproj">
+      <Project>{4844D59F-ACA3-43A1-8598-448B4EB3DE90}</Project>
+      <Name>api-certstore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-certvalidation\csharp\api-certvalidation.csproj">
+      <Project>{278F201B-5D46-43D3-A40D-A2F11BA934F2}</Project>
+      <Name>api-certvalidation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-common\csharp\api-common.csproj">
+      <Project>{CA8572D2-2D3C-42F0-9A07-6261B00BD5F6}</Project>
+      <Name>api-common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-crypto\crypto\csharp\api-crypto.csproj">
+      <Project>{82649E95-07E4-4166-9D55-B4705CC80836}</Project>
+      <Name>api-crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-infra\csharp\api-infra.csproj">
+      <Project>{98C61CEF-1EE1-4594-941A-B364DD57EA90}</Project>
+      <Name>api-infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-signature\csharp\api-signature.csproj">
+      <Project>{9229C786-6088-4913-ACCD-DDE35AEE0662}</Project>
+      <Name>api-signature</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.Targets" />
+  <Import Project="..\..\api-parent\ma3api-dotnet\BuildCommon.targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

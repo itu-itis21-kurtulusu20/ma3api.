@@ -1,0 +1,252 @@
+<asn1config>
+    <module>
+        <name>pkcs9</name>
+        <sourceFile>pkcs9.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.pkcs9</pkgName>
+    </module>
+
+    <module>
+        <name>depo</name>
+        <sourceFile>depo.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.depo</pkgName>
+    </module>
+
+    <module>
+        <name>pkcs12</name>
+        <sourceFile>pkcs12.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.pkcs12</pkgName>
+    </module>
+
+    <module>
+        <name>cmp</name>
+        <sourceFile>CMP.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.cmp</pkgName>
+    </module>
+
+    <module>
+        <name>crmf</name>
+        <sourceFile>CRMF.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.crmf</pkgName>
+    </module>
+
+    <module>
+        <name>Explicit</name>
+        <sourceFile>Explicit.asn</sourceFile>
+        <production name="CertificateSerialNumber">
+            <isBigInteger/>
+        </production>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.x509</pkgName>
+    </module>
+
+    <module>
+        <name>Implicit</name>
+        <sourceFile>Implicit.asn</sourceFile>
+        <production name="CRLNumber">
+            <isBigInteger/>
+        </production>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.x509</pkgName>
+    </module>
+
+    <module>
+        <name>Kerberos</name>
+        <sourceFile>Kerberos.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.x509</pkgName>
+    </module>
+
+    <module>
+        <name>pkcs10</name>
+        <sourceFile>pkcs10.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.pkcs10</pkgName>
+    </module>
+
+    <module>
+        <name>pkcs5</name>
+        <sourceFile>pkcs5.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.api.smartcard.apdu.asn.pkcs5</pkgName>
+    </module>
+
+    <module>
+        <name>pkcs15</name>
+        <sourceFile>pkcs15.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.api.smartcard.apdu.asn.pkcs15</pkgName>
+    </module>
+
+    <module>
+        <name>crlfinder</name>
+        <sourceFile>crlfinder.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.esya.crlfinder</pkgName>
+        <production name="CRLNumber">
+            <isBigInteger/>
+        </production>
+    </module>
+
+    <module>
+        <name>algorithms</name>
+        <sourceFile>Algorithms.asn</sourceFile>
+        <production name="ECParameters">
+            <isBigInteger/>
+        </production>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.algorithms</pkgName>
+    </module>
+
+    <module>
+        <name>aes</name>
+        <sourceFile>aes.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.algorithms</pkgName>
+    </module>
+
+    <module>
+        <name>iso9796</name>
+        <sourceFile>iso9796.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.algorithms</pkgName>
+    </module>
+
+    <module>
+        <name>PKIXqualified</name>
+        <sourceFile>PKIXqualified.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.PKIXqualified</pkgName>
+    </module>
+
+    <module>
+        <name>pkcs7</name>
+        <sourceFile>pkcs7.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.pkcs7</pkgName>
+    </module>
+
+    <module>
+        <name>etsiqc</name>
+        <sourceFile>etsiqc.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.etsiqc</pkgName>
+    </module>
+
+    <module>
+        <name>pkixtsp</name>
+        <sourceFile>pkixtsp.asn</sourceFile>
+        <production name="BIGINTEGER">
+            <isBigInteger/>
+        </production>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.pkixtsp</pkgName>
+    </module>
+
+    <module>
+        <name>ocsp</name>
+        <sourceFile>ocsp.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.ocsp</pkgName>
+    </module>
+
+    <module>
+        <name>cms</name>
+        <sourceFile>CMS.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.cms</pkgName>
+    </module>
+
+    <module>
+        <name>dercms</name>
+        <sourceFile>derCMS.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.cms</pkgName>
+    </module>
+
+    <module>
+        <name>etsi101733</name>
+        <sourceFile>etsi101733.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.cms</pkgName>
+    </module>
+
+    <module>
+        <name>attrcert</name>
+        <sourceFile>AttrCert.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.attrcert</pkgName>
+    </module>
+
+    <module>
+        <name>esya</name>
+        <sourceFile>esya.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.esya</pkgName>
+    </module>
+
+    <module>
+        <name>signaturepolicies</name>
+        <sourceFile>signaturepolicies.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.signaturepolicies</pkgName>
+    </module>
+	
+	<module>
+        <name>scobject</name>
+        <sourceFile>scobject.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.scencryptedpackage</pkgName>
+	</module>
+	
+	<module>
+        <name>encryptedDataPackage</name>
+        <sourceFile>encryptedDataPackage.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.scencryptedpackage</pkgName>
+    </module>
+
+    <module>
+        <name>pkcs1pkcs8</name>
+        <sourceFile>pkcs1pkcs8.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.pkcs1pkcs8</pkgName>
+        <production name="RSAPrivateKey">
+            <isBigInteger/>
+        </production>
+
+        <production name="RSAPublicKey">
+            <isBigInteger/>
+        </production>
+
+
+    </module>
+    <module>
+        <name>cvc</name>
+        <sourceFile>cvc.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.cvc</pkgName>
+
+        <production name="HeaderList">
+            <isPDU/>
+        </production>
+
+        <production name="Car">
+            <isPDU/>
+        </production>
+
+        <production name="Chr">
+            <isPDU/>
+        </production>
+        <production name="Cpi">
+            <isPDU/>
+        </production>
+        <production name="AlgId">
+            <isPDU/>
+        </production>
+        <production name="Cha">
+            <isPDU/>
+        </production>
+
+        <production name="PuKRemainder">
+            <isPDU/>
+        </production>
+
+
+        <production name="Ced">
+            <isPDU/>
+        </production>
+        <production name="Cxd">
+            <isPDU/>
+        </production>
+
+        <production name="Modulus">
+            <isPDU/>
+        </production>
+
+        <production name="Exponent">
+            <isPDU/>
+        </production>
+    </module>
+
+    <module>
+        <name>cvcalgorithms</name>
+        <sourceFile>cvcalgorithms.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.cvc</pkgName>
+    </module>
+
+</asn1config>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>ma3api-parent</artifactId>
+		<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+		<version>2.3.25-SNAPSHOT</version>
+		<relativePath>../api-parent/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>ma3api-tsl</artifactId>
+	<name>MA3 Api TSL Module</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-xmlsignature</artifactId>
+			<version>${project.version}</version>
+					<exclusions>
+						<exclusion>
+							<groupId>sqlite</groupId>
+							<artifactId>system-data-sqlite</artifactId>
+						</exclusion>
+						<exclusion>
+							<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+							<artifactId>ma3api-mssclient</artifactId>
+						</exclusion>
+						<exclusion>
+							<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+							<artifactId>ma3api-turktelekommssprovider</artifactId>
+						</exclusion>
+						<exclusion>
+							<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+							<artifactId>ma3api-turkcellmssprovider</artifactId>
+						</exclusion>
+					</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-asn</artifactId>			
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-crypto</artifactId>			
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-certstore</artifactId>			
+			<exclusions>
+				<exclusion>
+					<groupId>sqlite</groupId>
+					<artifactId>system-data-sqlite</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-certvalidation</artifactId>			
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-smartcard-android</artifactId>
+			<version>${project.version}</version>
+			<!--  	<scope>test</scope>  -->
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-smartcard-android-acs</artifactId>
+			<version>${project.version}</version>
+			<!--  	<scope>test</scope>  -->
+		</dependency>		
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-smartcard</artifactId>			
+			<exclusions>
+				<exclusion>
+					<artifactId>ma3api-managedPkcs11</artifactId>
+					<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-signature</artifactId>			
+            <exclusions>
+                <exclusion>
+                    <artifactId>ma3api-managedPkcs11</artifactId>
+                    <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+                </exclusion>
+            </exclusions>
+		</dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <scope>test</scope>
+            <type>test-jar</type>
+            <artifactId>ma3api-signature</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-cmssignature</artifactId>			
+			<exclusions>
+				<exclusion>
+					<groupId>sqlite</groupId>
+					<artifactId>system-data-sqlite</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- remove dependency -->
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-turkcellmssprovider</artifactId>
+			<version>${project.version}</version>
+			<!--  	<scope>test</scope>  -->
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-turktelekommssprovider</artifactId>
+			<version>${project.version}</version>
+			<!--  	<scope>test</scope>  -->
+		</dependency>		
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-crypto-sunprovider</artifactId>
+		<!--  	<scope>test</scope>  -->
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-crypto-gnuprovider</artifactId>			
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-infra</artifactId>			
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>testsrc</testSourceDirectory>
+	</build>
+</project>

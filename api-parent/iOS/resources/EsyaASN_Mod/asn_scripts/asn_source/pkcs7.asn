@@ -1,0 +1,160 @@
+pkcs7 {iso(1) member-body(2) us(840) rsadsi(113549) pkcs(1)
+pkcs-7(7) modules(1) pkcs-7(1)}
+
+DEFINITIONS IMPLICIT TAGS ::=
+BEGIN
+
+-- EXPORTS All --
+	-- All types and values defined in this module are exported for use
+	-- in other ASN.1 modules.
+
+IMPORTS
+	CertificateList
+	FROM Explicit {iso(1) identified-organization(3)
+             dod(6) internet(1) security(5) mechanisms(5) pkix(7)
+             id-mod(0) id-pkix1-explicit-88(1)}
+	Attributes
+	FROM pkcs10
+;
+
+
+ContentInfo ::= SEQUENCE {
+   contentType ContentType,
+   content [0] EXPLICIT ANY DEFINED BY contentType OPTIONAL }
+
+ContentType ::= OBJECT IDENTIFIER
+
+Data ::= OCTET STRING
+
+-- OIDs
+pkcs-7 OBJECT IDENTIFIER ::= { iso(1) member-body(2) us(840) rsadsi(113549) pkcs(1) 7 }
+data OBJECT IDENTIFIER ::= { pkcs-7 1 }
+signedData OBJECT IDENTIFIER ::= { pkcs-7 2 }
+envelopedData OBJECT IDENTIFIER ::= { pkcs-7 3 }
+signedAndEnvelopedData OBJECT IDENTIFIER ::= { pkcs-7 4 }
+digestedData OBJECT IDENTIFIER ::= { pkcs-7 5 }
+encryptedData OBJECT IDENTIFIER ::= { pkcs-7 6 }
+
+
+-- useful definitions
+CertificateRevocationLists ::= SET OF CertificateList
+ContentEncryptionAlgorithmIdentifier ::= AlgorithmIdentifier
+DigestAlgorithmIdentifier ::= AlgorithmIdentifier
+DigestEncryptionAlgorithmIdentifier ::= AlgorithmIdentifier
+IssuerAndSerialNumber ::= SEQUENCE {
+   issuer Name,
+   serialNumber CertificateSerialNumber
+}
+KeyEncryptionAlgorithmIdentifier ::= AlgorithmIdentifier
+Version ::= INTEGER
+
+ExtendedCertificateOrCertificate ::= CHOICE {
+   certificate Certificate --, - - X.509
+   -- extendedCertificate [0] IMPLICIT ExtendedCertificate
+}
+ExtendedCertificatesAndCertificates ::= SET OF ExtendedCertificateOrCertificate
+
+
+-- SignedData type
+
+SignedData ::= SEQUENCE {
+   version Version,
+   digestAlgorithms DigestAlgorithmIdentifiers,
+   contentInfo ContentInfo,
+   certificates [0] IMPLICIT ExtendedCertificatesAndCertificates OPTIONAL,
+   crls [1] IMPLICIT CertificateRevocationLists OPTIONAL,
+   signerInfos SignerInfos
+}
+
+DigestAlgorithmIdentifiers ::= SET OF DigestAlgorithmIdentifier
+
+SignerInfos ::= SET OF SignerInfo
+
+SignerInfo ::= SEQUENCE {
+   version Version,
+   issuerAndSerialNumber IssuerAndSerialNumber,
+   digestAlgorithm DigestAlgorithmIdentifier,
+   authenticatedAttributes [0] IMPLICIT Attributes OPTIONAL,
+   digestEncryptionAlgorithm DigestEncryptionAlgorithmIdentifier,
+   encryptedDigest EncryptedDigest,
+   unauthenticatedAttributes [1] IMPLICIT Attributes OPTIONAL
+}
+
+EncryptedDigest ::= OCTET STRING
+
+DigestInfo ::= SEQUENCE {
+   digestAlgorithm DigestAlgorithmIdentifier,
+   digest Digest
+}
+
+Digest ::= OCTET STRING
+
+-- EnvelopedData type
+
+EnvelopedData ::= SEQUENCE {
+  version Version,
+  recipientInfos RecipientInfos,
+  encryptedContentInfo EncryptedContentInfo
+}
+
+RecipientInfos ::= SET OF RecipientInfo
+
+EncryptedContentInfo ::= SEQUENCE {
+   contentType ContentType,
+   contentEncryptionAlgorithm ContentEncryptionAlgorithmIdentifier,
+   encryptedContent [0] IMPLICIT EncryptedContent OPTIONAL
+}
+
+EncryptedContent ::= OCTET STRING
+
+RecipientInfo ::= SEQUENCE {
+   version Version,
+   issuerAndSerialNumber IssuerAndSerialNumber,
+   keyEncryptionAlgorithm KeyEncryptionAlgorithmIdentifier,
+   encryptedKey EncryptedKey
+}
+
+EncryptedKey ::= OCTET STRING
+
+-- SignedAndEnvelopedData type
+
+SignedAndEnvelopedData ::= SEQUENCE {
+   version Version,
+   recipientInfos RecipientInfos,
+   digestAlgorithms DigestAlgorithmIdentifiers,
+   encryptedContentInfo EncryptedContentInfo,
+   certificates [0] IMPLICIT ExtendedCertificatesAndCertificates OPTIONAL,
+   crls [1] IMPLICIT CertificateRevocationLists OPTIONAL,
+   signerInfos SignerInfos
+}
+
+
+
+SigningCertificate ::=  SEQUENCE {
+    certs        SEQUENCE OF ESSCertID,
+    policies     SEQUENCE OF PolicyInformation OPTIONAL
+}
+
+id-aa-signingCertificate OBJECT IDENTIFIER ::= { iso(1)
+    member-body(2) us(840) rsadsi(113549) pkcs(1) pkcs9(9)
+    smime(16) id-aa(2) 12 }
+
+id-aa-timeStampToken OBJECT IDENTIFIER ::= { iso(1)
+    member-body(2) us(840) rsadsi(113549) pkcs(1) pkcs9(9)
+    smime(16) id-aa(2) 14 }
+
+
+ESSCertID ::=  SEQUENCE {
+     certHash                 Hash,
+     issuerSerial             IssuerSerial OPTIONAL
+}
+
+Hash ::= OCTET STRING -- SHA1 hash of entire certificate
+
+IssuerSerial ::= SEQUENCE {
+     issuer                   GeneralNames,
+     serialNumber             CertificateSerialNumber
+}
+
+
+END

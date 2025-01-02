@@ -1,0 +1,53 @@
+<asn1config>
+    <module>
+        <name>SelfCvc</name>
+        <sourceFile>SelfCvc.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.passport</pkgName>
+
+
+        <production name="Car">
+            <isPDU/>
+        </production>
+
+        <production name="Chr">
+            <isPDU/>
+        </production>
+        <production name="Cpi">
+            <isPDU/>
+        </production>
+        <production name="AlgId">
+            <isPDU/>
+        </production>
+        <production name="Chat">
+            <isPDU/>
+        </production>
+
+        <production name="PuKRemainder">
+            <isPDU/>
+        </production>
+
+
+        <production name="Ced">
+            <isPDU/>
+        </production>
+        <production name="Cxd">
+            <isPDU/>
+        </production>
+
+        <production name="ElcPuK">
+            <isPDU/>
+        </production>
+
+        <production name="TempElc">
+            <isPDU/>
+        </production>
+
+
+    </module>
+
+    <module>
+        <name>cvcalgorithms</name>
+        <sourceFile>cvcalgorithms.asn</sourceFile>
+        <pkgName>tr.gov.tubitak.uekae.esya.asn.cvc</pkgName>
+    </module>
+</asn1config>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ma3api-parent</artifactId>
+        <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+        <version>2.3.25-SNAPSHOT</version>
+        <relativePath>../api-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ma3api-smartcard-parent</artifactId>
+    <packaging>pom</packaging>
+    <name>MA3 Api SmartCard Parent Pom</name>
+
+     <properties>
+        <relativeDepth>\..\..</relativeDepth>
+    </properties>
+
+    <modules>
+        <module>ma3api-smartcard</module>
+        <module>ma3api-smartcard-android</module>
+        <module>ma3api-smartcard-android-acs</module>
+        <module>ma3api-smartcard-android-ccid</module>
+        <module>ma3api-smartcard-cli</module>
+    </modules>
+
+    <build>
+
+    </build>
+
+</project>

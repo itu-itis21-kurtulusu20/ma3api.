@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Veritabani">
+      <UniqueIdentifier>{6e69b4fc-4fe4-4b1b-be26-3afc90447003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File">
+      <UniqueIdentifier>{62c2ad95-e69f-46e7-a37a-0c7417b20894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Veritabani">
+      <UniqueIdentifier>{9737d0bb-6c2f-4841-9766-c38c55596809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\File">
+      <UniqueIdentifier>{3b1c5be4-a56b-47e7-afd9-80cf2bbe9b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="QtSolutions">
+      <UniqueIdentifier>{2086d701-006d-4a1d-826f-988051846446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ayarlar">
+      <UniqueIdentifier>{f6accd04-67bf-4dfa-803f-5ff2c5f80e22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ayarlar\header">
+      <UniqueIdentifier>{123b1343-04e2-455e-a81f-c36a957bbc55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ayarlar\src">
+      <UniqueIdentifier>{e2bbdb3f-9840-4129-8ed3-c3507cc2a6b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinProcessSormaIzleme">
+      <UniqueIdentifier>{e26d3be6-cdf2-4e1d-a3fe-671681850d13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Loglama">
+      <UniqueIdentifier>{7c0b5ada-1ffa-4e72-84ed-71d20fa23cc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transaction">
+      <UniqueIdentifier>{370b8317-3200-4b7a-aa40-b4fc0a5c9fed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBFilter">
+      <UniqueIdentifier>{d82bf8e6-9042-4695-ad53-b2b811dce3ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZamanTutma">
+      <UniqueIdentifier>{360f32f6-44b3-4428-96f3-ad54815e1b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZamanTutma\QElapsedTimer">
+      <UniqueIdentifier>{2bdefb25-72c7-4e24-9072-ee65875a659a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scheduler_Cron">
+      <UniqueIdentifier>{8f02f4eb-390f-427f-bc3c-f0f9b4407411}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\AbstractPersistenceMapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AbstractRDBMapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EApplicationManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarKartlar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarKartlarRDMMapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarlardanDilBelirleyici.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarLDAPRDBMapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarListenerThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarSinif.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarValueTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EDbLoggerThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EDilBelirleyici.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EDilBelirleyiciFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EExplorerRefresher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EKulGrupBilgi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ELangManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ELoggerRDMMapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ELokaldenDilBelirleyici.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EMemoryDBMapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EOrtamDegiskeni.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ESingFilterManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EsyaUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ESynchroniseManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ETestUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EYardimAcici.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ILogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\IMapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ParametreListesi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PersistenceFacade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EVeritabani.cpp">
+      <Filter>Source Files\Veritabani</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EVeritabaniException.cpp">
+      <Filter>Source Files\Veritabani</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SampleObjectModel.cpp">
+      <Filter>Source Files\Veritabani</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VT_SampleObject.cpp">
+      <Filter>Source Files\Veritabani</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VTObject.cpp">
+      <Filter>Source Files\Veritabani</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EFileHandle.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EFileLocker.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EFileSecurity.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ELinuxFileSecurity.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ESambaIstemcisi.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EWindowsFileSecurity.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FileUtil.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\smbmm.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_EAyarKartlar.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_EAyarLdap.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_EAyarListenerThread.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_EDbLoggerThread.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_EFileLogger.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_ELoggerRDMMapper.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_ESqliteLogger.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_ILogger.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_PersistenceFacade.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_qtsingleapplication.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_SchedulerTask.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_ScheduleTaskExecuter.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_ScheduleTimerThread.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_SignalSchedulerTask.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\qrc_EsyaOrtak.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\QtSolutions\qtsingleapplication.cpp">
+      <Filter>QtSolutions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\QtSolutions\qtsingleapplication_mac.cpp">
+      <Filter>QtSolutions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\QtSolutions\qtsingleapplication_win.cpp">
+      <Filter>QtSolutions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\QtSolutions\qtsingleapplication_x11.cpp">
+      <Filter>QtSolutions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarGDMVarsayilanOzne.cpp">
+      <Filter>Ayarlar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarAlici.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarException.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarGDMAcikDosya.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarGDMDizin.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarGDMDizinBilgiManager.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarGDMOzneBilgiManager.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarGDMOzneBilgisi.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarKullaniciManager.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarlar.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarLdap.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarManager.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EAyarManagerFactory.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EGenelAyarManager.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EKullaniciAyarYonetici.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EYerelAyarManager.cpp">
+      <Filter>Ayarlar\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EProcessInfo.cpp">
+      <Filter>WinProcessSormaIzleme</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NTProcessInfo.cpp">
+      <Filter>WinProcessSormaIzleme</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AbstractSeviyeLogcu.cpp">
+      <Filter>Loglama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BosSeviyeLogcu.cpp">
+      <Filter>Loglama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DebugSeviyeLogcu.cpp">
+      <Filter>Loglama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DeepDebugSeviyeLogcu.cpp">
+      <Filter>Loglama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EFileLogger.cpp">
+      <Filter>Loglama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ELogger.cpp">
+      <Filter>Loglama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ELoggerFactory.cpp">
+      <Filter>Loglama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ErrorSeviyeLogcu.cpp">
+      <Filter>Loglama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ESeviyeLogYonetici.cpp">
+      <Filter>Loglama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ESqliteLogger.cpp">
+      <Filter>Loglama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\InfoLogger.cpp">
+      <Filter>Loglama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PerformanceInfoSeviyeLogcu.cpp">
+      <Filter>Loglama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WarningLogger.cpp">
+      <Filter>Loglama</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AtomicWork.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BaseTransaction.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DBSession.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SQliteAtomicWork.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SqliteDBSession.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EFilter.cpp">
+      <Filter>DBFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ESure.cpp">
+      <Filter>ZamanTutma</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Kronometre.cpp">
+      <Filter>ZamanTutma</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\QElapsedTimer\qelapsedtimer.cpp">
+      <Filter>ZamanTutma\QElapsedTimer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\QElapsedTimer\qelapsedtimer_unix.cpp">
+      <Filter>ZamanTutma\QElapsedTimer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\QElapsedTimer\qelapsedtimer_win.cpp">
+      <Filter>ZamanTutma\QElapsedTimer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GUIDGenerator.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\InvalidPatternException.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MemoryTaskCollector.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScheduleLauncherThread.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SchedulePredictor.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Scheduler.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SchedulerTask.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SchedulerValueMatcher.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SchedulerValueParser.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScheduleTaskExecuter.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScheduleTimerThread.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SchedulingPattern.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SignalSchedulerTask.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TaskCollector.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TaskTable.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Transaction.cpp">
+      <Filter>Scheduler_Cron</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\EAyarLDAPRDBMapper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\VT_SampleObject.h">
+      <Filter>Source Files\Veritabani</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EApplicationManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EAyarlardanDilBelirleyici.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EAyarSinif.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EAyarValueTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EDilBelirleyici.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EDilBelirleyiciFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EExplorerRefresher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EKulGrupBilgi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ELangManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ELokaldenDilBelirleyici.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EOrtamDegiskeni.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ESingFilterManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\EsyaGenelIfadeler_DIL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\esyaOrtak.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EsyaOrtak_Ortak.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EsyaOrtakDLL_DIL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EsyaUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ESynchroniseManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ETestUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EYardimAcici.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\OrtakDil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ortaklibrary_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ParametreListesi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Transaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EVeritabaniException.h">
+      <Filter>Header Files\Veritabani</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\VTObject.h">
+      <Filter>Header Files\Veritabani</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EFileSecurity.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ELinuxFileSecurity.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ESambaIstemcisi.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EWindowsFileSecurity.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\smbmm.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EAyarGDMVarsayilanOzne.h">
+      <Filter>Ayarlar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EAyarGDMDizinBilgiManager.h">
+      <Filter>Ayarlar\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EAyarKullaniciManager.h">
+      <Filter>Ayarlar\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EAyarManager.h">
+      <Filter>Ayarlar\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EAyarManagerFactory.h">
+      <Filter>Ayarlar\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EAyarTanimlari.h">
+      <Filter>Ayarlar\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EGenelAyarManager.h">
+      <Filter>Ayarlar\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EKullaniciAyarYonetici.h">
+      <Filter>Ayarlar\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EYerelAyarManager.h">
+      <Filter>Ayarlar\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EAyarGDMOzneBilgiManager.h">
+      <Filter>Ayarlar\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EAyarGDMOzneBilgisi.h">
+      <Filter>Ayarlar\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EProcessInfo.h">
+      <Filter>WinProcessSormaIzleme</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\NTProcessInfo.h">
+      <Filter>WinProcessSormaIzleme</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AbstractSeviyeLogcu.h">
+      <Filter>Loglama</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BosSeviyeLogcu.h">
+      <Filter>Loglama</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DebugSeviyeLogcu.h">
+      <Filter>Loglama</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DeepDebugSeviyeLogcu.h">
+      <Filter>Loglama</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ELoggerFactory.h">
+      <Filter>Loglama</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ErrorSeviyeLogcu.h">
+      <Filter>Loglama</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ESeviyeLogYonetici.h">
+      <Filter>Loglama</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\InfoLogger.h">
+      <Filter>Loglama</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\PerformanceInfoSeviyeLogcu.h">
+      <Filter>Loglama</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WarningLogger.h">
+      <Filter>Loglama</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AtomicWork.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BaseTransaction.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DBSession.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SQliteAtomicWork.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SqliteDBSession.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ESure.h">
+      <Filter>ZamanTutma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Kronometre.h">
+      <Filter>ZamanTutma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\PerformansOlcumleri.h">
+      <Filter>ZamanTutma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\QElapsedTimer\qelapsedtimer.h">
+      <Filter>ZamanTutma\QElapsedTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GUIDGenerator.h">
+      <Filter>Scheduler_Cron</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\InvalidPatternException.h">
+      <Filter>Scheduler_Cron</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MemoryTaskCollector.h">
+      <Filter>Scheduler_Cron</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ScheduleLauncherThread.h">
+      <Filter>Scheduler_Cron</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SchedulePredictor.h">
+      <Filter>Scheduler_Cron</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Scheduler.h">
+      <Filter>Scheduler_Cron</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SchedulerValueMatcher.h">
+      <Filter>Scheduler_Cron</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SchedulerValueParser.h">
+      <Filter>Scheduler_Cron</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SchedulingPattern.h">
+      <Filter>Scheduler_Cron</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TaskCollector.h">
+      <Filter>Scheduler_Cron</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TaskTable.h">
+      <Filter>Scheduler_Cron</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EsyaOrtak_Ayar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\QtSolutions\QtSingleApplication">
+      <Filter>QtSolutions</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\src\SampleObjectModel.h">
+      <Filter>Source Files\Veritabani</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\AbstractPersistenceMapper.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\AbstractRDBMapper.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EAyarKartlar.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EAyarKartlarRDMMapper.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EAyarListenerThread.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EDbLoggerThread.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EFileLogger.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ELoggerRDMMapper.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\IMapper.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\PersistenceFacade.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ScheduleTimerThread.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EVeritabani.h">
+      <Filter>Header Files\Veritabani</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EFileHandle.h">
+      <Filter>Header Files\File</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EFileLocker.h">
+      <Filter>Header Files\File</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\FileUtil.h">
+      <Filter>Header Files\File</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\EsyaOrtakGUI_Mod\Resources\EsyaOrtak.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\EsyaOrtakGUI_Mod\Resources\styles.qss">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\QtSolutions\qtsingleapplication.h">
+      <Filter>QtSolutions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EAyarAlici.h">
+      <Filter>Ayarlar\header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EAyarException.h">
+      <Filter>Ayarlar\header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EAyarGDMAcikDosya.h">
+      <Filter>Ayarlar\header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EAyarGDMDizin.h">
+      <Filter>Ayarlar\header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EAyarlar.h">
+      <Filter>Ayarlar\header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EAyarLdap.h">
+      <Filter>Ayarlar\header</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ELogger.h">
+      <Filter>Loglama</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ESqliteLogger.h">
+      <Filter>Loglama</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ILogger.h">
+      <Filter>Loglama</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EFilter.h">
+      <Filter>DBFilter</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\SchedulerTask.h">
+      <Filter>Scheduler_Cron</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ScheduleTaskExecuter.h">
+      <Filter>Scheduler_Cron</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\SignalSchedulerTask.h">
+      <Filter>Scheduler_Cron</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

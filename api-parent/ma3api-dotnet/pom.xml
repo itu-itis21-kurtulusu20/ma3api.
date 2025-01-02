@@ -1,0 +1,294 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>ma3api-parent</artifactId>
+		<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+		<version>2.3.25-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>ma3api-dotnet</artifactId>
+	<name>MA3 Api .Net Bundle</name>
+	<packaging>pom</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<targetFrameworkClassifier>net4</targetFrameworkClassifier>
+		<targetPlatform>Any CPU</targetPlatform>
+		<netdocClassifier>netdoc</netdocClassifier>
+		<ma3api.version>${project.version}</ma3api.version>
+		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
+		<timestamp>${maven.build.timestamp}</timestamp>
+	</properties>
+
+	<dependencies>
+	</dependencies>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<groupId>tr.gov.tubitak.uekae.esya.ci</groupId>
+				<artifactId>obfuscation</artifactId>
+				<version>1.0.7</version>
+				<executions>
+					<execution>
+						<id>parseversion</id>
+						<goals>
+							<goal>parse-version</goal>
+						</goals>
+						<phase>validate</phase>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.7</version>
+				<executions>
+					<execution>
+						<id>set_date_version</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<target name="Set Date and Version">
+								<exec executable="powershell.exe" failonerror="true">
+									<arg value="-Command"/>
+									<arg value="&quot;(gc ..\..\api-common\csharp\src\lcns\Bld.cs) -replace '20181005-0705', '${maven.build.timestamp}' | sc ..\..\api-common\csharp\src\lcns\Bld.cs&quot;"/>
+								</exec>
+								<exec executable="powershell.exe" failonerror="true">
+									<arg value="-Command"/>
+									<arg value="&quot;(gc ..\..\api-common\csharp\src\lcns\Bld.cs) -replace '2.1.20-SNAPSHOT', '${project.version}' | sc ..\..\api-common\csharp\src\lcns\Bld.cs&quot;"/>
+								</exec>
+							</target>
+						</configuration>
+					</execution>
+					<execution>
+						<id>build_dlls</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<target name="Build DLL">
+								<exec executable="${devenv.msbuild.dir}/MSBuild.exe" failonerror="true">
+									<arg value="api-parent-v.3.5.sln"/>
+									<arg value="/target:Rebuild"/>
+									<arg value="/p:Platform=${targetPlatform}"/>
+									<arg value="/p:Configuration=Release;AssemblyVersion=${parsedVersion.dotnetVersion}"/>
+								</exec>
+							</target>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>zip_signature</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<finalName>ESYAAPI-Signature</finalName>
+							<descriptors>
+								<descriptor>assemblyForSignature.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+					<execution>
+						<id>zip_envelope</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<finalName>ESYAAPI-Envelope</finalName>
+							<descriptors>
+								<descriptor>assemblyForEnvelope.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<profiles>
+		<profile>
+			<id>obfuscate_dlls</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<property>
+					<name>enableObfuscate</name>
+					<value>true</value>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<version>1.7</version>
+						<executions>
+							<execution>
+								<id>obfuscate_signature_dlls</id>
+								<phase>package</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<target>
+										<exec executable="cmd.exe" spawn="false" failonerror="true">
+											<arg value="/c"/>
+											<arg value="${devenv.obfuscar.dir}/Obfuscar.Console.exe"/>
+											<arg value="obfuscar_signature_config.xml"/>
+										</exec>
+									</target>
+								</configuration>
+							</execution>
+							<execution>
+								<id>obfuscate_envelope_dlls</id>
+								<phase>package</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<target>
+										<exec executable="cmd.exe" spawn="false" failonerror="true">
+											<arg value="/c"/>
+											<arg value="${devenv.obfuscar.dir}/Obfuscar.Console.exe"/>
+											<arg value="obfuscar_envelope_config.xml"/>
+										</exec>
+									</target>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>sign_dlls</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<property>
+					<name>sign_dlls</name>
+					<value>true</value>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>net.jsign</groupId>
+						<artifactId>jsign-maven-plugin</artifactId>
+						<version>5.0</version>
+						<configuration>
+							<keystore>${providerArg}</keystore>
+							<storepass>${storepass}</storepass>
+							<storetype>PKCS11</storetype>
+							<alias>${alias}</alias>
+							<tsaurl>${tsaurl}</tsaurl>
+						</configuration>
+						<executions>
+							<execution>
+								<id>sign_signature_dlls</id>
+								<phase>package</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+								<configuration>
+									<fileset>
+										<directory>${project.basedir}/obfuscated_signature</directory>
+										<includes>
+											<include>*.dll</include>
+										</includes>
+									</fileset>
+								</configuration>
+							</execution>
+							<execution>
+								<id>sign_signature_dlls_EN</id>
+								<phase>package</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+								<configuration>
+									<fileset>
+										<directory>${project.basedir}/bin/Release/en-US</directory>
+										<includes>
+											<include>*.dll</include>
+										</includes>
+									</fileset>
+								</configuration>
+							</execution>
+							<execution>
+								<id>sign_signature_dlls_TR</id>
+								<phase>package</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+								<configuration>
+									<fileset>
+										<directory>${project.basedir}/bin/Release/tr-TR</directory>
+										<includes>
+											<include>*.dll</include>
+										</includes>
+									</fileset>
+								</configuration>
+							</execution>
+							<execution>
+								<id>sign_envelope_dlls</id>
+								<phase>package</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+								<configuration>
+									<fileset>
+										<directory>${project.basedir}/obfuscated_envelope</directory>
+										<includes>
+											<include>*.dll</include>
+										</includes>
+									</fileset>
+								</configuration>
+							</execution>
+							<execution>
+								<id>sign_envelope_dlls_EN</id>
+								<phase>package</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+								<configuration>
+									<fileset>
+										<directory>${project.basedir}/../../api-cmsenvelope/csharp/api-cmsenvelope-bundle/bin/Release/en-US</directory>
+										<includes>
+											<include>*.dll</include>
+										</includes>
+									</fileset>
+								</configuration>
+							</execution>
+							<execution>
+								<id>sign_envelope_dlls_TR</id>
+								<phase>package</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+								<configuration>
+									<fileset>
+										<directory>${project.basedir}/../../api-cmsenvelope/csharp/api-cmsenvelope-bundle/bin/Release/tr-TR</directory>
+										<includes>
+											<include>*.dll</include>
+										</includes>
+									</fileset>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

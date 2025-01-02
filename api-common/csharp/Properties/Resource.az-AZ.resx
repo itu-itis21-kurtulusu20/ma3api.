@@ -1,0 +1,1332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACIKLAMA" xml:space="preserve">
+    <value>Açıqlama</value>
+  </data>
+  <data name="ACIKLAMA_GIRINIZ" xml:space="preserve">
+    <value>Zəhmət olmasa, açıqlama daxil edin!</value>
+  </data>
+  <data name="AD" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="ADRES" xml:space="preserve">
+    <value>Ünvan</value>
+  </data>
+  <data name="AKTARIM_BILGILERI" xml:space="preserve">
+    <value>Ötürmə Məlumatları</value>
+  </data>
+  <data name="AKTIF" xml:space="preserve">
+    <value>Aktiv</value>
+  </data>
+  <data name="AKTIF_YAP" xml:space="preserve">
+    <value>Aktiv et</value>
+  </data>
+  <data name="ALGORITMA" xml:space="preserve">
+    <value>Alqoritm</value>
+  </data>
+  <data name="ANAHTAR" xml:space="preserve">
+    <value>Açar</value>
+  </data>
+  <data name="ANAHTAR_ADI" xml:space="preserve">
+    <value>Açar Adı</value>
+  </data>
+  <data name="Anahtar_Bilgileri" xml:space="preserve">
+    <value>Açar Məlumatları</value>
+  </data>
+  <data name="ANAHTAR_BOYU" xml:space="preserve">
+    <value>Açar Boyu</value>
+  </data>
+  <data name="ANAHTAR_HATALI" xml:space="preserve">
+    <value>Simmetrik Şifrələmə açarı istifadə edilmir!</value>
+  </data>
+  <data name="ANAHTAR_SERTIFIKA_BETIGI" xml:space="preserve">
+    <value>Açar/Sertifikatt Skripti</value>
+  </data>
+  <data name="ANAHTAR_URETILIYOR" xml:space="preserve">
+    <value>Açar(lar) yaradılır</value>
+  </data>
+  <data name="ANAHTAR_URETME" xml:space="preserve">
+    <value>Açar Yaratma</value>
+  </data>
+  <data name="ANAH_URETILEMEDI" xml:space="preserve">
+    <value>Açar istehsalında xəta!</value>
+  </data>
+  <data name="ANA_DIZIN" xml:space="preserve">
+    <value>Ana kataloq</value>
+  </data>
+  <data name="ARA" xml:space="preserve">
+    <value>Axtar</value>
+  </data>
+  <data name="ARAMA" xml:space="preserve">
+    <value>Axtarış</value>
+  </data>
+  <data name="ARAMADA_BILINMEYEN_HATA" xml:space="preserve">
+    <value>Axtarışda bilinməyən bir xəta baş verdi! Axtarış nöqtəsini doğru verdiyinizdən əmin olun!</value>
+  </data>
+  <data name="ARAMA_FILTRESI_HATALI" xml:space="preserve">
+    <value>Verilən axtarış filtri xətalıdır! (Axtarış filter)</value>
+  </data>
+  <data name="ARANAN_TKA_0_BULUNAMADI" xml:space="preserve">
+    <value>Axtarılan TKA "{0}" tapıla bilmədi!</value>
+  </data>
+  <data name="ARGUMAN_BILINMIYOR" xml:space="preserve">
+    <value>Verilən arqument bilinmir!</value>
+  </data>
+  <data name="ASKIDA" xml:space="preserve">
+    <value>Asqıda</value>
+  </data>
+  <data name="ASKIYAAL" xml:space="preserve">
+    <value>Asqıya Alma Tələbi Yarat</value>
+  </data>
+  <data name="ASN1_DECODE_HATASI" xml:space="preserve">
+    <value>Asn1 strukturu DECODE edilərkən xəta ilə qarşılaşıldı!</value>
+  </data>
+  <data name="ASN1_ENCODE_HATASI" xml:space="preserve">
+    <value>Asn1 strukturu ENCODE edilərkən xəta ilə qarşılaşıldı!</value>
+  </data>
+  <data name="ATTRIBUTEA_VERILMEK_ISTENEN_DEGER_HATALI" xml:space="preserve">
+    <value>Atributa verilmək istənən dəyər atributun sxem təsviri ilə düz gəlmir!</value>
+  </data>
+  <data name="ATTRIBUTE_BILINMIYOR" xml:space="preserve">
+    <value>LDAP'dan gətirilməsi istənən atribut bilinməyən bir atribut!</value>
+  </data>
+  <data name="AYARLAR" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="BAKILACAK_YER" xml:space="preserve">
+    <value>Baxılacaq Yer</value>
+  </data>
+  <data name="BASARILI" xml:space="preserve">
+    <value>Uğurlu</value>
+  </data>
+  <data name="BASARISIZ" xml:space="preserve">
+    <value>Uğursuz</value>
+  </data>
+  <data name="BASLIK_ANAHTAR_PARCALAMA" xml:space="preserve">
+    <value>Açar Parçalama</value>
+  </data>
+  <data name="BASLIK_HAKKINDA" xml:space="preserve">
+    <value>Haqqında</value>
+  </data>
+  <data name="BASLIK_SIFRENIZ" xml:space="preserve">
+    <value>Şifrəniz</value>
+  </data>
+  <data name="BASLIK_SLOTLISTESI" xml:space="preserve">
+    <value>Slot Siyahısı Seçimi</value>
+  </data>
+  <data name="BELGE" xml:space="preserve">
+    <value>Sənəd</value>
+  </data>
+  <data name="BELGE_NO" xml:space="preserve">
+    <value>Sənəd No</value>
+  </data>
+  <data name="BELGE_YOLU" xml:space="preserve">
+    <value>Sənəd Yolu</value>
+  </data>
+  <data name="BILGI" xml:space="preserve">
+    <value>Məlumat</value>
+  </data>
+  <data name="BIRDEN_FAZLA_EMAIL" xml:space="preserve">
+    <value>Email ilə axtarış aparılmasına baxmayaraq birdən artıq nəticə tapıldı! Yalnız birini qaytarıram!</value>
+  </data>
+  <data name="BLOKUZUNLUGU_0_ALGI_1_DESTEKLEMIYOR" xml:space="preserve">
+    <value>Blok uzunluğunda xəta var! {0} alqoritmi {1} blok uzunluğunu dəstəkləmir!</value>
+  </data>
+  <data name="CALISTIRILMAMASI_GEREKEN_FONKSIYON" xml:space="preserve">
+    <value>Çağrılmaması lazım gələn bir funksiya çağırıldı.</value>
+  </data>
+  <data name="CARD_NO_CONFLICT" xml:space="preserve">
+    <value>Kartdan və məlumat bazasından oxunan kart seriya nömrələri eyni deyil!</value>
+  </data>
+  <data name="CA_CERT_ERROR" xml:space="preserve">
+    <value>SM sertifikatı alınarkən xəta baş verdi!</value>
+  </data>
+  <data name="CERTSIGN" xml:space="preserve">
+    <value>Sertifikat İmzalama</value>
+  </data>
+  <data name="CERT_HATALI" xml:space="preserve">
+    <value>Verilən sertifikat xətalıdır!</value>
+  </data>
+  <data name="CKR_DEVICE_MEMORY_M" xml:space="preserve">
+    <value>Ağıllı kart hafizəsində xəta baş verdi</value>
+  </data>
+  <data name="CKR_PIN_INCORRECT_M" xml:space="preserve">
+    <value>Parolunuz xətalı</value>
+  </data>
+  <data name="CKR_PIN_INVALID_M" xml:space="preserve">
+    <value>Parolunuz etibarsız</value>
+  </data>
+  <data name="CKR_PIN_LOCKED_M" xml:space="preserve">
+    <value>Ağıllı kartınızın PIN parolu kilidləndi.</value>
+  </data>
+  <data name="CKR_TOKEN_NOT_PRESENT_M" xml:space="preserve">
+    <value>Ağıllı Kartınızı Taxın</value>
+  </data>
+  <data name="CKR_USER_ALREADY_LOGGED_IN_M" xml:space="preserve">
+    <value>İstifadəçi login olmuş vəziyyətdədir.</value>
+  </data>
+  <data name="COMMONNAME" xml:space="preserve">
+    <value>CommonName (ÜmumiAd)</value>
+  </data>
+  <data name="COUNTRYCITIZENSHIP" xml:space="preserve">
+    <value>CountryCitizenship (Vətəndaşı olduğu ölkə)</value>
+  </data>
+  <data name="COUNTRYNAME" xml:space="preserve">
+    <value>CountryName (Ölkənin adı)</value>
+  </data>
+  <data name="COUNTRYRESIDENCE" xml:space="preserve">
+    <value>CountryResidence (Yaşadığı ölkə)</value>
+  </data>
+  <data name="CRLSIGN" xml:space="preserve">
+    <value>CRL İmzalama</value>
+  </data>
+  <data name="DATAENCIPHERMENT" xml:space="preserve">
+    <value>Verilən şifrələmə</value>
+  </data>
+  <data name="DATEOFBIRTH" xml:space="preserve">
+    <value>DateOfBirth (Doğum tarixi)</value>
+  </data>
+  <data name="DECIPHERONLY" xml:space="preserve">
+    <value>DecipherOnly (yalnız deşifrə et)</value>
+  </data>
+  <data name="DEFAULT_KURUM" xml:space="preserve">
+    <value>Default qurum, SM sahibidir</value>
+  </data>
+  <data name="DEGISME_TARIHI" xml:space="preserve">
+    <value>Dəyişmə tarixi</value>
+  </data>
+  <data name="DENEME_YAZISI" xml:space="preserve">
+    <value>Yoxlama yazısı</value>
+  </data>
+  <data name="DESTEKLENEN_MECHANIZMA_YOK" xml:space="preserve">
+    <value>Dəstəklənən bir PKCS#11 mexanizmi tapıla bilmədi!</value>
+  </data>
+  <data name="DETAYLAR" xml:space="preserve">
+    <value>Detallar</value>
+  </data>
+  <data name="DIGITALSIGNATURE" xml:space="preserve">
+    <value>Rəqəmli imza</value>
+  </data>
+  <data name="DIL" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="DIZINSIF_VEYA_KULLADI_HATALI" xml:space="preserve">
+    <value>LDAP'a bağlanarkən kataloq şifrəsi və ya istifadəçi adı yanlış verildi!</value>
+  </data>
+  <data name="DIZIN_ADI" xml:space="preserve">
+    <value>Kataloq Adı</value>
+  </data>
+  <data name="DLL_LOAD_EDILEMEDI" xml:space="preserve">
+    <value>Dll yüklənə bilmədi</value>
+  </data>
+  <data name="DNSNAME" xml:space="preserve">
+    <value>DNS Adı</value>
+  </data>
+  <data name="DOMAIN_COMPONENT" xml:space="preserve">
+    <value>domainKomponent</value>
+  </data>
+  <data name="DOSYA_ADI" xml:space="preserve">
+    <value>Dosye adı</value>
+  </data>
+  <data name="DOSYA_GORUNTULE" xml:space="preserve">
+    <value>Dosyeni ekrana çıxar</value>
+  </data>
+  <data name="DOSYA_KAYDET" xml:space="preserve">
+    <value>Dosyeyə qeyd et</value>
+  </data>
+  <data name="DOSYA_OKUNAMADI" xml:space="preserve">
+    <value>Dosye oxuna bilmədi!</value>
+  </data>
+  <data name="DOSYA_SEC" xml:space="preserve">
+    <value>Dosye seç</value>
+  </data>
+  <data name="DOSYA_SECILMEDI" xml:space="preserve">
+    <value>Dosye seçilmədi!</value>
+  </data>
+  <data name="DOSYA_SECINIZ" xml:space="preserve">
+    <value>Dosye seçin</value>
+  </data>
+  <data name="DOSYA_TURU" xml:space="preserve">
+    <value>Dosye növü</value>
+  </data>
+  <data name="DOSYA_YOLU" xml:space="preserve">
+    <value>Dosye yolu</value>
+  </data>
+  <data name="DUGME_AC" xml:space="preserve">
+    <value>Aç</value>
+  </data>
+  <data name="DUGME_BITIR" xml:space="preserve">
+    <value>Bitir</value>
+  </data>
+  <data name="DUGME_DETAY" xml:space="preserve">
+    <value>Detallar</value>
+  </data>
+  <data name="DUGME_DIZINDENSEC" xml:space="preserve">
+    <value>Kataloqdan seç</value>
+  </data>
+  <data name="DUGME_DIZIN_DNEKLE" xml:space="preserve">
+    <value>DN əlavə et</value>
+  </data>
+  <data name="DUGME_DN_OLUSTUR" xml:space="preserve">
+    <value>DN yarat</value>
+  </data>
+  <data name="DUGME_EKLE" xml:space="preserve">
+    <value>Əlavə et</value>
+  </data>
+  <data name="DUGME_ETKINLESTIR" xml:space="preserve">
+    <value>Aktivləşdir</value>
+  </data>
+  <data name="DUGME_EVET" xml:space="preserve">
+    <value>Bəli</value>
+  </data>
+  <data name="DUGME_GUNCELLE" xml:space="preserve">
+    <value>Aktivləşdir</value>
+  </data>
+  <data name="DUGME_HAYIR" xml:space="preserve">
+    <value>Xeyir</value>
+  </data>
+  <data name="DUGME_INIYAZ" xml:space="preserve">
+    <value>INI yaz</value>
+  </data>
+  <data name="DUGME_KAYDET" xml:space="preserve">
+    <value>Qeyd et</value>
+  </data>
+  <data name="DUGME_KOPYA_CIKAR" xml:space="preserve">
+    <value>Surət çıxar</value>
+  </data>
+  <data name="DUGME_ONAYLA" xml:space="preserve">
+    <value>Təsdiq et</value>
+  </data>
+  <data name="DUGME_PKCS10ISTEGI" xml:space="preserve">
+    <value>PKCS10 İstəyini yarat</value>
+  </data>
+  <data name="DUGME_SERTIFIKAAL" xml:space="preserve">
+    <value>Sertifikat Al</value>
+  </data>
+  <data name="DUGME_SERVISI_BASLAT" xml:space="preserve">
+    <value>Servisi Başlat</value>
+  </data>
+  <data name="DUGME_SERVISI_DURDUR" xml:space="preserve">
+    <value>Servisi Durdur</value>
+  </data>
+  <data name="DUGME_SIL" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="DUGME_SILYAYINLA" xml:space="preserve">
+    <value>Yeni CRL Yayınla</value>
+  </data>
+  <data name="DUGME_TAMAM" xml:space="preserve">
+    <value>Tamam</value>
+  </data>
+  <data name="DUGME_TARIH_SEC" xml:space="preserve">
+    <value>Tarix Seç</value>
+  </data>
+  <data name="DUGME_TEMIZLE" xml:space="preserve">
+    <value>Təmizlə</value>
+  </data>
+  <data name="DUGME_TUMUNUKALDIR" xml:space="preserve">
+    <value>Hamısını Qaldır</value>
+  </data>
+  <data name="DUGME_TUMUNUSEC" xml:space="preserve">
+    <value>Hamısını Seç</value>
+  </data>
+  <data name="DUGME_VAZGEC" xml:space="preserve">
+    <value>Vaz keç</value>
+  </data>
+  <data name="DUGME_VT_TEMIZLE" xml:space="preserve">
+    <value>VT Təmizlə</value>
+  </data>
+  <data name="DUGME_YENILE" xml:space="preserve">
+    <value>Yenilə</value>
+  </data>
+  <data name="DURUM" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="ECDSAANAHTARBOYU_0_BILINMIYOR" xml:space="preserve">
+    <value>ECDSA açar boyu {0} üçün parametrlər bilinmir.</value>
+  </data>
+  <data name="EKLENECEK_NOKTA_BULUNAMADI" xml:space="preserve">
+    <value>Yeni daxiletmənin əlavə ediləcəyi nöqtə tapıla bilmədi!</value>
+  </data>
+  <data name="EKLERKEN_AYNI_TKA" xml:space="preserve">
+    <value>LDAP'ta, LDAP'a yeni əlavə edilmək istənən məlumat ilə eyni TKA-lı və ya elektron poçt ünvanlı bir daxiletmə var!</value>
+  </data>
+  <data name="EKLERKEN_BILINMEYEN_HATA" xml:space="preserve">
+    <value>LDAP'ta yeni daxiletmə yaradarkən bilinməyən bir xəta baş verdi!</value>
+  </data>
+  <data name="EKLERKEN_EKSIK_ATTRIBUTE" xml:space="preserve">
+    <value>LDAP'a yeni əlavə edilməsi istənən daxiletmənin məcburi atributlarının hamısı verilməyib!</value>
+  </data>
+  <data name="ENCIPHERONLY" xml:space="preserve">
+    <value>EncipherOnly (Yalnız deşifrə et)</value>
+  </data>
+  <data name="ENCODEDECODE_HATASI" xml:space="preserve">
+    <value>Encode və/və ya decode xətası ilə qarşılaşıldı!</value>
+  </data>
+  <data name="EPOSTA" xml:space="preserve">
+    <value>Elektron poçt</value>
+  </data>
+  <data name="ESYA_KONTROL_MERKEZI" xml:space="preserve">
+    <value>ESYA Nəzarət Mərkəzi</value>
+  </data>
+  <data name="ESYA_KONTROL_MERKEZI_B" xml:space="preserve">
+    <value>ESYA NƏZARƏT MƏRKƏZİ</value>
+  </data>
+  <data name="EVET" xml:space="preserve">
+    <value>Bəli</value>
+  </data>
+  <data name="GECERLI" xml:space="preserve">
+    <value>Etibarlı</value>
+  </data>
+  <data name="GENDER" xml:space="preserve">
+    <value>Gender (Cins)</value>
+  </data>
+  <data name="GETATTRIBUTELIST_YANLIS_ARGUMANLA_CAGRILDI" xml:space="preserve">
+    <value>getAtributList funksiyası yanlış arqumentlə çağırıldı!</value>
+  </data>
+  <data name="GIVENNAME" xml:space="preserve">
+    <value>VerilmişAd</value>
+  </data>
+  <data name="GUNCELLEME" xml:space="preserve">
+    <value>Aktuallaşdırma</value>
+  </data>
+  <data name="GUNCELLEMEDE_HATA" xml:space="preserve">
+    <value>Aktuallaşdırma əməliyyatında xəta baş verdi!</value>
+  </data>
+  <data name="GUNCELLEME_IS_HATALI" xml:space="preserve">
+    <value>Verilən aktuallaşdırma aparılacaq iş dəyəri standartlar xaricindədir. Default DƏYƏR_ƏLAVƏ ET alınır!</value>
+  </data>
+  <data name="GUNCELLENECEK_TKA_0_BULUNAMADI" xml:space="preserve">
+    <value>Aktuallaşmaq istənən TKA "{0}" tapıla bilmədi!</value>
+  </data>
+  <data name="GUNCELLERKEN_CIKACAK_DEGER_BULUNAMADI" xml:space="preserve">
+    <value>Aktuallaşdırma sırasında çıxarılmaq istənən dəyər tapıla bilmədi!</value>
+  </data>
+  <data name="GUNCELLERKEN_DEGER_EKLENEMIYOR" xml:space="preserve">
+    <value>Aktuallaşdırma sırasında əlavə edilmək istənən dəyər əlavə oluna bilmir!</value>
+  </data>
+  <data name="HAKKINDA" xml:space="preserve">
+    <value>Haqqında</value>
+  </data>
+  <data name="HATA" xml:space="preserve">
+    <value>Xəta</value>
+  </data>
+  <data name="HATALI" xml:space="preserve">
+    <value>Yok yada Xətalı</value>
+  </data>
+  <data name="HATASIZ" xml:space="preserve">
+    <value>Var və Xətasız</value>
+  </data>
+  <data name="HAYIR" xml:space="preserve">
+    <value>Xeyir</value>
+  </data>
+  <data name="HEPSI" xml:space="preserve">
+    <value>Hamısı</value>
+  </data>
+  <data name="HIC_GELMEMELI" xml:space="preserve">
+    <value>Buraya heç gəlməməli</value>
+  </data>
+  <data name="HSME_ULASILAMADI" xml:space="preserve">
+    <value>HSM cihazına çatmaq mümkün olmadı!</value>
+  </data>
+  <data name="HSM_INIDEN_DEGERLER_OKUNAMADI" xml:space="preserve">
+    <value>HSM ayar Dosyesindən dəyərlər oxuna bilmədi!</value>
+  </data>
+  <data name="HSM_INI_0_OKUNAMADI" xml:space="preserve">
+    <value>HSM ayar dosyesi '{0}' oxuna bilmədi:</value>
+  </data>
+  <data name="IL" xml:space="preserve">
+    <value>Vilayət</value>
+  </data>
+  <data name="ILCE" xml:space="preserve">
+    <value>Rayon</value>
+  </data>
+  <data name="ILKLENDIRME_ANAHTAR_GRUP_NO" xml:space="preserve">
+    <value>Inisiallaşdırma Açar Qrup No</value>
+  </data>
+  <data name="ILKLENDIRME_BETIGI" xml:space="preserve">
+    <value>Inisiallaşdırma Skripti</value>
+  </data>
+  <data name="ILKLENDIRME_KART_TIPI" xml:space="preserve">
+    <value>Inisiallaşdırma Kart Tipi</value>
+  </data>
+  <data name="ILKLENDIRME_SABLON_ADI" xml:space="preserve">
+    <value>Inisiallaşdırma Şablon Adı</value>
+  </data>
+  <data name="ILKLENDIRME_SABLON_MAJOR_SURUMU" xml:space="preserve">
+    <value>Inisiallaşdırma Şablon Böyük Versiyası</value>
+  </data>
+  <data name="ILKLENDIRME_SABLON_MINOR_SURUMU" xml:space="preserve">
+    <value>Inisiallaşdırma Şablon Kiçik Versiyası</value>
+  </data>
+  <data name="IMZALA" xml:space="preserve">
+    <value>İmzala</value>
+  </data>
+  <data name="IMZALAMA" xml:space="preserve">
+    <value>İmzalama</value>
+  </data>
+  <data name="IMZALAMADA_HATA" xml:space="preserve">
+    <value>İmzalamada xəta!</value>
+  </data>
+  <data name="IMZALAMA_HATASI" xml:space="preserve">
+    <value>İmzalama apararkən xəta baş verdi!</value>
+  </data>
+  <data name="IMZALGOZET_YOK" xml:space="preserve">
+    <value>İmzalama qısa məzmun alqoritmi yoxdur!</value>
+  </data>
+  <data name="IMZALG_0_BILINMIYOR" xml:space="preserve">
+    <value>İmzalama alqoritmi {0} bilinmir!</value>
+  </data>
+  <data name="IMZALG_0_ICIN_1_BOYUNDAANAH_OLMAZ" xml:space="preserve">
+    <value>İmzalama alqoritmi {0} üçün {1} boyunda açar dəstəklənmir!</value>
+  </data>
+  <data name="IMZALG_0_ICIN_OZET_1_BILINMIYOR" xml:space="preserve">
+    <value>İmzalama alqoritmi {0} üçün qısa məzmun alqoritmi {1} bilinmir!</value>
+  </data>
+  <data name="IMZALG_YOK" xml:space="preserve">
+    <value>İmzalama alqoritmi yoxdur!</value>
+  </data>
+  <data name="IMZANAHBOY_YOK" xml:space="preserve">
+    <value>İmzalama açar boyu yoxdur!</value>
+  </data>
+  <data name="IMZANAH_HATALI" xml:space="preserve">
+    <value>İmzalama açarı xətalıdır!</value>
+  </data>
+  <data name="IMZA_DOGRULAMA_HATASI" xml:space="preserve">
+    <value>İmza təsdiq edərkən xəta baş verdi!</value>
+  </data>
+  <data name="IMZSERTSERINO_HATALI" xml:space="preserve">
+    <value>Səlahiyyətli istifadəçinin imzalama sertifikatının seriya nömrəsi xətalıdır!</value>
+  </data>
+  <data name="INIT_EDILMEMIS" xml:space="preserve">
+    <value>İnisiallaşdırma aparılmadan istifadə edilmək istənir!</value>
+  </data>
+  <data name="INIT_EDILMIS" xml:space="preserve">
+    <value>Daha əvvəlcə inisiallaşdırılıb!</value>
+  </data>
+  <data name="INVALID_CERT" xml:space="preserve">
+    <value>Sertifikat təsdiq oluna bilmədi!</value>
+  </data>
+  <data name="IP" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="IP_PORTTA_DIZIN_BULUNAMADI" xml:space="preserve">
+    <value>LDAP'a bağlanıla bilmədi. Verilən IP və portda kataloq tapıla bilmədi!</value>
+  </data>
+  <data name="ISLEM_TIPI" xml:space="preserve">
+    <value>Əməliyyat Tipi</value>
+  </data>
+  <data name="ISSUER" xml:space="preserve">
+    <value>Sertifikatı Verən ESHS</value>
+  </data>
+  <data name="KARTA_LOGIN_OLUNAMADI" xml:space="preserve">
+    <value>Karta Login oluna bilmədi!</value>
+  </data>
+  <data name="KARTA_ULASILAMADI" xml:space="preserve">
+    <value>Ağıllı karta çatmaq olmadı!</value>
+  </data>
+  <data name="KARTINIZ_TAKILIMI" xml:space="preserve">
+    <value>Kartınızın taxılmış olmasından əmin olun!</value>
+  </data>
+  <data name="KARTTAN_BILGILER_ALINAMADI" xml:space="preserve">
+    <value>Taxılmış kartdan lazımi məlumatlar alına bilməyib!</value>
+  </data>
+  <data name="KARTTA_0_ANAHTARI_VAR" xml:space="preserve">
+    <value>Kartda {0} adında açar var!</value>
+  </data>
+  <data name="KARTTA_0_ANAHTARI_YOK" xml:space="preserve">
+    <value>Kartda {0} adında açar tapıla bilmədi!</value>
+  </data>
+  <data name="KARTTA_HATA_0" xml:space="preserve">
+    <value>Ağıllı Kartda xəta baş verdi! {0}</value>
+  </data>
+  <data name="KARTTA_SIFRECOZME_HATA" xml:space="preserve">
+    <value>Kartda şifrə açma əməliyyatı aparıla bilmədi!</value>
+  </data>
+  <data name="KARTTA_SIFRELEME_YAPILAMADI" xml:space="preserve">
+    <value>Kartda şifrələmə əməliyyatı yapıla bilmədi!</value>
+  </data>
+  <data name="KART_TIPI" xml:space="preserve">
+    <value>Kart Tipi</value>
+  </data>
+  <data name="KART_TIPI_VE_PAROLA" xml:space="preserve">
+    <value>Kart Tipi və Parol</value>
+  </data>
+  <data name="KART_TIPLERI_OKUNAMADI" xml:space="preserve">
+    <value>Kart tipləri oxuna bilmədi</value>
+  </data>
+  <data name="KAYDEDILECEK_YER" xml:space="preserve">
+    <value>Qeyd ediləcək yer</value>
+  </data>
+  <data name="KAYIT_MAKAMI" xml:space="preserve">
+    <value>Qeydiyyat Orqanı</value>
+  </data>
+  <data name="KEYAGREEMENT" xml:space="preserve">
+    <value>Açar Müqaviləsi</value>
+  </data>
+  <data name="KEYCERTSIGN" xml:space="preserve">
+    <value>AçarSertİmza</value>
+  </data>
+  <data name="KEYENCIPHERMENT" xml:space="preserve">
+    <value>Açar Şifrələmə</value>
+  </data>
+  <data name="KIMLIKNO" xml:space="preserve">
+    <value>Ş/v nömrəsi</value>
+  </data>
+  <data name="KIRMIZI" xml:space="preserve">
+    <value>Qırmızı</value>
+  </data>
+  <data name="KONTROL_MERKEZI" xml:space="preserve">
+    <value>Nəzarət Mərkəzi</value>
+  </data>
+  <data name="KRIPTOMOD_ANAH_BUTUN" xml:space="preserve">
+    <value>Açarlar Bütün</value>
+  </data>
+  <data name="KRIPTOMOD_ANAH_PARCALI_MOFN" xml:space="preserve">
+    <value>Açarlar Parçalı (MofN)</value>
+  </data>
+  <data name="KRIPTOMOD_HSM" xml:space="preserve">
+    <value>HSM (Hardware Security Rejimile)</value>
+  </data>
+  <data name="KRIPTO_GENEL_HATA" xml:space="preserve">
+    <value>Kripto əməliyyatlarında ümumi bir xəta ilə qarşılaşıldı!</value>
+  </data>
+  <data name="KRITIKLOGOLUSTURULAMADI" xml:space="preserve">
+    <value>Kritik log yaradıla bilmədi</value>
+  </data>
+  <data name="KULLANIM_BILINMIYOR" xml:space="preserve">
+    <value>Verilən məqsəd üçün istifadə ediləcək simmetrik alqoritm bilinmir</value>
+  </data>
+  <data name="LABEL_KARTPAROLASINIGIRINIZ" xml:space="preserve">
+    <value>Zəhmət olmasa, kartınızın parolunu daxil edin:</value>
+  </data>
+  <data name="LABEL_SADECETAKILISLOTLAR" xml:space="preserve">
+    <value>Yalnız taxılmış slotlar</value>
+  </data>
+  <data name="LABEL_SLOTLISTESI" xml:space="preserve">
+    <value>Slot Siyahısı</value>
+  </data>
+  <data name="LDAPA_BAGLANILAMADI" xml:space="preserve">
+    <value>LDAP'a bağlanıla bilmədi!</value>
+  </data>
+  <data name="LDAPA_BAGLANTI_BULUNAMADI" xml:space="preserve">
+    <value>LDAP bağlantısı qurulmadan əməliyyat keçirilə bilməz. LDAP'a bağlantı tapıla bilmədi!</value>
+  </data>
+  <data name="LDAP_TIP_HATALI" xml:space="preserve">
+    <value>LDAP tipi xətalıdır!</value>
+  </data>
+  <data name="LISTELE" xml:space="preserve">
+    <value>Siyahıya al</value>
+  </data>
+  <data name="LISTE_GIRILIRKEN_HATA" xml:space="preserve">
+    <value>Siyahı daxil edilərkən xəta</value>
+  </data>
+  <data name="LOCALITYNAME" xml:space="preserve">
+    <value>LokallıqAdı</value>
+  </data>
+  <data name="LOG" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="LOG_MODULU" xml:space="preserve">
+    <value>Log Rejimli</value>
+  </data>
+  <data name="LOG_OLAYTIPI" xml:space="preserve">
+    <value>Log Hadisə Tipi</value>
+  </data>
+  <data name="LOG_SONUCU" xml:space="preserve">
+    <value>Log Nəticəsi</value>
+  </data>
+  <data name="LOG_TARIHI" xml:space="preserve">
+    <value>Log Tarixi</value>
+  </data>
+  <data name="LUTFEN_DOLDURUNUZ" xml:space="preserve">
+    <value>Zəhmət olmasa, doldurun:</value>
+  </data>
+  <data name="MAVI" xml:space="preserve">
+    <value>Mavi</value>
+  </data>
+  <data name="MESAJ_AKILLIKARTBILGILERIALINAMADI" xml:space="preserve">
+    <value>Ağıllı kart məlumatları alına bilmədi!</value>
+  </data>
+  <data name="MESAJ_ANAHTAR_PARCALAR_BOLUNUYOR" xml:space="preserve">
+    <value>Açar parçalara bölünür...</value>
+  </data>
+  <data name="MESAJ_BILINMEYENHATA" xml:space="preserve">
+    <value>Lisenziya nəzarətində bilinməyən bir xəta baş verdi!</value>
+  </data>
+  <data name="MESAJ_BOSALANKALMASIN" xml:space="preserve">
+    <value>Boş sahə qalmamalı. Zəhmət olmasa, bütün sahələri doldurun!</value>
+  </data>
+  <data name="MESAJ_DOSYABULUNAMADI" xml:space="preserve">
+    <value>Lisenziya dosyesi tapıla bilmədi!</value>
+  </data>
+  <data name="MESAJ_ENAZ_0_BUYUKHARFOLMALI" xml:space="preserve">
+    <value>Parolda ən azı {0} böyük hərf olmalıdır.</value>
+  </data>
+  <data name="MESAJ_ENAZ_0_KARAKTEROLMALI" xml:space="preserve">
+    <value>Parol uzunluğu  ən azı {0} olmalıdır.</value>
+  </data>
+  <data name="MESAJ_ENAZ_0_KUCUKHARFOLMALI" xml:space="preserve">
+    <value>Parolda ən azı {0} kiçik hərf olmalıdır.</value>
+  </data>
+  <data name="MESAJ_ENAZ_0_OZELKARAKTEROLMALI" xml:space="preserve">
+    <value>Parolda ən azı {0} xüsusi simvol olmalıdır. {1}</value>
+  </data>
+  <data name="MESAJ_ENAZ_0_RAKAMOLMALI" xml:space="preserve">
+    <value>Parolda ən azı {0} rəqəm olmalıdır.</value>
+  </data>
+  <data name="MESAJ_ENCOK_0_KARAKTEROLMALI" xml:space="preserve">
+    <value>Parol uzunluğu ən artıq {0} olmalıdır.</value>
+  </data>
+  <data name="MESAJ_HOSTADIBILINMIYOR" xml:space="preserve">
+    <value>Host adı bilinmir!</value>
+  </data>
+  <data name="MESAJ_HOSTHATALI" xml:space="preserve">
+    <value>Bu kompüterin adı lisenziyadakı məlumatlarla uyğun gəlmir.</value>
+  </data>
+  <data name="MESAJ_IMPL" xml:space="preserve">
+    <value>Tətbiq :</value>
+  </data>
+  <data name="MESAJ_IMPLURETICI" xml:space="preserve">
+    <value>Tətbiq yaradıcısı :</value>
+  </data>
+  <data name="MESAJ_IMPLVERSION" xml:space="preserve">
+    <value>Tətbiq Versiya :</value>
+  </data>
+  <data name="MESAJ_IPHATALI" xml:space="preserve">
+    <value>Bu kompüterin IP nömrəsi lisenziyadakı məlumatlarla uyğun deyil.</value>
+  </data>
+  <data name="MESAJ_LISANSBASLAMAMIS" xml:space="preserve">
+    <value>Lisenziyanızın müddəti başlamamışdır.</value>
+  </data>
+  <data name="MESAJ_LISANSBITMIS" xml:space="preserve">
+    <value>Lisenziyanızın müddəti bitmişdir.</value>
+  </data>
+  <data name="MESAJ_SPEC" xml:space="preserve">
+    <value>Spec :</value>
+  </data>
+  <data name="MESAJ_SPECURETICI" xml:space="preserve">
+    <value>Spec yaradıcısı :</value>
+  </data>
+  <data name="MESAJ_SPECVERSION" xml:space="preserve">
+    <value>Spec Versiya :</value>
+  </data>
+  <data name="MOD_0_BILINMIYOR" xml:space="preserve">
+    <value>Rejim {0} bilinmir!</value>
+  </data>
+  <data name="MOD_SECILMEMIS" xml:space="preserve">
+    <value>istifadə ediləcək rejim seçilməyib!</value>
+  </data>
+  <data name="MOD_SECILMIS" xml:space="preserve">
+    <value>Rejim daha əvvəldən seçilib!</value>
+  </data>
+  <data name="MOFN_KART_OKUNMUS" xml:space="preserve">
+    <value>Bu Kartdakı açar parçası daha əvvəlcə oxunmuşdur. Zəhmət olmasa, başqa bir kart ilə yoxlayın!</value>
+  </data>
+  <data name="NESNE_OKUNAMADI" xml:space="preserve">
+    <value>Predmet oxuna bilmədi</value>
+  </data>
+  <data name="NO" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NONREPUDIATION" xml:space="preserve">
+    <value>Red olmayan</value>
+  </data>
+  <data name="NO_DBCONNECTION" xml:space="preserve">
+    <value>Məlumat bazasına bağlantı xətası!</value>
+  </data>
+  <data name="NO_SUCH_CARD_NO" xml:space="preserve">
+    <value>Bu səlahiyyətli istifadəçinin məlumat bazasında kart seriya nömrəsi müəyyən edilməyib!</value>
+  </data>
+  <data name="NO_SUCH_USER" xml:space="preserve">
+    <value>Bu istifadəçi adına sahib bir səlahiyyətli istifadəçi sistemdə müəyyən edilməyib!</value>
+  </data>
+  <data name="NUMARA" xml:space="preserve">
+    <value>Nömrə</value>
+  </data>
+  <data name="OID_0_BILINMIYOR" xml:space="preserve">
+    <value>Alqoritm OID {0} bilinmir!</value>
+  </data>
+  <data name="OID_ADI" xml:space="preserve">
+    <value>OID Adı</value>
+  </data>
+  <data name="OID_DEGERI" xml:space="preserve">
+    <value>OID Dəyəri</value>
+  </data>
+  <data name="ONCA_0_FONKSIYONU_CAGRILMALI" xml:space="preserve">
+    <value>Əvvəlcə init_SMQurulumIcin(...) funksiyası çağırılmalıdır!</value>
+  </data>
+  <data name="ONCEKI" xml:space="preserve">
+    <value>Əvvəlki</value>
+  </data>
+  <data name="ONIZLEME" xml:space="preserve">
+    <value>Ön izləmə</value>
+  </data>
+  <data name="ORGANIZATIONAL_UNIT_NAME" xml:space="preserve">
+    <value>Təşkilat vahidinin adı</value>
+  </data>
+  <data name="ORGANIZATION_NAME" xml:space="preserve">
+    <value>organizationName (Təşkilat Adı)</value>
+  </data>
+  <data name="OZETALG_0_BILINMIYOR" xml:space="preserve">
+    <value>Qısa məzmun alqoritmi {0} bilinmir!</value>
+  </data>
+  <data name="PADDING_BILINMIYOR" xml:space="preserve">
+    <value>Verilən paddinq bilinmir!</value>
+  </data>
+  <data name="PADDING_HATALI" xml:space="preserve">
+    <value>Yanlış paddinq byte'ları ilə qarşılaşıldı!</value>
+  </data>
+  <data name="PARAMETRELER" xml:space="preserve">
+    <value>Parametrlər</value>
+  </data>
+  <data name="PAROLA" xml:space="preserve">
+    <value>Parol</value>
+  </data>
+  <data name="PAROLA_HATALI" xml:space="preserve">
+    <value>Verilən parol xətalıdır!</value>
+  </data>
+  <data name="PAROLA_SURESI_DOLMUS" xml:space="preserve">
+    <value>Parol müddəti dolmuşdur!</value>
+  </data>
+  <data name="PASIF" xml:space="preserve">
+    <value>Passiv</value>
+  </data>
+  <data name="PASIF_YAP" xml:space="preserve">
+    <value>Passiv Et</value>
+  </data>
+  <data name="PFX_UZANTISI" xml:space="preserve">
+    <value>PFX Uzantısı</value>
+  </data>
+  <data name="PLACEOFBIRTH" xml:space="preserve">
+    <value>Doğum Yeri</value>
+  </data>
+  <data name="PRIVBYTES_HATALI" xml:space="preserve">
+    <value>PrivateKey (xüsusi açar) olaraq alınan byte array (bayt oxu) xətalıdır!</value>
+  </data>
+  <data name="PRIVKEY_OLUSTURULAMADI" xml:space="preserve">
+    <value>Xüsusi açar yaratmaq üçün məlumatlar alına bilmədi!</value>
+  </data>
+  <data name="PSEUDONYM" xml:space="preserve">
+    <value>Psevdonim</value>
+  </data>
+  <data name="PUBBYTES_HATALI" xml:space="preserve">
+    <value>PublicKey (xüsusi açar) olaraq alınan byte array xətalıdır!</value>
+  </data>
+  <data name="PUBKEY_YOK" xml:space="preserve">
+    <value>Açıq açar əlimdə yoxdur!</value>
+  </data>
+  <data name="PUBLICKEY_OKUNAMADI" xml:space="preserve">
+    <value>Kartdan açıq açar oxuna bilmədi!</value>
+  </data>
+  <data name="RASTGELE" xml:space="preserve">
+    <value>Təsadüfi</value>
+  </data>
+  <data name="RB_HATA_44105" xml:space="preserve">
+    <value>Bu səlahiyyətli istifadəçinin məlumat bazasında sertifikat seriya nömrəsi yoxdur!</value>
+  </data>
+  <data name="RB_HATA_44106" xml:space="preserve">
+    <value>Kartdan və məlumat bazasından oxunan sertifikat seriya nömrələri eyni deyil!</value>
+  </data>
+  <data name="ROLE" xml:space="preserve">
+    <value>Rol (Vəzifə)</value>
+  </data>
+  <data name="ROLU_KAYITCI_OLAN_IMZ_SERT_BULUNAMADI" xml:space="preserve">
+    <value>Rolu qeydiyyatçı olan etibarlı imzalama sertifikatı tapıla bilmədi və ya sayı birdən artıqdır!</value>
+  </data>
+  <data name="SCHEMA_HATASI" xml:space="preserve">
+    <value>LDAP'da sxem xətası... Sxemə zidd bir iş görülmək istəndi!</value>
+  </data>
+  <data name="SEARCH_KONTROL_HATALI" xml:space="preserve">
+    <value>Verilən axtarış nəzarətlərində xəta var!</value>
+  </data>
+  <data name="SERTIFIKA_ALMA" xml:space="preserve">
+    <value>Sertifikat alma</value>
+  </data>
+  <data name="SERTIFIKA_IPTALASKI" xml:space="preserve">
+    <value>Sertifikat Ləğv/Asqı</value>
+  </data>
+  <data name="SERTIFIKA_IPTAL_TALEBI" xml:space="preserve">
+    <value>Sertifikat Ləğv Tələbi</value>
+  </data>
+  <data name="SERTIFIKA_ISLEMLERI" xml:space="preserve">
+    <value>Sertifikat Əməliyyatları</value>
+  </data>
+  <data name="SERTIFIKA_TALEP" xml:space="preserve">
+    <value>Sertifikat Tələb</value>
+  </data>
+  <data name="SIFALG_0_BILINMIYOR" xml:space="preserve">
+    <value>Şifrələmə alqoritmi {0} bilinmir!</value>
+  </data>
+  <data name="SIFALG_0_ICIN_1_BOYUNDAANAH_OLMAZ" xml:space="preserve">
+    <value>Şifrələmə alqoritmi {0} üçün {1} boyunda açar dəstəklənmir!</value>
+  </data>
+  <data name="SIFALG_YOK" xml:space="preserve">
+    <value>Şifrələmə alqoritmi yoxdur!</value>
+  </data>
+  <data name="SIFANAHBOY_YOK" xml:space="preserve">
+    <value>Şifrələmə açar boyu yoxdur!</value>
+  </data>
+  <data name="SIFANAH_HATALI" xml:space="preserve">
+    <value>Şifrələmə açarı xətalıdır!</value>
+  </data>
+  <data name="SIFRELE" xml:space="preserve">
+    <value>Şifrələ</value>
+  </data>
+  <data name="SIFRELEME_HATASI" xml:space="preserve">
+    <value>Şifrələmə xətası:</value>
+  </data>
+  <data name="SIFRE_COZME_HATASI" xml:space="preserve">
+    <value>Şifrə açma xətası:</value>
+  </data>
+  <data name="SIFSERTSERINO_OKUMA_HATASI" xml:space="preserve">
+    <value>Səlahiyyətli istifadəçinin Şifrələmə sertifikat seriya nömrəsi oxunarkən xəta baş verdi!</value>
+  </data>
+  <data name="SILERKEN_BILINMEYEN_HATA" xml:space="preserve">
+    <value>LDAP'dan TKA silərkən bilinməyən bir xəta baş verdi!</value>
+  </data>
+  <data name="SILINECEK_TKADA_ENTRY_VAR" xml:space="preserve">
+    <value>LDAP'dan silinmək istənən TKA başqa daxiletmə(lər) ehtiva edir!</value>
+  </data>
+  <data name="SILINECEK_TKA_HATALI" xml:space="preserve">
+    <value>LDAP'dan silinməsi istənən TKA yanlış verildi!</value>
+  </data>
+  <data name="SIMALG_BILINMIYOR" xml:space="preserve">
+    <value>Verilən Simmetrik alqoritm bilinmir!</value>
+  </data>
+  <data name="SIMALG_OID_BILINMIYOR" xml:space="preserve">
+    <value>Bu simmetrik alqoritm üçün obyekt ID bilinmir!</value>
+  </data>
+  <data name="SIMMOD_BILINMIYOR" xml:space="preserve">
+    <value>Verilən simmetrik alqoritm rejimi bilinmir!</value>
+  </data>
+  <data name="SONRAKI" xml:space="preserve">
+    <value>Sonrakı</value>
+  </data>
+  <data name="SORU" xml:space="preserve">
+    <value>Sual</value>
+  </data>
+  <data name="SOYAD" xml:space="preserve">
+    <value>Soyad</value>
+  </data>
+  <data name="STATE_OR_PROVINCE_NAME" xml:space="preserve">
+    <value>stateOrProvinceName (dövlət və ya əyalət adı)</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>LOG_METNI</value>
+  </data>
+  <data name="SUBJECT" xml:space="preserve">
+    <value>Sertifikat Sahibi</value>
+  </data>
+  <data name="SUNIMZOBJE_DOGRU_INIT_EDILMEMIS" xml:space="preserve">
+    <value>SUN İmzalama obyekti doğru inisiallaşdırılmayıb!</value>
+  </data>
+  <data name="TC_KIMLIK_NO" xml:space="preserve">
+    <value>TC Ş/v No</value>
+  </data>
+  <data name="TIP" xml:space="preserve">
+    <value>Tip</value>
+  </data>
+  <data name="_0_1_ARALIGINDA_OLMALI" xml:space="preserve">
+    <value>Saylar {0}-{1} aralığında olmalı!</value>
+  </data>
+  <data name="_0_ALGORITMASIYLA_SIFRECOZME_YAPILAMIYOR" xml:space="preserve">
+    <value>{0} alqoritmi ilə şifrə açma aparıla bilmir!</value>
+  </data>
+  <data name="_0_ISLEMI_ICIN_YETERLI_YETKINIZ_YOK" xml:space="preserve">
+    <value>{0} əməliyyatını gerçəkləşdirmək üçün yetərli səlahiyyətə malik deyilsiniz!</value>
+  </data>
+  <data name="EKU_CLIENT_AUTHENTICATION" xml:space="preserve">
+    <value>Müştəri Tanıma</value>
+  </data>
+  <data name="EKU_CODE_SIGNING" xml:space="preserve">
+    <value>Kod İmzalama</value>
+  </data>
+  <data name="EKU_DVCS" xml:space="preserve">
+    <value>DVCS</value>
+  </data>
+  <data name="EKU_EMAIL_PROTECTION" xml:space="preserve">
+    <value>Elektron Poçt Koruma</value>
+  </data>
+  <data name="EKU_IPSEC_END_SYSTEM" xml:space="preserve">
+    <value>IPSEC Yekunlaşdırma Sistemi</value>
+  </data>
+  <data name="EKU_IPSEC_TUNNEL" xml:space="preserve">
+    <value>IPSEC tuneli</value>
+  </data>
+  <data name="EKU_IPSEC_USER" xml:space="preserve">
+    <value>IPSEC istifadəçisi</value>
+  </data>
+  <data name="EKU_OCSP_SIGNING" xml:space="preserve">
+    <value>OCSP İmzalama</value>
+  </data>
+  <data name="EKU_SERVER_AUTHENTICATION" xml:space="preserve">
+    <value>Server Tanıma</value>
+  </data>
+  <data name="EKU_TIME_STAMPING" xml:space="preserve">
+    <value>Zaman Damğası</value>
+  </data>
+  <data name="ISSUER_ALT_NAME" xml:space="preserve">
+    <value>Issuer Alternative Name (Verənin alternativ adı)</value>
+  </data>
+  <data name="key_let_cihazBilgilerindeDegisiklikYapilmasi" xml:space="preserve">
+    <value>Cihaz Məlumatlarında Dəyişiklik Edilməsi</value>
+  </data>
+  <data name="key_let_cihazOlusturma" xml:space="preserve">
+    <value>Cihaz Yaratma</value>
+  </data>
+  <data name="key_let_cihazSilinmesi" xml:space="preserve">
+    <value>Cihazın Silinməsi</value>
+  </data>
+  <data name="key_let_denetlemeLoglariSilmeGirisimi" xml:space="preserve">
+    <value>Yoxlanılan Logları Silmə Təşəbbüsü</value>
+  </data>
+  <data name="key_let_denetlenenOlaylarinDegistirilmesi" xml:space="preserve">
+    <value>Yoxlanılan hadisələrin dəyişdirilməsi</value>
+  </data>
+  <data name="key_let_kayitcininSistemdenCikmasi" xml:space="preserve">
+    <value>Qeydiyyatçının Sistemdən Çıxması</value>
+  </data>
+  <data name="key_let_kayitcininSistemeGirmesi" xml:space="preserve">
+    <value>Qeydiyyatçının Sistemə Girməsi</value>
+  </data>
+  <data name="key_let_kontrolMerkezininCalismasi" xml:space="preserve">
+    <value>Nəzarət Mərkəzinin Çalışması</value>
+  </data>
+  <data name="key_let_kontrolMerkezininDurmasi" xml:space="preserve">
+    <value>Nəzarət Mərkəzinin Dayanması</value>
+  </data>
+  <data name="key_let_ksmAnahtarDegisimi" xml:space="preserve">
+    <value>KSM Açar Dəyişikliyi</value>
+  </data>
+  <data name="key_let_kullaniciBilgilerindeDegisiklikYapilmasi" xml:space="preserve">
+    <value>İstifadəçi Məlumatlarında Dəyişiklik Edilməsi</value>
+  </data>
+  <data name="key_let_kullaniciOlusturma" xml:space="preserve">
+    <value>İstifadəçi Yaratma</value>
+  </data>
+  <data name="key_let_kullaniciSilinmesi" xml:space="preserve">
+    <value>İstifadəçinin silinməsi</value>
+  </data>
+  <data name="key_let_logYazmaGirisimi" xml:space="preserve">
+    <value>Log yazma təşəbbüsü</value>
+  </data>
+  <data name="key_let_sertifikaAskidanIndirilmesi" xml:space="preserve">
+    <value>Sertifikatın Asqıdan Endirilməsi</value>
+  </data>
+  <data name="key_let_sertifikaAskidanIndirmeIstegi" xml:space="preserve">
+    <value>Sertifikat Asqıdan Endirmə İstəyi</value>
+  </data>
+  <data name="key_let_sertifikaAskiyaAlinmasi" xml:space="preserve">
+    <value>Sertifikatın Asqıya Alınması</value>
+  </data>
+  <data name="key_let_sertifikaAskiyaAlmaIstegi" xml:space="preserve">
+    <value>Sertifikat Asqıya Alma İstəyi</value>
+  </data>
+  <data name="key_let_sertifikaImzalanmasi" xml:space="preserve">
+    <value>Sertifikatın İmzalanması</value>
+  </data>
+  <data name="key_let_sertifikaIptalEdilmesi" xml:space="preserve">
+    <value>Sertifikatın Ləğv Edilməsi</value>
+  </data>
+  <data name="key_let_sertifikaIptalIstegi" xml:space="preserve">
+    <value>Sertifikatı Ləğv İstəyi</value>
+  </data>
+  <data name="key_let_sertifikaIstekMesajiGelmesi" xml:space="preserve">
+    <value>Sertifikat İstək Mesajının Gəlməsi</value>
+  </data>
+  <data name="key_let_sertifikaSablonuOlusturulmasi" xml:space="preserve">
+    <value>Sertifikat Şablonu Yaradılması</value>
+  </data>
+  <data name="key_let_sertifikaSablonuSilinmesi" xml:space="preserve">
+    <value>Sertifikat Şablonunun Silinməsi</value>
+  </data>
+  <data name="key_let_sifrelemeAnahtariGonderilmesi" xml:space="preserve">
+    <value>Şifrələmə Açarı Göndərilməsi</value>
+  </data>
+  <data name="key_let_sifrelemeAnahtarinaUlasim" xml:space="preserve">
+    <value>Şifrələmə Açarına Çatma</value>
+  </data>
+  <data name="key_let_silKonfigurasyonuEklenmesi" xml:space="preserve">
+    <value>CRL Konfiqurasiyasının Əlavə Edilməsi</value>
+  </data>
+  <data name="key_let_silKonfigurasyonuGuncellenmesi" xml:space="preserve">
+    <value>CRL Konfiqurasiyasının Aktivləşdirilməsi</value>
+  </data>
+  <data name="key_let_silOlusturma" xml:space="preserve">
+    <value>CRL Yaratma</value>
+  </data>
+  <data name="key_let_silSablonuEklenmesi" xml:space="preserve">
+    <value>CRL Şablonunun Əlavə Edilməsi</value>
+  </data>
+  <data name="key_let_silSablonuGuncellenmesi" xml:space="preserve">
+    <value>CRL Şablonunun Aktuallaşdırılması</value>
+  </data>
+  <data name="key_let_silServisininCalismasi" xml:space="preserve">
+    <value>CRL Servisinin Çalışması</value>
+  </data>
+  <data name="key_let_silServisininDurmasi" xml:space="preserve">
+    <value>CRL Servisinin Dayanması</value>
+  </data>
+  <data name="key_let_sistemParametreleriDegistirilmesi" xml:space="preserve">
+    <value>Sistem Parametrlərinin Dəyişdirilməsi</value>
+  </data>
+  <data name="key_let_smAnahtarDegisimi" xml:space="preserve">
+    <value>SM Açar Dəyişikliyi</value>
+  </data>
+  <data name="key_let_smAnahtarDegisimiIcinIstekUretilmesi" xml:space="preserve">
+    <value>SM Açar Dəyişikliyi Üçün İstək Yaradılması</value>
+  </data>
+  <data name="key_let_smServisininCalismasi" xml:space="preserve">
+    <value>SM Servisinin Çalışması</value>
+  </data>
+  <data name="key_let_smServisininDurmasi" xml:space="preserve">
+    <value>SM Servisinin Dayanması</value>
+  </data>
+  <data name="key_let_webKayitMakamininCalismasi" xml:space="preserve">
+    <value>Qeydiyyat Orqanının Çalışması</value>
+  </data>
+  <data name="key_let_webKayitMakamininDurmasi" xml:space="preserve">
+    <value>Qeydiyyat Orqanının Dayanması</value>
+  </data>
+  <data name="key_let_yetkiDegisiklikleri" xml:space="preserve">
+    <value>Səlahiyyət Dəyişiklikləri</value>
+  </data>
+  <data name="key_let_yetkiliEkleme" xml:space="preserve">
+    <value>Səlahiyyətli Əlavəetmə</value>
+  </data>
+  <data name="SERTIFIKA" xml:space="preserve">
+    <value>Sertifikat</value>
+  </data>
+  <data name="SERTIFIKA_AIA" xml:space="preserve">
+    <value>Xidmət Təminedici Məlumata Çatma</value>
+  </data>
+  <data name="SERTIFIKA_AUTHORITY_KEY_ID" xml:space="preserve">
+    <value>Xidmət Təminedici Açarın Təyinedicisi (İdentifikatoru)</value>
+  </data>
+  <data name="SERTIFIKA_BASIC_CONS" xml:space="preserve">
+    <value>Əsas Məhdudiyyətlər</value>
+  </data>
+  <data name="SERTIFIKA_CDP" xml:space="preserve">
+    <value>CRL Paylama Nöqtələri</value>
+  </data>
+  <data name="SERTIFIKA_EXTENDED_KEY_USAGE" xml:space="preserve">
+    <value>Genişləndirilmiş açar istifadəsi</value>
+  </data>
+  <data name="SERTIFIKA_KEY_USAGE" xml:space="preserve">
+    <value>Açarın istifadəsi</value>
+  </data>
+  <data name="SERTIFIKA_POLICIES" xml:space="preserve">
+    <value>Sertifikat Prinsipləri</value>
+  </data>
+  <data name="SERTIFIKA_POLICY_MAPPINGS" xml:space="preserve">
+    <value>Prinsip Bərabərləşdirmələri</value>
+  </data>
+  <data name="SERTIFIKA_QC_STATEMENTS" xml:space="preserve">
+    <value>Keyfiyyətli Sertifikat Aksesuarları</value>
+  </data>
+  <data name="SERTIFIKA_SAN" xml:space="preserve">
+    <value>Subyekt Digər Adı</value>
+  </data>
+  <data name="SERTIFIKA_SERIAL_NUMBER" xml:space="preserve">
+    <value>Seriya nömrəsi</value>
+  </data>
+  <data name="SERTIFIKA_SUBJECT_DIRECTORY_ATTR" xml:space="preserve">
+    <value>Subyekt Kataloq Məlumatları</value>
+  </data>
+  <data name="SERTIFIKA_SUBJECT_KEY_ID" xml:space="preserve">
+    <value>Subyekt Açarı Təyinedicisi (İdentifikatoru)</value>
+  </data>
+  <data name="SIL_HOLD_INST_CODE" xml:space="preserve">
+    <value>Hold Instruction Code</value>
+  </data>
+  <data name="SIL_ISSUING_DIST_POINT" xml:space="preserve">
+    <value>Sil Issuing Distribution Point (Paylama Nöqtəsinin Verilməsi)</value>
+  </data>
+  <data name="SIL_REASON_CODE" xml:space="preserve">
+    <value>Ləğv səbəbi</value>
+  </data>
+  <data name="SIL_REASON_CODE_IMZ" xml:space="preserve">
+    <value>İmzalama sertifikatı ləğv səbəbi</value>
+  </data>
+  <data name="SIL_REASON_CODE_SIF" xml:space="preserve">
+    <value>Şifrələmə sertifikatı ləğv səbəbi</value>
+  </data>
+  <data name="TOOLTIP_ISLEMDEVAMEDIYOR" xml:space="preserve">
+    <value>Əməliyyat davam edir</value>
+  </data>
+  <data name="TUM_DOSYALAR" xml:space="preserve">
+    <value>Bütün dosyelər</value>
+  </data>
+  <data name="TUM_TABLOYU_IMZALA" xml:space="preserve">
+    <value>Bütün cədvəli imzala</value>
+  </data>
+  <data name="UPN" xml:space="preserve">
+    <value>UPN</value>
+  </data>
+  <data name="UST_DIZIN" xml:space="preserve">
+    <value>Üst Kataloq</value>
+  </data>
+  <data name="UYARI" xml:space="preserve">
+    <value>Xəbərdarlıq</value>
+  </data>
+  <data name="VARSAYILAN" xml:space="preserve">
+    <value>Fərz edilən</value>
+  </data>
+  <data name="VERILEN_ARAMA_NOKTASI_NULL_VEYA_BOS" xml:space="preserve">
+    <value>Verilən axtarış nöqtəsi sıfır və ya boş!</value>
+  </data>
+  <data name="VERSION" xml:space="preserve">
+    <value>Versiya</value>
+  </data>
+  <data name="VT_ERROR" xml:space="preserve">
+    <value>Məlumat bazası xətası!</value>
+  </data>
+  <data name="X400NAME" xml:space="preserve">
+    <value>X400Name</value>
+  </data>
+  <data name="YAPILANDIRMADA_EKLENDI" xml:space="preserve">
+    <value>Konfiqurasiyada əlavə olundu</value>
+  </data>
+  <data name="YENI_DIZIN_OLUSTUR" xml:space="preserve">
+    <value>Yeni kataloq yarat</value>
+  </data>
+  <data name="YESIL" xml:space="preserve">
+    <value>Yaşıl</value>
+  </data>
+  <data name="YONETICI_EPOSTA" xml:space="preserve">
+    <value>Rəhbər elektron poçt</value>
+  </data>
+  <data name="YONSAY_MIN_0_OLMALI" xml:space="preserve">
+    <value>Rəhbər sayı ən azı {0} olmalı!</value>
+  </data>
+  <data name="YON_SAY_FARKLI" xml:space="preserve">
+    <value>Rəhbər sayı köhnə verilənlə eyni deyil!</value>
+  </data>
+  <data name="SC_SELECTOR_NOT_GIVEN" xml:space="preserve">
+    <value>Akıllı Kart Seçici Verilmedi</value>
+  </data>
+  <data name="SELECT_SC" xml:space="preserve">
+    <value>Akıllı Kart Seçin</value>
+  </data>
+  <data name="WRONG_FORMAT_QCC_STATEMENT" xml:space="preserve">
+    <value>Xml faylına daxil edilmiş qualified certificate checker parametrinin formatı səhvdir.</value>
+  </data>
+</root>

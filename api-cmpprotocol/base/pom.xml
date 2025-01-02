@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>          
+        <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+        <artifactId>ma3api-cmpprotocol-parent</artifactId>
+        <version>2.3.25-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>ma3api-cmpprotocol-base</artifactId>
+    <name>MA3 Api Cmp Protocol Base</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-common</artifactId>
+            <!--<version>1.4.15</version>-->
+        </dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-asn</artifactId>
+            <!--<version>1.4.15</version>-->
+        </dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-crypto</artifactId>
+            <!--<version>1.4.15</version>-->
+        </dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-crypto-gnuprovider</artifactId>
+            <!--<version>1.4.15</version>-->
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <!--<testSourceDirectory>testsrc</testSourceDirectory>-->
+        <plugins>
+
+        </plugins>
+    </build>
+
+
+</project>

@@ -1,0 +1,85 @@
+MessageRecoverySignatureMechanisms {
+iso(1) standard(0) signature-schemes(9796) part(2) asn1-module(1)
+message-recovery-signature-mechanisms(0) }
+DEFINITIONS EXPLICIT TAGS ::= BEGIN
+IMPORTS
+HashFunctions
+FROM DedicatedHashFunctions {
+iso(1) standard(0) hash-functions(10118) part(3)
+asn1-module(1) dedicated-hash-functions(0) } ;
+SignatureWithMessageRecovery ::= SEQUENCE {
+algorithm ALGORITHM.&id({MessageRecovery}),
+parameters ALGORITHM.&Type({MessageRecovery}{@algorithm}) OPTIONAL
+}
+MessageRecovery ALGORITHM ::= {
+dswmr-mechanism1A |
+dswmr-mechanism2A |
+dswmr-mechanism3A |
+dswmr-mechanism1N |
+dswmr-mechanism2N |
+dswmr-mechanism3N |
+dswmr-mechanism1A-sha1 |
+dswmr-mechanism2A-sha1 |
+dswmr-mechanism3A-sha1 |
+dswmr-mechanism1N-sha1 |
+dswmr-mechanism2N-sha1 |
+dswmr-mechanism3N-sha1,
+... -- Expect additional signature scheme objects --
+}
+dswmr-mechanism1A ALGORITHM ::= {
+OID mechanism1A PARMS HashFunctions
+}
+dswmr-mechanism2A ALGORITHM ::= {
+OID mechanism2A PARMS HashFunctions
+}
+dswmr-mechanism3A ALGORITHM ::= {
+OID mechanism3A PARMS HashFunctions
+}
+dswmr-mechanism1N ALGORITHM ::= {
+OID mechanism1N PARMS HashFunctions
+}
+dswmr-mechanism2N ALGORITHM ::= {
+OID mechanism2N PARMS HashFunctions
+}
+dswmr-mechanism3N ALGORITHM ::= {
+OID mechanism3N PARMS HashFunctions
+}
+dswmr-mechanism1A-sha1 ALGORITHM ::= { OID mechanism1A-sha1 }
+dswmr-mechanism2A-sha1 ALGORITHM ::= { OID mechanism2A-sha1 }
+dswmr-mechanism3A-sha1 ALGORITHM ::= { OID mechanism3A-sha1 }
+dswmr-mechanism1N-sha1 ALGORITHM ::= { OID mechanism1N-sha1 }
+dswmr-mechanism2N-sha1 ALGORITHM ::= { OID mechanism2N-sha1 }
+dswmr-mechanism3N-sha1 ALGORITHM ::= { OID mechanism3N-sha1 }
+-- Cryptographic algorithm identification --
+ALGORITHM ::= CLASS {
+&id OBJECT IDENTIFIER UNIQUE,
+&Type OPTIONAL
+}
+WITH SYNTAX { OID &id [PARMS &Type] }
+-- Message recovery signature mechanisms --
+OID ::= OBJECT IDENTIFIER -- Alias
+signatureMechanismA OID ::= {
+iso(1) standard(0) signature-schemes(9796) part2(2) mechanism(0) alternate(0)
+}
+mechanism1A OID ::= { signatureMechanismA mechanism1(0) }
+mechanism2A OID ::= { signatureMechanismA mechanism2(1) }
+mechanism3A OID ::= { signatureMechanismA mechanism3(2) }
+signatureMechanismN OID ::= {
+iso(1) standard(0) signature-schemes(9796) part2(2) mechanism(0) normal(1) }
+mechanism1N OID ::= { signatureMechanismN mechanism1(0) }
+mechanism2N OID ::= { signatureMechanismN mechanism2(1) }
+mechanism3N OID ::= { signatureMechanismN mechanism3(2) }
+-- Combined signature scheme and hash-function mechanisms –-
+mechanismA-Hash OID ::= {
+iso(1) standard(0) signature-schemes(9796) part2(2)
+mechanismHash(2) alternate(0) }
+mechanism1A-sha1 OID ::= { mechanismA-Hash mechanism1-SHA1(0) }
+mechanism2A-sha1 OID ::= { mechanismA-Hash mechanism2-SHA1(1) }
+mechanism3A-sha1 OID ::= { mechanismA-Hash mechanism3-SHA1(2) }
+mechanismN-Hash OID ::= {
+iso(1) standard(0) signature-schemes(9796) part2(2)
+mechanismHash(2) normal(1) }
+mechanism1N-sha1 OID ::= { mechanismN-Hash mechanism1-SHA1(0) }
+mechanism2N-sha1 OID ::= { mechanismN-Hash mechanism2-SHA1(1) }
+mechanism3N-sha1 OID ::= { mechanismN-Hash mechanism3-SHA1(2) }
+END -- MessageRecoverySignatureMechanisms --

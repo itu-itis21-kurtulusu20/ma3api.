@@ -1,0 +1,31 @@
+#	127.0.0.1       localhost
+#	::1             localhost
+
+# Test Suite OCSP | 10.203.55.5
+10.203.55.40 ocspsA1.test2.kamusm.gov.tr
+10.203.55.41 ocspsA2.test2.kamusm.gov.tr
+10.203.55.42 ocspsA3.test2.kamusm.gov.tr
+10.203.55.43 ocspsA4.test2.kamusm.gov.tr
+10.203.55.44 ocspsA5.test2.kamusm.gov.tr
+10.203.55.45 ocspsA6.test2.kamusm.gov.tr
+10.203.55.50 ocspsA11.test2.kamusm.gov.tr
+10.203.55.51 ocspsA12.test2.kamusm.gov.tr
+10.203.55.52 ocspsA13.test2.kamusm.gov.tr
+10.203.55.53 ocspsA14.test2.kamusm.gov.tr
+10.203.55.54 ocspsA15.test2.kamusm.gov.tr
+10.203.55.55 ocspsA16.test2.kamusm.gov.tr
+10.203.55.56 ocspsA17.test2.kamusm.gov.tr
+
+# Test Suite Depo | 10.203.55.6
+10.203.55.6 depo.test2.kamusm.gov.tr
+
+# Test Suite ZD | 10.203.55.6
+10.203.56.12 zdsA1.test2.kamusm.gov.tr
+10.203.56.13 zdsA2.test2.kamusm.gov.tr
+10.203.56.14 zdsA3.test2.kamusm.gov.tr
+10.203.56.15 zdsA4.test2.kamusm.gov.tr
+10.203.56.16 zdsA5.test2.kamusm.gov.tr
+10.203.56.17 zdsB.test2.kamusm.gov.tr
+10.203.56.18 zdsC1.test2.kamusm.gov.tr
+10.203.56.19 zdsC2.test2.kamusm.gov.tr
+10.203.56.20 zdsC3.test2.kamusm.gov.tr

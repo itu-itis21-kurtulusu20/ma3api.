@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AndroidSignExample</string>
+    <string name="text_FileName">İmzalanacak Dosya :</string>
+    <string name="text_CertList">Sertifika Listesi</string>
+    <string name="hint_select_file">Dosya Seçiniz ...</string>
+    <string name="txt_Sign">İmzala</string>
+    <string name="txt_Parola">Parola :</string>
+    <string name="hint_Enter_Password">Kart Parolası Giriniz...</string>
+    <string name="msg_CertLoading">Karttan Sertifikalar Yükleniyor.</string>
+    <string name="msg_PleaseWait">Lütfen Bekleyiniz...</string>
+    <string name="msg_Signing">İmzalama işlemi yapılıyor.</string>
+</resources>

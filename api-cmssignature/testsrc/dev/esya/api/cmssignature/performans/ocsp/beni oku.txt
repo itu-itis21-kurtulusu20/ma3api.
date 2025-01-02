@@ -1,0 +1,9 @@
+
+* Program belli aralıklarla OCSP ve Zaman Damgası istediğinde bulunur.
+
+* Program ocsp istekleri ile ilgili log'ları ocsp.log dosyasına, zaman damgası istekleri ile ilgili log'ları ts.log dosyasına 
+yazar. Süreleri sıralamak içim log'ları excel'e kopyalayabilirsiniz.
+
+* Programın çalışabilmesi için ESYA API lisansının lisans klasörüne lisans.xml isminde kopyalanması gerekmektedir.
+
+* Programın ayarları settings.ini dosyasından yapılır. "settings.ini" içindeki açıklamalar yardımıyla ayarları doldurabilirsiniz. 

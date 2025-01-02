@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D0040F3-961C-472E-921D-12AB4B4A4648}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ma3api_cvc</RootNamespace>
+    <AssemblyName>ma3api-cvc</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="asn1rt">
+      <HintPath>T:\api-parent\dlls\asn1rt.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>T:\api-parent\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\tr\gov\tubitak\uekae\esya\api\cvc\CVCChainInfoProvider.cs" />
+    <Compile Include="src\tr\gov\tubitak\uekae\esya\api\cvc\CVCChainVerificationResult.cs" />
+    <Compile Include="src\tr\gov\tubitak\uekae\esya\api\cvc\CVCChainVerifier.cs" />
+    <Compile Include="src\tr\gov\tubitak\uekae\esya\api\cvc\CVCFields.cs" />
+    <Compile Include="src\tr\gov\tubitak\uekae\esya\api\cvc\CVCVerifier.cs" />
+    <Compile Include="src\tr\gov\tubitak\uekae\esya\api\cvc\CVCVerifierException.cs" />
+    <Compile Include="src\tr\gov\tubitak\uekae\esya\api\cvc\oids\CVCOIDs.cs" />
+    <Compile Include="src\tr\gov\tubitak\uekae\esya\api\cvc\oids\CVCRoleIDs.cs" />
+    <Compile Include="src\tr\gov\tubitak\uekae\esya\api\cvc\ICVCChainInfoProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\api-asn\csharp\api-asn.csproj">
+      <Project>{307F1CDC-084E-4A9D-9208-0943DE95DA0F}</Project>
+      <Name>api-asn %28api-asn\api-asn%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-common\csharp\api-common.csproj">
+      <Project>{CA8572D2-2D3C-42F0-9A07-6261B00BD5F6}</Project>
+      <Name>api-common %28api-common\api-common%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-crypto\bouncyprovider\csharp\bouncyprovider.csproj">
+      <Project>{64916A9E-4971-4FF2-9DAF-65AB1FBD2048}</Project>
+      <Name>bouncyprovider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-crypto\crypto\csharp\api-crypto.csproj">
+      <Project>{82649E95-07E4-4166-9D55-B4705CC80836}</Project>
+      <Name>api-crypto %28api-crypto\api-crypto%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\api-smartcard\java6\csharp\api-smartcard.csproj">
+      <Project>{541FAB38-2515-41F9-8856-0CA083597F92}</Project>
+      <Name>api-smartcard %28api-smartcard\api-smartcard%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

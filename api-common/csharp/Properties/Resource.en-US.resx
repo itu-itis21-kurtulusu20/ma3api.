@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AGREEMENTALG_BILINMIYOR" xml:space="preserve">
+    <value>Unknown Agreement Algorithm</value>
+  </data>
+  <data name="AKI_ID" xml:space="preserve">
+    <value>AKI</value>
+  </data>
+  <data name="AKI_ISSUER" xml:space="preserve">
+    <value>Certificate Issuer</value>
+  </data>
+  <data name="AKI_SERIAL" xml:space="preserve">
+    <value>Certificate Serial Number</value>
+  </data>
+  <data name="ARGUMAN_BILINMIYOR" xml:space="preserve">
+    <value>Given argument is not known!</value>
+  </data>
+  <data name="ASKIDA" xml:space="preserve">
+    <value>On Hold Certificate</value>
+  </data>
+  <data name="ASN1_ENCODE_HATASI" xml:space="preserve">
+    <value>Error occurred while encoding the Asn1 structure!</value>
+  </data>
+  <data name="AUTHORITY_SUBJECT_KEY_IDENTIFIER_UYUMLU" xml:space="preserve">
+    <value>Certificate Authority Subject Key Identifier is Same with Certificate Authority Key Identifier</value>
+  </data>
+  <data name="AUTHORITY_SUBJECT_KEY_IDENTIFIER_UYUMSUZ" xml:space="preserve">
+    <value>Certificate Authority Subject Key Identifier is not Same with Certificate Authority Key Identifier</value>
+  </data>
+  <data name="AYNI_EXTENSION_BIRDEN_FAZLA" xml:space="preserve">
+    <value>More than one the same extension in the certificate</value>
+  </data>
+  <data name="BASARILI" xml:space="preserve">
+    <value>Successful</value>
+  </data>
+  <data name="BASE_SILDE_ASKIYA_ALINAN_DELTADA_REMOVE_EDILMIS" xml:space="preserve">
+    <value>Certificate in Base CRL is not in Delta CRL</value>
+  </data>
+  <data name="BASIC_CONST_CA_KONTROLU" xml:space="preserve">
+    <value>Checking CA Value in Basic Constraints</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTISI_BOZUK" xml:space="preserve">
+    <value>Basic Constraint Extension is Corrupted</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_CA_DEGERI_DOGRU" xml:space="preserve">
+    <value>CA Value of Basic Constraints Extension is True</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_CA_DEGERI_YANLIS" xml:space="preserve">
+    <value>CA Value of Basic Constraints Extension is Wrong</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_CA_DEGERI_YOK" xml:space="preserve">
+    <value>There is No CA value of Basic Constraints Extension</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_LEN_CONS_DEGERI_ASILDI" xml:space="preserve">
+    <value>Path Length Constraint Value in Basic Constraints Extension has Exceeded</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_LEN_CONS_DEGERI_GECERLI" xml:space="preserve">
+    <value>Path Length Constraint Value in Basic Constraints Extension is Valid</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_LEN_CONS_DEGERI_NEGATIF" xml:space="preserve">
+    <value>Path Length Constraint Value in Basic Constraints Extension is Negative</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_LEN_CONS_DEGERI_YOK" xml:space="preserve">
+    <value>There is no Path Length Constraint Value in Basic Constraints Extension</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_YOK" xml:space="preserve">
+    <value>Basic Constraints Extension does not Exist</value>
+  </data>
+  <data name="BASIT_ALANLAR_VAR_DOGRU" xml:space="preserve">
+    <value>There are Basic Fields with Version 1 or higher</value>
+  </data>
+  <data name="BASIT_ALANLAR_VAR_YANLIS" xml:space="preserve">
+    <value>There are Basic Fields, But Those are not Version 1 or higher</value>
+  </data>
+  <data name="BC_CA" xml:space="preserve">
+    <value>Certificate Authority</value>
+  </data>
+  <data name="BC_CA_DEGIL" xml:space="preserve">
+    <value>Not CA</value>
+  </data>
+  <data name="BC_PATH" xml:space="preserve">
+    <value>Path Length Constraint</value>
+  </data>
+  <data name="BC_TYPE" xml:space="preserve">
+    <value>Subject Type</value>
+  </data>
+  <data name="CERTIFICATE_CHECKER_FAIL" xml:space="preserve">
+    <value>{0} failed</value>
+  </data>
+  <data name="CERTIFICATE_NO_PATH_FOUND" xml:space="preserve">
+    <value>No trusted path found. Certificate's root certificate may not be one of your trusted certificates</value>
+  </data>
+  <data name="CERTIFICATE_VALIDATION_SUCCESSFUL" xml:space="preserve">
+    <value>Certificate validation is successful</value>
+  </data>
+  <data name="CERTIFICATE_VALIDATION_UNSUCCESSFUL" xml:space="preserve">
+    <value>Certificate validation is unsuccessful. Validation status : {0}</value>
+  </data>
+  <data name="CERTSIGN" xml:space="preserve">
+    <value>Certificate Signing</value>
+  </data>
+  <data name="CERT_HATALI" xml:space="preserve">
+    <value>Error in given certificate!</value>
+  </data>
+  <data name="CEVAPTA_SERTIFIKA_YOK" xml:space="preserve">
+    <value>OCSP Response Does Not Include a Certificate</value>
+  </data>
+  <data name="SERTIFIKA_KULLANICI_NOTU_YOK" xml:space="preserve">
+    <value>There is no usetr notice in the certificate.</value>
+  </data>
+  <data name="CEVAP_IMZALI_DEGIL" xml:space="preserve">
+    <value>OCSP Response Not Signed</value>
+  </data>
+  <data name="CEVAP_YAPISI_BOZUK" xml:space="preserve">
+    <value>OCSP Response Structure Corrupt</value>
+  </data>
+  <data name="CORRUPT_DATE_INFO" xml:space="preserve">
+    <value>Corrupted date info</value>
+  </data>
+  <data name="COUNTRYCITIZENSHIP" xml:space="preserve">
+    <value>CountryCitizenship</value>
+  </data>
+  <data name="COUNTRYRESIDENCE" xml:space="preserve">
+    <value>Country Residence</value>
+  </data>
+  <data name="CRLSIGN" xml:space="preserve">
+    <value>CRL Signing</value>
+  </data>
+  <data name="DATAENCIPHERMENT" xml:space="preserve">
+    <value>Data encipherement</value>
+  </data>
+  <data name="DATEOFBIRTH" xml:space="preserve">
+    <value>Date Of Birth</value>
+  </data>
+  <data name="DECIPHERONLY" xml:space="preserve">
+    <value>Decipher Only</value>
+  </data>
+  <data name="DELTA_CRL_INDICATOR_KONTROLU" xml:space="preserve">
+    <value>Delta Crl Indicator Control</value>
+  </data>
+  <data name="DELTA_CRL_INDICATOR_VAR" xml:space="preserve">
+    <value>Delta Crl Indicator Exists</value>
+  </data>
+  <data name="DELTA_CRL_INDICATOR_YOK" xml:space="preserve">
+    <value>No Delta Crl Indicator</value>
+  </data>
+  <data name="DIGITALSIGNATURE" xml:space="preserve">
+    <value>Digital Signature</value>
+  </data>
+  <data name="DOGRULAMA_KRIPTO_HATASI" xml:space="preserve">
+    <value>Validation Crypto Error</value>
+  </data>
+  <data name="ECDSAANAHTARBOYU_0_BILINMIYOR" xml:space="preserve">
+    <value>The parameters for ECDSA key length {0} are not known.</value>
+  </data>
+  <data name="EKLENTILER_GECERLI" xml:space="preserve">
+    <value>Extensions in the certificate are valid</value>
+  </data>
+  <data name="EKLENTI_YOK" xml:space="preserve">
+    <value>No extensions in certificate</value>
+  </data>
+  <data name="EKU_CLIENT_AUTHENTICATION" xml:space="preserve">
+    <value>Client Authentication</value>
+  </data>
+  <data name="EKU_CODE_SIGNING" xml:space="preserve">
+    <value>Code Signing</value>
+  </data>
+  <data name="EKU_DVCS" xml:space="preserve">
+    <value>DVCS</value>
+  </data>
+  <data name="EKU_EMAIL_PROTECTION" xml:space="preserve">
+    <value>E-mail protection</value>
+  </data>
+  <data name="EKU_IPSEC_END_SYSTEM" xml:space="preserve">
+    <value>IPSEC End System</value>
+  </data>
+  <data name="EKU_IPSEC_TUNNEL" xml:space="preserve">
+    <value>IPSEC Tunnel</value>
+  </data>
+  <data name="EKU_IPSEC_USER" xml:space="preserve">
+    <value>IPSEC User</value>
+  </data>
+  <data name="EKU_OCSP_SIGNING" xml:space="preserve">
+    <value>OCSP Signing</value>
+  </data>
+  <data name="EKU_SERVER_AUTHENTICATION" xml:space="preserve">
+    <value>Server Authentication</value>
+  </data>
+  <data name="EKU_TIME_STAMPING" xml:space="preserve">
+    <value>Time Stamping</value>
+  </data>
+  <data name="ENCIPHERONLY" xml:space="preserve">
+    <value>Encipher Only</value>
+  </data>
+  <data name="ENCRYPTIONCERT_KEY_USAGE_KONTROLU" xml:space="preserve">
+    <value>Encryption Certificate Key Usage Control</value>
+  </data>
+  <data name="EXTENDEDKEY_USAGE_BOZUK" xml:space="preserve">
+    <value>Invalid Extended Key Usage Extension</value>
+  </data>
+  <data name="EXTENDEDKEY_USAGE_GECERLI" xml:space="preserve">
+    <value>Extended Key Usage Extension validated</value>
+  </data>
+  <data name="EXTENDEDKEY_USAGE_YOK" xml:space="preserve">
+    <value>No Extended Key Usage Extension</value>
+  </data>
+  <data name="EXTENSION_VAR_DOGRU" xml:space="preserve">
+    <value>There is a Version 3 Extension</value>
+  </data>
+  <data name="EXTENSION_VAR_YANLIS" xml:space="preserve">
+    <value>There is an Extension, But Its not Version 3</value>
+  </data>
+  <data name="FRESHEST_CRL_KONTROLU" xml:space="preserve">
+    <value>Freshest Crl Control</value>
+  </data>
+  <data name="FRESHEST_CRL_VAR" xml:space="preserve">
+    <value>Freshest Crl Exists</value>
+  </data>
+  <data name="FRESHEST_CRL_YOK" xml:space="preserve">
+    <value>No Freshest Crl</value>
+  </data>
+  <data name="GECERLI" xml:space="preserve">
+    <value>Valid Certificate</value>
+  </data>
+  <data name="GECERSIZ_EKLENTI" xml:space="preserve">
+    <value>Invalid extension in certificate</value>
+  </data>
+  <data name="GENDER" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="HATA_IMZA_PAKETI_BILINMEYEN_UZANTI_EKSIK_MIMETYPE" xml:space="preserve">
+    <value>Unknown Extension and missing Mimetype!</value>
+  </data>
+  <data name="HATA_IMZA_PAKETI_DESTEKLENMIYOR" xml:space="preserve">
+    <value>Signature package is not supported: {0} - {1}</value>
+  </data>
+  <data name="HATA_IMZA_PAKETI_UZANTI_MIMETYPE_UYUZMAZLIK" xml:space="preserve">
+    <value>Extension ({0}) and mimetype ({1}) does not match</value>
+  </data>
+  <data name="IMZALAYAN_SERTIFIKA_GECERLI" xml:space="preserve">
+    <value>Signer Certificate Valid</value>
+  </data>
+  <data name="IMZALAYAN_SERTIFIKA_GECERSIZ" xml:space="preserve">
+    <value>Signer Certificate Invalid</value>
+  </data>
+  <data name="IMZALG_0_BILINMIYOR" xml:space="preserve">
+    <value>Signing algorithm {0} is not known!</value>
+  </data>
+  <data name="IMZA_ANAHTAR_ALGORITMA_UYUMSUZLUGU" xml:space="preserve">
+    <value>Incompatible key type and signing algorithm</value>
+  </data>
+  <data name="IMZA_DOGRULANAMADI" xml:space="preserve">
+    <value>OCSP Response Signature Could Not Be Validated</value>
+  </data>
+  <data name="IMZA_DOGRULANDI" xml:space="preserve">
+    <value>OCSP Response Signature Validated</value>
+  </data>
+  <data name="IMZA_PAKETI_IMZA_KONTEYNERI_BULUNAMADI" xml:space="preserve">
+    <value>No signature container found in package</value>
+  </data>
+  <data name="INIT_EDILMIS" xml:space="preserve">
+    <value>Already initialized!</value>
+  </data>
+  <data name="INTERNAL_ERROR" xml:space="preserve">
+    <value>Internal Error</value>
+  </data>
+  <data name="INVALID_DATE_INFO" xml:space="preserve">
+    <value>Date check failed</value>
+  </data>
+  <data name="IPTAL_EDILMIS" xml:space="preserve">
+    <value>Revoked Certificate</value>
+  </data>
+  <data name="IPTAL_KONTROLU_SORUNLU" xml:space="preserve">
+    <value>Problem in Revocation Control</value>
+  </data>
+  <data name="ISSUER_SUBJECT_UYUMLU" xml:space="preserve">
+    <value>Issuer of Certificate Matches the Subject of CA Certificate</value>
+  </data>
+  <data name="ISSUER_SUBJECT_UYUMSUZ" xml:space="preserve">
+    <value>Issuer of Certificate does not match the Subject of CA Certificate</value>
+  </data>
+  <data name="KARTTA_0_ANAHTARI_YOK" xml:space="preserve">
+    <value>Key {0} is not found in the card!</value>
+  </data>
+  <data name="KEYAGREEMENT" xml:space="preserve">
+    <value>Key Agreement</value>
+  </data>
+  <data name="KEYENCIPHERMENT" xml:space="preserve">
+    <value>Key Encipherment</value>
+  </data>
+  <data name="KEY_IDENTIFIER_KONTROLU" xml:space="preserve">
+    <value>Key Identifier Check</value>
+  </data>
+  <data name="KEY_USAGE_BOZUK" xml:space="preserve">
+    <value>Corrupted Key Usage Extension</value>
+  </data>
+  <data name="KEY_USAGE_SERTIFIKA_IMZALAYICI" xml:space="preserve">
+    <value>KeyCertSign Bit is Asserted in Key Usage Extension</value>
+  </data>
+  <data name="KEY_USAGE_SERTIFIKA_IMZALAYICI_DEGIL" xml:space="preserve">
+    <value>KeyCertSign Bit is not Asserted in Key Usage Extension</value>
+  </data>
+  <data name="KEY_USAGE_SERTIFIKA_SIFRELEME" xml:space="preserve">
+    <value>Key Encipherment Bit is Asserted in Key Usage Extension</value>
+  </data>
+  <data name="KEY_USAGE_SIL_IMZALAYICI" xml:space="preserve">
+    <value>CRLSign Bit is Asserted in Key Usage Extension</value>
+  </data>
+  <data name="KEY_USAGE_SIL_IMZALAYICI_DEGIL" xml:space="preserve">
+    <value>CRLSign Bit is not Asserted in Key Usage Extension</value>
+  </data>
+  <data name="KEY_USAGE_YOK" xml:space="preserve">
+    <value>No Key Usage Extension</value>
+  </data>
+  <data name="KONTROL_SONUCU" xml:space="preserve">
+    <value>Control Result</value>
+  </data>
+  <data name="KRIPTO_GENEL_HATA" xml:space="preserve">
+    <value>General error in crypto processes!</value>
+  </data>
+  <data name="MALFORMED_REQUEST" xml:space="preserve">
+    <value>Malformed Request</value>
+  </data>
+	<data name="MESAJ_ESNEKZDYOK" xml:space="preserve">
+    <value>Permissive timestamp field could not be found in the licence. Please renew the licence file!</value>
+  </data>
+  <data name="NITELIKLI_COMPLIANCE" xml:space="preserve">
+    <value>This is an ETSI TS 101 862 Compliant Qualified Digital Certificate.</value>
+  </data>
+  <data name="NITELIKLI_MONEY_LIMIT" xml:space="preserve">
+    <value>Money Limit</value>
+  </data>
+  <data name="NITELIKLI_TK" xml:space="preserve">
+    <value>This certificate complies with the Telekomünikasyon Kurumu Qualified Digital Certificate Profile.</value>
+  </data>
+  <data name="NONREPUDIATION" xml:space="preserve">
+    <value>Non Repudation</value>
+  </data>
+  <data name="NOPATHFOUND" xml:space="preserve">
+    <value>No Path found</value>
+  </data>
+  <data name="NO_TRUSTED_CERT_FOUND" xml:space="preserve">
+    <value>Could not find any trusted certificate.</value>
+  </data>
+  <data name="OCSPDEN_IPTAL_KONTROLU" xml:space="preserve">
+    <value>CRL control from OCSP</value>
+  </data>
+  <data name="OCSP_CEVABI_BULUNAMADI" xml:space="preserve">
+    <value>OCSP answer is not found</value>
+  </data>
+  <data name="OCSP_CEVABI_GECERSIZ" xml:space="preserve">
+    <value>Invalid OCSP answer</value>
+  </data>
+  <data name="OCSP_CEVABI_KONTROLCU" xml:space="preserve">
+    <value>OCSP Response Control</value>
+  </data>
+  <data name="OCSP_IMZALAYAN_SERTIFIKA_KONTROLU" xml:space="preserve">
+    <value>OCSP Signer Certificate Control</value>
+  </data>
+  <data name="OCSP_IMZA_KONTROLU" xml:space="preserve">
+    <value>OCSP Response Signature Control</value>
+  </data>
+  <data name="OCSP_RESPONSEDATE_EXPIRED" xml:space="preserve">
+    <value>OCSP date expired</value>
+  </data>
+  <data name="OCSP_RESPONSEDATE_INVALID" xml:space="preserve">
+    <value>OCSP date invalid</value>
+  </data>
+  <data name="OZETALG_0_BILINMIYOR" xml:space="preserve">
+    <value>Hash algorithm is not known!</value>
+  </data>
+  <data name="PATH_LEN_CONSTRAINT_KONTROLU" xml:space="preserve">
+    <value>Path Length Constraint Check</value>
+  </data>
+  <data name="PLACEOFBIRTH" xml:space="preserve">
+    <value>Place of Birth</value>
+  </data>
+  <data name="PM_IDP" xml:space="preserve">
+    <value>Issuer Domain Policy</value>
+  </data>
+  <data name="PM_SDP" xml:space="preserve">
+    <value>Subject Domain Policy</value>
+  </data>
+  <data name="POLICY_CPS" xml:space="preserve">
+    <value>CPS</value>
+  </data>
+  <data name="POLICY_ID" xml:space="preserve">
+    <value>Policy ID</value>
+  </data>
+  <data name="POLICY_IDENTIFIER" xml:space="preserve">
+    <value>Policy Identifier</value>
+  </data>
+  <data name="POLICY_INFO" xml:space="preserve">
+    <value>Policy Info</value>
+  </data>
+  <data name="POLICY_NOTICE" xml:space="preserve">
+    <value>User Notice</value>
+  </data>
+  <data name="POLICY_QUALIFIER" xml:space="preserve">
+    <value>Policy Qualifier</value>
+  </data>
+  <data name="PVR_BASICCONSTRAINTS_FAILURE" xml:space="preserve">
+    <value>Certificate basic constraints check failure</value>
+  </data>
+  <data name="PVR_CDP_CONTROL_FAILURE" xml:space="preserve">
+    <value>Certificate CRL Distribution Points check failure</value>
+  </data>
+  <data name="PVR_CERTIFICATE_EXPIRED" xml:space="preserve">
+    <value>Certificate expired</value>
+  </data>
+  <data name="PVR_CERTIFICATE_EXTENSIONS_FAILURE" xml:space="preserve">
+    <value>Cant check certificate extensions</value>
+  </data>
+  <data name="PVR_CERTIFICATE_REVOKED" xml:space="preserve">
+    <value>Certificate is revoked.</value>
+  </data>
+  <data name="PVR_CRL_DELTACRLINDICATOR_CONTROL_FAILURE" xml:space="preserve">
+    <value>CRL delta crl indicator check failure</value>
+  </data>
+  <data name="PVR_CRL_EXPIRED" xml:space="preserve">
+    <value>CRL expired</value>
+  </data>
+  <data name="PVR_CRL_EXTENSIONS_CONTROL_FAILURE" xml:space="preserve">
+    <value>CRL extensions check failure</value>
+  </data>
+  <data name="PVR_CRL_FRESHESTCRL_CONTROL_FAILURE" xml:space="preserve">
+    <value>CRL freshest extension check failure</value>
+  </data>
+  <data name="PVR_CRL_KEYUSAGE_CONTROL_FAILURE" xml:space="preserve">
+    <value>CRL key usage check failure</value>
+  </data>
+  <data name="PVR_CRL_NAME_CONTROL_FAILURE" xml:space="preserve">
+    <value>CRL name check failure</value>
+  </data>
+  <data name="PVR_CRL_SIGNATURE_CONTROL_FAILURE" xml:space="preserve">
+    <value>CRL signature check failure</value>
+  </data>
+  <data name="PVR_EXTENDED_KEYUSAGE_CONTROL_FAILURE" xml:space="preserve">
+    <value>Certificate extended key usage check failure.</value>
+  </data>
+  <data name="PVR_INCOMPLETE_VALIDATION" xml:space="preserve">
+    <value>Certificate validation cant be completed</value>
+  </data>
+  <data name="PVR_INVALID_PATH" xml:space="preserve">
+    <value>Invalid certificate path</value>
+  </data>
+  <data name="PVR_KEYID_CONTROL_FAILURE" xml:space="preserve">
+    <value>Certificate KeyId check failure</value>
+  </data>
+  <data name="PVR_KEYUSAGE_CONTROL_FAILURE" xml:space="preserve">
+    <value>Certificate key usage check failure</value>
+  </data>
+  <data name="PVR_NAMECONSTRAINTS_FAILURE" xml:space="preserve">
+    <value>Certificate name constraints check failure</value>
+  </data>
+  <data name="PVR_NAME_CONTROL_FAILURE" xml:space="preserve">
+    <value>Certificate name check failure</value>
+  </data>
+  <data name="PVR_NO_PATHFOUND" xml:space="preserve">
+    <value>Certificate path cant be found</value>
+  </data>
+  <data name="PVR_OCSP_DATE_CONTROL_FAILURE" xml:space="preserve">
+    <value>OCSP date control failed</value>
+  </data>
+  <data name="PVR_OCSP_RESPONSESTATUS_CONTROL_FAILURE" xml:space="preserve">
+    <value>OCSP response status check failure</value>
+  </data>
+  <data name="PVR_OCSP_SIGNATURE_CONTROL_FAILURE" xml:space="preserve">
+    <value>OCSP signature check failure</value>
+  </data>
+  <data name="PVR_PATHLENCONSTRAINTS_FAILURE" xml:space="preserve">
+    <value>Certificate path length constraints check failure</value>
+  </data>
+  <data name="PVR_POLICYCONSTRAINTS_CONTROL_FAILURE" xml:space="preserve">
+    <value>Certificate policy constraints check failure</value>
+  </data>
+  <data name="PVR_POLICYMAPPING_CONTROL_FAILURE" xml:space="preserve">
+    <value>Certificate policy mapping check failure</value>
+  </data>
+  <data name="PVR_REVOCATION_CONTROL_FAILURE" xml:space="preserve">
+    <value>Certificate revocation check failure.</value>
+  </data>
+  <data name="PVR_SERIALNUMBER_NOT_POSITIVE" xml:space="preserve">
+    <value>Serial number negative</value>
+  </data>
+  <data name="PVR_SIGNATURE_ALGORITHM_DIFFERENT" xml:space="preserve">
+    <value>Certificate and signing algorithm mismatch</value>
+  </data>
+  <data name="PVR_SIGNATURE_CONTROL_FAILURE" xml:space="preserve">
+    <value>Certificate signature check failure.</value>
+  </data>
+  <data name="PVR_SUCCESS" xml:space="preserve">
+    <value>Successful</value>
+  </data>
+  <data name="PVR_UNSPECIFIED_FAILURE" xml:space="preserve">
+    <value>Unspecified error</value>
+  </data>
+  <data name="PVR_VERSION_CONTROL_FAILURE" xml:space="preserve">
+    <value>Certificate version check failure</value>
+  </data>
+  <data name="ROLE" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="SERI_NO_KONTROLU" xml:space="preserve">
+    <value>Serial number control</value>
+  </data>
+  <data name="SERI_NO_NEGATIF" xml:space="preserve">
+    <value>Serial number is negative</value>
+  </data>
+  <data name="SERI_NO_POZITIF" xml:space="preserve">
+    <value>Serial number is positive</value>
+  </data>
+  <data name="SERTIFIKADA_ACIK_ANAHTAR_BOZUK" xml:space="preserve">
+    <value>Corrupted Public Key in Certificate</value>
+  </data>
+  <data name="SERTIFIKADA_ACIK_ANAHTAR_YOK" xml:space="preserve">
+    <value>No Public Key In Certificate</value>
+  </data>
+  <data name="SERTIFIKA_AUTHORITY_KEY_IDENTIFIER_YOK" xml:space="preserve">
+    <value>Certificate Authority Key Identifier does not Exist</value>
+  </data>
+  <data name="SERTIFIKA_DELTA_SILDE" xml:space="preserve">
+    <value>Certificate is revoked in Delta CRL</value>
+  </data>
+  <data name="SERTIFIKA_DELTA_SILDE_REMOVE_EDILMIS" xml:space="preserve">
+    <value>Certificate is not in Delta CRL</value>
+  </data>
+  <data name="SERTIFIKA_EKLENTI_KONTROLU" xml:space="preserve">
+    <value>Certificate extension control</value>
+  </data>
+  <data name="SERTIFIKA_EXTENDED_KEY_USAGE_KONTROLU" xml:space="preserve">
+    <value>Certificate Extended Key Usage Check</value>
+  </data>
+  <data name="SERTIFIKA_IMZALI_DEGIL" xml:space="preserve">
+    <value>Unsigned Certificate</value>
+  </data>
+  <data name="SERTIFIKA_IMZA_DOGRULANAMADI" xml:space="preserve">
+    <value>Certificate Signature is not Validated</value>
+  </data>
+  <data name="SERTIFIKA_IMZA_DOGRULANDI" xml:space="preserve">
+    <value>Certificate Signature Validated</value>
+  </data>
+  <data name="SERTIFIKA_IMZA_KONTROLU" xml:space="preserve">
+    <value>Certificate Signature Validation</value>
+  </data>
+  <data name="SERTIFIKA_ISSUER_YOK" xml:space="preserve">
+    <value>No Issuer Field in Certificate</value>
+  </data>
+  <data name="SERTIFIKA_KEYUSAGE_HATALI" xml:space="preserve">
+    <value>Certificate key usage field is invalid.</value>
+  </data>
+  <data name="SERTIFIKA_KEY_USAGE_KONTROLU" xml:space="preserve">
+    <value>Certificate Key Usage Extension Control</value>
+  </data>
+  <data name="SERTIFIKA_LISTEDE" xml:space="preserve">
+    <value>Certificate is revoked in CRL</value>
+  </data>
+  <data name="SERTIFIKA_LISTEDE_DEGIL" xml:space="preserve">
+    <value>Certificate is not in CRL</value>
+  </data>
+  <data name="SERTIFIKA_NAME_KONTROLU" xml:space="preserve">
+    <value>Certificate Name Validation</value>
+  </data>
+  <data name="SERTIFIKA_NITELIKLI_IBARESI_YOK" xml:space="preserve">
+    <value>There is no qualified extension in the certificate.</value>
+  </data>
+  <data name="SERTIFIKA_NITELIKLI_KONTROLU" xml:space="preserve">
+    <value>Qualified Certificate Control</value>
+  </data>
+  <data name="SERTIFIKA_NITELIKLI_KONTROLU_BASARILI" xml:space="preserve">
+    <value>Qualified certificate control is successfull.</value>
+  </data>
+  <data name="SERTIFIKA_OCSPDE_GECERLI" xml:space="preserve">
+    <value>Certificate is good in OCSP answer</value>
+  </data>
+  <data name="SERTIFIKA_OCSPDE_GECERLI_DEGIL" xml:space="preserve">
+    <value>Certificate is revoked in OCSP answer</value>
+  </data>
+  <data name="SERTIFIKA_OCSP_SERTIFIKASI_DEGIL" xml:space="preserve">
+    <value>OCSP Response Certificate Is Not an OCSP Certificate</value>
+  </data>
+  <data name="SERTIFIKA_SORUNLU" xml:space="preserve">
+    <value>Problem in Certificate</value>
+  </data>
+  <data name="SERTIFIKA_SURESI_DOLMUS" xml:space="preserve">
+    <value>Certificate is expired</value>
+  </data>
+  <data name="SERTIFIKA_TARIH_BILGISI_BOZUK" xml:space="preserve">
+    <value>Certificate date is invalid</value>
+  </data>
+  <data name="SERTIFIKA_TARIH_GECERLI" xml:space="preserve">
+    <value>Certificate is not expired</value>
+  </data>
+  <data name="SERTIFIKA_TARIH_GECERSIZ" xml:space="preserve">
+    <value>Certificate is expired</value>
+  </data>
+  <data name="SERTIFIKA_TARIH_KONTROLU" xml:space="preserve">
+    <value>Certificate validity control</value>
+  </data>
+  <data name="SERTIFIKA_YAPISI_BOZUK" xml:space="preserve">
+    <value>Corrupted Certificate</value>
+  </data>
+  <data name="SIGNATURE_ALG_AYNI" xml:space="preserve">
+    <value>Signature Algorithm values are Same</value>
+  </data>
+  <data name="SIGNATURE_ALG_AYNIMI_KONTROLU" xml:space="preserve">
+    <value>Checking Signature Algorithm is Same or not</value>
+  </data>
+  <data name="SIGNATURE_ALG_FARKLI" xml:space="preserve">
+    <value>Signature Algorithm values are Different</value>
+  </data>
+  <data name="SIG_REQUIRED" xml:space="preserve">
+    <value>Signature Required</value>
+  </data>
+  <data name="SILDEN_IPTAL_KONTROLU" xml:space="preserve">
+    <value>Revocation check from CRL</value>
+  </data>
+  <data name="SIL_BULUNAMADI" xml:space="preserve">
+    <value>CRL is not found</value>
+  </data>
+  <data name="SIL_EKLENTI_KONTROLU" xml:space="preserve">
+    <value>CRL Extension Validation</value>
+  </data>
+  <data name="SIL_GECERSIZ" xml:space="preserve">
+    <value>CRL is invalid</value>
+  </data>
+  <data name="SIL_IMZALI_DEGIL" xml:space="preserve">
+    <value>Unsigned CRL</value>
+  </data>
+  <data name="SIL_IMZA_DOGRULANAMADI" xml:space="preserve">
+    <value>CRL Signature is not Validated</value>
+  </data>
+  <data name="SIL_IMZA_DOGRULANDI" xml:space="preserve">
+    <value>CRL Signature Validated</value>
+  </data>
+  <data name="SIL_IMZA_KONTROLU" xml:space="preserve">
+    <value>CRL Signature Validation</value>
+  </data>
+  <data name="SIL_KEY_USAGE_KONTROLU" xml:space="preserve">
+    <value>CRL Key Usage Extension Control</value>
+  </data>
+  <data name="SIL_NAME_KONTROLU" xml:space="preserve">
+    <value>CRL Name Validation</value>
+  </data>
+  <data name="SIL_TARIH_KONTROLU" xml:space="preserve">
+    <value>CRL Date Validation</value>
+  </data>
+  <data name="SIL_YAPISI_BOZUK" xml:space="preserve">
+    <value>Corrupted CRL</value>
+  </data>
+  <data name="SMSERTIFIKA_SUBJECT_KEY_IDENTIFIER_YOK" xml:space="preserve">
+    <value>Certificate Authority Subject Key Identifier does not Exist</value>
+  </data>
+  <data name="SMSERTIFIKA_SUBJECT_YOK" xml:space="preserve">
+    <value>No Subject Field in CA Certificate</value>
+  </data>
+  <data name="SM_SERTIFIKASI_BULUNAMADI" xml:space="preserve">
+    <value>Issuer certificate is not found</value>
+  </data>
+  <data name="TRY_LATER" xml:space="preserve">
+    <value>Try Later</value>
+  </data>
+  <data name="UID_VAR_DOGRU" xml:space="preserve">
+    <value>There is a UID with Version 2 or higher</value>
+  </data>
+  <data name="UID_VAR_YANLIS" xml:space="preserve">
+    <value>There is a UID, But Its nor Version 2 or higher</value>
+  </data>
+  <data name="UNAUTHORIZED" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
+  <data name="UNKNOWN" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="VALID_DATE_INFO" xml:space="preserve">
+    <value>Date check is valid</value>
+  </data>
+  <data name="VERSION" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="ZINCIR_SORUNLU" xml:space="preserve">
+    <value>Problem in Certification Path</value>
+  </data>
+  <data name="ALGORITMS" xml:space="preserve">
+    <value>Algorithm</value>
+  </data>
+  <data name="ESYA_KONTROL_MERKEZI_B" xml:space="preserve">
+    <value>ESYA ADMINISTRATION CENTER</value>
+  </data>
+  <data name="PADDING_BILINMIYOR" xml:space="preserve">
+    <value>Given padding is not known!</value>
+  </data>
+  <data name="SIMMOD_BILINMIYOR" xml:space="preserve">
+    <value>Unknown symmetric mode!</value>
+  </data>
+  <data name="SC_SELECTOR_NOT_GIVEN" xml:space="preserve">
+    <value>Smart Card selector is not given</value>
+  </data>
+  <data name="SELECT_SC" xml:space="preserve">
+    <value>Choose Smart Card</value>
+  </data>
+  <data name="WRONG_FORMAT_QCC_STATEMENT" xml:space="preserve">
+    <value>The format of the qualified certificate checker parameter entered in the xml file is incorrect.</value>
+  </data>
+</root>

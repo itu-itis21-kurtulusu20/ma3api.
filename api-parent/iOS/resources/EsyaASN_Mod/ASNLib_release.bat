@@ -1,0 +1,1 @@
+..\cmake\built_release.bat

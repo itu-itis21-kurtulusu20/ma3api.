@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tsl-config>
+	<TSLType>
+		<EUGeneric>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUgeneric</EUGeneric>
+		<EUSchemes>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUschemes</EUSchemes>
+		<CCList>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/CClist</CCList>
+		<CCListofLists>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/CClistoflists</CCListofLists>
+	</TSLType>
+	
+	<StatusDeterminationApproach>
+		<EUAppropriate>http://uri.etsi.org/TrstSvc/TrustedList/StatusDetn/EUappropriate</EUAppropriate>
+		<CCDetermination>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/StatusDetn/CCdetermination</CCDetermination>
+	</StatusDeterminationApproach>
+	
+	<ServiceTypeIdentifier>
+		<PKC>http://uri.etsi.org/TrstSvc/Svctype/CA/PKC</PKC>
+		<CAQC>http://uri.etsi.org/TrstSvc/Svctype/CA/QC</CAQC>
+		<TSA>http://uri.etsi.org/TrstSvc/Svctype/TSA</TSA>
+		<QTST>http://uri.etsi.org/TrstSvc/Svctype/TSA/QTST</QTST>
+		<TSSQC>http://uri.etsi.org/TrstSvc/Svctype/TSA/TSS-QC</TSSQC>
+		<TSSAdESQCandQES>http://uri.etsi.org/TrstSvc/Svctype/TSS-AdESQCandQES</TSSAdESQCandQES>
+		<OCSP>http://uri.etsi.org/TrstSvc/Svctype/Certstatus/OCSP</OCSP>
+		<OCSPQC>http://uri.etsi.org/TrstSvc/Svctype/Certstatus/OCSP/QC</OCSPQC>
+		<CRL>http://uri.etsi.org/TrstSvc/Svctype/Certstatus/CRL</CRL>
+		<CRLQC>http://uri.etsi.org/TrstSvc/Svctype/Certstatus/CRL/QC</CRLQC>
+		<RA>http://uri.etsi.org/TrstSvc/Svctype/RA</RA>
+		<ACA>http://uri.etsi.org/TrstSvc/Svctype/ACA</ACA>
+		<SignaturePolicyAuthority>http://uri.etsi.org/TrstSvc/Svctype/SignaturePolicyAuthority</SignaturePolicyAuthority>
+		<NationalRootCAQC>http://uri.etsi.org/TrstSvc/Svctype/NationalRootCA-QC</NationalRootCAQC>
+		<Archiv>http://uri.etsi.org/TrstSvc/Svctype/Archiv</Archiv>
+		<REM>http://uri.etsi.org/TrstSvc/Svctype/REM</REM>
+		<EDS>http://uri.etsi.org/TrstSvc/Svctype/EDS</EDS>
+		<EDSQ>http://uri.etsi.org/TrstSvc/Svctype/EDS/Q</EDSQ>
+		<PSES>http://uri.etsi.org/TrstSvc/Svctype/PSES</PSES>
+		<PSESQ>http://uri.etsi.org/TrstSvc/Svctype/PSES/Q</PSESQ>
+		<IdV>http://uri.etsi.org/TrstSvc/Svctype/IdV</IdV>
+		<KEscrow>http://uri.etsi.org/TrstSvc/Svctype/KEscrow</KEscrow>
+		<PPwd>http://uri.etsi.org/TrstSvc/Svctype/PPwd</PPwd>
+		<TLIssuer>http://uri.etsi.org/TrstSvc/Svctype/TLIssuer</TLIssuer>
+		<Unspecified>http://uri.etsi.org/TrstSvc/Svctype/unspecified</Unspecified>
+	</ServiceTypeIdentifier>
+	
+	<ServiceCurrentStatus>
+		<UnderSupervision>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/undersupervision</UnderSupervision>
+		<SupervisionInCessation>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/supervisionincessation</SupervisionInCessation>
+		<SupervisionCeased>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/supervisionceased</SupervisionCeased>
+		<SupervisionRevoked>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/supervisionrevoked</SupervisionRevoked>
+		<Accredited>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/accredited</Accredited>
+		<AccreditationCeased>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/accreditationceased</AccreditationCeased>
+		<AccreditationRevoked>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/accreditationrevoked</AccreditationRevoked>
+		<SetByNationalLaw>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/setbynationallaw</SetByNationalLaw>
+		<DeprecatedByNationalLaw>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/deprecatedbynationallaw</DeprecatedByNationalLaw>
+	</ServiceCurrentStatus>
+	
+	<SchemeTypeCommunityRules>
+		<CC>http://uri.etsi.org/TrstSvc/TrustedList/schemerules/CC</CC>
+		<CompiledList>http://uri.etsi.org/TrstSvc/TrustedList/schemerules/CompiledList</CompiledList>
+	</SchemeTypeCommunityRules>
+	
+</tsl-config>

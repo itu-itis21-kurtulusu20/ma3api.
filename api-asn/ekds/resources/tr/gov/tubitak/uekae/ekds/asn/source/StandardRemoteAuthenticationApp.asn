@@ -1,0 +1,37 @@
+StandardRemoteAuthenticationApp 
+
+DEFINITIONS IMPLICIT TAGS ::=
+
+BEGIN
+
+IMPORTS
+  DataObjectVersionNumber              FROM EkdsCommonDataObjectDefs
+  CardHolderUniqueIdentifierDataObject FROM EkdsElectronicIdentityCardApp;
+
+--
+-- APPLICATION DEF
+--
+
+--
+-- DATA OBJECTS
+--
+
+StandardIdentityIdentificationDataObject ::= [APPLICATION 10] SEQUENCE
+{
+  version             [0] DataObjectVersionNumber,
+  cardHolder	    [1] CardHolderUniqueIdentifierDataObject,
+  signedChallenge		    [2] IdentityChallengeDataObject 
+}
+
+IdentityChallengeDataObject ::= SEQUENCE
+{
+  challengeData 	  [0] Challenge,
+  signData   	  [1] DataObjectDigitalSignature
+}
+
+Challenge ::= SEQUENCE
+{
+   version [0] DataObjectVersionNumber,
+   challengeData [1] OCTET STRING  
+}
+END

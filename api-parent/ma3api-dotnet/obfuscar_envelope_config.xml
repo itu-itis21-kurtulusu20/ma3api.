@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<Obfuscator>
+    <Var name="InPath" value="..\..\api-cmsenvelope\csharp\api-cmsenvelope-bundle\bin\Release"/>
+    <Var name="OutPath" value=".\obfuscated_envelope"/>
+    <Var name="KeyFile" value="ma3api.snk"/>
+    <Var name="HidePrivateApi" value="true"/>
+    <Var name="KeepPublicApi" value="true"/>
+
+    <Module file="$(InPath)\ma3api-asn.dll"> <SkipEnums value="true"/> </Module>
+    <Module file="$(InPath)\ma3api-certstore.dll"> <SkipEnums value="true"/> </Module>
+    <Module file="$(InPath)\ma3api-certvalidation.dll"> <SkipEnums value="true"/> </Module>
+    <Module file="$(InPath)\ma3api-cmsenvelope.dll"> <SkipEnums value="true"/> </Module>
+    <Module file="$(InPath)\ma3api-common.dll"> <SkipEnums value="true"/> </Module>
+    <Module file="$(InPath)\ma3api-crypto.dll"> <SkipEnums value="true"/> </Module>
+    <Module file="$(InPath)\ma3api-crypto-bouncyprovider.dll"> <SkipEnums value="true"/> </Module>
+    <Module file="$(InPath)\ma3api-infra.dll"> <SkipEnums value="true"/> </Module>
+    <Module file="$(InPath)\ma3api-pkcs11-interop.dll"> <SkipEnums value="true"/> </Module>
+    <Module file="$(InPath)\ma3api-smartcard.dll"> <SkipEnums value="true"/> </Module>
+</Obfuscator>

@@ -1,0 +1,816 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AGREEMENTALG_BILINMIYOR" xml:space="preserve">
+    <value>Bilinmeyen anahtar anlaşması (agreement)</value>
+  </data>
+  <data name="AKI_ID" xml:space="preserve">
+    <value>Anahtar Kimliği</value>
+  </data>
+  <data name="AKI_ISSUER" xml:space="preserve">
+    <value>Yetkili Sertifikasını veren</value>
+  </data>
+  <data name="AKI_SERIAL" xml:space="preserve">
+    <value>Yetkili Sertifika seri numarası</value>
+  </data>
+  <data name="ARGUMAN_BILINMIYOR" xml:space="preserve">
+    <value>Verilen argüman bilinmiyor!</value>
+  </data>
+  <data name="ASKIDA" xml:space="preserve">
+    <value>Sertifika Askıda</value>
+  </data>
+  <data name="ASN1_ENCODE_HATASI" xml:space="preserve">
+    <value>Asn1 yapısı ENCODE edilirken hata ile karşılaşıldı!</value>
+  </data>
+  <data name="AUTHORITY_SUBJECT_KEY_IDENTIFIER_UYUMLU" xml:space="preserve">
+    <value>Sertifikadaki Yetkili Anahtar Tanımlayıcısı ile SM Sertifikasındaki Konu Anahtar Tanımlayıcısı Uyumlu</value>
+  </data>
+  <data name="AUTHORITY_SUBJECT_KEY_IDENTIFIER_UYUMSUZ" xml:space="preserve">
+    <value>Sertifikadaki Yetkili Anahtar Tanımlayıcısı ile SM Sertifikasındaki Konu Anahtar Tanımlayıcısı Uyumsuz</value>
+  </data>
+  <data name="AYNI_EXTENSION_BIRDEN_FAZLA" xml:space="preserve">
+    <value>Sertifikada Aynı Eklentiden Birden Fazla Var</value>
+  </data>
+  <data name="BASARILI" xml:space="preserve">
+    <value>Başarılı</value>
+  </data>
+  <data name="BASE_SILDE_ASKIYA_ALINAN_DELTADA_REMOVE_EDILMIS" xml:space="preserve">
+    <value>Base Silde Askıya Alınmış Sertifika Delta Silde Çıkarılmış</value>
+  </data>
+  <data name="BASIC_CONST_CA_KONTROLU" xml:space="preserve">
+    <value>Temel Kısıtlamalar CA Kontrolü</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTISI_BOZUK" xml:space="preserve">
+    <value>Temel Kısıtlamalar Eklentisi Bozuk</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_CA_DEGERI_DOGRU" xml:space="preserve">
+    <value>Temel Kısıtlamalar Eklentisi CA Değeri Doğru</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_CA_DEGERI_YANLIS" xml:space="preserve">
+    <value>Temel Kısıtlamalar Eklentisi CA Değeri Yanlış</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_CA_DEGERI_YOK" xml:space="preserve">
+    <value>Temel Kısıtlamalar Eklentisi CA Değeri Yok</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_LEN_CONS_DEGERI_ASILDI" xml:space="preserve">
+    <value>Temel Kısıtlar Eklentisinde Yol Uzunluğu Kısıtlayıcısı Değeri Aşıldı</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_LEN_CONS_DEGERI_GECERLI" xml:space="preserve">
+    <value>Temel Kısıtlar Eklentisinde Yol Uzunluğu Kısıtlayıcısı Değeri Geçerli</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_LEN_CONS_DEGERI_NEGATIF" xml:space="preserve">
+    <value>Temel Kısıtlar Eklentisinde Yol Uzunluğu Kısıtlayıcısı Değeri Negatif</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_LEN_CONS_DEGERI_YOK" xml:space="preserve">
+    <value>Temel Kısıtlar Eklentisinde Yol Uzunluğu Kısıtlayıcısı Yok</value>
+  </data>
+  <data name="BASIC_CONST_EKLENTI_YOK" xml:space="preserve">
+    <value>Temel Kısıtlamalar Eklentisi Yok</value>
+  </data>
+  <data name="BASIT_ALANLAR_VAR_DOGRU" xml:space="preserve">
+    <value>Basit Alanlar var, versiyon 1 veya üstü</value>
+  </data>
+  <data name="BASIT_ALANLAR_VAR_YANLIS" xml:space="preserve">
+    <value>Basit Alanlar var, versiyon 1 veya üstü değil</value>
+  </data>
+  <data name="BC_CA" xml:space="preserve">
+    <value>Sertifika Makamı</value>
+  </data>
+  <data name="BC_CA_DEGIL" xml:space="preserve">
+    <value>Sertifika Makamı Değil</value>
+  </data>
+  <data name="BC_PATH" xml:space="preserve">
+    <value>Yol Uzunluğu Kısıtlaması</value>
+  </data>
+  <data name="BC_TYPE" xml:space="preserve">
+    <value>Özne Türü</value>
+  </data>
+  <data name="CERTIFICATE_CHECKER_FAIL" xml:space="preserve">
+    <value>{0} başarısız</value>
+  </data>
+  <data name="CERTIFICATE_NO_PATH_FOUND" xml:space="preserve">
+    <value>Güvendiğiniz bir sertifika zinciri oluşturulamadı. Sertifikanın kök sertifikası güvenilir sertifikalarınızdan biri olmayabilir</value>
+  </data>
+  <data name="CERTIFICATE_VALIDATION_SUCCESSFUL" xml:space="preserve">
+    <value>Sertifika doğrulama başarılı</value>
+  </data>
+  <data name="CERTIFICATE_VALIDATION_UNSUCCESSFUL" xml:space="preserve">
+    <value>Sertifika doğrulaması başarısız. Doğrulama durumu: {0}</value>
+  </data>
+  <data name="CERTSIGN" xml:space="preserve">
+    <value>Sertifika İmzalama</value>
+  </data>
+  <data name="CERT_HATALI" xml:space="preserve">
+    <value>Verilen sertifika hatalı!</value>
+  </data>
+  <data name="CEVAPTA_SERTIFIKA_YOK" xml:space="preserve">
+    <value>OCSP Cevabında Sertifika Yok</value>
+  </data>
+  <data name="CEVAP_IMZALI_DEGIL" xml:space="preserve">
+    <value>OCSP Cevabı İmzalı Değil</value>
+  </data>
+  <data name="CEVAP_YAPISI_BOZUK" xml:space="preserve">
+    <value>OCSP Cevap Yapısı Bozuk</value>
+  </data>
+  <data name="CORRUPT_DATE_INFO" xml:space="preserve">
+    <value>Tarih bilgisine erişilemiyor</value>
+  </data>
+  <data name="COUNTRYCITIZENSHIP" xml:space="preserve">
+    <value>CountryCitizenship (Uyruk)</value>
+  </data>
+  <data name="COUNTRYRESIDENCE" xml:space="preserve">
+    <value>CountryResidence (İkamet Edilen Ülke)</value>
+  </data>
+  <data name="CRLSIGN" xml:space="preserve">
+    <value>SİL İmzalama</value>
+  </data>
+  <data name="DATAENCIPHERMENT" xml:space="preserve">
+    <value>Veri Şifreleme</value>
+  </data>
+  <data name="DATEOFBIRTH" xml:space="preserve">
+    <value>DateOfBirth (Doğum Tarihi)</value>
+  </data>
+  <data name="DECIPHERONLY" xml:space="preserve">
+    <value>DecipherOnly</value>
+  </data>
+  <data name="DELTA_CRL_INDICATOR_KONTROLU" xml:space="preserve">
+    <value>Delta Sil Belirleyici Kontrolü</value>
+  </data>
+  <data name="DELTA_CRL_INDICATOR_VAR" xml:space="preserve">
+    <value>Delta Sil Belirleyici Var</value>
+  </data>
+  <data name="DELTA_CRL_INDICATOR_YOK" xml:space="preserve">
+    <value>Delta Sil Belirleyici Yok</value>
+  </data>
+  <data name="DIGITALSIGNATURE" xml:space="preserve">
+    <value>Sayısal İmza</value>
+  </data>
+  <data name="DOGRULAMA_KRIPTO_HATASI" xml:space="preserve">
+    <value>Doğrulama Kripto Hatası</value>
+  </data>
+  <data name="ECDSAANAHTARBOYU_0_BILINMIYOR" xml:space="preserve">
+    <value>ECDSA Anahtar boyu {0} icin parametreler bilinmiyor.</value>
+  </data>
+  <data name="EKLENTILER_GECERLI" xml:space="preserve">
+    <value>Sertifika Eklentileri Geçerli</value>
+  </data>
+  <data name="EKLENTI_YOK" xml:space="preserve">
+    <value>Sertifikada Eklenti Yok</value>
+  </data>
+  <data name="EKU_CLIENT_AUTHENTICATION" xml:space="preserve">
+    <value>İstemci Tanıma</value>
+  </data>
+  <data name="EKU_CODE_SIGNING" xml:space="preserve">
+    <value>Kod İmzalama</value>
+  </data>
+  <data name="EKU_DVCS" xml:space="preserve">
+    <value>DVCS</value>
+  </data>
+  <data name="EKU_EMAIL_PROTECTION" xml:space="preserve">
+    <value>Elektronik Posta Koruma</value>
+  </data>
+  <data name="EKU_IPSEC_END_SYSTEM" xml:space="preserve">
+    <value>IPSEC Sonlandırma Sistemi</value>
+  </data>
+  <data name="EKU_IPSEC_TUNNEL" xml:space="preserve">
+    <value>IPSEC tunnel</value>
+  </data>
+  <data name="EKU_IPSEC_USER" xml:space="preserve">
+    <value>IPSEC Kullanıcısı</value>
+  </data>
+  <data name="EKU_OCSP_SIGNING" xml:space="preserve">
+    <value>OCSP İmzalama</value>
+  </data>
+  <data name="EKU_SERVER_AUTHENTICATION" xml:space="preserve">
+    <value>Sunucu Tanıma</value>
+  </data>
+  <data name="EKU_TIME_STAMPING" xml:space="preserve">
+    <value>Zaman Damgası</value>
+  </data>
+  <data name="ENCIPHERONLY" xml:space="preserve">
+    <value>EncipherOnly</value>
+  </data>
+  <data name="ENCRYPTIONCERT_KEY_USAGE_KONTROLU" xml:space="preserve">
+    <value>Şifreleme Sertifikası Anahtar Kullanımı Eklentisi Kontrolü</value>
+  </data>
+  <data name="EXTENDEDKEY_USAGE_BOZUK" xml:space="preserve">
+    <value>Gelişmiş Anahtar Kullanımı Eklentisi Geçersiz</value>
+  </data>
+  <data name="EXTENDEDKEY_USAGE_GECERLI" xml:space="preserve">
+    <value>Anahtar Kullanımı Eklentisi Sertifika İmzalayıcı Değil</value>
+  </data>
+  <data name="EXTENDEDKEY_USAGE_YOK" xml:space="preserve">
+    <value>Gelişmiş Anahtar Kullanımı Eklentisi Yok</value>
+  </data>
+  <data name="EXTENSION_VAR_DOGRU" xml:space="preserve">
+    <value>Eklenti var, versiyon 3</value>
+  </data>
+  <data name="EXTENSION_VAR_YANLIS" xml:space="preserve">
+    <value>Eklenti var, versiyon 3 değil</value>
+  </data>
+  <data name="FRESHEST_CRL_KONTROLU" xml:space="preserve">
+    <value>Freshest Sil Kontrolü</value>
+  </data>
+  <data name="FRESHEST_CRL_VAR" xml:space="preserve">
+    <value>Freshest Sil Var</value>
+  </data>
+  <data name="FRESHEST_CRL_YOK" xml:space="preserve">
+    <value>Freshest Sil Yok</value>
+  </data>
+  <data name="GECERLI" xml:space="preserve">
+    <value>Sertifika Geçerli</value>
+  </data>
+  <data name="GECERSIZ_EKLENTI" xml:space="preserve">
+    <value>Sertifikada Geçersiz Bir Eklenti Var</value>
+  </data>
+  <data name="GENDER" xml:space="preserve">
+    <value>Gender (Cinsiyet)</value>
+  </data>
+  <data name="HATA_IMZA_PAKETI_BILINMEYEN_UZANTI_EKSIK_MIMETYPE" xml:space="preserve">
+    <value>Bilinmeyen Uzantı ve eksik Mimetype!</value>
+  </data>
+  <data name="HATA_IMZA_PAKETI_DESTEKLENMIYOR" xml:space="preserve">
+    <value>İmza Paketi desteklenmiyor: {0} - {1}</value>
+  </data>
+  <data name="HATA_IMZA_PAKETI_UZANTI_MIMETYPE_UYUZMAZLIK" xml:space="preserve">
+    <value>Uzantı ({0}) ve mimetype ({1}) uyuşmuyor</value>
+  </data>
+  <data name="IMZALAYAN_SERTIFIKA_GECERLI" xml:space="preserve">
+    <value>İmzalayan Sertifika Geçerli</value>
+  </data>
+  <data name="IMZALAYAN_SERTIFIKA_GECERSIZ" xml:space="preserve">
+    <value>İmzalayan Sertifika Geçersiz</value>
+  </data>
+  <data name="IMZALG_0_BILINMIYOR" xml:space="preserve">
+    <value>İmzalama algoritması {0} bilinmiyor!</value>
+  </data>
+  <data name="IMZA_ANAHTAR_ALGORITMA_UYUMSUZLUGU" xml:space="preserve">
+    <value>Seçilen imzalama algoritması ile kullanılan anahtar tipi uyumsuz</value>
+  </data>
+  <data name="IMZA_DOGRULANAMADI" xml:space="preserve">
+    <value>OCSP Cevabı İmzası Doğrulanamadı</value>
+  </data>
+  <data name="IMZA_DOGRULANDI" xml:space="preserve">
+    <value>OCSP Cevabı İmzası Doğrulandı</value>
+  </data>
+  <data name="IMZA_PAKETI_IMZA_KONTEYNERI_BULUNAMADI" xml:space="preserve">
+    <value>Pakette herhangi bir imza konteyneri bulunamadı</value>
+  </data>
+  <data name="INIT_EDILMIS" xml:space="preserve">
+    <value>Daha önce "initialize" edilmiş!</value>
+  </data>
+  <data name="INTERNAL_ERROR" xml:space="preserve">
+    <value>Internal Error</value>
+  </data>
+  <data name="INVALID_DATE_INFO" xml:space="preserve">
+    <value>Tarih kontrolu başarısız</value>
+  </data>
+  <data name="IPTAL_EDILMIS" xml:space="preserve">
+    <value>Sertifika İptal Edilmiş</value>
+  </data>
+  <data name="IPTAL_KONTROLU_SORUNLU" xml:space="preserve">
+    <value>İptal Kontrolü Sorunlu</value>
+  </data>
+  <data name="ISSUER_SUBJECT_UYUMLU" xml:space="preserve">
+    <value>Sertifikadaki Issuer ile SM Sertifikasındaki Subject Değerleri Uyumlu</value>
+  </data>
+  <data name="ISSUER_SUBJECT_UYUMSUZ" xml:space="preserve">
+    <value>Sertifikadaki Issuer ile SM Sertifikasındaki Subject Değerleri Uyumsuz</value>
+  </data>
+  <data name="KARTTA_0_ANAHTARI_YOK" xml:space="preserve">
+    <value>Kartta {0} isminde anahtar bulunamadı!</value>
+  </data>
+  <data name="KEYAGREEMENT" xml:space="preserve">
+    <value>Anahtar Anlaşması</value>
+  </data>
+  <data name="KEYENCIPHERMENT" xml:space="preserve">
+    <value>Anahtar Şifreleme</value>
+  </data>
+  <data name="KEY_IDENTIFIER_KONTROLU" xml:space="preserve">
+    <value>Anahtar Tanımlayıcısı Kontrolü</value>
+  </data>
+  <data name="KEY_USAGE_BOZUK" xml:space="preserve">
+    <value>Anahtar Kullanımı Eklentisi Yapısı Bozuk</value>
+  </data>
+  <data name="KEY_USAGE_SERTIFIKA_IMZALAYICI" xml:space="preserve">
+    <value>Anahtar Kullanımı Eklentisi Sertifika İmzalayıcı</value>
+  </data>
+  <data name="KEY_USAGE_SERTIFIKA_IMZALAYICI_DEGIL" xml:space="preserve">
+    <value>Anahtar Kullanımı Eklentisi Sertifika İmzalayıcı Değil</value>
+  </data>
+  <data name="KEY_USAGE_SERTIFIKA_SIFRELEME" xml:space="preserve">
+    <value>Anahtar Kullanımı Eklentisi Şifreleme</value>
+  </data>
+  <data name="KEY_USAGE_SIL_IMZALAYICI" xml:space="preserve">
+    <value>Anahtar Kullanımı Eklentisi Sil İmzalayıcı</value>
+  </data>
+  <data name="KEY_USAGE_SIL_IMZALAYICI_DEGIL" xml:space="preserve">
+    <value>Anahtar Kullanımı Eklentisi Sil İmzalayıcı Değil</value>
+  </data>
+  <data name="KEY_USAGE_YOK" xml:space="preserve">
+    <value>Anahtar Kullanımı Eklentisi Yok</value>
+  </data>
+  <data name="KONTROL_SONUCU" xml:space="preserve">
+    <value>Kontrol Sonucu</value>
+  </data>
+  <data name="KRIPTO_GENEL_HATA" xml:space="preserve">
+    <value>Kripto işlemlerinde genel bir hata ile karşılaşıldı!</value>
+  </data>
+  <data name="MALFORMED_REQUEST" xml:space="preserve">
+    <value>Malformed Request</value>
+  </data>
+  <data name="MESAJ_ESNEKZDYOK" xml:space="preserve">
+    <value>Lisans dosyasında esnek zaman damgası alanı bulunamadı. Lisans dosyasını yenileyiniz!</value>
+  </data>
+  <data name="NITELIKLI_COMPLIANCE" xml:space="preserve">
+    <value>Bu sertifika, ETSI TS 101 862 standardına göre oluşturulmuş nitelikli elektronik sertifikadır.</value>
+  </data>
+  <data name="NITELIKLI_MONEY_LIMIT" xml:space="preserve">
+    <value>Para Limiti</value>
+  </data>
+  <data name="NITELIKLI_TK" xml:space="preserve">
+    <value>Telekomünikasyon Kurumu tarafından belirlenmiş nitelikli elektronik sertifika profiline uygundur.</value>
+  </data>
+  <data name="NONREPUDIATION" xml:space="preserve">
+    <value>Red Olmayan</value>
+  </data>
+  <data name="NOPATHFOUND" xml:space="preserve">
+    <value>Sertifika Zinciri tespit edilemedi</value>
+  </data>
+  <data name="NO_TRUSTED_CERT_FOUND" xml:space="preserve">
+    <value>Hiç Güvenilir Sertifika Bulunamadı</value>
+  </data>
+  <data name="OCSPDEN_IPTAL_KONTROLU" xml:space="preserve">
+    <value>OCSPden İptal Kontrolü</value>
+  </data>
+  <data name="OCSP_CEVABI_BULUNAMADI" xml:space="preserve">
+    <value>OCSP Cevabı Bulunamadı</value>
+  </data>
+  <data name="OCSP_CEVABI_GECERSIZ" xml:space="preserve">
+    <value>OCSP Cevabı Geçersiz</value>
+  </data>
+  <data name="OCSP_CEVABI_KONTROLCU" xml:space="preserve">
+    <value>OCSP Cevabı Kontrolu</value>
+  </data>
+  <data name="OCSP_IMZALAYAN_SERTIFIKA_KONTROLU" xml:space="preserve">
+    <value>OCSP İmzalayıcı Sertifika Kontrolü</value>
+  </data>
+  <data name="OCSP_IMZA_KONTROLU" xml:space="preserve">
+    <value>OCSP Cevabı İmza Kontrolü</value>
+  </data>
+  <data name="OCSP_RESPONSEDATE_EXPIRED" xml:space="preserve">
+    <value>OCSP zamanı geçerli değil</value>
+  </data>
+  <data name="OCSP_RESPONSEDATE_INVALID" xml:space="preserve">
+    <value>OCSP zamanı geçerli değil</value>
+  </data>
+  <data name="OZETALG_0_BILINMIYOR" xml:space="preserve">
+    <value>Özet algoritması bilinmiyor!</value>
+  </data>
+  <data name="PADDING_BILINMIYOR" xml:space="preserve">
+    <value>Verilen padding bilinmiyor!</value>
+  </data>
+  <data name="PATH_LEN_CONSTRAINT_KONTROLU" xml:space="preserve">
+    <value>Yol Uzunluğu Kısıtlayıcısı Kontrolü</value>
+  </data>
+  <data name="PLACEOFBIRTH" xml:space="preserve">
+    <value>Doğum Yeri</value>
+  </data>
+  <data name="PM_IDP" xml:space="preserve">
+    <value>Sertifika Sağlayıcı Alan İlkesi</value>
+  </data>
+  <data name="PM_SDP" xml:space="preserve">
+    <value>Konu Alan İlkesi</value>
+  </data>
+  <data name="POLICY_CPS" xml:space="preserve">
+    <value>CPS</value>
+  </data>
+  <data name="POLICY_ID" xml:space="preserve">
+    <value>İlke Niteleyici Kimliği</value>
+  </data>
+  <data name="POLICY_IDENTIFIER" xml:space="preserve">
+    <value>İlke Tanımlayıcısı</value>
+  </data>
+  <data name="POLICY_INFO" xml:space="preserve">
+    <value>İlke Niteleyici Bilgisi</value>
+  </data>
+  <data name="POLICY_NOTICE" xml:space="preserve">
+    <value>Kullanıcı Notu</value>
+  </data>
+  <data name="POLICY_QUALIFIER" xml:space="preserve">
+    <value>Niteleyici</value>
+  </data>
+  <data name="PVR_BASICCONSTRAINTS_FAILURE" xml:space="preserve">
+    <value>Sertifika Temel Kısıtlamalar kontrolü başarısız</value>
+  </data>
+  <data name="PVR_CDP_CONTROL_FAILURE" xml:space="preserve">
+    <value>Sertifika SİL Dağıtım Noktaları kontrolü başarısız</value>
+  </data>
+  <data name="PVR_CERTIFICATE_EXPIRED" xml:space="preserve">
+    <value>Sertifika geçerlilik süresi dolmuş</value>
+  </data>
+  <data name="PVR_CERTIFICATE_EXTENSIONS_FAILURE" xml:space="preserve">
+    <value>Sertifika Eklenti kontrolü başarısız</value>
+  </data>
+  <data name="PVR_CERTIFICATE_REVOKED" xml:space="preserve">
+    <value>Sertifika iptal edilmiş</value>
+  </data>
+  <data name="PVR_CRL_DELTACRLINDICATOR_CONTROL_FAILURE" xml:space="preserve">
+    <value>SİL Delta Sil Belirteci Eklentisi kontrolü başarısız</value>
+  </data>
+  <data name="PVR_CRL_EXPIRED" xml:space="preserve">
+    <value>SİL geçerlilik süresi dolmuş</value>
+  </data>
+  <data name="PVR_CRL_EXTENSIONS_CONTROL_FAILURE" xml:space="preserve">
+    <value>SİL Eklentileri kontrolü başarısız</value>
+  </data>
+  <data name="PVR_CRL_FRESHESTCRL_CONTROL_FAILURE" xml:space="preserve">
+    <value>SİL En Güncel SİL Eklentisi kontrolü başarısız</value>
+  </data>
+  <data name="PVR_CRL_KEYUSAGE_CONTROL_FAILURE" xml:space="preserve">
+    <value>SİL Anahtar Kullanımı kontrolü başarısız</value>
+  </data>
+  <data name="PVR_CRL_NAME_CONTROL_FAILURE" xml:space="preserve">
+    <value>SİL İsim kontrolü başarısız</value>
+  </data>
+  <data name="PVR_CRL_SIGNATURE_CONTROL_FAILURE" xml:space="preserve">
+    <value>SİL İmza kontrolü başarısız</value>
+  </data>
+  <data name="PVR_EXTENDED_KEYUSAGE_CONTROL_FAILURE" xml:space="preserve">
+    <value>Sertifika Gelişmiş Anahtar Kullanımı kontrolü başarısız.</value>
+  </data>
+  <data name="PVR_INCOMPLETE_VALIDATION" xml:space="preserve">
+    <value>Sertifika Doğrulama tamamlanamadı</value>
+  </data>
+  <data name="PVR_INVALID_PATH" xml:space="preserve">
+    <value>Geçersiz Sertifika Zinciri</value>
+  </data>
+  <data name="PVR_KEYID_CONTROL_FAILURE" xml:space="preserve">
+    <value>Sertifika Anahtar Tanımlayıcısı kontrolü başarısız</value>
+  </data>
+  <data name="PVR_KEYUSAGE_CONTROL_FAILURE" xml:space="preserve">
+    <value>Sertifika Anahtar Kullanımı kontrolü başarısız</value>
+  </data>
+  <data name="PVR_NAMECONSTRAINTS_FAILURE" xml:space="preserve">
+    <value>Sertifika İsim Kısıtlamaları kontrolü başarısız</value>
+  </data>
+  <data name="PVR_NAME_CONTROL_FAILURE" xml:space="preserve">
+    <value>Sertifika İsim kontrolü başarısız</value>
+  </data>
+  <data name="PVR_NO_PATHFOUND" xml:space="preserve">
+    <value>Geçerli zincir bulunamadı</value>
+  </data>
+  <data name="PVR_OCSP_DATE_CONTROL_FAILURE" xml:space="preserve">
+    <value>OCSP zamanı geçerli değil</value>
+  </data>
+  <data name="PVR_OCSP_RESPONSESTATUS_CONTROL_FAILURE" xml:space="preserve">
+    <value>OCSP Cevap Durumu kontrolü başarısız</value>
+  </data>
+  <data name="PVR_OCSP_SIGNATURE_CONTROL_FAILURE" xml:space="preserve">
+    <value>OCSP İmza kontrolü başarısız</value>
+  </data>
+  <data name="PVR_PATHLENCONSTRAINTS_FAILURE" xml:space="preserve">
+    <value>Sertifika Yol Uzunluğu kontrolü başarısız</value>
+  </data>
+  <data name="PVR_POLICYCONSTRAINTS_CONTROL_FAILURE" xml:space="preserve">
+    <value>Sertifika Politika Kısıtlamaları kontrolü başarısız</value>
+  </data>
+  <data name="PVR_POLICYMAPPING_CONTROL_FAILURE" xml:space="preserve">
+    <value>Sertifika Politika Eşleştirmeleri kontrolü başarısız</value>
+  </data>
+  <data name="PVR_REVOCATION_CONTROL_FAILURE" xml:space="preserve">
+    <value>Sertifika iptal kontrolü yapılamadı</value>
+  </data>
+  <data name="PVR_SERIALNUMBER_NOT_POSITIVE" xml:space="preserve">
+    <value>Seri Numarası negatif</value>
+  </data>
+  <data name="PVR_SIGNATURE_ALGORITHM_DIFFERENT" xml:space="preserve">
+    <value>Sertifika ve imza algoritması uyuşmuyor</value>
+  </data>
+  <data name="PVR_SIGNATURE_CONTROL_FAILURE" xml:space="preserve">
+    <value>Sertifika İmza kontrolü başarısız</value>
+  </data>
+  <data name="PVR_SUCCESS" xml:space="preserve">
+    <value>Başarılı</value>
+  </data>
+  <data name="PVR_UNSPECIFIED_FAILURE" xml:space="preserve">
+    <value>Tanımlanmamış hata</value>
+  </data>
+  <data name="PVR_VERSION_CONTROL_FAILURE" xml:space="preserve">
+    <value>Sertifika versiyon kontrolü başarısız</value>
+  </data>
+  <data name="ROLE" xml:space="preserve">
+    <value>Role (Görev)</value>
+  </data>
+  <data name="SC_SELECTOR_NOT_GIVEN" xml:space="preserve">
+    <value>Akıllı Kart Seçici Verilmedi</value>
+  </data>
+  <data name="SELECT_SC" xml:space="preserve">
+    <value>Akıllı Kart Seçin</value>
+  </data>
+  <data name="SERI_NO_KONTROLU" xml:space="preserve">
+    <value>Seri Numarası Kontrolü</value>
+  </data>
+  <data name="SERI_NO_NEGATIF" xml:space="preserve">
+    <value>Seri Numarası Negatif</value>
+  </data>
+  <data name="SERI_NO_POZITIF" xml:space="preserve">
+    <value>Seri Numarası Pozitif</value>
+  </data>
+  <data name="SERTIFIKADA_ACIK_ANAHTAR_BOZUK" xml:space="preserve">
+    <value>Sertifikadaki Açık Anahtar Bozuk</value>
+  </data>
+  <data name="SERTIFIKADA_ACIK_ANAHTAR_YOK" xml:space="preserve">
+    <value>Sertifikada Açık Anahtar Yok</value>
+  </data>
+  <data name="SERTIFIKA_AUTHORITY_KEY_IDENTIFIER_YOK" xml:space="preserve">
+    <value>Sertifikada Yetkili Anahtar Tanımlayıcısı Yok</value>
+  </data>
+  <data name="SERTIFIKA_DELTA_SILDE" xml:space="preserve">
+    <value>Sertifika Delta Silde İptal Edilmiş</value>
+  </data>
+  <data name="SERTIFIKA_DELTA_SILDE_REMOVE_EDILMIS" xml:space="preserve">
+    <value>Sertifika Delta Silde Çıkarılmış</value>
+  </data>
+  <data name="SERTIFIKA_EKLENTI_KONTROLU" xml:space="preserve">
+    <value>Sertifika Eklenti Kontrolü</value>
+  </data>
+  <data name="SERTIFIKA_EXTENDED_KEY_USAGE_KONTROLU" xml:space="preserve">
+    <value>Sertifika Gelişmiş Anahtar Kullanımı Eklentisi Kontrolü</value>
+  </data>
+  <data name="SERTIFIKA_IMZALI_DEGIL" xml:space="preserve">
+    <value>Sertifika İmzalı Değil</value>
+  </data>
+  <data name="SERTIFIKA_IMZA_DOGRULANAMADI" xml:space="preserve">
+    <value>Sertifika İmzası Doğrulanamadı</value>
+  </data>
+  <data name="SERTIFIKA_IMZA_DOGRULANDI" xml:space="preserve">
+    <value>Sertifika İmzası Doğrulandı</value>
+  </data>
+  <data name="SERTIFIKA_IMZA_KONTROLU" xml:space="preserve">
+    <value>Sertifika İmza Kontrolü</value>
+  </data>
+  <data name="SERTIFIKA_ISSUER_YOK" xml:space="preserve">
+    <value>Sertifikada Issuer Yok</value>
+  </data>
+  <data name="SERTIFIKA_KEYUSAGE_HATALI" xml:space="preserve">
+    <value>Sertifika anahtar kullanım alanı hatalı.</value>
+  </data>
+  <data name="SERTIFIKA_KEY_USAGE_KONTROLU" xml:space="preserve">
+    <value>Sertifika Anahtar Kullanımı Eklentisi Kontrolü</value>
+  </data>
+  <data name="SERTIFIKA_KULLANICI_NOTU_YOK" xml:space="preserve">
+    <value>Sertifika Kullanıcı Notu Yok</value>
+  </data>
+  <data name="SERTIFIKA_LISTEDE" xml:space="preserve">
+    <value>Sertifika Silde İptal Edilmiş</value>
+  </data>
+  <data name="SERTIFIKA_LISTEDE_DEGIL" xml:space="preserve">
+    <value>Sertifika Silde Yok</value>
+  </data>
+  <data name="SERTIFIKA_NAME_KONTROLU" xml:space="preserve">
+    <value>Sertifika Name Kontrolü</value>
+  </data>
+  <data name="SERTIFIKA_NITELIKLI_IBARESI_YOK" xml:space="preserve">
+    <value>Sertifikada nitelikli ibaresi bulunamadı.</value>
+  </data>
+  <data name="SERTIFIKA_NITELIKLI_KONTROLU" xml:space="preserve">
+    <value>Nitelikli Sertifika Kontrolü</value>
+  </data>
+  <data name="SERTIFIKA_NITELIKLI_KONTROLU_BASARILI" xml:space="preserve">
+    <value>Nitelikli sertifika kontrolü başarılı.</value>
+  </data>
+  <data name="SERTIFIKA_OCSPDE_GECERLI" xml:space="preserve">
+    <value>Sertifika OCSPde Geçerli</value>
+  </data>
+  <data name="SERTIFIKA_OCSPDE_GECERLI_DEGIL" xml:space="preserve">
+    <value>Sertifika OCSPde Geçerli Değil</value>
+  </data>
+  <data name="SERTIFIKA_OCSP_SERTIFIKASI_DEGIL" xml:space="preserve">
+    <value>OCSP Cevabındaki Sertifika OCSP Sertifikası Değil</value>
+  </data>
+  <data name="SERTIFIKA_SORUNLU" xml:space="preserve">
+    <value>Sertifika Sorunlu</value>
+  </data>
+  <data name="SERTIFIKA_SURESI_DOLMUS" xml:space="preserve">
+    <value>Sertifika süresi dolmuş</value>
+  </data>
+  <data name="SERTIFIKA_TARIH_BILGISI_BOZUK" xml:space="preserve">
+    <value>Sertifika Tarih Bilgisi Yapısı Bozuk</value>
+  </data>
+  <data name="SERTIFIKA_TARIH_GECERLI" xml:space="preserve">
+    <value>Sertifika Tarihi Geçerli</value>
+  </data>
+  <data name="SERTIFIKA_TARIH_GECERSIZ" xml:space="preserve">
+    <value>Sertifika Tarihi Geçersiz</value>
+  </data>
+  <data name="SERTIFIKA_TARIH_KONTROLU" xml:space="preserve">
+    <value>Sertifika Geçerlilik Tarihi Kontrolü</value>
+  </data>
+  <data name="SERTIFIKA_YAPISI_BOZUK" xml:space="preserve">
+    <value>Sertifika Yapısı Bozuk</value>
+  </data>
+  <data name="SIGNATURE_ALG_AYNI" xml:space="preserve">
+    <value>İmzalama Algoritması Değerleri Aynı</value>
+  </data>
+  <data name="SIGNATURE_ALG_AYNIMI_KONTROLU" xml:space="preserve">
+    <value>İmzalama Algoritması Aynımı Kontrolü</value>
+  </data>
+  <data name="SIGNATURE_ALG_FARKLI" xml:space="preserve">
+    <value>Imzalama Algoritması Değerleri Farklı</value>
+  </data>
+  <data name="SIG_REQUIRED" xml:space="preserve">
+    <value>Signature Required</value>
+  </data>
+  <data name="SILDEN_IPTAL_KONTROLU" xml:space="preserve">
+    <value>Silden İptal Kontrolü</value>
+  </data>
+  <data name="SIL_BULUNAMADI" xml:space="preserve">
+    <value>Sil Bulunamadı</value>
+  </data>
+  <data name="SIL_EKLENTI_KONTROLU" xml:space="preserve">
+    <value>Sil Eklenti Kontrolü</value>
+  </data>
+  <data name="SIL_GECERSIZ" xml:space="preserve">
+    <value>Sil Geçersiz</value>
+  </data>
+  <data name="SIL_IMZALI_DEGIL" xml:space="preserve">
+    <value>Sil İmzalı Değil</value>
+  </data>
+  <data name="SIL_IMZA_DOGRULANAMADI" xml:space="preserve">
+    <value>Sil İmzası Doğrulanamadı</value>
+  </data>
+  <data name="SIL_IMZA_DOGRULANDI" xml:space="preserve">
+    <value>Sil İmzası Doğrulandı</value>
+  </data>
+  <data name="SIL_IMZA_KONTROLU" xml:space="preserve">
+    <value>Sil İmza Kontrolü</value>
+  </data>
+  <data name="SIL_KEY_USAGE_KONTROLU" xml:space="preserve">
+    <value>Sil Anahtar Kullanımı Eklentisi Kontrolü</value>
+  </data>
+  <data name="SIL_NAME_KONTROLU" xml:space="preserve">
+    <value>Sil Name Kontrolü</value>
+  </data>
+  <data name="SIL_TARIH_KONTROLU" xml:space="preserve">
+    <value>Sil Tarih Kontrolü</value>
+  </data>
+  <data name="SIL_YAPISI_BOZUK" xml:space="preserve">
+    <value>Sil Yapısı Bozuk</value>
+  </data>
+  <data name="SIMMOD_BILINMIYOR" xml:space="preserve">
+    <value>Verilen simetrik algoritma modu bilinmiyor!</value>
+  </data>
+  <data name="SMSERTIFIKA_SUBJECT_KEY_IDENTIFIER_YOK" xml:space="preserve">
+    <value>SM Sertifikasında Konu Anahtar Tanımlayıcısı</value>
+  </data>
+  <data name="SMSERTIFIKA_SUBJECT_YOK" xml:space="preserve">
+    <value>SM Sertifikasında Subject Yok</value>
+  </data>
+  <data name="SM_SERTIFIKASI_BULUNAMADI" xml:space="preserve">
+    <value>SM Sertifikası Bulunamadı</value>
+  </data>
+  <data name="TRY_LATER" xml:space="preserve">
+    <value>Try Later</value>
+  </data>
+  <data name="UID_VAR_DOGRU" xml:space="preserve">
+    <value>UID var, versiyon 2 veya üstü</value>
+  </data>
+  <data name="UID_VAR_YANLIS" xml:space="preserve">
+    <value>UID var, versiyon 2 veya üstü değil</value>
+  </data>
+  <data name="UNAUTHORIZED" xml:space="preserve">
+    <value>Unauthorized</value>
+  </data>
+  <data name="UNKNOWN" xml:space="preserve">
+    <value>Bilinmiyor</value>
+  </data>
+  <data name="VALID_DATE_INFO" xml:space="preserve">
+    <value>Tarih kontrolu başarılı</value>
+  </data>
+  <data name="VERSION" xml:space="preserve">
+    <value>Versiyon</value>
+  </data>
+  <data name="ZINCIR_SORUNLU" xml:space="preserve">
+    <value>Sertifika Zinciri Sorunlu</value>
+  </data>
+  <data name="WRONG_FORMAT_QCC_STATEMENT" xml:space="preserve">
+    <value>Xml dosyasında girilen qualified certificate checker parametresinin formatı yanlış.</value>
+  </data>
+</root>

@@ -1,0 +1,169 @@
+<asn1config>
+  <storage>list</storage>
+  
+  <module>
+    <name>cmp</name>
+    <sourceFile>CMP.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.cmp</pkgName>
+    <typePrefix>CMPStream_</typePrefix>
+    <valuePrefix>CMPStream_</valuePrefix>
+  </module>
+
+   
+  <module>
+    <name>dercms</name>
+    <sourceFile>derCMS.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.cms</pkgName>
+    <typePrefix>DERCMSStream_</typePrefix>
+    <valuePrefix>DERCMSStream_</valuePrefix>
+  </module>
+
+
+  <module>
+    <name>crmf</name>
+    <sourceFile>CRMF.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.crmf</pkgName>
+    <typePrefix>CRMFStream_</typePrefix>
+    <valuePrefix>CRMFStream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>Explicit</name>
+    <sourceFile>Explicit.asn</sourceFile>
+    <production name="Certificate">
+	<isPDU/>
+    </production>
+    <production name="CertificateSerialNumber">
+	<isBigInteger/>
+    </production>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.x509</pkgName>
+    <typePrefix>EXPStream_</typePrefix>
+    <valuePrefix>EXPStream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>Implicit</name>
+    <sourceFile>Implicit.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.x509</pkgName>
+    <typePrefix>IMPStream_</typePrefix>
+    <valuePrefix>IMPStream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>pkcs10</name>
+    <sourceFile>pkcs10.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.pkcs10</pkgName>
+    <typePrefix>PKCS10Stream_</typePrefix>
+    <valuePrefix>PKCS10Stream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>algorithms</name>
+    <sourceFile>Algorithms.asn</sourceFile>
+    <production name="ECParameters">
+	<isBigInteger/>
+    </production>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.algorithms</pkgName>
+    <typePrefix>ALGOSStream_</typePrefix>
+    <valuePrefix>ALGOSStream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>asnAes</name>
+    <sourceFile>asnAes.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.algorithms</pkgName>
+    <typePrefix>AESStream_</typePrefix>
+    <valuePrefix>AESStream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>PKIXqualified</name>
+    <sourceFile>PKIXqualified.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.PKIXqualified</pkgName>
+    <typePrefix>PKIXQUALStream_</typePrefix>
+    <valuePrefix>PKIXQUALStream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>pkcs7</name>
+    <sourceFile>pkcs7.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.pkcs7</pkgName>
+    <typePrefix>PKCS7Stream_</typePrefix>
+    <valuePrefix>PKCS7Stream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>etsiqc</name>
+    <sourceFile>etsiqc.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.etsiqc</pkgName>
+    <typePrefix>ETSIQCStream_</typePrefix>
+    <valuePrefix>ETSIQCStream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>pkixtsp</name>
+    <sourceFile>pkixtsp.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.pkixtsp</pkgName>
+    <typePrefix>TSPStream_</typePrefix>
+    <valuePrefix>TSPStream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>ocsp</name>
+    <sourceFile>ocsp.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.ocsp</pkgName>
+    <typePrefix>OCSPStream_</typePrefix>
+    <valuePrefix>OCSPStream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>cms</name>
+    <sourceFile>CMS.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.cms</pkgName>
+    <typePrefix>CMSStream_</typePrefix>
+    <valuePrefix>CMSStream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>etsi101733</name>
+    <sourceFile>etsi101733.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.cms</pkgName>
+    <typePrefix>ETSI101733Stream_</typePrefix>
+    <valuePrefix>ETSI101733Stream_</valuePrefix>
+  </module>
+  
+  <module>
+    <name>attrcert</name>
+    <sourceFile>AttrCert.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.attrcert</pkgName>
+    <typePrefix>ATTRCERTStream_</typePrefix>
+    <valuePrefix>ATTRCERTStream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>esya</name>
+    <sourceFile>esya.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.esya</pkgName>
+    <typePrefix>ESYAStream_</typePrefix>
+    <valuePrefix>ESYAStream_</valuePrefix>
+  </module>
+
+  <module>
+    <name>pkcs1pkcs8</name>
+    <sourceFile>pkcs1pkcs8.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.pkcs1pkcs8</pkgName>
+    <production name="RSAPrivateKey">
+	<isBigInteger/>
+    </production>
+    
+    <production name="RSAPublicKey">
+	<isBigInteger/>
+    </production>
+    
+    
+    <typePrefix>PKCS18Stream_</typePrefix>
+    <valuePrefix>PKCS18Stream_</valuePrefix>
+
+  </module>  
+  
+</asn1config>

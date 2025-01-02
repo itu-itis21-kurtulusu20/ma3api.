@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>ma3api-parent</artifactId>
+		<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+        <version>2.3.25-SNAPSHOT</version>
+		<relativePath>../api-parent/pom.xml</relativePath>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>ma3api-asn</artifactId>
+	<name>MA3 Api Asn Module</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.objsys.asn1j.runtime</groupId>
+			<artifactId>asn1rt</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+			<artifactId>ma3api-common</artifactId>
+		</dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.bilgem.uekae.ekds</groupId>
+            <artifactId>wia</artifactId>
+            <version>2.3.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.bilgem.uekae.deys.kkkk.api</groupId>
+            <artifactId>kkkkapi-operational-enterprise</artifactId>
+            <version>2.3.5</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>testsrc</testSourceDirectory>
+		<plugins>
+		</plugins>
+	</build>
+
+</project>

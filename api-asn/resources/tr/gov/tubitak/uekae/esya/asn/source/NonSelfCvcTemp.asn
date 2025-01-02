@@ -1,0 +1,64 @@
+-- CVC data types according to EN 419212-1:2014(E)
+NonSelfCvcTemp{ iso(1) identified-organization(3) dod(6) internet(1)
+  security(5) mechanisms(5) pkix(7) id-mod(0) id-pkix1-explicit(22) }
+
+   DEFINITIONS EXPLICIT TAGS ::=
+
+    BEGIN
+
+     IMPORTS
+
+      AlgRef,  ElcPuK, AlgRef ,Signature , PuKRemainder, DiscretionaryDO
+           --,UTF8String --   --if required; otherwise, comment out
+                  FROM cvcTemp
+
+        ;
+
+      HeaderList ::= [APPLICATION 13] OCTET STRING
+
+      NonSelfDescCVC ::= [APPLICATION 33] SEQUENCE{
+      	signature Signature,
+      	puKRemainder PuKRemainder OPTIONAL,
+      	car Car
+      }
+
+
+
+CertContentTemplate ::= [APPLICATION 78] SEQUENCE{
+	cpi Cpi,
+	car Car,
+	puk ElcPuK,
+	chr Chr,
+	--cha Cha,
+	chat Chat,
+	ced Ced OPTIONAL,
+	cxd Cxd OPTIONAL
+}
+
+
+      Car ::= [APPLICATION 2] OCTET STRING -- (SIZE(8))
+
+      Cpi ::= [APPLICATION 41] OCTET STRING (SIZE(1))
+
+      Chr ::= [APPLICATION 32] OCTET STRING -- (SIZE(12))
+      Cha ::= [APPLICATION 76] OCTET STRING
+      --AlgId ::= OBJECT IDENTIFIER
+      AlgId ::= [UNIVERSAL 6] OCTET STRING
+
+      Ced ::= [APPLICATION 37] OCTET STRING (SIZE(6))
+      Cxd ::= [APPLICATION 36] OCTET STRING (SIZE(6))
+
+
+      NonSelfDescCVCwithHeader ::= [APPLICATION 34] SEQUENCE{
+      	cvcTemp NonSelfDescCVC,
+      	header HeaderList
+      }
+
+      Chat ::= [APPLICATION 76] SEQUENCE{
+      	algId AlgId,
+      	discretionaryDO DiscretionaryDO
+      }
+
+
+
+END

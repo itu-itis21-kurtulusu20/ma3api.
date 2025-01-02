@@ -1,0 +1,307 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>ESYA Certificate Validation API Reference</title>
+<style type="text/css">
+    pre {background-color:#eee;}
+    h1, h2, h3, h4 {color:#069;}
+    table {border:1px solid #069; background-color: #f3f3f3;}
+    td {border:1px solid #bdf; padding:3px;}
+    th {background-color:#acf;}
+    .code { font-family:courier new, monospace; font-size:.8em;}
+</style>
+</head>
+<body>
+<h1>ESYA Certificate Validation API</h1>
+Highly configurable, standarts compliant, multiplatform X509 Certificate
+Validation API
+
+<h2>1. Concepts</h2>
+
+<h3>1.1. Validation Algorithm</h3>
+
+Certification path validation procedures for the Internet PKI are
+based on the algorithm supplied in [X.509]. Certification path
+processing verifies the binding between the subject distinguished
+name and/or subject alternative name and subject public key. The
+binding is limited by constraints that are specified in the
+certificates that comprise the path and inputs that are specified by
+the relying party. The basic constraints and policy constraints
+extensions allow the certification path processing logic to automate
+the decision making process.
+
+<pre>
+            +-------+
+            | START |
+            +-------+
+                |
+                V
+        +----------------+
+        | Initialization |
+        +----------------+
+                |
+                +<--------------------+
+                |                     |
+                V                     |
+        +----------------+            |
+        | Process Cert   |            |
+        +----------------+            |
+                |                     |
+                V                     |
+        +================+            |
+        | IF Last Cert   |            |
+        | in Path        |            |
+        +================+            |
+            |          |              |
+       THEN |          | ELSE         |
+            V          V              |
++----------------+ +----------------+ |
+| Wrap up        | | Prepare for    | |
++----------------+ | Next Cert      | |
+        |          +----------------+ |
+        V              |              |
+    +-------+          +--------------+
+    | STOP  |
+    +-------+
+    
+    Certification Path Processing Flowchart
+</pre>
+
+<h3>1.2. Validation Policy</h3>
+
+Validation Policy specifies which controls will be performed and in which order
+they take place during validation of certificates , CRLs or OCSP Responses.
+
+<h3>1.3. Checkers</h3>
+Checkers performs the control steps of validation. To make it configurable; each
+control step is defined in its own checker. For example the condition which is
+specified in RFC 5280 "The serial number is a positive integer." is checked by
+PositiveSerialNumberChecker class.
+
+<h3>1.4. Finders</h3>
+During validation process, some items such as issuer certificates or crls must
+be found from some places. These external items to be found are searched and
+found according to the finders. Each Finder specifies a location or means of
+finding an item. For example to locate an issuer certificate according to the
+Authority Info Access extension of the certificate , CertificateFinderFromAIA is
+used.
+
+<h3>1.5. Matchers</h3>
+When an associatiated item like CA certificate of a certificate or CRL of a
+certificate is found, the matching between these two items must be done
+according to several criteria specified in RFC5280. Those matching criteria are
+defined in matcher classes.
+
+
+
+
+
+<h2>2. Configuration</h2>
+
+Configuration is done via validation policy xml file. Below follows an example
+configuration, and then you can find a list of predefined configuration
+components. Note that these components are not limited to classes listed here.
+You can extend this set by implementing certain interfaces, and use them in your
+configuration file. Refer Javadoc for more information on implementing custom
+components.
+
+<h3>2.1. Example Configuration</h3>
+
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;policy>
+    &lt;find>
+        &lt;trustedcertificate>
+            &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.certificate.trusted.TrustedCertificateFinderFromFileSystem">
+                &lt;param name="dizin" value="E:\testdata\CryptographicMaterial\TrustAnchors\"/>
+            &lt;/class>
+        &lt;/trustedcertificate>
+        &lt;certificate>
+            &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.certificate.CertificateFinderFromFile">
+                &lt;param name="dosyayolu" value="E:\testdata\CryptographicMaterial\certs\SigningUserOK.crt"/>
+            &lt;/class>
+            &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.certificate.CertificateFinderFromFile">
+                &lt;param name="dosyayolu" value="E:\testdata\CryptographicMaterial\certs\LevelACAOK.cer"/>
+            &lt;/class>
+        &lt;/certificate>
+        &lt;crl>
+            &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.crl.CRLFinderFromFile">
+                &lt;param name="dosyayolu" value="E:\testdata\CryptographicMaterial\crl\LevelACAOK.crl"/>
+            &lt;/class>
+            &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.crl.CRLFinderFromFile">
+                &lt;param name="dosyayolu" value="E:\testdata\CryptographicMaterial\crl\RootCAOK.crl"/>
+            &lt;/class>
+        &lt;/crl>
+        &lt;oscp>
+        &lt;/oscp>
+    &lt;/find>
+    &lt;match>
+        &lt;certificate>
+            &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.match.certificate.IssuerSubjectMatcher"/>
+            &lt;!--class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.match.certificate.KeyIDMatcher"/-->
+        &lt;/certificate>
+        &lt;crl>
+            &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.match.crl.CRLIssuerMatcher"/>
+            &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.match.crl.CRLDistributionPointOnlyContainsMatcher"/>
+            &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.match.crl.CRLDistributionPointMatcher"/>
+        &lt;/crl>
+    &lt;/match>
+    &lt;validate>
+        &lt;certificate>
+            &lt;self>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.SignatureAlgConsistencyChecker"/>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.PositiveSerialNumberChecker"/>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.CertificateExtensionChecker"/>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.CertificateDateChecker"/>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.VersionChecker"/>
+            &lt;/self>
+            &lt;issuer>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.BasicConstraintCAChecker"/>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.KeyIdentifierChecker"/>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.CertificateKeyUsageChecker"/>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.CertificateNameChecker"/>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.PathLenConstraintChecker"/>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.CertificateSignatureChecker"/>
+            &lt;/issuer>
+            &lt;revocation>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.revocation.RevocationFromOCSPChecker"/>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.revocation.RevocationFromCRLChecker"/>
+            &lt;/revocation>
+        &lt;/certificate>
+        &lt;crl>
+            &lt;crlself>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.crl.self.CRLDateChecker"/>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.crl.self.CRLExtensionChecker"/>
+            &lt;/crlself>
+            &lt;crlissuer>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.crl.issuer.CRLSignatureChecker"/>
+                &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.crl.issuer.CRLKeyUsageChecker"/>
+            &lt;/crlissuer>
+        &lt;/crl>
+        &lt;oscp>
+            &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.ocsp.OCSPSignatureChecker"/>
+            &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.ocsp.SigningCertificateChecker"/>
+            &lt;class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.ocsp.ResponseStatusChecker"/>
+        &lt;/oscp>
+    &lt;/validate>
+    &lt;parameters>
+        &lt;UserPolicySet value="2.5.29.32.0"/>
+        &lt;InitialExplicitPolicy value="false"/>
+        &lt;InitialAnyPolicyInhibit value="false"/>
+        &lt;InitialPolicyMappingInhibit value="false"/>
+    &lt;/parameters>
+&lt;/policy>    
+</pre>
+
+<h3>2.2. Predefined Finders</h3>
+
+<table>
+    <tr><th>Family</th><th>Type</th><th>Class</th><th>Detail</th></tr>
+    <tr><td rowspan="8">Certificate</td><td rowspan="4">Certificate</td><td>CertificateFinderFromECertStore</td><td>from local Certificate Store</td></tr>
+    <tr>        <td>CertificateFinderFromFile</td><td>from local file</td></tr>
+    <tr>        <td>CertificateFinderFromHTTP</td><td>according to Authority Info Access (AIA) extension, from HTTP address</td></tr>
+    <tr>        <td>CertificateFinderFromLDAP</td><td>according to Authority Info Access (AIA) extension, from LDAP address</td></tr>
+    <tr>    <td rowspan="2">Trusted Certificate</td><td>TrustedCertificateFinderFromECertStore</td><td>from local Certificate Store</td></tr>
+    <tr>        <td>TrustedCertificateFinderFromFile</td><td>from local file</td></tr>
+    <tr>    <td rowspan="2">Cross Certificate</td><td>CrossCertificateFinderFromECertStore</td><td>from local Certificate Store</td></tr>
+    <tr>        <td>CrossCertificateFinderFromFile</td><td>from local file</td></tr>
+    <tr><td rowspan="8">CRL</td><td rowspan="6">CRL</td><td>CRLFinderFromECertStore</td><td>from local Certificate Store</td></tr>
+    <tr>        <td>CRLFinderFromFile</td><td>from local Certificate Store</td></tr>
+    <tr>        <td>CRLFinderFromHTTP</td><td>according to the CRL Distribution Points(CDP) extension from HTTP address</td></tr>
+    <tr>        <td>CRLFinderFromHTTPAddress</td><td>from the configured HTTP address</td></tr>
+    <tr>        <td>CRLFromLDAP</td><td>according to the CRL Distribution Points(CDP) extension from HTTP address</td></tr>
+    <tr>        <td>CRLFromLDAPAddress</td><td>from the configured LDAP address</td></tr>
+    <tr>    <td rowspan="2">Delta CRL</td><td>DeltaCRLFinderFromECertStore</td><td>from local Certificate Store</td></tr>
+    <tr>        <td>DeltaCRLFinderFromFile</td><td>from local Certificate Store</td></tr>
+    <tr><td rowspan="1">OCSP</td><td rowspan="5">OCSP Response</td><td>OCSPResponseFinderFromAIA</td><td>according ot AuthorityInfoAccess extension</td></tr>
+</table>
+
+
+<h3>2.3. Predefined Checkers</h3>
+
+<table>
+<tr><th>Family</th><th>Type</th><th>Class</th><th>Check</th></tr>
+<tr><td rowspan="15">Certificate </td><td rowspan="8">Issuer </td><td>BasicConstraintCAChecker</td><td>Basic Constraints extension in the issuer certificate has CA feature.</td></tr>
+ <tr>        <td>CertificateKeyUsageChecker      </td><td>Issuer certificate has CertificateSigning key usage</td></tr>
+ <tr>        <td>CertificateNameChecker          </td><td>Issuer field of the certificate and subject field of the issuer certificate are same</td></tr>
+ <tr>        <td>CertificateSignatureChecker     </td><td>Signature of the Certificate is valid</td></tr>
+ <tr>        <td>CRLDistributionPointsChecker    </td><td>CDP extension in the CRL is valid.</td></tr>
+ <tr>        <td>KeyIdentifierChecker            </td><td>SubjectKeyIdentifier extension of the CA certificate and AuthorityKeyIdentifier extension of the certificate matches</td></tr>
+ <tr>        <td>PathLenConstraintChecker        </td><td>Check restriction on the path length</td></tr>
+ <tr>        <td>PolicyConstraintChecker         </td><td>Validity of the certificate according the constraints defined by PolicyConstraints extension</td></tr>
+ <tr>   <td rowspan="2">Revocation  </td><td>RevocationFromCRLChecker        </td><td>Revocation status by using the matching CRLs</td></tr>
+ <tr>        <td>RevocationFromOCSPChecker       </td><td>Revocation status by using ocsp query to the OCSP servers</td></tr>
+ <tr>   <td rowspan="5">Self    </td><td>CertificateDateChecker          </td><td>Date information in the Certificate</td></tr>
+ <tr>        <td>CertificateExtensionchecker     </td><td>Extensions validity</td></tr>
+ <tr>        <td>PositiveSerialNumberChecker     </td><td>Serial number of the certificate is positive.</td></tr>
+ <tr>        <td>SignatureAlgConsistencyChecker  </td><td>Certificate's signature field and in the signatureAlgorithm field are equal</td></tr>
+ <tr>        <td>VersionChecker                  </td><td>Version information in the certificate</td></tr>
+<tr><td rowspan="7">CRL    </td><td rowspan="3">Issuer      </td><td>CRLKeyUsageChecker              </td><td>CRL issuer certificate has CRLSigning key usage</td></tr>
+ <tr>        <td>CRLNameChecker                  </td><td>Issuer field of the crl and the Subject field of the issuer certificate are the same</td></tr>
+ <tr>        <td>CRLSignatureChecker             </td><td>Signature of the CRL is valid</td></tr>
+ <tr>   <td rowspan="2">Self        <td>CRLDateChecker                  </td><td>Validity of date information in the CRL</td></tr>
+ <tr>        <td>CRLExtensionChecker             </td><td>Validity of extension information in the CRL</td></tr>
+<tr>    <td rowspan="2">Delta CRL       </td><td>DeltaCRLIndicatorChecker        </td><td>Existance of critical delta CRL indicator extension</td></tr>
+ <tr>        <td>FreshestCRLChecker              </td><td>Freshest CRL extension must not exist</td></tr>
+<tr><td rowspan="3">OCSP Response  </td><td rowspan="3"> Self        </td><td>OCSPSignatureChecker            </td><td>Validity of the signature the OCSP Response</td></tr>
+ <tr>       <td>ResponseStatusChecker           </td><td>Validity of OCSP Response status</td></tr>
+ <tr>       <td>SigningCertificateChecker       </td><td>Signing certificate of the OCSP Response is valid.</td></tr>
+</table>
+
+    
+<h3>2.4. Predefined Matchers</h3>
+
+<table>
+<tr><th>Family</th><th>Type</th><th>Class</th><th>Matches</th></tr>
+<tr><td rowspan="5">Certificate</td><td rowspan="2">Certificate</td><td>IssuerSubjectMatcher</td><td>Subject field of the CA certificate and the issuer field of the certificate</td></tr>
+<tr>        <td>KeyIDMatcher</td><td>SubjectKeyIdentifier extension of the CA certificate and AuthorityKeyIdentifier extension of the certificate</td></tr>
+<tr>    <td rowspan="3">Cross Certificate</td><td>PublicKeyMatcher</td><td>PublicKeys</td></tr>
+<tr>        <td>SKIMatcher</td><td>SubjectKeyIdentifier extension</td></tr>
+<tr>        <td>SubjectMatcher</td><td>Subject Information</td></tr>
+<tr><td rowspan="8">CRL</td><td rowspan="4">CRL</td><td>CRLDistributionPointMatcher</td><td>CRLDistributionPoint extension</td></tr>
+<tr>        <td>CRLDistributionPointOnlyContainsMatcher</td><td>CRLDistributionPointOnly extension</td></tr>
+<tr>        <td>CRLIssuerMatcher</td><td>Issuer fields of the crl and the certificate</td></tr>
+<tr>        <td>CRLKeyIDMatcher</td><td>Authority Key Identifier (AKI) extensions</td></tr>
+<tr>    <td rowspan="4">Delta CRL</td><td>BaseCRLNumberMatcher</td><td>CRL number of the complete CRL is equal to or greater than the BaseCRLNumber specified in the delta CRL.</td></tr>
+<tr>        <td>CRLNumberMatcher</td><td>Delta-CRL and a complete crl according to the CRLNumber extensions</td></tr>
+<tr>        <td>DeltaCRLIssuerMatcher</td><td>Delta-CRL and base CRL has same issuer</td></tr>
+<tr>        <td>ScopeMatcher</td><td>The complete CRL and delta CRL have the same scope.</td></tr>
+</table>
+
+
+<h2>3. Code usage</h2>
+Here is general contract for certificate validation procedure:
+<pre class="code">
+ValidationPolicy policy = PolicyReader.readValidationPolicy(POLICY_PATH);
+ValidationSystem validationSystem = CertificateValidation.createValidationSystem(policy);
+CertificateController checker = new CertificateController();
+CertificateStatusInfo csi = checker.check(validationSystem, sertifika);
+</pre>
+
+If you want to pass PKI resources to be used in certificate validation, or have
+other preferences to pass like validation time then you
+can use related ValidationSystem methods (see JavaDoc for further information)
+
+<pre class="code">
+ValidationSystem validationSystem = CertificateValidation.createValidationSystem(policy);
+
+validationSystem.setUserInitialCertificateSet(myCertificates);
+validationSystem.setUserInitialCRLSet(myCrls);
+validationSystem.setUserInitialOCSPResponseSet(myOCSPResponses);
+
+validationSystem.setBaseValidationTime(context.getValidationTime());
+
+CertificateController checker = new CertificateController();
+CertificateStatusInfo csi = checker.check(validationSystem, certificate);
+</pre>
+
+These examples can be simplified by using CertificateValidation utility methods
+<pre class="code">
+CertificateStatusInfo csi = CertificateValidation.validateCertificate(validationSystem, certificate)    
+</pre>
+
+That's all folks.
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+crlfinder DEFINITIONS IMPLICIT TAGS ::= BEGIN
+
+ IMPORTS
+
+     -- Imports from RFC 3280 [PROFILE], Appendix A.1
+          AlgorithmIdentifier, Name, CertificateSerialNumber
+              FROM Explicit
+                   { iso(1) identified-organization(3) dod(6)
+                     internet(1) security(5) mechanisms(5) pkix(7)
+                     mod(0) pkix1-explicit(18) }
+
+
+	IssuerAndSerialNumber FROM cms;
+
+CRLRequest ::= SEQUENCE {
+   issuerSerialOfIssuer     IssuerAndSerialNumber OPTIONAL,
+   crlIssuer           [10]  Name OPTIONAL,
+   crlRequestType           CRLRequestType
+}
+
+--CertificateSerialNumber  ::=  INTEGER
+
+CRLRequestType ::= CHOICE {
+    crlNo        		[0]    CRLNumber , 
+    crlHash      		[1]    CRLHash ,
+    issuedNotBefore    	[2]    GeneralizedTime,
+    issuedNotAfter 		[3]    GeneralizedTime
+}
+
+CRLNumber ::=  INTEGER -- Asn1BigInteger
+
+CRLHash     ::=     SEQUENCE {
+    hashAlgorithm    AlgorithmIdentifier,
+    hashValue        OCTET STRING
+}
+
+
+CRLResponse ::= SEQUENCE {
+   responseStatus         CRLResponseStatus,
+   responseBytes          SEQUENCE OF OCTET STRING OPTIONAL
+}
+
+CRLResponseStatus ::= ENUMERATED {
+   successful            (0),
+   noResult              (1),
+   malformedRequest      (2),
+   internalError         (3)
+}
+
+END

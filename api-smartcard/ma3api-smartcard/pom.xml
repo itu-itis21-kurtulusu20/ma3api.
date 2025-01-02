@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+        <artifactId>ma3api-smartcard-parent</artifactId>
+        <version>2.3.25-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>ma3api-smartcard</artifactId>
+    <packaging>jar</packaging>
+    <name>MA3 Api SmartCard Module</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-asn</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-crypto</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-crypto-gnuprovider</artifactId>
+        </dependency>
+		<dependency>
+		  <groupId>tubitak.akis</groupId>
+		  <artifactId>akiscif</artifactId>
+          <version>${akiscif.version}</version>
+		</dependency>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>5.13.0</version>
+        </dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-infra</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>testsrc</testSourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.5</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

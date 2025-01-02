@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<assembly
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+	<id>bundle</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<!--dependencySets>
+		<dependencySet>
+			<outputDirectory>lib</outputDirectory>
+			<excludes>
+				<exclude>*:annotations</exclude>
+				<exclude>*:net4</exclude>
+				<exclude>*:dll</exclude>
+				<exclude>*:dll-x86</exclude>
+				<exclude>*:ma3api-managedPkcs11</exclude>
+			</excludes>
+		</dependencySet>
+	</dependencySets-->
+	<files>
+		<file>
+			<source>target/.classpath</source>
+			<outputDirectory>.</outputDirectory>
+		</file>
+		<file>
+			<source>..\resources\ReadMe\java\lib\BENI_OKU.txt</source>
+			<outputDirectory>lib</outputDirectory>
+		</file>
+		<file>
+			<source>..\resources\ReadMe\java\BENI_OKU.txt</source>
+			<outputDirectory>.</outputDirectory>
+		</file>
+		<file>
+			<source>..\resources\profiller\Elektronik_Imza_Kullanim_Profilleri_Rehberi.pdf</source>
+			<outputDirectory>config\profiller</outputDirectory>
+		</file>
+		<file>
+			<source>..\docs\manual\MA3 API Kullanim Kilavuzu.pdf</source>
+			<outputDirectory>doc</outputDirectory>
+		</file>
+		<file>
+			<source>..\docs\manual\Zaman Damgasi Istemcisi Kullanim Kilavuzu.pdf</source>
+			<outputDirectory>doc</outputDirectory>
+		</file>
+		<file>
+			<source>..\docs\manual\MA3 API KULLANICI LISANS SOZLESMESI.txt</source>
+			<outputDirectory>.</outputDirectory>
+		</file>
+		<file>
+			<source>${project.basedir}\bundleConfig\.project</source>
+			<outputDirectory>.</outputDirectory>
+		</file>
+		<file>
+			<source>..\resources\maven-install-jars.bat</source>
+			<outputDirectory>lib</outputDirectory>
+		</file>
+	</files>
+	<fileSets>
+		<fileSet>
+			<directory>target/lib</directory>
+			<outputDirectory>lib</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>..\docs\Harici Lisanslar Java</directory>
+			<outputDirectory>lib\Harici Lisanslar</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>..\resources\sample-policy</directory>
+			<outputDirectory>config</outputDirectory>
+		</fileSet>	
+		<fileSet>
+			<directory>target/dependencyjavadocs</directory>
+			<outputDirectory>javadocs</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}/src</directory>
+			<outputDirectory>ornekler/src</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>..\..\api-smartcard\ma3api-smartcard-android\example</directory>
+			<outputDirectory>ornekler\AndroidImza</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>..\..\api-cmssignature\api-mssclient\examples\Java</directory>
+			<outputDirectory>ornekler\MobilImzaJava</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>..\resources\pfx</directory>
+			<outputDirectory>sertifika deposu</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>..\resources\test-root-cert
+			</directory>
+			<outputDirectory>sertifika deposu\test kok sertifika</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>..\resources\testdata</directory>
+			<outputDirectory>testdata</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}</directory>
+			<outputDirectory>.</outputDirectory>
+			<includes>
+				<include>.classpath</include>
+				<include>.project</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</assembly>

@@ -1,0 +1,1464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Wrappers">
+      <UniqueIdentifier>{c514fdef-2e29-4905-b242-6aafeaf15f94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated_ASN">
+      <UniqueIdentifier>{33e73a1d-5b30-40f1-8947-2bab5915a80c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="runtime">
+      <UniqueIdentifier>{38413428-d2bd-4c90-a5bb-30f5247acbfc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\wrapped_classes\EASNException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\EASNWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\AAControls.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\AccessDescription.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\ACClearAttrs.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\AdministrationDomainName.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\AlgorithmIdentifier.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\AnotherName.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\AttCertIssuer.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\AttCertValidityPeriod.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\Attribute.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\AttributeCertificate.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\AttributeCertificateInfo.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\AttributeTypeAndValue.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\AttributeValue.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\AttrSpec.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\AuthorityInfoAccess.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\AuthorityKeyIdentifier.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\BasicConstraints.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\BilinmeyenEklenti.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\BlokIsleyici.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\BuiltInDomainDefinedAttribute.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\BuiltInStandardAttributes.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\CDP.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\CertificateIssuer.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\CertificatePolicies.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\CertStatus.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\ClassList.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\Clearance.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonName.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\ContentInfo.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\CountryName.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\CRLDistributionPoints.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\CRLNumber.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\Curve.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\DepoASNEklenecekKokSertifika.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\DepoASNImza.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\DepoASNImzalar.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\DepoASNKokSertifika.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\DepoASNKokSertifikalar.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\DepoASNRawImza.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\DepoASNSilinecekKokSertifika.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\DigestInfo.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\DistributionPoint.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\DistributionPointName.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\DSASignature.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\EASNStreamingUtils.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\EASNToStringUtils.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\EBitString.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\ECCCMSSharedInfo.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\ECertChoices.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\ECertificate.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\ECertificateList.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\ECParameters.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\ECPrivateKey.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\ECRL.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\Eklenti.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\EklentiFabrikasi.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\ESeqOfList.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\ESSCertID.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\ETime.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\ExtendedKeyUsage.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\Extension.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\ExtensionAttribute.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\ExtensionGenerator.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\ExtKeyUsage.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\FieldID.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\GeneralName.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\GeneralNames.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\GeneralSubtree.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\Holder.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\IetfAttrSyntax.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\IetfAttrSyntax_values_element.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\InhibitAnyPolicy.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\IssuerAndSerialNumber.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\IssuerSerial.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\IssuingDistributionPoint.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\KeyAgreeRecipientIdentifier.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\KeyPurposeId.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\KeyUsage.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\MQVUserKeyingMaterial.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\Name.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\NameConstraints.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\NameUtils.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\ObjectDigestInfo.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\ORAddress.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\OrganizationalUnitName.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\OriginatorIdentifierOrKey.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\OriginatorInfo.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\ortak.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\OtherKeyAttribute.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\OutputStream.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\PBES2_Params.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\PBKDF2_Params.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\PBKDF2_Salt.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\PersonalName.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\PKCS12PbeParams.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\PKCS7Data.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\PKCS7Hash.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\PKCS7IssuerSerial.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\PolicyConstraints.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\PolicyInformation.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\PolicyMappings.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\PolicyMappingsElement.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\PolicyQualifierInfo.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\PrivateKeyInfo.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\ProxyInfo.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\QCStatement.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\QCStatements.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\ReasonFlags.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\RecipientEncryptedKey.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\RecipientEncryptedKeys.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\RecipientIdentifier.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\RecipientKeyIdentifier.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\RelativeDistinguishedName.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\RevocationInfoChoice.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\RevokedCertificatesElement.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\RevokedInfo.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\RoleSyntax.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\RSAPrivateKey.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\RSAPublicKey.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\SecurityCategory.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\SerialNumber.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\Signature.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\SignerIdentifier.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\SigningCertificate.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\SMIMECapabilities.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\SMIMECapability.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\SMIMEEncryptionKeyPreference.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\SpecifiedECDomain.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\SubjectAlternativeName.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\SubjectKeyIdentifier.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\SubjectPublicKeyInfo.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\SvceAuthInfo.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\Target.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\TargetCert.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\Targets.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\TBSCertificate.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Wrapped_Classes\TBSCertList.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\wrapped_classes\V2Form.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\algorithms.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\algorithmsCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\algorithmsCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\algorithmsDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\algorithmsEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\algorithmsPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\algorithmsPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposu.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposuCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposuCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposuDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposuEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposuPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposuPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\asnaes.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\asnaesCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\asnaesCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\asnaesDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\asnaesEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\asnaesPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\asnaesPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\attrcert.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\attrcertCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\attrcertCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\attrcertDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\attrcertEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\attrcertPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\attrcertPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cmp.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cmpCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cmpCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cmpDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cmpEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cmpPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cmpPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cms.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cmsCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cmsCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cmsDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cmsEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cmsPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\cmsPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\crmf.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\crmfCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\crmfCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\crmfDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\crmfEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\crmfPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\crmfPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\dercms.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\dercmsCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\dercmsCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\dercmsDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\dercmsEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\dercmsPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\dercmsPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\esya.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\esyaCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\esyaCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\esyaDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\esyaEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\esyaPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\esyaPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsi101733.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsi101733Compare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsi101733Copy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsi101733Dec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsi101733Enc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsi101733Print.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsi101733PrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsiqc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsiqcCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsiqcCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsiqcDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsiqcEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsiqcPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\etsiqcPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\Explicit.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ExplicitCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ExplicitCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ExplicitDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ExplicitEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ExplicitPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ExplicitPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\implicit.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ImplicitCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ImplicitCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ImplicitDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ImplicitEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ImplicitPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ImplicitPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ocsp.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ocspCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ocspCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ocspDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ocspEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ocspPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\ocspPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs10.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs10Compare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs10Copy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs10Dec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs10Enc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs10Print.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs10PrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs12.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs12Compare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs12Copy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs12Dec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs12Enc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs12Print.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs12PrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8Compare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8Copy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8Dec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8Enc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8Print.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8PrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2Compare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2Copy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2Dec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2Enc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2Print.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2PrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs7.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs7Compare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs7Copy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs7Dec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs7Enc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs7Print.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkcs7PrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualified.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualifiedCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualifiedCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualifiedDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualifiedEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualifiedPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualifiedPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkixtsp.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkixtspCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkixtspCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkixtspDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkixtspEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkixtspPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\pkixtspPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitions.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitionsCompare.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitionsCopy.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitionsDec.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitionsEnc.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitionsPrint.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitionsPrtToStrm.cpp">
+      <Filter>Generated_ASN</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\wrapped_classes\EASNException.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\EASNWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\QCStatements.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\AAControls.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\AccessDescription.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\ACClearAttrs.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\AdministrationDomainName.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\AlgorithmIdentifier.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\AnotherName.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\asnlib_global.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\AttCertIssuer.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\AttCertValidityPeriod.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\AttributeCertificate.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\AttributeCertificateInfo.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\AttributeTypeAndValue.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\AttributeValue.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\AttrSpec.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\BlokIsleyici.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\BuiltInDomainDefinedAttribute.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\BuiltInStandardAttributes.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\CDP.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\CertificateIssuer.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\ClassList.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\Clearance.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonName.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\CountryName.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\Curve.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\DistributionPoint.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\DSASignature.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\EASNWrapperTemplate.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\ECCCMSSharedInfo.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\ECertChoices.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\ECertificateList.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\ECParameters.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\ECPrivateKey.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\ECRL.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\ESeqOfList.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\ESSCertID.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\EsyaASN_DIL.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\ETime.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\ExtensionAttribute.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\FieldID.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\GeneralName.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\GeneralNames.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\GeneralSubtree.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\Holder.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\IetfAttrSyntax.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\IetfAttrSyntax_values_element.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\InhibitAnyPolicy.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\IssuerAndSerialNumber.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\IssuerSerial.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\KeyAgreeRecipientIdentifier.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\KeyPurposeId.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\MQVUserKeyingMaterial.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\myerrors.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\NameUtils.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\NetworkAddress.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\NumericUserIdentifier.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\ObjectDigestInfo.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\ORAddress.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\OrganizationalUnitName.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\OrganizationName.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\OriginatorIdentifierOrKey.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\OriginatorInfo.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\PersonalName.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\PKCS12PbeParams.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\PKCS7Data.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\PKCS7Hash.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\PKCS7IssuerSerial.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\PolicyMappings.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\PolicyMappingsElement.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\PrivateDomainName.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\PrivateKeyInfo.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\ProxyInfo.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\QCStatement.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\RecipientEncryptedKey.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\RecipientEncryptedKeys.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\RecipientIdentifier.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\RevocationInfoChoice.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\RevokedCertificatesElement.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\RevokedInfo.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\RoleSyntax.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\RSAPrivateKey.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\RSAPublicKey.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\SecurityCategory.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\Signature.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\SignerIdentifier.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\SigningCertificate.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\SpecifiedECDomain.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\SvceAuthInfo.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\Target.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\TargetCert.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\Targets.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\TBSCertificate.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Wrapped_Classes\TBSCertList.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\TerminalIdentifier.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\wrapped_classes\V2Form.h">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\algorithms.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\asn1ber.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\asn1BerCppTypes.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\ASN1BERInputStream.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\ASN1BEROutputStream.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\asn1berSocket.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\asn1berStream.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generated_ASN\ASN_SertifikaDeposu.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\asnaes.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\attrcert.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\cmp.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\cms.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\crmf.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\dercms.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\esya.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\etsi101733.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\etsiqc.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\Explicit.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\Implicit.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\ocsp.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\pkcs10.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\pkcs1pkcs8.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\generated_ASN\pkcs5v2.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\pkcs7.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\PKIXqualified.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\pkixtsp.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\rtkey.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Generated_ASN\UsefulDefinitions.h">
+      <Filter>Generated_ASN</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\src\Wrapped_Classes\Attribute.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\AuthorityInfoAccess.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\AuthorityKeyIdentifier.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\AY_Eklenti.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\BasicConstraints.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\BilinmeyenEklenti.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\CertificatePolicies.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\CertStatus.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\ContentInfo.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\CRLDistributionPoints.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\CRLNumber.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNEklenecekKokSertifika.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNImza.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNImzalar.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNKokSertifika.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNKokSertifikalar.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNRawImza.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNSilinecekKokSertifika.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\DigestInfo.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\DistributionPointName.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\EASNStreamingUtils.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\EASNToStringUtils.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\EBitString.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\ECertificate.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\Eklenti.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\EklentiFabrikasi.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\ExtendedKeyUsage.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\Extension.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\ExtensionGenerator.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\ExtKeyUsage.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\IssuingDistributionPoint.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\KeyUsage.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\myasndefs.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\Name.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\NameConstraints.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\ortak.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\OtherKeyAttribute.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\OutputStream.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\PBES2_Params.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\PBKDF2_Params.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\PBKDF2_Salt.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\PolicyConstraints.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\PolicyInformation.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\PolicyQualifierInfo.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\ReasonFlags.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\RecipientKeyIdentifier.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\RelativeDistinguishedName.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\SerialNumber.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\SMIMECapabilities.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\SMIMECapability.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\SMIMEEncryptionKeyPreference.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\SubjectAlternativeName.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\SubjectKeyIdentifier.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\SubjectPublicKeyInfo.h">
+      <Filter>Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Generated_ASN\pkcs12.h">
+      <Filter>Generated_ASN</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

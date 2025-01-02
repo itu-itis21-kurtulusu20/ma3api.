@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="ASN_Wrappers">
+      <UniqueIdentifier>{0276a143-152a-49fc-9e28-72910e2339c2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\AsymetricKeyDecryptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EATimeStampProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ECMSException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ECMSUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EsyaCMSManagedExport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GroupKeyDecryptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImzaDogrulamaAlgoritmasi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImzaDogrulamaSonucu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImzaKontrolcu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImzaKriptoKontrolcu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\KeyDecryptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\KontrolcuSonucu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\OzetKontrolcu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PasswordBasedKeyDecryptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SignedAttributesKontrolcu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SignerParam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SignParam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_StreamedSignedData.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\Release\moc_StreamedSignedData.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_StreamEnvelopedData.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\Release\moc_StreamEnvelopedData.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\Besleyici.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\EncapContentInfo.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\EncryptedContentInfo.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\EncryptedData.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\EnvelopedData.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\EsyaFileInfoRecipientInfo.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\EsyaGroupRecipientInfo.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\ESYAPasswordRecipientInfo.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\KeyAgreeRecipientInfo.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\KeyTransRecipientInfo.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\OtherRecipientInfo.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\PasswordRecipientInfo.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\RecipientInfo.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\SignedData.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\SignerInfo.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\SignerTree.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\StreamedSignedData.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\StreamEnvelopedData.cpp">
+      <Filter>ASN_Wrappers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\cms_asn\AuthEnvelopedData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cmsOrtak.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ECMSException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\EsyaCMS_DIL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cms_asn\Besleyici.h">
+      <Filter>ASN_Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cms_asn\EsyaGroupRecipientInfo.h">
+      <Filter>ASN_Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cms_asn\KeyAgreeRecipientInfo.h">
+      <Filter>ASN_Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cms_asn\KeyTransRecipientInfo.h">
+      <Filter>ASN_Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cms_asn\SignerTree.h">
+      <Filter>ASN_Wrappers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\src\EsyaCMSManagedExport.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\aciklamalar.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\AsymetricKeyDecryptor.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cmslibrary_global.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\EATimeStampProvider.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ECMSUtil.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\GroupKeyDecryptor.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ImzaDogrulamaAlgoritmasi.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ImzaDogrulamaSonucu.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ImzaKontrolcu.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ImzaKriptoKontrolcu.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\KeyDecryptor.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\KontrolcuSonucu.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\MyMetaTypes.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\OzetKontrolcu.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\PasswordBasedKeyDecryptor.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\SignedAttributesKontrolcu.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\SignerParam.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\SignParam.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\EncapContentInfo.h">
+      <Filter>ASN_Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\EncryptedContentInfo.h">
+      <Filter>ASN_Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\EncryptedData.h">
+      <Filter>ASN_Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\EnvelopedData.h">
+      <Filter>ASN_Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\EsyaFileInfoRecipientInfo.h">
+      <Filter>ASN_Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\OtherRecipientInfo.h">
+      <Filter>ASN_Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\PasswordRecipientInfo.h">
+      <Filter>ASN_Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\RecipientInfo.h">
+      <Filter>ASN_Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\SignedData.h">
+      <Filter>ASN_Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\SignerInfo.h">
+      <Filter>ASN_Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\StreamedSignedData.h">
+      <Filter>ASN_Wrappers</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\StreamEnvelopedData.h">
+      <Filter>ASN_Wrappers</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

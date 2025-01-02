@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="validation.policy.cantFind" xml:space="preserve">
+    <value>SignaturePolicy cannot be found.</value>
+  </data>
+  <data name="validation.timestamp.cantFind" xml:space="preserve">
+    <value>No TimeStamp found in "{0}".</value>
+  </data>
+  <data name="core.verified" xml:space="preserve">
+    <value>Core validation succeeded.</value>
+  </data>
+  <data name="config.validatorClassNotFound" xml:space="preserve">
+    <value>Validator class "{0}" not found.</value>
+  </data>
+  <data name="validation.certificate.cantFound" xml:space="preserve">
+    <value>Cannot determine signing certificate.</value>
+  </data>
+  <data name="validation.policy.valid" xml:space="preserve">
+    <value>SignaturePolicyIdentifier is valid.</value>
+  </data>
+  <data name="core.referencesAreValid" xml:space="preserve">
+    <value>References are valid.</value>
+  </data>
+  <data name="config.invalidValidator" xml:space="preserve">
+    <value>Class "{0}" for profile "{1}" is not a validator.</value>
+  </data>
+  <data name="config.cyclicInheritanceForProfileValidators" xml:space="preserve">
+    <value>Validation profiles has cyclic dependency.</value>
+  </data>
+  <data name="errors.cantDecode" xml:space="preserve">
+    <value>Cannot decode {1} as {0}.</value>
+  </data>
+  <data name="validation.signingTime.notWithinCertificatePeriod" xml:space="preserve">
+    <value>SigningTime property is not within validity period of signers certificate.</value>
+  </data>
+  <data name="OCSP" xml:space="preserve">
+    <value>OCSP</value>
+  </data>
+  <data name="validation.references.certRefs.extraCert" xml:space="preserve">
+    <value>CompleteCertificateRefs contains a reference not existing in cert validation path!</value>
+  </data>
+  <data name="core.timestamp.cantExtractDigestAlg" xml:space="preserve">
+    <value>Cannot get digest algorithm from Timestamp.</value>
+  </data>
+  <data name="validation.references.certRefs.missingCert" xml:space="preserve">
+    <value>CompleteCertificateRefs does not contain certificate in validation path!</value>
+  </data>
+  <data name="validation.dataObjectFormat.mimeMismatch" xml:space="preserve">
+    <value>DataObjectFormat/Reference MIME Type mismatch! Expected "{0}", found "{1}".</value>
+  </data>
+  <data name="transform.unsupported" xml:space="preserve">
+    <value>Unsupported transformation: "{0}".</value>
+  </data>
+  <data name="resolver.xpointerSupportLimited" xml:space="preserve">
+    <value>XPointer support is only for '/' or Id. Cannot resolve "{0}"</value>
+  </data>
+  <data name="validation.references.revRefs.missing" xml:space="preserve">
+    <value>CompleteRevocationRefs does not contain {0} in validation path!</value>
+  </data>
+  <data name="validation.timestamp.notWithinCertificatePeriod" xml:space="preserve">
+    <value>{0}[{1}] time "{2}", is not within certificate validity period.</value>
+  </data>
+  <data name="validation.timestamp.certificateNotValidated" xml:space="preserve">
+    <value>Cannot verify timestamp signer certificate.</value>
+  </data>
+  <data name="core.model.missingDataObjectFormatContent" xml:space="preserve">
+    <value>At least one element of Description, ObjectIdentifier and/or MimeType MUST be present within DataObjectFormat</value>
+  </data>
+  <data name="error.formatAlreadyEvolved" xml:space="preserve">
+    <value>Signature already in {0} format.</value>
+  </data>
+  <data name="core.cantVerify.reference" xml:space="preserve">
+    <value>Reference "{0}" could not be validated.</value>
+  </data>
+  <data name="validation.signingCertificate.serialMismatch" xml:space="preserve">
+    <value>Certificate serial number is : "{0}", but should have been: "{1}".</value>
+  </data>
+  <data name="validation.timestamp.valid" xml:space="preserve">
+    <value>{0} is valid.</value>
+  </data>
+  <data name="core.timestamp.cantExtractTSTInfo" xml:space="preserve">
+    <value>Cannot get TSTInfo from TimeStamp.</value>
+  </data>
+  <data name="CRL" xml:space="preserve">
+    <value>CRL</value>
+  </data>
+  <data name="core.cantResolve.signingCertificateAttribute" xml:space="preserve">
+    <value>Error occurred while resolving referenced certificate in SigningCertificate attribute.</value>
+  </data>
+  <data name="errors.cantDigest" xml:space="preserve">
+    <value>Cannot digest "{0}".</value>
+  </data>
+  <data name="transform.enveloped.cantFindSignature" xml:space="preserve">
+    <value>Cannot find Signature element that belongs to Enveloped Signature transform.</value>
+  </data>
+  <data name="errors.kripto.hash" xml:space="preserve">
+    <value>Cannot hash using algorithm "{0}".</value>
+  </data>
+  <data name="validation.certificate.validatedSigner" xml:space="preserve">
+    <value>Successfully validated signer certificate.</value>
+  </data>
+  <data name="validation.certificate.cantValidateSigner" xml:space="preserve">
+    <value>Cannot validate signer certificate: {0}</value>
+  </data>
+  <data name="validation.signingTime.notFound" xml:space="preserve">
+    <value>No signing time present.</value>
+  </data>
+  <data name="validation.timestamp.signature.invalid" xml:space="preserve">
+    <value>Timestamp signature invalid.</value>
+  </data>
+  <data name="config.missingAncestorToInheritProfiles" xml:space="preserve">
+    <value>Validation profile "{0}" cannot inherit validators from missing "{1}" profile.</value>
+  </data>
+  <data name="config.invalidProfile" xml:space="preserve">
+    <value>Cannot resolve signature profile "{0}" for validation configuration.</value>
+  </data>
+  <data name="validation.data.resolutionMismatch" xml:space="preserve">
+    <value>Resolved {0} [uri:'{1}'] mismatch {2} : {3}</value>
+  </data>
+  <data name="validation.signingCertificate.valid" xml:space="preserve">
+    <value>SigningCertificate property is valid.</value>
+  </data>
+  <data name="encode" xml:space="preserve">
+    <value>encode</value>
+  </data>
+  <data name="validation.policy.invalidDigest" xml:space="preserve">
+    <value>Invalid SignaturePolicy digest.</value>
+  </data>
+  <data name="validation.timestamp.cantBeBeforeSigningTime" xml:space="preserve">
+    <value>{0}[{1}] time "{2}", cannot be before SigningTime attribute "{3}".</value>
+  </data>
+  <data name="validation.dataObjectFormat.valid" xml:space="preserve">
+    <value>DataObjectFormat property is valid.</value>
+  </data>
+  <data name="validation.timestamp.invalidDigest" xml:space="preserve">
+    <value>{0}[{1}] has invalid digest value.</value>
+  </data>
+  <data name="signer" xml:space="preserve">
+    <value>signer</value>
+  </data>
+  <data name="core.model.invalidResponderId" xml:space="preserve">
+    <value>Invalid ResponderId. Either key or name values shall be declared.</value>
+  </data>
+  <data name="validation.references.certRefs.valid" xml:space="preserve">
+    <value>CompleteCertificateRefs is consistent.</value>
+  </data>
+  <data name="errors.base64" xml:space="preserve">
+    <value>Error in Base64 conversion.</value>
+  </data>
+  <data name="validation.references.revRefs.valid" xml:space="preserve">
+    <value>CompleteRevocationRefs is consistent.</value>
+  </data>
+  <data name="validation.signingTime.valid" xml:space="preserve">
+    <value>Signing Certificate is valid at signing time signed property.</value>
+  </data>
+  <data name="validation.timestamp.vdata.cantResolveByURI" xml:space="preserve">
+    <value>Cannot resolve Timestamp(uri:{0}) for TimestampValidationData</value>
+  </data>
+  <data name="errors.cantAddDocument" xml:space="preserve">
+    <value>Cannot add document:"{0}" to XML Signature.</value>
+  </data>
+  <data name="unknown.encoding" xml:space="preserve">
+    <value>Unknown encoding type "{0}"</value>
+  </data>
+  <data name="errors.null" xml:space="preserve">
+    <value>{0} cannot be 'null'.</value>
+  </data>
+  <data name="validation.signingCertificate.invalidDigest" xml:space="preserve">
+    <value>Invalid certificate digest.</value>
+  </data>
+  <data name="errors.cantInit" xml:space="preserve">
+    <value>Could not init "{0}"</value>
+  </data>
+  <data name="validation.timestamp.signature.verificationError" xml:space="preserve">
+    <value>Cannot verify Timestamp signature</value>
+  </data>
+  <data name="core.invalid.secretkey" xml:space="preserve">
+    <value>Invalid secret key : {0}</value>
+  </data>
+  <data name="errors.cantFindCertificate" xml:space="preserve">
+    <value>Cannot find certificate.</value>
+  </data>
+  <data name="core.cantVerify.signatureValue" xml:space="preserve">
+    <value>Inconsistent signature value.</value>
+  </data>
+  <data name="errors.verify" xml:space="preserve">
+    <value>Verify error.</value>
+  </data>
+  <data name="errors.cantEncode" xml:space="preserve">
+    <value>Cannot encode {1} as {0}.</value>
+  </data>
+  <data name="errors.cantUpdate" xml:space="preserve">
+    <value>Cannot update "{0}".</value>
+  </data>
+  <data name="transform.isNotApplicableFor" xml:space="preserve">
+    <value>Cannot apply "{0}" transform to "{1}".</value>
+  </data>
+  <data name="xml.WrongElement" xml:space="preserve">
+    <value>Cannot create a {0} from a {1} element</value>
+  </data>
+  <data name="transform.error" xml:space="preserve">
+    <value>Error occurred while applying {0} transform.</value>
+  </data>
+  <data name="error.formatCantEvolveMultiple" xml:space="preserve">
+    <value>Evolution from {0} to {1} format is not supported. Evolve to {2} format first.</value>
+  </data>
+  <data name="core.invalidKeyInfo" xml:space="preserve">
+    <value>Cannot resolve Certificate from KeyInfo.</value>
+  </data>
+  <data name="transform.errorApplyingTo" xml:space="preserve">
+    <value>Error occurred applying "{0}" transform to "{1}".</value>
+  </data>
+  <data name="config.notDefined" xml:space="preserve">
+    <value>"{0}" not defined in XML Signature configuration.</value>
+  </data>
+  <data name="validation.timestamp.invalidFormat" xml:space="preserve">
+    <value>{0}[{1}] is not in TimeStamp format.</value>
+  </data>
+  <data name="validation.references.revRefs.extra" xml:space="preserve">
+    <value>CompleteRevocationRefs contains a reference not existing in cert validation path!</value>
+  </data>
+  <data name="errors.cantOutputXml" xml:space="preserve">
+    <value>Cannot output signature.</value>
+  </data>
+  <data name="validation.timestamp.error" xml:space="preserve">
+    <value>Error occurred while validating {0}[{1}].</value>
+  </data>
+  <data name="errors.cantCanonicalize" xml:space="preserve">
+    <value>Cannot canonicalize {0}.</value>
+  </data>
+  <data name="core.invalid.publickey" xml:space="preserve">
+    <value>Invalid {0} public key : {1}</value>
+  </data>
+  <data name="error.formatCantAddArchiveTS" xml:space="preserve">
+    <value>Before adding additional Archive timestamps, evolve to A format first.</value>
+  </data>
+  <data name="validation.signingCertificate.issuerMismatch" xml:space="preserve">
+    <value>Certificate issuer is : "{0}", but should have been: "{1}".</value>
+  </data>
+  <data name="validation.timestamp.vdata.cantResolveI" xml:space="preserve">
+    <value>Cannot resolve Timestamp for TimestampValidationData</value>
+  </data>
+  <data name="validation.timestamp.signature.verified" xml:space="preserve">
+    <value>Timestamp signature verified.</value>
+  </data>
+  <data name="core.invalid.privatekey" xml:space="preserve">
+    <value>Invalid {0} private key : {1}</value>
+  </data>
+  <data name="config.cantFind" xml:space="preserve">
+    <value>Cannot find "{0}" for init!</value>
+  </data>
+  <data name="resolver.cantFindResolverForUri" xml:space="preserve">
+    <value>Cannot find any resolver suitable for URI : "{0}"</value>
+  </data>
+  <data name="core.timestamp.cantTimestamp" xml:space="preserve">
+    <value>Cannot timestamp "{0}"</value>
+  </data>
+  <data name="validation.policy.cantFindByUri" xml:space="preserve">
+    <value>SignaturePolicy referenced by SPURI cannot be found.</value>
+  </data>
+  <data name="validation.timestamp.vdata.orderError" xml:space="preserve">
+    <value>Timestamp should be added before its validation data"</value>
+  </data>
+  <data name="core.cantVerify" xml:space="preserve">
+    <value>Core validation failed.</value>
+  </data>
+  <data name="core.timestamp.cantExtractTime" xml:space="preserve">
+    <value>Cannot get time from Timestamp.</value>
+  </data>
+  <data name="certificate" xml:space="preserve">
+    <value>certificate</value>
+  </data>
+  <data name="unknown.algorithm" xml:space="preserve">
+    <value>Unknown algorithm: "{0}".</value>
+  </data>
+  <data name="errors.convert" xml:space="preserve">
+    <value>Error occurred converting {0} to {1}.</value>
+  </data>
+  <data name="core.cantCalculateSignatureValue" xml:space="preserve">
+    <value>Cannot calculate signature value.</value>
+  </data>
+  <data name="core.timestamp.cantEncode" xml:space="preserve">
+    <value>Cannot encode TimeStamp.</value>
+  </data>
+  <data name="config.cantLoad" xml:space="preserve">
+    <value>Cannot load "{0}" for init!</value>
+  </data>
+  <data name="validation.timestamp.certificateNotFound" xml:space="preserve">
+    <value>Cannot find {0} timestamp signer certificate.</value>
+  </data>
+  <data name="signature" xml:space="preserve">
+    <value>signature</value>
+  </data>
+  <data name="xml.WrongContent" xml:space="preserve">
+    <value>Cannot find {0} in {1}</value>
+  </data>
+  <data name="error.formatCantEvolve" xml:space="preserve">
+    <value>Evolution from {0} to {1} format is not supported.</value>
+  </data>
+  <data name="validation.signingCertificate.notFound" xml:space="preserve">
+    <value>SigningCertificate property not found.</value>
+  </data>
+  <data name="validation.data.cantConstruct" xml:space="preserve">
+    <value>Cannot construct {0}. {1} in {2}</value>
+  </data>
+  <data name="unknown.keyValue" xml:space="preserve">
+    <value>Unknown key value.</value>
+  </data>
+  <data name="resolver.cantResolveUri" xml:space="preserve">
+    <value>Cannot resolve URI : "{0}"</value>
+  </data>
+  <data name="core.ocsp.cantResolveProducedAt" xml:space="preserve">
+    <value>Cannot resolve produce date from OCSP response.</value>
+  </data>
+  <data name="errors.sign" xml:space="preserve">
+    <value>Sign error.</value>
+  </data>
+  <data name="core.invalidRetrievalMethod" xml:space="preserve">
+    <value>Retrieval Method must return DOM element but returned: "{0}"</value>
+  </data>
+  <data name="validation.policy.invalidDigestByUri" xml:space="preserve">
+    <value>Invalid digest for SignaturePolicy referenced by SPURI.</value>
+  </data>
+  <data name="validation.timestamp.cantBeBeforeTimestamp" xml:space="preserve">
+    <value>{0}[{1}] time "{2}", cannot be before {3} time "{4}".</value>
+  </data>
+  <data name="errors.cantFind" xml:space="preserve">
+    <value>Cannot find "{0}".</value>
+  </data>
+  <data name="core.invalid.formatOf" xml:space="preserve">
+    <value>Invalid {0} format of {1}</value>
+  </data>
+  <data name="errors.nullElement" xml:space="preserve">
+    <value>Expected: {0} element instead of 'null'.</value>
+  </data>
+  <data name="core.model.individualDataObjectsCantReferenceQP" xml:space="preserve">
+    <value>SignedProperties typed Reference cannot be included to IndividualDataObjectsTimeStamp.</value>
+  </data>
+  <data name="core.timestamp.cantAddBeforeSignatureValue" xml:space="preserve">
+    <value>Cannot calculate value for Signature TimeStamp. Sign document first.</value>
+  </data>
+  <data name="core.etsiRequiresCertificate" xml:space="preserve">
+    <value>For ETSI formats key information shall be provided as Public Certificate.</value>
+  </data>
+  <data name="errors.invalid.certificate" xml:space="preserve">
+    <value>Invalid certificate.</value>
+  </data>
+  <data name="validation.policy.cantFindId" xml:space="preserve">
+    <value>SignaturePolicy is not implied and SignaturePolicyId cannot be found.</value>
+  </data>
+  <data name="core.signedDocumentVerified" xml:space="preserve">
+    <value>SignedDocument validation succeeded.</value>
+  </data>
+  <data name="validation.dataObjectFormat.noReference" xml:space="preserve">
+    <value>DataObjectFormat must refer to a Reference!</value>
+  </data>
+  <data name="publicKey" xml:space="preserve">
+    <value>public key</value>
+  </data>
+  <data name="decode" xml:space="preserve">
+    <value>decode</value>
+  </data>
+  <data name="core.model.invalidEncapsulatedEncoding" xml:space="preserve">
+    <value>Encapsulated {0} cannot have encoding type other than 'DER'.</value>
+  </data>
+  <data name="core.model.commitmentNeedObjectReferences" xml:space="preserve">
+    <value>Either object references must exist or CommitmentIndication should be for all signed data objects</value>
+  </data>
+  <data name="validation.certificate.error" xml:space="preserve">
+    <value>Error occurred verifying signer certificate: {0}</value>
+  </data>
+  <data name="unsupported.operation" xml:space="preserve">
+    <value>Unsupported operation: "{0}".</value>
+  </data>
+  <data name="errors.duplicate" xml:space="preserve">
+    <value>Duplicate "{0}".</value>
+  </data>
+  <data name="config.inconsistentGracePeriod" xml:space="preserve">
+    <value>Last Revocation Period must be higher than grace period!</value>
+  </data>
+  <data name="configFile" xml:space="preserve">
+    <value>xml signature configuration file(xmlsignature-config.xml)</value>
+  </data>
+  <data name="core.cantCreateBuffer" xml:space="preserve">
+    <value>Cannot create {0} buffer for "{1}"</value>
+  </data>
+  <data name="core.cantResolve.verificationKey" xml:space="preserve">
+    <value>Cannot resolve Key for verification.</value>
+  </data>
+  <data name="core.timestamp.cantExtractSignedData" xml:space="preserve">
+    <value>Cannot get SignedData from TimeStamp.</value>
+  </data>
+  <data name="validation.dataObjectFormat.encodingMismatch" xml:space="preserve">
+    <value>DataObjectFormat/Reference Encoding mismatch! Expected "{0}", found "{1}".</value>
+  </data>
+  <data name="core.cantGeneratePublicKey" xml:space="preserve">
+    <value>Error occurred in {0} public key generation.</value>
+  </data>
+  <data name="validation.timestamp.incoherent" xml:space="preserve">
+    <value>Timestamp time incoherent.</value>
+  </data>
+  <data name="errors.cantConstructSignature" xml:space="preserve">
+    <value>Cannot construct XML Signature from document: "{0}"</value>
+  </data>
+  <data name="core.ocsp.cantResolveResponderId" xml:space="preserve">
+    <value>Cannot resolve ResponderId from OCSP response.</value>
+  </data>
+  <data name="core.cantResolveRetrievalMethod" xml:space="preserve">
+    <value>Cannot dereference Retrieval Method: "{0}"</value>
+  </data>
+  <data name="config.missingValidationProfile" xml:space="preserve">
+    <value>Validation profile "{0}" is not declared on config file. </value>
+  </data>
+  <data name="core.verified.signatureValue" xml:space="preserve">
+    <value>Signature value validated.</value>
+  </data>
+  <data name="validation.values.certVals.countMismatch" xml:space="preserve">
+    <value>CertificateValues and CompleteCertificateRefs counts mismatch!</value>
+  </data>
+  <data name="validation.values.certVals.missingValue" xml:space="preserve">
+    <value>Cannot find value in CertificateValues for a reference!</value>
+  </data>
+  <data name="validation.values.certVals.valid" xml:space="preserve">
+    <value>CertificateValues is consistent with CompleteCertificateRefs.</value>
+  </data>
+  <data name="validation.values.revVals.countMismatch" xml:space="preserve">
+    <value>RevocationValues and CompleteRevocationRefs counts mismatch in {0}!</value>
+  </data>
+  <data name="validation.values.revVals.missingValue" xml:space="preserve">
+    <value>Cannot find {0} value in RevocationValues for a reference!</value>
+  </data>
+  <data name="validation.values.revVals.valid" xml:space="preserve">
+    <value>RevocationValues is consistent with CompleteRevocationRefs.</value>
+  </data>
+  <data name="validation.policy.cantValidatePolicy" xml:space="preserve">
+    <value>Unable to validate signature policy ID.</value>
+  </data>
+  <data name="validation.policy.not2h" xml:space="preserve">
+    <value>Signature time stamp must be taken within 2 hours after signing time.</value>
+  </data>
+  <data name="validation.policy.notsha2" xml:space="preserve">
+    <value>Policy digest algortihm is not SHA-256.</value>
+  </data>
+  <data name="validation.policy.notTurkishProfile" xml:space="preserve">
+    <value>Signature does not have Turkish signature profile.</value>
+  </data>
+  <data name="validation.policy.signaturePolicyAttributes" xml:space="preserve">
+    <value>Signature Policy Attribute Check</value>
+  </data>
+  <data name="validation.policy.successful" xml:space="preserve">
+    <value>Profile attributes compatible with standards.</value>
+  </data>
+  <data name="validation.timestamp.failed" xml:space="preserve">
+    <value>Cannot validate timestamp {0}, because {1}.</value>
+  </data>
+  <data name="validation.policy.invalidRevocationDataType" xml:space="preserve">
+    <value>Revocation data type is not convenient for used profile.</value>
+  </data>
+  <data name="validation.policy.invalidSignatureType" xml:space="preserve">
+    <value>Signature format is not convenient for used profile.</value>
+  </data>
+  <data name="validation.policy.cantcheck" xml:space="preserve">
+    <value>Profile exists but cannot recognized.</value>
+  </data>
+  <data name="validation.policy.noCRL" xml:space="preserve">
+    <value>Profile has to have CRL as revocation data for signer's certificate.</value>
+  </data>
+  <data name="validation.policy.noOCSP" xml:space="preserve">
+    <value>Profile has to have OCSP as revocation data for signer's certificate.</value>
+  </data>
+  <data name="validation.policy.timeStampCheckError" xml:space="preserve">
+    <value>Error while checking timestamp conformance for signature profile.</value>
+  </data>
+  <data name="validation.signingCertificate.notSha2" xml:space="preserve">
+    <value>Signing Certificate digest algorithm is not SHA-256.</value>
+  </data>
+  <data name="validation.timestamp.certificateValue.noRootCert" xml:space="preserve">
+    <value>Timestamp does not have its root certificate in validation data.</value>
+  </data>
+  <data name="validation.timestamp.notAfterSigningTime" xml:space="preserve">
+    <value>Signature timestamp must be taken after signing time.</value>
+  </data>
+  <data name="validation.timestamp.notWithin2HoursOfSigningTime" xml:space="preserve">
+    <value>Signature timestamp must be taken within 2 hours after signing time.</value>
+  </data>
+  <data name="validation.timestamp.revocationValue.noCRL" xml:space="preserve">
+    <value>Timestamp does not have CRL for revocation data.</value>
+  </data>
+  <data name="validation.check.certificate" xml:space="preserve">
+    <value>Certificate Validation Check</value>
+  </data>
+  <data name="validation.check.certRefs" xml:space="preserve">
+    <value>Certificate References Check</value>
+  </data>
+  <data name="validation.check.certValues" xml:space="preserve">
+    <value>Certificate Values Check</value>
+  </data>
+  <data name="validation.check.dataObjectFormat" xml:space="preserve">
+    <value>Data Object Format Check</value>
+  </data>
+  <data name="validation.check.encapsulatedTS" xml:space="preserve">
+    <value>Encapsulated Timestamp Check</value>
+  </data>
+  <data name="validation.check.keyInfo" xml:space="preserve">
+    <value>Key Info Check</value>
+  </data>
+  <data name="validation.check.reference" xml:space="preserve">
+    <value>Reference Check</value>
+  </data>
+  <data name="validation.check.revocationRefs" xml:space="preserve">
+    <value>Revocation References Check</value>
+  </data>
+  <data name="validation.check.revocationValues" xml:space="preserve">
+    <value>Revocation Values Check</value>
+  </data>
+  <data name="validation.check.signaturePolicy" xml:space="preserve">
+    <value>Signature Policy Check</value>
+  </data>
+  <data name="validation.check.signaturePolicyAttributes" xml:space="preserve">
+    <value>Signature Policy Attribute Check</value>
+  </data>
+  <data name="validation.check.signatureValue" xml:space="preserve">
+    <value>Signature Value Check</value>
+  </data>
+  <data name="validation.check.signedDoc" xml:space="preserve">
+    <value>Signed Document Check</value>
+  </data>
+  <data name="validation.check.signingCertificate" xml:space="preserve">
+    <value>Signing Certificate Check</value>
+  </data>
+  <data name="validation.check.signingTime" xml:space="preserve">
+    <value>Signing Time Check</value>
+  </data>
+  <data name="validation.check.timestamp" xml:space="preserve">
+    <value>{0} Timestamp Check</value>
+  </data>
+  <data name="validation.check.xmlSignature" xml:space="preserve">
+    <value>XML Signature Check</value>
+  </data>
+  <data name="validation.signatureAlgorithm.notSha2" xml:space="preserve">
+    <value>Signature algorithm is not SHA-256.</value>
+  </data>
+</root>

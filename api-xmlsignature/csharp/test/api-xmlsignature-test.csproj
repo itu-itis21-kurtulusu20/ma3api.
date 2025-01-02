@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B526BC9-A530-4F9E-B52D-28DB7194C307}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImzaApiTest</RootNamespace>
+    <AssemblyName>ImzaApiTest</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ImzaApiTest.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ImzaApiTest.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ImzaApiTest.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ImzaApiTest.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="asn1rtcs">
+      <HintPath>..\..\..\api-parent\dlls\asn1rtcs.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\api-parent\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\api-parent\dlls\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.82.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\api-parent\dlls\x64\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\api-asn\csharp\api-asn.csproj">
+      <Project>{307F1CDC-084E-4A9D-9208-0943DE95DA0F}</Project>
+      <Name>api-asn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-certstore\csharp\api-certstore.csproj">
+      <Project>{4844D59F-ACA3-43A1-8598-448B4EB3DE90}</Project>
+      <Name>api-certstore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-certvalidation\csharp\api-certvalidation.csproj">
+      <Project>{278F201B-5D46-43D3-A40D-A2F11BA934F2}</Project>
+      <Name>api-certvalidation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-cmssignature\csharp\api-cmssignature.csproj">
+      <Project>{5A16F873-C904-4FEB-A383-A905E133B238}</Project>
+      <Name>api-cmssignature</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-cmssignature\csharp\test\api-cmssignature-test.csproj">
+      <Project>{BBC5118F-79E2-49B4-BA5A-22EE651F917B}</Project>
+      <Name>api-cmssignature-test</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-common\csharp\api-common.csproj">
+      <Project>{CA8572D2-2D3C-42F0-9A07-6261B00BD5F6}</Project>
+      <Name>api-common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-crypto\bouncyprovider\csharp\bouncyprovider.csproj">
+      <Project>{64916A9E-4971-4FF2-9DAF-65AB1FBD2048}</Project>
+      <Name>bouncyprovider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-crypto\crypto\csharp\api-crypto.csproj">
+      <Project>{82649E95-07E4-4166-9D55-B4705CC80836}</Project>
+      <Name>api-crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-infra\csharp\api-infra.csproj">
+      <Project>{98C61CEF-1EE1-4594-941A-B364DD57EA90}</Project>
+      <Name>api-infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-signature\csharp\api-signature.csproj">
+      <Project>{9229C786-6088-4913-ACCD-DDE35AEE0662}</Project>
+      <Name>api-signature</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-smartcard\ma3api-smartcard\csharp\api-smartcard.csproj">
+      <Project>{541FAB38-2515-41F9-8856-0CA083597F92}</Project>
+      <Name>api-smartcard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\api-xmlsignature.csproj">
+      <Project>{DE4FB845-23AD-4F03-99C2-4B93B2DEA909}</Project>
+      <Name>api-xmlsignature</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\dev.esya.api.xmlsignature\ConfigExample.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\destek\EDefterTeknosolDestek.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\IdGenerator.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\SmartCardAccessTest.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\helper\XmlSignatureTestHelper.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\signerHelpers\BaseParameterGetter.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\signerHelpers\EPfxSigner.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\signerHelpers\EPfxSignerManager.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\signerHelpers\ESmartCardSignerManager.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\signerHelpers\ISignerManager.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\signerHelpers\ParameterGetterFactory.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\signerHelpers\SignerManagerFactory.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\signerHelpers\UgTestParameterGetter.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\A00SignWithRevoked.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\A01SignWithDifferentCERPRIVATEKEY.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\A02SignWithP2.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\A03SignWithP3.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\A04SignWithP4.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\AA0SignEDefter.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\AA1AddExtraArchiveTimeStamp.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\AA2SignParallel.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\AA3SignSerialCounter.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\AA4SignValidator.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckArchiveTimeStamp.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckCertificateDigestValues.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckCompleteCertRefs.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckCompleteRevocationRefsAndValues.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckPolicyDigestValues.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckRevocationDigestValues.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckRevocationValues.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckSigAndRefsTimeStamp.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckSignatureType.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckSignatureValue.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckSignedObjectDigestValues.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckSignedPropertiesDigestValues.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckSigningCertificate.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckTimeStamp.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\CheckTimeStampValidationData.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\SignAndUpgrade.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\SignBESWithFreeLicense.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\UnitTestParameters.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\test\UpgradeESTWithTestLicense.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\unit\validation\XMLSignatureValidation.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\ValidateCreatedSignatures.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\ValidateExternalSignatures.cs" />
+    <Compile Include="src\dev.esya.api.xmlsignature\XMLValidationSupport.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\conversion\T01_BES.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\conversion\T02_Conversion.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\ec\T01_SignWithBES_EC.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\ec\T02_SignWithEST_EC.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\ec\T03_SignWithEPES_EC.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\ec\T04_SignWithESC_EC.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\ec\T05_SignWithESX_EC.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\ec\T06_SignWithESXL_EC.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\ec\T07_SignWithESA_EC.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\ec\wrongalg\T01_SignWithBES_EC_WrongSigAlg.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\T01_SignWithBES.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\T02_SignWithEST.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\T03_SignWithEPES.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\T04_SignWithESC.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\T05_SignWithESX.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\T06_SignWithESXL.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\creation\T07_SignWithESA.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\validation\XMLValidationUtil.cs" />
+    <Compile Include="src\test.esya.api.xmlsignature\XMLSignatureTestBase.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

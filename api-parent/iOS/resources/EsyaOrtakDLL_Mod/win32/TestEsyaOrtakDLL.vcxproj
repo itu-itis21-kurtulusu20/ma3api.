@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B35B6635-EA84-4F0E-8E63-3444359BD057}</ProjectGuid>
+    <RootNamespace>OrtakLibraryTest</RootNamespace>
+    <SccProjectName>Rational ClearCase</SccProjectName>
+    <SccAuxPath>Rational ClearCase</SccAuxPath>
+    <SccLocalPath>Rational ClearCase</SccLocalPath>
+    <SccProvider>Rational ClearCase</SccProvider>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;.\..\..\EsyaOrtakLIB_Mod\src;.\..\..\EsyaOrtakDLL_Mod\src;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtSql;.\..\..\EsyaOrtak_Mod\test;.\..\test;$(QTDIR)\include\QtGui;.\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmain.lib;QtCore4.lib;QtTest4.lib;EsyaOrtakDLL.lib;QtSql4.lib;QtGui4.lib;EsyaOrtakLIB.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\built\release;..\..\EsyaOrtakLIB_Mod\built\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;.\..\..\EsyaOrtakLIB_Mod\src;.\..\..\EsyaOrtakDLL_Mod\src;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtSql;.\..\..\EsyaOrtak_Mod\test;.\..\test;$(QTDIR)\include\QtGui;.\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmain.lib;QtCore4.lib;QtTest4.lib;EsyaOrtakDLL.lib;QtSql4.lib;QtGui4.lib;EsyaOrtakLIB.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\built\release;..\..\EsyaOrtakLIB_Mod\built\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;.\..\..\EsyaOrtakDLL_Mod\;.\..\..\EsyaOrtakDLL_Mod\src;.\..\..\EsyaGenelGUI_Mod\src;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtSql;.\..\..\EsyaOrtak_Mod\test;.\..\test;$(QTDIR)\include\QtGui;.\..;.\..\built;.\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;QtTestd4.lib;EsyaOrtakDLLD.lib;QtSqld4.lib;QtGuid4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\built\debug;.\..\..\EsyaGenelGUI_Mod\built\debug;.\..\..\EsyaOrtakDLL_Mod\built\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;.\..\..\EsyaOrtakDLL_Mod\src;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtSql;.\..\..\EsyaOrtak_Mod\test;.\..\test;$(QTDIR)\include\QtGui;.\..;.\..\..\EsyaOrtakLIB_Mod\src;.\..\built;.\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;QtTestd4.lib;EsyaOrtakDLLD.lib;QtSqld4.lib;QtGuid4.lib;EsyaOrtakLIBD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\built\debug;..\..\EsyaOrtakLIB_Mod\built\x64\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\test\EFileLockerTest.cpp" />
+    <ClCompile Include="..\test\FileUtilTest.cpp" />
+    <ClCompile Include="..\test\main.cpp" />
+    <ClCompile Include="..\test\MyTestSchedulerTask.cpp" />
+    <ClCompile Include="..\test\TestEAyarKartlar.cpp" />
+    <ClCompile Include="..\test\TestEAyarKullaniciManager.cpp" />
+    <ClCompile Include="..\test\TestEAyarLDAP.cpp" />
+    <ClCompile Include="..\test\TestEFilter.cpp" />
+    <ClCompile Include="..\test\TestEOrtamDegiskeni.cpp" />
+    <ClCompile Include="..\test\TestEProcessInfo.cpp" />
+    <ClCompile Include="..\test\TestEVeritabani.cpp" />
+    <ClCompile Include="..\test\TestILogger.cpp" />
+    <ClCompile Include="..\test\TestScheduler.cpp" />
+    <ClCompile Include="..\test\TestEAyarAlici.cpp" />
+    <ClCompile Include="..\built\generatedfiles\debug\moc_EAyarLdap.cpp" />
+    <ClCompile Include="generatedfiles\release\moc_EFileLockerTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_EFileLockerTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\moc_EFileLogger.cpp" />
+    <ClCompile Include="..\built\generatedfiles\debug\moc_ELoggerRDMMapper.cpp" />
+    <ClCompile Include="..\built\generatedfiles\debug\moc_ESqliteLogger.cpp" />
+    <ClCompile Include="generatedfiles\debug\moc_FileUtilTest.cpp" />
+    <ClCompile Include="..\built\generatedfiles\debug\moc_ILogger.cpp" />
+    <ClCompile Include="..\built\generatedfiles\debug\moc_PersistenceFacade.cpp" />
+    <ClCompile Include="..\built\generatedfiles\debug\moc_qtsingleapplication.cpp" />
+    <ClCompile Include="generatedfiles\Release\moc_SchedulerTask.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_SchedulerTask.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_TestEAyarAlici.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_TestEAyarAlici.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_TestEAyarKartlar.cpp" />
+    <ClCompile Include="generatedfiles\debug\moc_TestEAyarKullaniciManager.cpp" />
+    <ClCompile Include="generatedfiles\debug\moc_TestEAyarLDAP.cpp" />
+    <ClCompile Include="generatedfiles\debug\moc_TestEFilter.cpp" />
+    <ClCompile Include="generatedfiles\debug\moc_TestEOrtamDegiskeni.cpp" />
+    <ClCompile Include="generatedfiles\debug\moc_TestEProcessInfo.cpp" />
+    <ClCompile Include="generatedfiles\debug\moc_TestEVeritabani.cpp" />
+    <ClCompile Include="generatedfiles\debug\moc_TestILogger.cpp" />
+    <ClCompile Include="generatedfiles\Release\moc_TestScheduler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_TestScheduler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\built\generatedfiles\debug\qrc_EsyaOrtak.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\test\TestEProcessInfo.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TestEProcessInfo.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaGenelGUI_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\built\." -I".\..\src\." "..\test\TestEProcessInfo.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEProcessInfo.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEProcessInfo.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEProcessInfo.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing TestEProcessInfo.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\built\." -I".\..\src\." "..\test\TestEProcessInfo.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEProcessInfo.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEProcessInfo.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEProcessInfo.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TestEProcessInfo.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEProcessInfo.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEProcessInfo.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEProcessInfo.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEProcessInfo.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing TestEProcessInfo.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEProcessInfo.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEProcessInfo.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEProcessInfo.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEProcessInfo.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\test\TestScheduler.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TestScheduler.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaGenelGUI_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\built\." -I".\..\src\." "..\test\TestScheduler.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestScheduler.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestScheduler.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestScheduler.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TestScheduler.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestScheduler.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestScheduler.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestScheduler.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestScheduler.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\test\EFileLockerTest.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing EFileLockerTest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaGenelGUI_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\built\." -I".\..\src\." "..\test\EFileLockerTest.h" -o ".\GeneratedFiles\$(Configuration)\moc_EFileLockerTest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\test\EFileLockerTest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_EFileLockerTest.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing EFileLockerTest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\EFileLockerTest.h" -o ".\GeneratedFiles\$(Configuration)\moc_EFileLockerTest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\test\EFileLockerTest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_EFileLockerTest.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\test\FileUtilTest.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing FileUtilTest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaGenelGUI_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\built\." -I".\..\src\." "..\test\FileUtilTest.h" -o ".\GeneratedFiles\$(Configuration)\moc_FileUtilTest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\test\FileUtilTest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_FileUtilTest.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing FileUtilTest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\built\." -I".\..\src\." "..\test\FileUtilTest.h" -o ".\GeneratedFiles\$(Configuration)\moc_FileUtilTest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;..\test\FileUtilTest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(Configuration)\moc_FileUtilTest.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing FileUtilTest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\FileUtilTest.h" -o ".\GeneratedFiles\$(Configuration)\moc_FileUtilTest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\test\FileUtilTest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_FileUtilTest.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing FileUtilTest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\FileUtilTest.h" -o ".\GeneratedFiles\$(Configuration)\moc_FileUtilTest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;..\test\FileUtilTest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(Configuration)\moc_FileUtilTest.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\test\MyTestSchedulerTask.h" />
+    <CustomBuild Include="..\src\SchedulerTask.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SchedulerTask.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaGenelGUI_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\built\." -I".\..\src\." "..\src\SchedulerTask.h" -o ".\GeneratedFiles\$(Configuration)\moc_SchedulerTask.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\src\SchedulerTask.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_SchedulerTask.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SchedulerTask.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\src\SchedulerTask.h" -o ".\GeneratedFiles\$(Configuration)\moc_SchedulerTask.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\src\SchedulerTask.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_SchedulerTask.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\test\TestEAyarAlici.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TestEAyarAlici.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaGenelGUI_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\built\." -I".\..\src\." "..\test\TestEAyarAlici.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarAlici.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarAlici.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarAlici.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing TestEAyarAlici.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\built\." -I".\..\src\." "..\test\TestEAyarAlici.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarAlici.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarAlici.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarAlici.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TestEAyarAlici.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEAyarAlici.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarAlici.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarAlici.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarAlici.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing TestEAyarAlici.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEAyarAlici.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarAlici.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarAlici.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarAlici.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\test\TestEAyarKartlar.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TestEAyarKartlar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaGenelGUI_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\built\." -I".\..\src\." "..\test\TestEAyarKartlar.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarKartlar.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarKartlar.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarKartlar.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing TestEAyarKartlar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\built\." -I".\..\src\." "..\test\TestEAyarKartlar.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarKartlar.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarKartlar.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarKartlar.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TestEAyarKartlar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEAyarKartlar.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarKartlar.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarKartlar.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarKartlar.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing TestEAyarKartlar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEAyarKartlar.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarKartlar.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarKartlar.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarKartlar.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\test\TestEAyarKullaniciManager.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TestEAyarKullaniciManager.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaGenelGUI_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\built\." -I".\..\src\." "..\test\TestEAyarKullaniciManager.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarKullaniciManager.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarKullaniciManager.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarKullaniciManager.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing TestEAyarKullaniciManager.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\built\." -I".\..\src\." "..\test\TestEAyarKullaniciManager.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarKullaniciManager.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarKullaniciManager.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarKullaniciManager.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TestEAyarKullaniciManager.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEAyarKullaniciManager.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarKullaniciManager.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarKullaniciManager.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarKullaniciManager.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing TestEAyarKullaniciManager.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEAyarKullaniciManager.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarKullaniciManager.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarKullaniciManager.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarKullaniciManager.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\test\TestEAyarLDAP.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TestEAyarLDAP.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaGenelGUI_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\built\." -I".\..\src\." "..\test\TestEAyarLDAP.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarLDAP.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarLDAP.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarLDAP.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing TestEAyarLDAP.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\built\." -I".\..\src\." "..\test\TestEAyarLDAP.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarLDAP.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarLDAP.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarLDAP.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TestEAyarLDAP.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEAyarLDAP.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarLDAP.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarLDAP.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarLDAP.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing TestEAyarLDAP.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEAyarLDAP.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEAyarLDAP.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEAyarLDAP.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEAyarLDAP.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\test\TestEFilter.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TestEFilter.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaGenelGUI_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\built\." -I".\..\src\." "..\test\TestEFilter.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEFilter.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEFilter.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEFilter.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing TestEFilter.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\built\." -I".\..\src\." "..\test\TestEFilter.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEFilter.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEFilter.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEFilter.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TestEFilter.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEFilter.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEFilter.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEFilter.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEFilter.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing TestEFilter.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEFilter.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEFilter.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEFilter.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEFilter.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\test\TestEOrtamDegiskeni.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TestEOrtamDegiskeni.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaGenelGUI_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\built\." -I".\..\src\." "..\test\TestEOrtamDegiskeni.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEOrtamDegiskeni.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEOrtamDegiskeni.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEOrtamDegiskeni.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing TestEOrtamDegiskeni.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\built\." -I".\..\src\." "..\test\TestEOrtamDegiskeni.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEOrtamDegiskeni.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEOrtamDegiskeni.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEOrtamDegiskeni.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TestEOrtamDegiskeni.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEOrtamDegiskeni.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEOrtamDegiskeni.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEOrtamDegiskeni.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEOrtamDegiskeni.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing TestEOrtamDegiskeni.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEOrtamDegiskeni.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEOrtamDegiskeni.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEOrtamDegiskeni.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEOrtamDegiskeni.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\test\TestEVeritabani.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TestEVeritabani.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaGenelGUI_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\built\." -I".\..\src\." "..\test\TestEVeritabani.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEVeritabani.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEVeritabani.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEVeritabani.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing TestEVeritabani.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\built\." -I".\..\src\." "..\test\TestEVeritabani.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEVeritabani.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEVeritabani.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEVeritabani.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TestEVeritabani.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEVeritabani.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEVeritabani.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestEVeritabani.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestEVeritabani.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing TestEVeritabani.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestEVeritabani.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestEVeritabani.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;..\test\TestEVeritabani.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(Configuration)\moc_TestEVeritabani.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\test\TestILogger.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TestILogger.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaGenelGUI_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\built\." -I".\..\src\." "..\test\TestILogger.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestILogger.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestILogger.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestILogger.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing TestILogger.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710 -D_ATL_MIN_CRT  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\built\." -I".\..\src\." "..\test\TestILogger.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestILogger.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;..\test\TestILogger.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(Configuration)\moc_TestILogger.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TestILogger.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestILogger.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestILogger.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\test\TestILogger.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_TestILogger.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing TestILogger.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -D_VC80_UPGRADE=0x0710  -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I"$(QTDIR)\include\QtTest\." -I"$(QTDIR)\include\QtSql\." -I".\..\..\EsyaOrtak_Mod\test\." -I".\..\test\." -I"$(QTDIR)\include\QtGui\." -I".\..\src\." "..\test\TestILogger.h" -o ".\GeneratedFiles\$(Configuration)\moc_TestILogger.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;..\test\TestILogger.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(Configuration)\moc_TestILogger.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" QtVersion="4.5.0" UicDir=".\GeneratedFiles" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

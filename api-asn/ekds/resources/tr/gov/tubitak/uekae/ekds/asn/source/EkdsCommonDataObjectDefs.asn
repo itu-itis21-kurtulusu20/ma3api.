@@ -1,0 +1,104 @@
+EkdsCommonDataObjectDefs 
+
+DEFINITIONS IMPLICIT TAGS ::=
+
+BEGIN
+
+IMPORTS 
+
+Certificate				FROM Explicit
+CertificateSerialNumber FROM Explicit;
+
+DataObjectAccessRules ::= SEQUENCE
+{
+  read   [0] AccessRule,
+  write  [1] AccessRule,
+  update [2] AccessRule,
+  erase  [3] AccessRule
+}
+
+AccessRule ::= BIT STRING
+{
+  always   (0), -- always --
+  extAuth  (1), -- external authentication --
+  holderAg (2), -- card holder agreement --
+  origAg   (3)  -- originator (author) agreement --
+}
+
+DataObjectValidationEndDate ::= UTCTime
+
+DataObjectSecAttributes ::= SEQUENCE
+{
+  encInfo  [0] DataObjectEncryptionInfo,
+  signInfo [1] DataObjectDigitalSignature
+}
+
+DataObjectErrorDetectionCode ::= INTEGER(0..255)
+
+DataObjectIssuerInfo ::= SEQUENCE
+{
+  issuerID         [0] CardHolderIdentifier,
+  issuerFirstName  [1] DataObjectIssuerName,
+  issuerSurname    [2] DataObjectIssuerSurname,
+  issuerEmployment [3] DataObjectIssuerEmployment
+}
+
+DataObjectIssuerName ::= UTF8String (SIZE(2..64))
+DataObjectIssuerSurname ::= UTF8String (SIZE(2..64))
+DataObjectIssuerEmployment ::= UTF8String (SIZE(2..64))
+DataObjectIssuerInstitutionName ::= UTF8String (SIZE(0..64))
+
+DataObjectIssuanceDate ::= UTCTime
+DataObjectValidationStartDate ::= UTCTime
+
+DataObjectAuthorInfo ::= SEQUENCE 
+{
+  authorID        [0] CardHolderIdentifier,
+  authorFirstName [1] DataObjectAuthorName,
+  authorSurname   [2] DataObjectAuthorSurname,
+  authorSpecialty [3] DataObjectAuthorSpecialty
+}
+
+DataObjectAuthorName ::= UTF8String (SIZE(2..64))
+DataObjectAuthorSurname ::= UTF8String (SIZE(2..64))
+DataObjectAuthorSpecialty ::= UTF8String (SIZE(2..24))
+
+DataObjectAttributes ::= SEQUENCE
+{
+  operOverDataObject   [0] OperationsOverDataObject,
+  securityAttributes   [1] DataObjectSecAttributes,
+  compressionMethod    [2] DataObjectCompressionMethod,
+  accessRules          [3] DataObjectAccessRules,
+  templateVersion      [4] DataObjectVersionNumber
+}
+
+OperationsOverDataObject ::= BIT STRING
+{
+  signature   (0), -- Sayisal imzasi alindiysa TRUE, aksi halde FALSE --
+  encryption  (1), -- Sifreleme yapildiysa TRUE, aksi halde FALSE --
+  compression (2)  --  Zipleme yapildiysa TRUE, aksi halde FALSE --
+}
+
+DataObjectDigitalSignature ::= SEQUENCE
+{
+  signAlgID      [0] ENUMERATED {rsa2048(0),rsa1024(1),dsa1024(2)},
+  signHashAlgID  [1] ENUMERATED {md5(0),sha1(1),sha256(2)},
+  signData       [2] OCTET STRING,
+  signVerifyData [3] CHOICE 
+	{
+		signCertData   [0] Certificate,
+		signCertID     [1] CertificateSerialNumber
+	}
+}
+
+DataObjectEncryptionInfo ::= SEQUENCE
+{
+	encAlgID [0] ENUMERATED {des(0),des3(1),aes(2), ...},
+	encKeyID [1] INTEGER
+}
+
+DataObjectVersionNumber ::= IA5String 
+DataObjectCompressionMethod ::= ENUMERATED {none(0), lzs(1), ...}
+
+
+END

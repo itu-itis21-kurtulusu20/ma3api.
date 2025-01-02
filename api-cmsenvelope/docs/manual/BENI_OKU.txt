@@ -1,0 +1,53 @@
+﻿Ayrıntılı bilgi için MA3 API CMS Envelope Kullanim Kilavuzunu ve MA3 API Kullanım Kılavuzundaki 1. AÇIK ANAHTAR ALTYAPISI (AAA), 3. SERTİFİKA DOĞRULAMA, 8. AKILLI KART ve EK bölümlerini okuyunuz.
+
+
+GENEL NOTLAR
+
+1. Testleri çalıştırmadan önce, aşağıda verilen bağlantılardan güncel "SertifikaDeposu.svt" veya "SertifikaDeposu.xml" dosyasını indiriniz.
+   İndirdiğiniz dosyayı kullanıcı dizini altında oluşturacağınız ".sertifikadeposu" isimli dizine kopyalayınız.
+
+http://depo.kamusm.gov.tr/depo/SertifikaDeposu.svt adresinden "SertifikaDeposu.svt" dosyasını,
+http://depo.kamusm.gov.tr/depo/SertifikaDeposu.xml adresinden "SertifikaDeposu.xml"  dosyasını indirebilirsiniz.
+
+2. Paket içimden çıkan lisans.xml dosyası ile sadece test sertifikaları ile çalışabilirsiniz. Gerçek sertifikalar ile çalışabilmek için KamuSM'den
+   lisans temin etmeniz gerekmektedir.
+
+3. Detaylı bilgi için kullanım klavuzuna bakınız.
+
+
+
+JAVA
+
+1. Java versiyon 8 desteklenmektedir.
+
+2. Örnek kodlar ornekler\src altındadır. Bu klasörünü test source root olarak tanımlayınız.
+
+3. Referans olarak lib klasörü altında bulunan jar'ları ekleyiniz.
+
+4. TestConstant.java sınıfı içindeki ayarları kendi ortamınıza göre düzenleyiniz.
+
+5. "ornekler" klasörü altındaki kodlar unit test olarak yazılmıştır, JUnit 4 çalıştırabildiğiniz bir ortama ihtiyacınız vardır. Fonksiyonları ayrı ayrı çalıştırabilirsiniz.
+   EnvelopeTest sınıfı ile testlere başlayabilirsiniz.
+
+6. Test sistemleri için "config" klasörü altındaki certval-encryption-policy-test.xml içindeki TrustedCertificateFinderFromFileSystem
+   ayarlarını kendi ortamınıza göre düzenleyiniz. Kök ve AltKök test sertifikalarını bu dizine yükleyiniz. Gerçek sistemde
+   TrustedCertificateFinderFromFileSystem bulucusunu kullanmayınız.
+
+
+.NET
+
+1. Çalışma framework'ü en az .NET 3.5 olacak şekilde bir proje yaratınız.
+
+2. Referans olarak lib/AnyCPU klasörü altında bulunan dll'leri ekleyiniz. Ayrıca kullanacağız platforma göre x86 veya x64 klasörü içinde bulunan dll'leri ekleyiniz.
+
+3. Windows'unuzun Culture-Info'suna bagli olarak en-US veya tr-TR altındaki dll'leri projenize referans olarak ekleyiniz.
+
+4. "ornekler" klasörü altındaki sınıfları projenize ekleyiniz.
+
+5. TestConstant.cs sınıfı içindeki ayarları kendi ortamınıza göre düzenleyiniz.
+
+6. Test sistemleri için "config" klasörü altındaki certval-encryption-policy-test.xml içindeki TrustedCertificateFinderFromFileSystem
+   ayarlarını kendi ortamınıza göre düzenleyiniz. Kök ve AltKök test sertifikalarını bu dizine yükleyiniz. Gerçek sistemde
+   TrustedCertificateFinderFromFileSystem bulucusunu kullanmayınız.
+
+7. "ornekler" klasörü altındaki kodlar unit test olarak yazılmıştır. Fonksiyonları ayrı ayrı çalıştırabilirsiniz.

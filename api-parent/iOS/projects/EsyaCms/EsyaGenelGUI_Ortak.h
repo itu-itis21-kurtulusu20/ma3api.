@@ -1,0 +1,19 @@
+#ifndef __ESYA_GENEL_GUI_ORTAK__H__
+#define __ESYA_GENEL_GUI_ORTAK__H__
+#include "esyaOrtak.h"
+#include "ELogger.h"
+using namespace esya;
+
+#define ESYA_GENEL_GUI_FUNC_BEGIN_PARAM(x)       //DEBUGLOGYAZ(ESYAGENELGUI_MOD,QString("%1 : %2 (%3)").arg(__EFUNC__).arg(" -GIRIS").arg(x));
+#define ESYA_GENEL_GUI_FUNC_END_PARAM(x)         //DEBUGLOGYAZ(ESYAGENELGUI_MOD,QString("%1 : %2 (%3)").arg(__EFUNC__).arg(" -TAMAMLANDI").arg(x));
+
+#define ESYA_GENEL_GUI_FUNC_BEGIN			ESYA_FUNC_BEGIN(ESYAGENELGUI_MOD)
+#define ESYA_GENEL_GUI_FUNC_END				ESYA_FUNC_END(ESYAGENELGUI_MOD)
+#define ESYA_GENEL_GUI_FUNC_ERROR(y)		ESYA_FUNC_ERROR(ESYAGENELGUI_MOD,y)
+
+
+enum ENUM_CERT_TYPE{CERT_TYPE_NONE = 0x000,CERT_TYPE_SIGN = 0x001,CERT_TYPE_ENC = 0x002,CERT_TYPE_ALL = 0x003};
+
+#endif
+
+

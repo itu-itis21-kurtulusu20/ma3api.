@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBC5118F-79E2-49B4-BA5A-22EE651F917B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ma3api-cmssignature-test</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>api_cmssignature_test</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ma3api-cmssignature-test.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ma3api-cmssignature-test.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;e:\Program Files\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ma3api-cmssignature-test.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;E:\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ma3api-cmssignature-test.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;E:\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="asn1rtcs">
+      <HintPath>..\..\..\api-parent\dlls\asn1rtcs.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\api-parent\dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="ma3api-pkcs11-interop">
+      <HintPath>..\..\..\api-parent\dlls\ma3api-pkcs11-interop.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\api-parent\dlls\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SQLite, Version=1.0.82.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\api-parent\dlls\x64\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\dev.esya.api.cmssignature\archive\ESATest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\AttributeUtilTest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\common\LicenseUtilTest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\sign\BaseSignedDataSignWithContextTest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\sign\ESATest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\smartcard\hsm\DirakHSMPoolTest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\smartcard\KeyTypeAndSigAlgTest.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\common\CombinedInputStreamTest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\smartcard\AkisPUKTest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\asn\ECertificateTest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\performance\BaseSignedDataMemoryTest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\smartcard\Akis25Tests.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\manualExamples\AkilliKartIslemleri.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\manualExamples\ImzaAtma.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\manualExamples\ImzaDogrulamaIslemleri.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\manualExamples\ImzaTipleri.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\manualExamples\ImzaTipleriArasindaDonusum.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\manualExamples\ImzayaEklenebilecekAlanlar.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\manualExamples\ImzaZamaniAlma.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\manualExamples\TestConstans.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\manualExamples\ZamanDamgasi.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\creation\BES.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\creation\EPES.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\creation\ESA.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\creation\ESC.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\creation\EST.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\creation\ESX.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\creation\ESXLong.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\negative\BES_N.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\negative\EPES_N.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\negative\ESA_N.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\negative\EST_N.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\negative\ESXLong_N.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\negative\ESX_N.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\TestConstants.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\validation\BES.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\validation\EPES.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\validation\ESA.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\validation\ESC.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\validation\EST.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\validation\ESX.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest2010\validation\ESXLong.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\conversion\ESA.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\conversion\ESC.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\conversion\EST.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\conversion\ESX1.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\conversion\ESX2.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\conversion\ESXLong1.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\conversion\ESXLong2.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\creation\BES.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\creation\EPES.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\creation\ESA.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\validation\CMSValidationTest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\validation\ENT\BES.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\validation\ENT\EPES.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\validation\ENT\ESA.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\validation\MA3\ESA.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\validation\NEGATIVE\BES.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\validation\NEGATIVE\EPES.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\validation\NEGATIVE\ESA.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\validation\NEGATIVE\EST.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\validation\NEGATIVE\ESX.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\plugtest\validation\NEGATIVE\ESXLong.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\pss\RSAPSSTest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\pss\VerifyJavaPSS.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\smartcard\ATRTest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\smartcard\CardTestUtil.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\smartcard\hsm\DirakHSMTest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\smartcard\GeneralSmartCardTest.cs" />
+    <Compile Include="src\dev.esya.api.cmssignature\trash\SupportOE.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\CMSSignatureTest.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\conversion\T01_BES.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\conversion\T02_Conversion.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\ec\T01_BES_EC.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\ec\T02_EPES_EC.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\ec\T03_EST_EC.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\ec\T04_ESC_EC.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\ec\T05_ESX1_EC.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\ec\T06_ESX2_EC.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\ec\T07_ESXLong_EC.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\ec\T08_ESXLong1_EC.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\ec\T09_ESXLong2_EC.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\ec\T10_ESA_EC.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\ec\wrongalg\T01_BES_EC_WrongSigAlg.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\T01_BES.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\T02_EPES.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\T03_EST.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\T04_ESC.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\T05_ESX1.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\T06_ESX2.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\T07_ESXLong.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\T08_ESXLong1.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\T09_ESXLong2.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\creation\T10_ESA.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\crypto\GCMRandomTests.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\crypto\GCMTest.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\crypto\NISTGCMTest.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\multithread\MultiThreadCertificateValidationTest.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\parameters\CurrentTimeParameterTest.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\smartcard\HSMPoolTest.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\smartcard\QueueTest.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\smartcard\CardTestUtil.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\smartcard\HSMPkcs11Tests.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\structural\ContentTest.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\testconstants\TestConstants.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\testconstants\UGTestConstants.cs" />
+    <Compile Include="src\test.esya.api.cmssignature\validation\ValidationUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\api-asn\csharp\api-asn.csproj">
+      <Project>{307F1CDC-084E-4A9D-9208-0943DE95DA0F}</Project>
+      <Name>api-asn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-certstore\csharp\api-certstore.csproj">
+      <Project>{4844D59F-ACA3-43A1-8598-448B4EB3DE90}</Project>
+      <Name>api-certstore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-certvalidation\csharp\api-certvalidation.csproj">
+      <Project>{278F201B-5D46-43D3-A40D-A2F11BA934F2}</Project>
+      <Name>api-certvalidation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-common\csharp\api-common.csproj">
+      <Project>{CA8572D2-2D3C-42F0-9A07-6261B00BD5F6}</Project>
+      <Name>api-common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-crypto\bouncyprovider\csharp\bouncyprovider.csproj">
+      <Project>{64916A9E-4971-4FF2-9DAF-65AB1FBD2048}</Project>
+      <Name>bouncyprovider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-crypto\crypto\csharp\api-crypto.csproj">
+      <Project>{82649E95-07E4-4166-9D55-B4705CC80836}</Project>
+      <Name>api-crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-infra\csharp\api-infra.csproj">
+      <Project>{98c61cef-1ee1-4594-941a-b364dd57ea90}</Project>
+      <Name>api-infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-signature\csharp\api-signature.csproj">
+      <Project>{9229C786-6088-4913-ACCD-DDE35AEE0662}</Project>
+      <Name>api-signature</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-signature\csharp\test\api-signature-test.csproj">
+      <Project>{6E3FDEC8-234C-4D9F-A3D7-C5EEB901C6CE}</Project>
+      <Name>api-signature-test</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\api-smartcard\ma3api-smartcard\csharp\api-smartcard.csproj">
+      <Project>{541FAB38-2515-41F9-8856-0CA083597F92}</Project>
+      <Name>api-smartcard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\api-cmssignature.csproj">
+      <Project>{5A16F873-C904-4FEB-A383-A905E133B238}</Project>
+      <Name>api-cmssignature</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

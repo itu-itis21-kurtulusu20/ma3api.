@@ -1,0 +1,1582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CD97DF85-9681-43E8-94B5-0F3059182278}</ProjectGuid>
+    <RootNamespace>ASNLib</RootNamespace>
+    <SccProjectName>Rational ClearCase</SccProjectName>
+    <SccAuxPath>Rational ClearCase</SccAuxPath>
+    <SccLocalPath>Rational ClearCase</SccLocalPath>
+    <SccProvider>Rational ClearCase</SccProvider>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\built\$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\built\$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\built\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;.\..\src\Generated_ASN;.\..\src\Wrapped_Classes;.\..\include;..\..\EsyaOrtakDLL_Mod\src;$(QTDIR)\include\QtSql;.\..\include\rtsrc;.\..\include\rtbersrc;.\..\include\rtxsrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;ASNLIB_LIB;BUILDDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmain.lib;QtCore4.lib;QtTest4.lib;asn1ber.lib;asn1rt.lib;EsyaOrtakDLL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\libs;..\..\EsyaOrtakDLL_Mod\built\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(ProjectName).dll $(Windir)\system32</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;.\..\src\Generated_ASN;.\..\src\Wrapped_Classes;.\..\include;.\..\..\EsyaOrtakLIB_Mod\src;$(QTDIR)\include\QtSql;.\..\include\rtsrc;.\..\include\rtbersrc;.\..\include\rtxsrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;ASNLIB_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>EsyaOrtakLIB.lib;asn1rt_a.lib;asn1ber_a.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\EsyaOrtakLIB_Mod\built\release;..\libs\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;.\..\src\Generated_ASN;.\..\src\Wrapped_Classes;.\..\include;.\..\..\EsyaOrtakDLL_Mod\src;$(QTDIR)\include\QtSql;.\..\include\rtsrc;.\..\include\rtbersrc;.\..\include\rtxsrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;ASNLIB_LIB;BUILDDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;QtTestd4.lib;asn1ber.lib;asn1rt.lib;EsyaOrtakDLLD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\libs\debug;..\..\EsyaOrtakDLL_Mod\built\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(ProjectName)D.dll $(Windir)\system32</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;.\..\src\Generated_ASN;.\..\src\Wrapped_Classes;.\..\include;.\..\..\EsyaOrtakDLL_Mod\src;$(QTDIR)\include\QtSql;.\..\include\rtsrc;.\..\include\rtbersrc;.\..\include\rtxsrc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;ASNLIB_LIB;BUILDDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;asn1ber.lib;asn1rt.lib;EsyaOrtakDLLD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\libs\$(Platform)\$(Configuration);..\..\EsyaOrtakDLL_Mod\built\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\wrapped_classes\EASNException.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\EASNWrapper.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\AAControls.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\AccessDescription.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\ACClearAttrs.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\AdministrationDomainName.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\AlgorithmIdentifier.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\AnotherName.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\AttCertIssuer.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\AttCertValidityPeriod.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\Attribute.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\AttributeCertificate.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\AttributeCertificateInfo.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\AttributeTypeAndValue.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\AttributeValue.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\AttrSpec.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\AuthorityInfoAccess.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\AuthorityKeyIdentifier.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\BasicConstraints.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\BilinmeyenEklenti.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\BlokIsleyici.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\BuiltInDomainDefinedAttribute.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\BuiltInStandardAttributes.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\CDP.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\CertificateIssuer.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\CertificatePolicies.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\CertStatus.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\ClassList.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\Clearance.cpp" />
+    <ClCompile Include="CommonName.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\ContentInfo.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\CountryName.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\CRLDistributionPoints.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\CRLNumber.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\Curve.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\DepoASNEklenecekKokSertifika.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\DepoASNImza.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\DepoASNImzalar.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\DepoASNKokSertifika.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\DepoASNKokSertifikalar.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\DepoASNRawImza.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\DepoASNSilinecekKokSertifika.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\DigestInfo.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\DistributionPoint.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\DistributionPointName.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\DSASignature.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\EASNStreamingUtils.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\EASNToStringUtils.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\EBitString.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\ECCCMSSharedInfo.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\ECertChoices.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\ECertificate.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\ECertificateList.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\ECParameters.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\ECPrivateKey.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\ECRL.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\Eklenti.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\EklentiFabrikasi.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\ESeqOfList.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\ESSCertID.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\ETime.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\ExtendedKeyUsage.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\Extension.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\ExtensionAttribute.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\ExtensionGenerator.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\ExtKeyUsage.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\FieldID.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\GeneralName.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\GeneralNames.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\GeneralSubtree.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\Holder.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\IetfAttrSyntax.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\IetfAttrSyntax_values_element.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\InhibitAnyPolicy.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\IssuerAndSerialNumber.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\IssuerSerial.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\IssuingDistributionPoint.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\KeyAgreeRecipientIdentifier.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\KeyPurposeId.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\KeyUsage.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\MQVUserKeyingMaterial.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\Name.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\NameConstraints.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\NameUtils.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\ObjectDigestInfo.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\ORAddress.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\OrganizationalUnitName.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\OriginatorIdentifierOrKey.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\OriginatorInfo.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\ortak.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\OtherKeyAttribute.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\OutputStream.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\PBES2_Params.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\PBKDF2_Params.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\PBKDF2_Salt.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\PersonalName.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\PKCS12PbeParams.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\PKCS7Data.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\PKCS7Hash.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\PKCS7IssuerSerial.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\PolicyConstraints.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\PolicyInformation.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\PolicyMappings.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\PolicyMappingsElement.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\PolicyQualifierInfo.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\PrivateKeyInfo.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\ProxyInfo.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\QCStatement.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\QCStatements.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\ReasonFlags.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\RecipientEncryptedKey.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\RecipientEncryptedKeys.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\RecipientIdentifier.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\RecipientKeyIdentifier.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\RelativeDistinguishedName.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\RevocationInfoChoice.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\RevokedCertificatesElement.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\RevokedInfo.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\RoleSyntax.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\RSAPrivateKey.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\RSAPublicKey.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\SecurityCategory.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\SerialNumber.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\Signature.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\SignerIdentifier.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\SigningCertificate.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\SMIMECapabilities.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\SMIMECapability.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\SMIMEEncryptionKeyPreference.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\SpecifiedECDomain.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\SubjectAlternativeName.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\SubjectKeyIdentifier.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\SubjectPublicKeyInfo.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\SvceAuthInfo.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\Target.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\TargetCert.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\Targets.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\TBSCertificate.cpp" />
+    <ClCompile Include="..\src\Wrapped_Classes\TBSCertList.cpp" />
+    <ClCompile Include="..\src\wrapped_classes\V2Form.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\algorithms.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\algorithmsCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\algorithmsCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\algorithmsDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\algorithmsEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\algorithmsPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\algorithmsPrtToStrm.cpp" />
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposu.cpp" />
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposuCompare.cpp" />
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposuCopy.cpp" />
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposuDec.cpp" />
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposuEnc.cpp" />
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposuPrint.cpp" />
+    <ClCompile Include="..\src\generated_ASN\ASN_SertifikaDeposuPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\asnaes.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\asnaesCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\asnaesCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\asnaesDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\asnaesEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\asnaesPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\asnaesPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\attrcert.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\attrcertCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\attrcertCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\attrcertDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\attrcertEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\attrcertPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\attrcertPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cmp.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cmpCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cmpCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cmpDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cmpEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cmpPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cmpPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cms.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cmsCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cmsCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cmsDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cmsEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cmsPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\cmsPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\crmf.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\crmfCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\crmfCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\crmfDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\crmfEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\crmfPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\crmfPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\dercms.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\dercmsCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\dercmsCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\dercmsDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\dercmsEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\dercmsPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\dercmsPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\esya.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\esyaCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\esyaCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\esyaDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\esyaEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\esyaPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\esyaPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsi101733.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsi101733Compare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsi101733Copy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsi101733Dec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsi101733Enc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsi101733Print.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsi101733PrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsiqc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsiqcCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsiqcCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsiqcDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsiqcEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsiqcPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\etsiqcPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\Explicit.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ExplicitCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ExplicitCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ExplicitDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ExplicitEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ExplicitPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ExplicitPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\implicit.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ImplicitCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ImplicitCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ImplicitDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ImplicitEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ImplicitPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ImplicitPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ocsp.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ocspCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ocspCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ocspDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ocspEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ocspPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\ocspPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs10.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs10Compare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs10Copy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs10Dec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs10Enc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs10Print.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs10PrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs12.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs12Compare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs12Copy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs12Dec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs12Enc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs12Print.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs12PrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8Compare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8Copy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8Dec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8Enc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8Print.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs1pkcs8PrtToStrm.cpp" />
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2.cpp" />
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2Compare.cpp" />
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2Copy.cpp" />
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2Dec.cpp" />
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2Enc.cpp" />
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2Print.cpp" />
+    <ClCompile Include="..\src\generated_ASN\pkcs5v2PrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs7.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs7Compare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs7Copy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs7Dec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs7Enc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs7Print.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkcs7PrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualified.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualifiedCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualifiedCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualifiedDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualifiedEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualifiedPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\PKIXqualifiedPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkixtsp.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkixtspCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkixtspCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkixtspDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkixtspEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkixtspPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\pkixtspPrtToStrm.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitions.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitionsCompare.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitionsCopy.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitionsDec.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitionsEnc.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitionsPrint.cpp" />
+    <ClCompile Include="..\src\Generated_ASN\UsefulDefinitionsPrtToStrm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\wrapped_classes\EASNException.h" />
+    <ClInclude Include="..\src\wrapped_classes\EASNWrapper.h" />
+    <ClInclude Include="..\src\wrapped_classes\QCStatements.h" />
+    <ClInclude Include="..\src\wrapped_classes\AAControls.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\AccessDescription.h" />
+    <ClInclude Include="..\src\wrapped_classes\ACClearAttrs.h" />
+    <ClInclude Include="..\src\wrapped_classes\AdministrationDomainName.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\AlgorithmIdentifier.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\AnotherName.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\asnlib_global.h" />
+    <ClInclude Include="..\src\wrapped_classes\AttCertIssuer.h" />
+    <ClInclude Include="..\src\wrapped_classes\AttCertValidityPeriod.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\Attribute.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\AttributeCertificate.h" />
+    <ClInclude Include="..\src\wrapped_classes\AttributeCertificateInfo.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\AttributeTypeAndValue.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\AttributeValue.h" />
+    <ClInclude Include="..\src\wrapped_classes\AttrSpec.h" />
+    <CustomBuild Include="..\src\wrapped_classes\AuthorityInfoAccess.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\AuthorityKeyIdentifier.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\AY_Eklenti.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\BasicConstraints.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\BilinmeyenEklenti.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\Wrapped_Classes\BlokIsleyici.h" />
+    <ClInclude Include="..\src\wrapped_classes\BuiltInDomainDefinedAttribute.h" />
+    <ClInclude Include="..\src\wrapped_classes\BuiltInStandardAttributes.h" />
+    <ClInclude Include="..\src\wrapped_classes\CDP.h" />
+    <ClInclude Include="..\src\wrapped_classes\CertificateIssuer.h" />
+    <CustomBuild Include="..\src\wrapped_classes\CertificatePolicies.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\CertStatus.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\ClassList.h" />
+    <ClInclude Include="..\src\wrapped_classes\Clearance.h" />
+    <ClInclude Include="CommonName.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\ContentInfo.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\CountryName.h" />
+    <CustomBuild Include="..\src\wrapped_classes\CRLDistributionPoints.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\CRLNumber.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\Curve.h" />
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNEklenecekKokSertifika.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNImza.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNImzalar.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNKokSertifika.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNKokSertifikalar.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNRawImza.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\DepoASNSilinecekKokSertifika.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\DigestInfo.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\Wrapped_Classes\DistributionPoint.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\DistributionPointName.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\DSASignature.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\EASNStreamingUtils.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\EASNToStringUtils.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\EASNWrapperTemplate.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\EBitString.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\ECCCMSSharedInfo.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\ECertChoices.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\ECertificate.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\Wrapped_Classes\ECertificateList.h" />
+    <ClInclude Include="..\src\wrapped_classes\ECParameters.h" />
+    <ClInclude Include="..\src\wrapped_classes\ECPrivateKey.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\ECRL.h" />
+    <CustomBuild Include="..\src\wrapped_classes\Eklenti.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\EklentiFabrikasi.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\Wrapped_Classes\ESeqOfList.h" />
+    <ClInclude Include="..\src\wrapped_classes\ESSCertID.h" />
+    <ClInclude Include="..\src\wrapped_classes\EsyaASN_DIL.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\ETime.h" />
+    <CustomBuild Include="..\src\wrapped_classes\ExtendedKeyUsage.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\Extension.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\ExtensionAttribute.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\ExtensionGenerator.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\ExtKeyUsage.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\FieldID.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\GeneralName.h" />
+    <ClInclude Include="..\src\wrapped_classes\GeneralNames.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\GeneralSubtree.h" />
+    <ClInclude Include="..\src\wrapped_classes\Holder.h" />
+    <ClInclude Include="..\src\wrapped_classes\IetfAttrSyntax.h" />
+    <ClInclude Include="..\src\wrapped_classes\IetfAttrSyntax_values_element.h" />
+    <ClInclude Include="..\src\wrapped_classes\InhibitAnyPolicy.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\IssuerAndSerialNumber.h" />
+    <ClInclude Include="..\src\wrapped_classes\IssuerSerial.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\IssuingDistributionPoint.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\KeyAgreeRecipientIdentifier.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\KeyPurposeId.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\KeyUsage.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\MQVUserKeyingMaterial.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\myasndefs.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\Wrapped_Classes\myerrors.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\Name.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\NameConstraints.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\Wrapped_Classes\NameUtils.h" />
+    <ClInclude Include="..\src\wrapped_classes\NetworkAddress.h" />
+    <ClInclude Include="..\src\wrapped_classes\NumericUserIdentifier.h" />
+    <ClInclude Include="..\src\wrapped_classes\ObjectDigestInfo.h" />
+    <ClInclude Include="..\src\wrapped_classes\ORAddress.h" />
+    <ClInclude Include="..\src\wrapped_classes\OrganizationalUnitName.h" />
+    <ClInclude Include="..\src\wrapped_classes\OrganizationName.h" />
+    <ClInclude Include="..\src\wrapped_classes\OriginatorIdentifierOrKey.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\OriginatorInfo.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\ortak.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\OtherKeyAttribute.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\OutputStream.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\PBES2_Params.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\PBKDF2_Params.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\PBKDF2_Salt.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\PersonalName.h" />
+    <ClInclude Include="..\src\wrapped_classes\PKCS12PbeParams.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\PKCS7Data.h" />
+    <ClInclude Include="..\src\wrapped_classes\PKCS7Hash.h" />
+    <ClInclude Include="..\src\wrapped_classes\PKCS7IssuerSerial.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\PolicyConstraints.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\PolicyInformation.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\PolicyMappings.h" />
+    <ClInclude Include="..\src\wrapped_classes\PolicyMappingsElement.h" />
+    <CustomBuild Include="..\src\wrapped_classes\PolicyQualifierInfo.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\PrivateDomainName.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\PrivateKeyInfo.h" />
+    <ClInclude Include="..\src\wrapped_classes\ProxyInfo.h" />
+    <ClInclude Include="..\src\wrapped_classes\QCStatement.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\ReasonFlags.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\RecipientEncryptedKey.h" />
+    <ClInclude Include="..\src\wrapped_classes\RecipientEncryptedKeys.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\RecipientIdentifier.h" />
+    <CustomBuild Include="..\src\wrapped_classes\RecipientKeyIdentifier.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\RelativeDistinguishedName.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\Wrapped_Classes\RevocationInfoChoice.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\RevokedCertificatesElement.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\RevokedInfo.h" />
+    <ClInclude Include="..\src\wrapped_classes\RoleSyntax.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\RSAPrivateKey.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\RSAPublicKey.h" />
+    <ClInclude Include="..\src\wrapped_classes\SecurityCategory.h" />
+    <CustomBuild Include="..\src\Wrapped_Classes\SerialNumber.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\Wrapped_Classes\Signature.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\SignerIdentifier.h" />
+    <ClInclude Include="..\src\wrapped_classes\SigningCertificate.h" />
+    <CustomBuild Include="..\src\wrapped_classes\SMIMECapabilities.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\SMIMECapability.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\wrapped_classes\SMIMEEncryptionKeyPreference.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\SpecifiedECDomain.h" />
+    <CustomBuild Include="..\src\wrapped_classes\SubjectAlternativeName.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\SubjectKeyIdentifier.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\Wrapped_Classes\SubjectPublicKeyInfo.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\wrapped_classes\SvceAuthInfo.h" />
+    <ClInclude Include="..\src\wrapped_classes\Target.h" />
+    <ClInclude Include="..\src\wrapped_classes\TargetCert.h" />
+    <ClInclude Include="..\src\wrapped_classes\Targets.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\TBSCertificate.h" />
+    <ClInclude Include="..\src\Wrapped_Classes\TBSCertList.h" />
+    <ClInclude Include="..\src\wrapped_classes\TerminalIdentifier.h" />
+    <ClInclude Include="..\src\wrapped_classes\V2Form.h" />
+    <ClInclude Include="..\src\Generated_ASN\algorithms.h" />
+    <ClInclude Include="..\src\Generated_ASN\asn1ber.h" />
+    <ClInclude Include="..\src\Generated_ASN\asn1BerCppTypes.h" />
+    <ClInclude Include="..\src\Generated_ASN\ASN1BERInputStream.h" />
+    <ClInclude Include="..\src\Generated_ASN\ASN1BEROutputStream.h" />
+    <ClInclude Include="..\src\Generated_ASN\asn1berSocket.h" />
+    <ClInclude Include="..\src\Generated_ASN\asn1berStream.h" />
+    <ClInclude Include="..\src\generated_ASN\ASN_SertifikaDeposu.h" />
+    <ClInclude Include="..\src\Generated_ASN\asnaes.h" />
+    <ClInclude Include="..\src\Generated_ASN\attrcert.h" />
+    <ClInclude Include="..\src\Generated_ASN\cmp.h" />
+    <ClInclude Include="..\src\Generated_ASN\cms.h" />
+    <ClInclude Include="..\src\Generated_ASN\crmf.h" />
+    <ClInclude Include="..\src\Generated_ASN\dercms.h" />
+    <ClInclude Include="..\src\Generated_ASN\esya.h" />
+    <ClInclude Include="..\src\Generated_ASN\etsi101733.h" />
+    <ClInclude Include="..\src\Generated_ASN\etsiqc.h" />
+    <ClInclude Include="..\src\Generated_ASN\Explicit.h" />
+    <ClInclude Include="..\src\Generated_ASN\Implicit.h" />
+    <ClInclude Include="..\src\Generated_ASN\ocsp.h" />
+    <ClInclude Include="..\src\Generated_ASN\pkcs10.h" />
+    <CustomBuild Include="..\src\Generated_ASN\pkcs12.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\Generated_ASN\pkcs1pkcs8.h" />
+    <ClInclude Include="..\src\generated_ASN\pkcs5v2.h" />
+    <ClInclude Include="..\src\Generated_ASN\pkcs7.h" />
+    <ClInclude Include="..\src\Generated_ASN\PKIXqualified.h" />
+    <ClInclude Include="..\src\Generated_ASN\pkixtsp.h" />
+    <ClInclude Include="..\src\Generated_ASN\rtkey.h" />
+    <ClInclude Include="..\src\Generated_ASN\UsefulDefinitions.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" QtVersion="4.5.0" QtVersion_x0020_Win32="4.5.0" UicDir=".\GeneratedFiles" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

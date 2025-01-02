@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ma3api-parent</artifactId>
+        <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+        <version>2.3.25-SNAPSHOT</version>
+        <relativePath>../../api-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ma3api-smartcard-esya</artifactId>
+    <name>MA3 Api Smart Card ESYA Module</name>
+    <description>Bu modül API ile birlikte dağıtılan SmartCard modülü ESYA işlemleri için yetersiz
+        kaldığı için yaratılmıştır. Bundan sonra API ile dağıtılan modül SmartCard Modulü olarak isimlendirilecektir.
+        Bu modül ise SmartCard ESYA modülü olarak isimlendirilecektir. API ile birlikte SmartCard ESYA modülü dağıtılmayacaktır.
+        Yeni fonksiyonalitenin var olan SmartCard modülüne eklenmemesinin sebebi, hem son kullanıcının bu tür işlemlere ihtiyacı
+        olmaması hem de smartcard modülünün crypto ve asn modüllerine dependency gerektirmesidir.
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-smartcard</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-crypto</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-crypto-gnuprovider</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tr.gov.tubitak.uekae.esya.api</groupId>
+            <artifactId>ma3api-smartcard</artifactId>
+            <version>${project.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>testsrc</testSourceDirectory>
+        <plugins>
+        </plugins>
+    </build>
+
+</project>

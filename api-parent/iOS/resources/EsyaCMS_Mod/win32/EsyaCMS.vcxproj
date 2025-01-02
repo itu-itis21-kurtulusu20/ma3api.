@@ -1,0 +1,818 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{71820D84-12FF-4653-8DE2-2A4FAC519D74}</ProjectGuid>
+    <RootNamespace>CMSLibrary</RootNamespace>
+    <SccProjectName>Rational ClearCase</SccProjectName>
+    <SccAuxPath>Rational ClearCase</SccAuxPath>
+    <SccLocalPath>Rational ClearCase</SccLocalPath>
+    <SccProvider>Rational ClearCase</SccProvider>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\built\$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\built\$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\built\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\..\src;.\..\src\cms_asn;.\..\..\EsyaOrtakDLL_Mod\src;.\..\..\EsyaOrtakLIB_Mod\src;.\..\..\EsyaASN_Mod\include;.\..\..\EsyaASN_Mod\include\rtxsrc;.\..\..\EsyaASN_Mod\include\rtbersrc;.\..\..\EsyaASN_Mod\include\rtsrc;.\..\..\EsyaASN_Mod\src\Generated_ASN;.\..\..\EsyaASN_Mod\src\kriptoasn;.\..\..\EsyaASN_Mod\src\Wrapped_Classes;.\..\..\EsyaKripto_Mod\src;.\..\..\EsyaKripto_Mod\include;.\..\..\EsyaPKCS11_Mod\src;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtXML;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;CMSLIBRARY_LIB;QT_SQL_LIB;USEDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>qtmain.lib;QtCore4.lib;EsyaASN.lib;EsyaPKCS11.lib;EsyaKripto.lib;EsyaOrtakDLL.lib;QtSql4.lib;asn1rt.lib;asn1ber.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\..\EsyaASN_Mod\built\release;..\..\EsyaKripto_Mod\built\release;..\..\EsyaPKCS11_Mod\built\release;..\..\EsyaASN_Mod\libs;..\..\EsyaOrtakDLL_Mod\built\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(ProjectName).dll $(Windir)\system32</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\..\src;.\..\src\cms_asn;.\..\..\EsyaOrtakDLL_Mod\src;.\..\..\EsyaOrtakLIB_Mod\src;.\..\..\EsyaASN_Mod\include;.\..\..\EsyaASN_Mod\include\rtxsrc;.\..\..\EsyaASN_Mod\include\rtbersrc;.\..\..\EsyaASN_Mod\include\rtsrc;.\..\..\EsyaASN_Mod\src\Generated_ASN;.\..\..\EsyaASN_Mod\src\kriptoasn;.\..\..\EsyaASN_Mod\src\Wrapped_Classes;.\..\..\EsyaKripto_Mod\src;.\..\..\EsyaKripto_Mod\include;.\..\..\EsyaPKCS11_Mod\src;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtXML;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;CMSLIBRARY_LIB;QT_SQL_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>qtmain.lib;QtCore4.lib;EsyaASN.lib;EsyaPKCS11.lib;EsyaKripto.lib;EsyaOrtakDLL.lib;QtSql4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\..\EsyaASN_Mod\built\release;..\..\EsyaKripto_Mod\built\release;..\..\EsyaPKCS11_Mod\built\release;..\..\EsyaOrtakDLL_Mod\built\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(ProjectName).dll $(Windir)\system32</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\..\src;.\..\src\cms_asn;.\..\..\EsyaOrtakDLL_Mod\src;.\..\..\EsyaOrtakLIB_Mod\src;.\..\..\EsyaASN_Mod\include;.\..\..\EsyaASN_Mod\include\rtxsrc;.\..\..\EsyaASN_Mod\include\rtbersrc;.\..\..\EsyaASN_Mod\include\rtsrc;.\..\..\EsyaASN_Mod\src\Generated_ASN;.\..\..\EsyaASN_Mod\src\kriptoasn;.\..\..\EsyaASN_Mod\src\Wrapped_Classes;.\..\..\EsyaKripto_Mod\src;.\..\..\EsyaKripto_Mod\include;.\..\..\EsyaKripto_Mod\include\crypto++;.\..\..\EsyaPKCS11_Mod\src;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtXML;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;CMSLIBRARY_LIB;QT_SQL_LIB;USEDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;EsyaASND.lib;EsyaPKCS11D.lib;EsyaKriptoD.lib;EsyaOrtakDLLD.lib;QtSqld4.lib;asn1rt.lib;asn1ber.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\..\EsyaASN_Mod\libs\debug;..\..\EsyaASN_Mod\built\debug;..\..\EsyaKripto_Mod\built\debug;..\..\EsyaPKCS11_Mod\built\debug;..\..\EsyaOrtakDLL_Mod\built\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(ProjectName)D.dll $(Windir)\system32\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\..\src;.\..\src\cms_asn;.\..\..\EsyaOrtakDLL_Mod\src;.\..\..\EsyaOrtakLIB_Mod\src;.\..\..\EsyaASN_Mod\include;.\..\..\EsyaASN_Mod\include\rtxsrc;.\..\..\EsyaASN_Mod\include\rtbersrc;.\..\..\EsyaASN_Mod\include\rtsrc;.\..\..\EsyaASN_Mod\src\Generated_ASN;.\..\..\EsyaASN_Mod\src\kriptoasn;.\..\..\EsyaASN_Mod\src\Wrapped_Classes;.\..\..\EsyaKripto_Mod\src;.\..\..\EsyaKripto_Mod\include;.\..\..\EsyaKripto_Mod\include\crypto++;.\..\..\EsyaPKCS11_Mod\src;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtXML;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;CMSLIBRARY_LIB;QT_SQL_LIB;USEDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;EsyaASND.lib;EsyaPKCS11D.lib;EsyaKriptoD.lib;EsyaOrtakDLLD.lib;QtSqld4.lib;asn1rt.lib;asn1ber.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\..\EsyaASN_Mod\libs\$(Platform)\$(Configuration);..\..\EsyaASN_Mod\built\$(Platform)\$(Configuration);..\..\EsyaKripto_Mod\built\$(Platform)\$(Configuration);..\..\EsyaPKCS11_Mod\built\$(Platform)\$(Configuration);..\..\EsyaOrtakDLL_Mod\built\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(ProjectName)D.dll $(Windir)\system32\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\AsymetricKeyDecryptor.cpp" />
+    <ClCompile Include="..\src\EATimeStampProvider.cpp" />
+    <ClCompile Include="..\src\ECMSException.cpp" />
+    <ClCompile Include="..\src\ECMSUtil.cpp" />
+    <ClCompile Include="..\src\EsyaCMSManagedExport.cpp" />
+    <ClCompile Include="..\src\GroupKeyDecryptor.cpp" />
+    <ClCompile Include="..\src\ImzaDogrulamaAlgoritmasi.cpp" />
+    <ClCompile Include="..\src\ImzaDogrulamaSonucu.cpp" />
+    <ClCompile Include="..\src\ImzaKontrolcu.cpp" />
+    <ClCompile Include="..\src\ImzaKriptoKontrolcu.cpp" />
+    <ClCompile Include="..\src\KeyDecryptor.cpp" />
+    <ClCompile Include="..\src\KontrolcuSonucu.cpp" />
+    <ClCompile Include="..\src\OzetKontrolcu.cpp" />
+    <ClCompile Include="..\src\PasswordBasedKeyDecryptor.cpp" />
+    <ClCompile Include="..\src\SignedAttributesKontrolcu.cpp" />
+    <ClCompile Include="..\src\SignerParam.cpp" />
+    <ClCompile Include="..\src\SignParam.cpp" />
+    <ClCompile Include="generatedfiles\debug\moc_StreamedSignedData.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\Release\moc_StreamedSignedData.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_StreamEnvelopedData.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\Release\moc_StreamEnvelopedData.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src\cms_asn\Besleyici.cpp" />
+    <ClCompile Include="..\src\cms_asn\EncapContentInfo.cpp" />
+    <ClCompile Include="..\src\cms_asn\EncryptedContentInfo.cpp" />
+    <ClCompile Include="..\src\cms_asn\EncryptedData.cpp" />
+    <ClCompile Include="..\src\cms_asn\EnvelopedData.cpp" />
+    <ClCompile Include="..\src\cms_asn\EsyaFileInfoRecipientInfo.cpp" />
+    <ClCompile Include="..\src\cms_asn\EsyaGroupRecipientInfo.cpp" />
+    <ClCompile Include="..\src\cms_asn\ESYAPasswordRecipientInfo.cpp" />
+    <ClCompile Include="..\src\cms_asn\KeyAgreeRecipientInfo.cpp" />
+    <ClCompile Include="..\src\cms_asn\KeyTransRecipientInfo.cpp" />
+    <ClCompile Include="..\src\cms_asn\OtherRecipientInfo.cpp" />
+    <ClCompile Include="..\src\cms_asn\PasswordRecipientInfo.cpp" />
+    <ClCompile Include="..\src\cms_asn\RecipientInfo.cpp" />
+    <ClCompile Include="..\src\cms_asn\SignedData.cpp" />
+    <ClCompile Include="..\src\cms_asn\SignerInfo.cpp" />
+    <ClCompile Include="..\src\cms_asn\SignerTree.cpp" />
+    <ClCompile Include="..\src\cms_asn\StreamedSignedData.cpp" />
+    <ClCompile Include="..\src\cms_asn\StreamEnvelopedData.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\src\EsyaCMSManagedExport.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\aciklamalar.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\AsymetricKeyDecryptor.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\cms_asn\AuthEnvelopedData.h" />
+    <CustomBuild Include="..\src\cmslibrary_global.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\cmsOrtak.h" />
+    <CustomBuild Include="..\src\EATimeStampProvider.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\ECMSException.h" />
+    <CustomBuild Include="..\src\ECMSUtil.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\EsyaCMS_DIL.h" />
+    <CustomBuild Include="..\src\GroupKeyDecryptor.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ImzaDogrulamaAlgoritmasi.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ImzaDogrulamaSonucu.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ImzaKontrolcu.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\ImzaKriptoKontrolcu.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\KeyDecryptor.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\KontrolcuSonucu.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\MyMetaTypes.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\OzetKontrolcu.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\PasswordBasedKeyDecryptor.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\SignedAttributesKontrolcu.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\SignerParam.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\SignParam.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\cms_asn\Besleyici.h" />
+    <CustomBuild Include="..\src\cms_asn\EncapContentInfo.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\EncryptedContentInfo.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\EncryptedData.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\EnvelopedData.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\EsyaFileInfoRecipientInfo.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\cms_asn\EsyaGroupRecipientInfo.h" />
+    <ClInclude Include="..\src\cms_asn\KeyAgreeRecipientInfo.h" />
+    <ClInclude Include="..\src\cms_asn\KeyTransRecipientInfo.h" />
+    <CustomBuild Include="..\src\cms_asn\OtherRecipientInfo.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\PasswordRecipientInfo.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\RecipientInfo.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\SignedData.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\SignerInfo.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\src\cms_asn\SignerTree.h" />
+    <CustomBuild Include="..\src\cms_asn\StreamedSignedData.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing StreamedSignedData.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DCMSLIBRARY_LIB -DQT_SQL_LIB -DUSEDLL -D_VC80_UPGRADE=0x0710 -D_WINDLL -I".\..\src\." -I".\..\src\cms_asn\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaASN_Mod\include\." -I".\..\..\EsyaASN_Mod\include\rtxsrc\." -I".\..\..\EsyaASN_Mod\include\rtbersrc\." -I".\..\..\EsyaASN_Mod\include\rtsrc\." -I".\..\..\EsyaASN_Mod\src\Generated_ASN\." -I".\..\..\EsyaASN_Mod\src\kriptoasn\." -I".\..\..\EsyaASN_Mod\src\Wrapped_Classes\." -I".\..\..\EsyaKripto_Mod\src\." -I".\..\..\EsyaKripto_Mod\include\." -I".\..\..\EsyaKripto_Mod\include\crypto++\." -I".\..\..\EsyaPKCS11_Mod\src\." -I".\GeneratedFiles\." -I".\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtXML\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtSql\." "..\src\cms_asn\StreamedSignedData.h" -o ".\GeneratedFiles\$(Configuration)\moc_StreamedSignedData.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\src\cms_asn\StreamedSignedData.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_StreamedSignedData.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing StreamedSignedData.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DCMSLIBRARY_LIB -DQT_SQL_LIB -DUSEDLL -D_VC80_UPGRADE=0x0710 -D_WINDLL -I".\..\src\." -I".\..\src\cms_asn\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaASN_Mod\include\." -I".\..\..\EsyaASN_Mod\include\rtxsrc\." -I".\..\..\EsyaASN_Mod\include\rtbersrc\." -I".\..\..\EsyaASN_Mod\include\rtsrc\." -I".\..\..\EsyaASN_Mod\src\Generated_ASN\." -I".\..\..\EsyaASN_Mod\src\kriptoasn\." -I".\..\..\EsyaASN_Mod\src\Wrapped_Classes\." -I".\..\..\EsyaKripto_Mod\src\." -I".\..\..\EsyaKripto_Mod\include\." -I".\..\..\EsyaKripto_Mod\include\crypto++\." -I".\..\..\EsyaPKCS11_Mod\src\." -I".\GeneratedFiles\." -I".\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtXML\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtSql\." "..\src\cms_asn\StreamedSignedData.h" -o ".\GeneratedFiles\$(Configuration)\moc_StreamedSignedData.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;..\src\cms_asn\StreamedSignedData.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(Configuration)\moc_StreamedSignedData.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing StreamedSignedData.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DCMSLIBRARY_LIB -DQT_SQL_LIB -DUSEDLL -D_VC80_UPGRADE=0x0710 -D_WINDLL  -I".\..\src\." -I".\..\src\cms_asn\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaASN_Mod\include\." -I".\..\..\EsyaASN_Mod\include\rtxsrc\." -I".\..\..\EsyaASN_Mod\include\rtbersrc\." -I".\..\..\EsyaASN_Mod\include\rtsrc\." -I".\..\..\EsyaASN_Mod\src\Generated_ASN\." -I".\..\..\EsyaASN_Mod\src\kriptoasn\." -I".\..\..\EsyaASN_Mod\src\Wrapped_Classes\." -I".\..\..\EsyaKripto_Mod\src\." -I".\..\..\EsyaKripto_Mod\include\." -I".\..\..\EsyaPKCS11_Mod\src\." -I".\GeneratedFiles\." -I".\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtXML\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtSql\." "..\src\cms_asn\StreamedSignedData.h" -o ".\GeneratedFiles\$(Configuration)\moc_StreamedSignedData.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\src\cms_asn\StreamedSignedData.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_StreamedSignedData.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing StreamedSignedData.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DCMSLIBRARY_LIB -DQT_SQL_LIB -D_VC80_UPGRADE=0x0710 -D_WINDLL -I".\..\src\." -I".\..\src\cms_asn\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaASN_Mod\include\." -I".\..\..\EsyaASN_Mod\include\rtxsrc\." -I".\..\..\EsyaASN_Mod\include\rtbersrc\." -I".\..\..\EsyaASN_Mod\include\rtsrc\." -I".\..\..\EsyaASN_Mod\src\Generated_ASN\." -I".\..\..\EsyaASN_Mod\src\kriptoasn\." -I".\..\..\EsyaASN_Mod\src\Wrapped_Classes\." -I".\..\..\EsyaKripto_Mod\src\." -I".\..\..\EsyaKripto_Mod\include\." -I".\..\..\EsyaPKCS11_Mod\src\." -I".\GeneratedFiles\." -I".\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtXML\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtSql\." "..\src\cms_asn\StreamedSignedData.h" -o ".\GeneratedFiles\$(Configuration)\moc_StreamedSignedData.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;..\src\cms_asn\StreamedSignedData.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(Configuration)\moc_StreamedSignedData.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\src\cms_asn\StreamEnvelopedData.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing StreamEnvelopedData.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DCMSLIBRARY_LIB -DQT_SQL_LIB -DUSEDLL -D_VC80_UPGRADE=0x0710 -D_WINDLL -I".\..\src\." -I".\..\src\cms_asn\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaASN_Mod\include\." -I".\..\..\EsyaASN_Mod\include\rtxsrc\." -I".\..\..\EsyaASN_Mod\include\rtbersrc\." -I".\..\..\EsyaASN_Mod\include\rtsrc\." -I".\..\..\EsyaASN_Mod\src\Generated_ASN\." -I".\..\..\EsyaASN_Mod\src\kriptoasn\." -I".\..\..\EsyaASN_Mod\src\Wrapped_Classes\." -I".\..\..\EsyaKripto_Mod\src\." -I".\..\..\EsyaKripto_Mod\include\." -I".\..\..\EsyaKripto_Mod\include\crypto++\." -I".\..\..\EsyaPKCS11_Mod\src\." -I".\GeneratedFiles\." -I".\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtXML\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtSql\." "..\src\cms_asn\StreamEnvelopedData.h" -o ".\GeneratedFiles\$(Configuration)\moc_StreamEnvelopedData.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\src\cms_asn\StreamEnvelopedData.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_StreamEnvelopedData.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing StreamEnvelopedData.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DCMSLIBRARY_LIB -DQT_SQL_LIB -DUSEDLL -D_VC80_UPGRADE=0x0710 -D_WINDLL -I".\..\src\." -I".\..\src\cms_asn\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaASN_Mod\include\." -I".\..\..\EsyaASN_Mod\include\rtxsrc\." -I".\..\..\EsyaASN_Mod\include\rtbersrc\." -I".\..\..\EsyaASN_Mod\include\rtsrc\." -I".\..\..\EsyaASN_Mod\src\Generated_ASN\." -I".\..\..\EsyaASN_Mod\src\kriptoasn\." -I".\..\..\EsyaASN_Mod\src\Wrapped_Classes\." -I".\..\..\EsyaKripto_Mod\src\." -I".\..\..\EsyaKripto_Mod\include\." -I".\..\..\EsyaKripto_Mod\include\crypto++\." -I".\..\..\EsyaPKCS11_Mod\src\." -I".\GeneratedFiles\." -I".\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtXML\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtSql\." "..\src\cms_asn\StreamEnvelopedData.h" -o ".\GeneratedFiles\$(Configuration)\moc_StreamEnvelopedData.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;..\src\cms_asn\StreamEnvelopedData.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(Configuration)\moc_StreamEnvelopedData.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing StreamEnvelopedData.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DCMSLIBRARY_LIB -DQT_SQL_LIB -DUSEDLL -D_VC80_UPGRADE=0x0710 -D_WINDLL  -I".\..\src\." -I".\..\src\cms_asn\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaASN_Mod\include\." -I".\..\..\EsyaASN_Mod\include\rtxsrc\." -I".\..\..\EsyaASN_Mod\include\rtbersrc\." -I".\..\..\EsyaASN_Mod\include\rtsrc\." -I".\..\..\EsyaASN_Mod\src\Generated_ASN\." -I".\..\..\EsyaASN_Mod\src\kriptoasn\." -I".\..\..\EsyaASN_Mod\src\Wrapped_Classes\." -I".\..\..\EsyaKripto_Mod\src\." -I".\..\..\EsyaKripto_Mod\include\." -I".\..\..\EsyaPKCS11_Mod\src\." -I".\GeneratedFiles\." -I".\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtXML\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtSql\." "..\src\cms_asn\StreamEnvelopedData.h" -o ".\GeneratedFiles\$(Configuration)\moc_StreamEnvelopedData.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\src\cms_asn\StreamEnvelopedData.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_StreamEnvelopedData.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing StreamEnvelopedData.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DCMSLIBRARY_LIB -DQT_SQL_LIB -D_VC80_UPGRADE=0x0710 -D_WINDLL -I".\..\src\." -I".\..\src\cms_asn\." -I".\..\..\EsyaOrtakDLL_Mod\src\." -I".\..\..\EsyaOrtakLIB_Mod\src\." -I".\..\..\EsyaASN_Mod\include\." -I".\..\..\EsyaASN_Mod\include\rtxsrc\." -I".\..\..\EsyaASN_Mod\include\rtbersrc\." -I".\..\..\EsyaASN_Mod\include\rtsrc\." -I".\..\..\EsyaASN_Mod\src\Generated_ASN\." -I".\..\..\EsyaASN_Mod\src\kriptoasn\." -I".\..\..\EsyaASN_Mod\src\Wrapped_Classes\." -I".\..\..\EsyaKripto_Mod\src\." -I".\..\..\EsyaKripto_Mod\include\." -I".\..\..\EsyaPKCS11_Mod\src\." -I".\GeneratedFiles\." -I".\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtXML\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtSql\." "..\src\cms_asn\StreamEnvelopedData.h" -o ".\GeneratedFiles\$(Configuration)\moc_StreamEnvelopedData.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;..\src\cms_asn\StreamEnvelopedData.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(Configuration)\moc_StreamEnvelopedData.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" QtVersion="4.5.0" QtVersion_x0020_Win32="$(DefaultQtVersion)" UicDir=".\GeneratedFiles" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

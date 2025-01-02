@@ -1,0 +1,17 @@
+<asn1config>
+  <storage>list</storage>
+    
+  <module>
+    <name>Explicit</name>
+    <sourceFile>Explicit.asn</sourceFile>
+    <production name="Certificate">
+	<isPDU/>
+    </production>
+    <production name="CertificateSerialNumber">
+	<isBigInteger/>
+    </production>
+    <typePrefix>EXP_</typePrefix>
+    <valuePrefix>EXP_</valuePrefix>
+  </module>
+
+</asn1config>

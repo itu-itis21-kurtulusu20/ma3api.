@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="tr.gov.tubitak.uekae.esya.api.asn1viewer.Asn1SelectionForm">
+  <grid id="27dc6" binding="panelMain" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="500"/>
+    </constraints>
+    <properties>
+      <minimumSize width="500" height="500"/>
+      <preferredSize width="500" height="500"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="1f0ec" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="be681" class="javax.swing.JTextField" binding="filePathTextField" default-binding="true">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <text value="File Path"/>
+            </properties>
+          </component>
+          <component id="8f5c5" class="javax.swing.JButton" binding="makeLatestDecodeButton" default-binding="true">
+            <constraints border-constraint="East"/>
+            <properties>
+              <text value="MakeLatestDecode"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="849b" class="javax.swing.JButton" binding="decodeButton" default-binding="true">
+        <constraints border-constraint="South"/>
+        <properties>
+          <text value="Decode"/>
+        </properties>
+      </component>
+      <scrollpane id="ae2a5">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="6468" class="javax.swing.JTree" binding="treeAsn1Classes">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>

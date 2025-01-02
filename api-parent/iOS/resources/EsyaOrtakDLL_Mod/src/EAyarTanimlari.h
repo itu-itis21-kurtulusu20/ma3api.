@@ -1,0 +1,151 @@
+#ifndef __E_AYAR_TANIMLARI_H_
+#define __E_AYAR_TANIMLARI_H_
+
+#define AYAR_SNF_ACILIS_ISLEMLERI "AcilisIslemleri" 
+#define AYAR_ACILIS_ISLEMLERI_SERTIFIKA_KONTROLU_YAP "SertifikaKontroluYap" 
+#define AYAR_ACILIS_ISLEMLERI_KULLANICIDURUMRAPORLA "KullaniciDurumuRaporla" 
+#define AYAR_ACILIS_ISLEMLERI_UYARI_MESAJI_BEKLEME_SURESI  "UyariMesajiBeklemeSuresi" 
+#define AYAR_ACILIS_ISLEMLERI_SERTIFIKA_BITMEYE_YAKIN_HABER_VERME_SURESI "SertifikaBitmeyeYakinHaberVermeSuresi" 
+#define AYAR_ACILIS_ISLEMLERI_KURTARILANLAR_DIZIN_YOLU "KurtarilanlarDizinYolu"
+#define AYAR_ACILIS_ISLEMLERI_KART_PAROLA_SURE_KONTROLU_YAP "KartParolaSureKontroluYap"
+
+
+#define AYAR_SNF_EPOSTA "EPosta"
+#define AYAR_EPOSTA_GUVENLIKSEVIYESI "GuvenlikSeviyesi" 
+#define AYAR_EPOSTA_VARSAYILAN_GUVENLIK_SEVIYESI "VarsayilanGuvenlikSeviyesi" 
+#define AYAR_EPOSTA_KENDINE_SIFRELE "KendineSifrele" 
+#define AYAR_EPOSTA_REGISTER_IMAGES "RegisterImages" 
+#define AYAR_EPOSTA_IMAGE_TYPES "ImageTypes" 
+#define AYAR_EPOSTA_IMAGE_VIWER_2003 "ImageViewer2003" 
+#define AYAR_EPOSTA_IMAGE_VIWER_OTHER "ImageViewerOther" 
+#define AYAR_EPOSTA_DISABLE_EDIT_SIGNED_ENC_MAIL "DisableEditSignEncMail"
+#define AYAR_EPOSTA_OUTLOOK_2007_MAPI_KULLAN "Outlook2007MAPIKullan"
+
+
+#define AYAR_EPOSTA_GIZLI_SIMSIFALG "GizliSimSifAlg" 
+#define AYAR_EPOSTA_GIZLI_IMZOZETALG "GizliImzOzetAlg" 
+#define AYAR_EPOSTA_OZEL_SIMSIFALG "OzelSimSifAlg" 
+#define AYAR_EPOSTA_OZEL_IMZOZETALG "OzelImzOzetAlg" 
+#define AYAR_EPOSTA_HIZMETE_OZEL_SIMSIFALG "HizmeteOzelSimSifAlg" 
+#define AYAR_EPOSTA_HIZMETE_OZEL_IMZOZETALG "HizmeteOzelImzOzetAlg" 
+#define AYAR_EPOSTA_TASNIF_DISI_SIMSIFALG "TasnifDisiSimSifAlg" 
+#define AYAR_EPOSTA_TASNIF_DISI_IMZOZETALG "TasnifDisiImzOzetAlg" 
+
+#define AYAR_EPOSTA_YONETICI_MOD "YoneticiMod" 
+
+
+
+#define AYAR_SNF_PAROLA "Parola" 
+#define AYAR_PAROLA_ESKIMESURESI "EskimeSuresi" 
+#define AYAR_PAROLA_DEGISIMZORUNLU "DegisimZorunlu" 
+#define AYAR_PAROLA_PAROLAPRENSIBI "ParolaPrensibi" 
+#define AYAR_PAROLA_ESKIMEONCESIHABERVERMESURESI """EskimeOncesiHaberVermeSuresi" 
+#define AYAR_PAROLA_SONDEGISTIRMEZAMANI "SonDegistirmeZamani" 
+#define AYAR_PAROLA_EKRAN_BEKLETME_SURESI "EkranBekletmeSuresi"  
+#define AYAR_PAROLA_PAROLA_SAKLA		"ParolaSakla"
+#define AYAR_PAROLA_MAX_PAROLA_SAKLAMA_SURESI_SN "MaxParolaSaklamaSuresiSn"
+
+#define AYAR_SNF_ISTEMCIRAPORLAMA "IstemciRaporlama" 
+#define AYAR_ISTEMCIRAPORLAMA_SUNUCUIP "SunucuIP" 
+#define AYAR_ISTEMCIRAPORLAMA_SUNUCUPORT "SucunuPort" 
+#define AYAR_ISTEMCIRAPORLAMA_RAPORLAMANESNESI "RaporlamaNesnesi" 
+#define AYAR_ISTEMCIRAPORLAMA_PAKET_VERSIYON "PaketVersiyon" 
+#define AYAR_ISTEMCIRAPORLAMA_PAKET_GUNCELLEME_TARIHI "PaketGuncellemeTarihi" 
+#define AYAR_ISTEMCIRAPORLAMA_MODUL_ISIMLERI "ModulIsimleri" 
+
+#define AYAR_SNF_GDM "GDM" 
+#define AYAR_GDM_ETKINANABLE "EtkinEnable" 
+#define AYAR_GDM_CIKISENABLE "CikisEnable" 
+#define AYAR_GDM_SECENEKENABLE "SecenekEnable" 
+#define AYAR_GDM_THREADCOUNT	"ThreadCount" 
+#define AYAR_GDM_DOSYABULENABLE "DosyaBulEnable" 
+#define AYAR_GDM_IMAGEREGISTER "ImageRegister" 
+#define AYAR_GDM_MESSAGEBOXDELAY "MessageBoxDelay" 
+#define AYAR_GDM_DIZINLERDINLENSIN "DizinlerDinlensin"  //Dizinleri dinleme islemi su anda
+// aktif mi bilgisini tutar
+#define AYAR_GDM_VARSAYILANDIZINTIPI "VarsayilanDizinTipi"  
+#define AYAR_GDM_VARSAYILANOZNESECIMTIPI "VarsayilanOzneSecimTipi"  
+
+
+
+#define AYAR_SNF_ISLEMOZELLIKLERI "IslemOzellikleri" 
+#define AYAR_ISLEMOZELLIKLERI_TEMPPATH "TempDizinYolu" 
+#define AYAR_ISLEMOZELLIKLERI_SECUREPATH "SecureDizinYolu"
+#define AYAR_ISLEMOZELLIKLERI_VARSAYILANHEDEFDIZIN "VarsayilanHedefDizin"
+#define AYAR_ISLEMOZELLIKLERI_ATTRIBUTEKORU "AttributeKoru" 
+#define AYAR_ISLEMOZELLIKLERI_GUVENLIDIZINDEOLUSTUR "GuvenliDizindeOlustur" 
+#define AYAR_ISLEMOZELLIKLERI_SONUCDIALOGGOSTER "SonucDialogGoster" 
+#define AYAR_ISLEMOZELLIKLERI_DOSYASECENEKLERIGOSTER "DosyaSecenekleriGoster" 
+#define AYAR_ISLEMOZELLIKLERI_EKRANKORUYUCUSURESI "EkranKoruyucuSuresi" 
+#define AYAR_ISLEMOZELLIKLERI_ASLINIGUVENLISIL "AsliniGuvenliSil" 
+#define AYAR_ISLEMOZELLIKLERI_DURUMGOSTER "DurumGoster" 
+#define AYAR_ISLEMOZELLIKLERI_ISOVERRIDE "IsOverride" 
+#define AYAR_ISLEMOZELLIKLERI_ALTDIZINLERE_UYGULA "AltDizinlereUygula"  
+#define AYAR_ISLEMOZELLIKLERI_PROGRAM_DILI "ProgramDili"
+#define AYAR_ISLEMOZELLIKLERI_DOSYA_GIZLILIK_DERECESI "DosyaGizlilikDerecesi"
+#define AYAR_ISLEMOZELLIKLERI_PORTABLE_CALIS "PortableCalis"
+#define AYAR_ISLEMOZELLIKLERI_RASTGELE_SAYI_URETME_TIPI "RNGTipi"
+#define AYAR_ISLEMOZELLIKLERI_RASTGELE_SAYI_URETME_DLL "RNGDLL"
+#define AYAR_ISLEMOZELLIKLERI_SIL_GUNCELLEMEDE_ESKI_SILLERI_SIL "SilGuncellemedeEskiSILleriTemizle"
+#define AYAR_ISLEMOZELLIKLERI_KERMEN_TEMP_FILE_NAME_PREFIX "KermenTempFileNamePrefix" 
+#define AYAR_ISLEMOZELLIKLERI_WAITTIMEFORLOCK "WaitTimeForLock"
+
+#define AYAR_SNF_ALGORITMA "Algoritma" 
+#define AYAR_ALGORITMA_SIMSIFALG "SimSifAlg"  //Content Enc Alg
+#define AYAR_ALGORITMA_IMZOZETALG "ImzOzetAlg" 
+#define AYAR_ALGORITMA_PBESIFALG "PBESifAlg" 
+
+#define AYAR_SNF_SERTYARDIMCI "SertifikaYardimcisi" 
+#define AYAR_SERTYARDIMCI_SELFSERVISADRES "SelfServisAdres" 
+
+
+#define AYAR_SNF_KULSERT "KullaniciSertifika"
+
+#define AYAR_KULSERT_SON_KISISEL_IMZ_SERT_DEGER "SonImzalamaSertifikaDegeri"
+#define AYAR_KULSERT_SON_KISISEL_SIF_SERT_DEGER "SonSifrelemeSertifikaDegeri"
+#define AYAR_KULSERT_SON_KURUMSAL_SIF_SERT_DEGER "SonKurumsalSifrelemeSertifikaDegeri"
+
+#define AYAR_KULSERT_IMZYAYINCI "ImzYayinci" 
+#define AYAR_KULSERT_IMZSERINO "ImzSeriNo" 
+#define AYAR_KULSERT_SIFYAYINCI "SifYayinci" 
+#define AYAR_KULSERT_SIFSERINO "SifSeriNo" 
+
+#define AYAR_SNF_SERTDEPO "SertifikaDeposu" 
+#define AYAR_SERTDEPO_VARSAYILANDIZIN "VarsayilanDizin" 
+
+#define AYAR_SNF_SERTDOGRULAMA "SertifikaDogrulama" 
+#define AYAR_SERTDOGRULAMA_CEVRIMDISI_CALIS "CevrimdisiCalis"
+
+#define AYAR_SNF_MGM "MGM" 
+#define AYAR_MGM_GUVENLI_DIZIN_YOLU "GuvenliDizinYolu" 
+#define AYAR_MGM_GECICI_DIZIN_YOLU "GeciciDizinYolu" 
+#define AYAR_MGM_SONUC_EKRANINI_GOSTER "SonucEkraniniGoster" 
+#define AYAR_MGM_WEB_SM_ADRESI "WebSMAdresi" 
+#define AYAR_MGM_GUNCEL_SERTIFIKA_BULMA_WEB_SM_ADRESI "GuncelSertifikaBulmaWebSMAdresi"
+#define AYAR_MGM_LISANS_DOSYA_YOLU "LisansDosyaYolu" 
+#define AYAR_MGM_BILGI_DIZIN_RECURSIVE "AltDizinlerideKontrolEt" //Dizinin imzali mi þifreli olduðunu kontrol ederken at dizinlere kadar kontrol et
+#define AYAR_MGM_WEB_SERTIFIKA_SAGLAYICI_ADRES "WebSertifikaSaglayiciAdres" 
+#define AYAR_MGM_CALISILACAK_LDAP_TIPI "CalisilacakLDAPTipi"
+#define AYAR_MGM_LOCAL_DC_DENE "LocalDCDene"
+#define AYAR_MGM_TUM_LDAPLARI_DENE "TumLDAPlariDene"
+
+
+#define AYAR_SNF_ZAMAN_DAMGASI "ZamanDamgasi"
+#define AYAR_ZAMAN_DAMGASI_MAIL_ZAMAN_DAMGALI_GONDER "MailZamanDamgaliGonder"
+#define AYAR_ZAMAN_DAMGASI_SUNUCU_IP "SunucuIP"
+#define AYAR_ZAMAN_DAMGASI_SUNUCU_PORT "SunucuPort"
+#define AYAR_ZAMAN_DAMGASI_VEKIL_SUNUCU_IP "VekilSunucuIP"
+#define AYAR_ZAMAN_DAMGASI_VEKIL_SUNUCU_PORT "VekilSunucuPort"
+#define AYAR_ZAMAN_DAMGASI_KULLANICI_NO "KullaniciNo"
+#define AYAR_ZAMAN_DAMGASI_PAROLA "Parola"
+#define AYAR_ZAMAN_DAMGASI_OZET_ALGORITMASI "OzetAlgoritmasi"
+
+
+#define AYAR_SNF_LOG				  "LOG" 
+#define AYAR_LOG_LOG_DIZIN_YOLU	  "LogDizinYolu" 
+#define AYAR_LOG_LOG_ESIK_DEGERI	  "LogEsikDegeri" 
+
+#define AYAR_DATEFORMAT	  "dd.MM.yyyy hh:mm:ss.zzz" 
+#define AYAR_GUN_AY_YIL_FORMAT "dd/MM/yyyy"
+
+#endif

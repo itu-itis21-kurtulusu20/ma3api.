@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvCertList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/text_CertList" />
+
+    <ListView
+        android:id="@+id/lstCert"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/text_FileName" />
+
+        <TextView
+            android:id="@+id/tvFilePath"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/hint_select_file"
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/btnSelectFile"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/txt_Parola" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:hint="@string/hint_Enter_Password"
+            android:inputType="textPassword"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSign"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="228dp"
+            android:text="@string/txt_Sign" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

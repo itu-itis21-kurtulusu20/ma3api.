@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<assembly
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+	<id>cmsenvelope</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+    <files>
+        <file>
+            <source>..\dlls\x64\System.Data.SQLite.dll</source>
+            <outputDirectory>lib/x64</outputDirectory>
+        </file>
+        <file>
+            <source>..\dlls\System.Data.SQLite.dll</source>
+            <outputDirectory>lib/x86</outputDirectory>
+        </file>
+    </files>
+	<fileSets>
+		<fileSet>
+			<directory>${project.basedir}\..\..\api-cmsenvelope\csharp\api-cmsenvelope-bundle\bin\Release</directory>
+			<outputDirectory>lib/AnyCPU</outputDirectory>
+			<includes>
+				<include>*.dll</include>
+				<include>./tr-TR/**</include>
+				<include>./en-US/**</include>
+			</includes>
+			<excludes>
+				<exclude>ma3api-*.dll</exclude>
+				<exclude>*.config</exclude>
+				<exclude>*.pdb</exclude>
+				<exclude>*.exe</exclude>
+				<exclude>System.Data.SQLite.dll</exclude>
+			</excludes>
+		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}/obfuscated_envelope</directory>
+			<outputDirectory>lib/AnyCPU</outputDirectory>
+			<includes>
+				<include>*.dll</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}\..\..\api-cmsenvelope\sample-policy</directory>
+			<outputDirectory>config</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}\..\..\api-cmsenvelope\csharp\api-cmsenvelope-bundle</directory>
+			<outputDirectory>ornekler</outputDirectory>
+			<excludes>
+				<exclude>./bin/**</exclude>
+				<exclude>./obj/**</exclude>
+			</excludes>
+		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}\..\docs\manual</directory>
+			<outputDirectory></outputDirectory>
+			<includes>
+				<include>MA3 API Kullanim Kilavuzu.pdf</include>
+				<include>MA3 API KULLANICI LISANS SOZLESMESI.txt</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>${project.basedir}\..\..\api-cmsenvelope\docs\manual</directory>
+			<outputDirectory></outputDirectory>
+			<includes>
+				<include>./*.txt</include>
+				<include>./*.pdf</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</assembly>

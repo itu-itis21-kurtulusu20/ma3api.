@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="0x00000000" xml:space="preserve">
+    <value>CKR_OK</value>
+  </data>
+  <data name="0x00000001" xml:space="preserve">
+    <value>CKR_CANCEL</value>
+  </data>
+  <data name="0x00000002" xml:space="preserve">
+    <value>CKR_HOST_MEMORY</value>
+  </data>
+  <data name="0x00000003" xml:space="preserve">
+    <value>CKR_SLOT_ID_INVALID</value>
+  </data>
+  <data name="0x00000005" xml:space="preserve">
+    <value>CKR_GENERAL_ERROR</value>
+  </data>
+  <data name="0x00000006" xml:space="preserve">
+    <value>CKR_FUNCTION_FAILED</value>
+  </data>
+  <data name="0x00000007" xml:space="preserve">
+    <value>CKR_ARGUMENTS_BAD</value>
+  </data>
+  <data name="0x00000008" xml:space="preserve">
+    <value>CKR_NO_EVENT</value>
+  </data>
+  <data name="0x00000009" xml:space="preserve">
+    <value>CKR_NEED_TO_CREATE_THREADS</value>
+  </data>
+  <data name="0x0000000A" xml:space="preserve">
+    <value>CKR_CANT_LOCK</value>
+  </data>
+  <data name="0x00000010" xml:space="preserve">
+    <value>CKR_ATTRIBUTE_READ_ONLY</value>
+  </data>
+  <data name="0x00000011" xml:space="preserve">
+    <value>CKR_ATTRIBUTE_SENSITIVE</value>
+  </data>
+  <data name="0x00000012" xml:space="preserve">
+    <value>CKR_ATTRIBUTE_TYPE_INVALID</value>
+  </data>
+  <data name="0x00000013" xml:space="preserve">
+    <value>CKR_ATTRIBUTE_VALUE_INVALID</value>
+  </data>
+  <data name="0x00000020" xml:space="preserve">
+    <value>CKR_DATA_INVALID</value>
+  </data>
+  <data name="0x00000021" xml:space="preserve">
+    <value>CKR_DATA_LEN_RANGE</value>
+  </data>
+  <data name="0x00000030" xml:space="preserve">
+    <value>CKR_DEVICE_ERROR</value>
+  </data>
+  <data name="0x00000031" xml:space="preserve">
+    <value>CKR_DEVICE_MEMORY</value>
+  </data>
+  <data name="0x00000032" xml:space="preserve">
+    <value>CKR_DEVICE_REMOVED</value>
+  </data>
+  <data name="0x00000040" xml:space="preserve">
+    <value>CKR_ENCRYPTED_DATA_INVALID</value>
+  </data>
+  <data name="0x00000041" xml:space="preserve">
+    <value>CKR_ENCRYPTED_DATA_LEN_RANGE</value>
+  </data>
+  <data name="0x00000050" xml:space="preserve">
+    <value>CKR_FUNCTION_CANCELED</value>
+  </data>
+  <data name="0x00000051" xml:space="preserve">
+    <value>CKR_FUNCTION_NOT_PARALLEL</value>
+  </data>
+  <data name="0x00000054" xml:space="preserve">
+    <value>CKR_FUNCTION_NOT_SUPPORTED</value>
+  </data>
+  <data name="0x00000060" xml:space="preserve">
+    <value>CKR_KEY_HANDLE_INVALID</value>
+  </data>
+  <data name="0x00000062" xml:space="preserve">
+    <value>CKR_KEY_SIZE_RANGE</value>
+  </data>
+  <data name="0x00000063" xml:space="preserve">
+    <value>CKR_KEY_TYPE_INCONSISTENT</value>
+  </data>
+  <data name="0x00000064" xml:space="preserve">
+    <value>CKR_KEY_NOT_NEEDED</value>
+  </data>
+  <data name="0x00000065" xml:space="preserve">
+    <value>CKR_KEY_CHANGED</value>
+  </data>
+  <data name="0x00000066" xml:space="preserve">
+    <value>CKR_KEY_NEEDED</value>
+  </data>
+  <data name="0x00000067" xml:space="preserve">
+    <value>CKR_KEY_INDIGESTIBLE</value>
+  </data>
+  <data name="0x00000068" xml:space="preserve">
+    <value>CKR_KEY_FUNCTION_NOT_PERMITTED</value>
+  </data>
+  <data name="0x00000069" xml:space="preserve">
+    <value>CKR_KEY_NOT_WRAPPABLE</value>
+  </data>
+  <data name="0x0000006A" xml:space="preserve">
+    <value>CKR_KEY_UNEXTRACTABLE</value>
+  </data>
+  <data name="0x00000070" xml:space="preserve">
+    <value>CKR_MECHANISM_INVALID</value>
+  </data>
+  <data name="0x00000071" xml:space="preserve">
+    <value>CKR_MECHANISM_PARAM_INVALID</value>
+  </data>
+  <data name="0x00000082" xml:space="preserve">
+    <value>CKR_OBJECT_HANDLE_INVALID</value>
+  </data>
+  <data name="0x00000090" xml:space="preserve">
+    <value>CKR_OPERATION_ACTIVE</value>
+  </data>
+  <data name="0x00000091" xml:space="preserve">
+    <value>CKR_OPERATION_NOT_INITIALIZED</value>
+  </data>
+  <data name="0x000000A0" xml:space="preserve">
+    <value>CKR_PIN_INCORRECT</value>
+  </data>
+  <data name="0x000000A1" xml:space="preserve">
+    <value>CKR_PIN_INVALID</value>
+  </data>
+  <data name="0x000000A2" xml:space="preserve">
+    <value>CKR_PIN_LEN_RANGE</value>
+  </data>
+  <data name="0x000000A3" xml:space="preserve">
+    <value>CKR_PIN_EXPIRED</value>
+  </data>
+  <data name="0x000000A4" xml:space="preserve">
+    <value>CKR_PIN_LOCKED</value>
+  </data>
+  <data name="0x000000B0" xml:space="preserve">
+    <value>CKR_SESSION_CLOSED</value>
+  </data>
+  <data name="0x000000B1" xml:space="preserve">
+    <value>CKR_SESSION_COUNT</value>
+  </data>
+  <data name="0x000000B3" xml:space="preserve">
+    <value>CKR_SESSION_HANDLE_INVALID</value>
+  </data>
+  <data name="0x000000B4" xml:space="preserve">
+    <value>CKR_SESSION_PARALLEL_NOT_SUPPORTED</value>
+  </data>
+  <data name="0x000000B5" xml:space="preserve">
+    <value>CKR_SESSION_READ_ONLY</value>
+  </data>
+  <data name="0x000000B6" xml:space="preserve">
+    <value>CKR_SESSION_EXISTS</value>
+  </data>
+  <data name="0x000000B7" xml:space="preserve">
+    <value>CKR_SESSION_READ_ONLY_EXISTS</value>
+  </data>
+  <data name="0x000000B8" xml:space="preserve">
+    <value>CKR_SESSION_READ_WRITE_SO_EXISTS</value>
+  </data>
+  <data name="0x000000C0" xml:space="preserve">
+    <value>CKR_SIGNATURE_INVALID</value>
+  </data>
+  <data name="0x000000C1" xml:space="preserve">
+    <value>CKR_SIGNATURE_LEN_RANGE</value>
+  </data>
+  <data name="0x000000D0" xml:space="preserve">
+    <value>CKR_TEMPLATE_INCOMPLETE</value>
+  </data>
+  <data name="0x000000D1" xml:space="preserve">
+    <value>CKR_TEMPLATE_INCONSISTENT</value>
+  </data>
+  <data name="0x000000E0" xml:space="preserve">
+    <value>CKR_TOKEN_NOT_PRESENT</value>
+  </data>
+  <data name="0x000000E1" xml:space="preserve">
+    <value>CKR_TOKEN_NOT_RECOGNIZED</value>
+  </data>
+  <data name="0x000000E2" xml:space="preserve">
+    <value>CKR_TOKEN_WRITE_PROTECTED</value>
+  </data>
+  <data name="0x000000F0" xml:space="preserve">
+    <value>CKR_UNWRAPPING_KEY_HANDLE_INVALID</value>
+  </data>
+  <data name="0x000000F1" xml:space="preserve">
+    <value>CKR_UNWRAPPING_KEY_SIZE_RANGE</value>
+  </data>
+  <data name="0x000000F2" xml:space="preserve">
+    <value>CKR_UNWRAPPING_KEY_TYPE_INCONSISTENT</value>
+  </data>
+  <data name="0x00000100" xml:space="preserve">
+    <value>CKR_USER_ALREADY_LOGGED_IN</value>
+  </data>
+  <data name="0x00000101" xml:space="preserve">
+    <value>CKR_USER_NOT_LOGGED_IN</value>
+  </data>
+  <data name="0x00000102" xml:space="preserve">
+    <value>CKR_USER_PIN_NOT_INITIALIZED</value>
+  </data>
+  <data name="0x00000103" xml:space="preserve">
+    <value>CKR_USER_TYPE_INVALID</value>
+  </data>
+  <data name="0x00000104" xml:space="preserve">
+    <value>CKR_USER_ANOTHER_ALREADY_LOGGED_IN</value>
+  </data>
+  <data name="0x00000105" xml:space="preserve">
+    <value>CKR_USER_TOO_MANY_TYPES</value>
+  </data>
+  <data name="0x00000110" xml:space="preserve">
+    <value>CKR_WRAPPED_KEY_INVALID</value>
+  </data>
+  <data name="0x00000112" xml:space="preserve">
+    <value>CKR_WRAPPED_KEY_LEN_RANGE</value>
+  </data>
+  <data name="0x00000113" xml:space="preserve">
+    <value>CKR_WRAPPING_KEY_HANDLE_INVALID</value>
+  </data>
+  <data name="0x00000114" xml:space="preserve">
+    <value>CKR_WRAPPING_KEY_SIZE_RANGE</value>
+  </data>
+  <data name="0x00000115" xml:space="preserve">
+    <value>CKR_WRAPPING_KEY_TYPE_INCONSISTENT</value>
+  </data>
+  <data name="0x00000120" xml:space="preserve">
+    <value>CKR_RANDOM_SEED_NOT_SUPPORTED</value>
+  </data>
+  <data name="0x00000121" xml:space="preserve">
+    <value>CKR_RANDOM_NO_RNG</value>
+  </data>
+  <data name="0x00000150" xml:space="preserve">
+    <value>CKR_BUFFER_TOO_SMALL</value>
+  </data>
+  <data name="0x00000160" xml:space="preserve">
+    <value>CKR_SAVED_STATE_INVALID</value>
+  </data>
+  <data name="0x00000170" xml:space="preserve">
+    <value>CKR_INFORMATION_SENSITIVE</value>
+  </data>
+  <data name="0x00000180" xml:space="preserve">
+    <value>CKR_STATE_UNSAVEABLE</value>
+  </data>
+  <data name="0x00000190" xml:space="preserve">
+    <value>CKR_CRYPTOKI_NOT_INITIALIZED</value>
+  </data>
+  <data name="0x00000191" xml:space="preserve">
+    <value>CKR_CRYPTOKI_ALREADY_INITIALIZED</value>
+  </data>
+  <data name="0x000001A0" xml:space="preserve">
+    <value>CKR_MUTEX_BAD</value>
+  </data>
+  <data name="0x000001A1" xml:space="preserve">
+    <value>CKR_MUTEX_NOT_LOCKED</value>
+  </data>
+  <data name="0x00000200" xml:space="preserve">
+    <value>CKR_FUNCTION_REJECTED</value>
+  </data>
+  <data name="0x80000000" xml:space="preserve">
+    <value>CKR_VENDOR_DEFINED</value>
+  </data>
+  <data name="INCORRECT_PIN" xml:space="preserve">
+    <value>Hatalı PIN.</value>
+  </data>
+  <data name="INCORRECT_PIN_FINAL_TRY" xml:space="preserve">
+    <value>Hatalı PIN. Bir sonraki hataı girişte PIN kilitlenecektir.</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Tamam</value>
+  </data>
+  <data name="PIN_LOCKED" xml:space="preserve">
+    <value>PIN kilitli.</value>
+  </data>
+</root>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policy>
+    <find>
+        <trustedcertificate>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.certificate.trusted.TrustedCertificateFinderFromFileSystem">
+                <param name="dizin" value="T:\api-xmlsignature\testdata\pt2010\CryptographicMaterial\SCOK\trusted\"/>
+            </class>
+        </trustedcertificate>
+        <certificate>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.certificate.CertificateFinderFromFile">
+                <param name="dosyayolu" value="T:\api-xmlsignature\testdata\pt2010\CryptographicMaterial\SCOK\LevelBCAOK.crt"/>
+            </class>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.certificate.CertificateFinderFromFile">
+                <param name="dosyayolu" value="T:\api-xmlsignature\testdata\pt2010\CryptographicMaterial\SCOK\LevelACAOK.crt"/>
+            </class>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.certificate.CertificateFinderFromFile">
+                <param name="dosyayolu" value="T:\api-xmlsignature\testdata\pt2010\CryptographicMaterial\SCOK\TSAOK.crt"/>
+            </class>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.certificate.CertificateFinderFromHTTP"/>
+        </certificate>
+        <rev>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.crl.CRLFinderFromFile">
+                <param name="dosyayolu" value="T:\api-xmlsignature\testdata\pt2010\CryptographicMaterial\SCOK\crls\RootCAOK.crl"/>
+            </class>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.crl.CRLFinderFromFile">
+                <param name="dosyayolu" value="T:\api-xmlsignature\testdata\pt2010\CryptographicMaterial\SCOK\crls\LevelACAOK.crl"/>
+            </class>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.crl.CRLFinderFromFile">
+                <param name="dosyayolu" value="T:\api-xmlsignature\testdata\pt2010\CryptographicMaterial\SCOK\crls\LevelBCAOK.crl"/>
+            </class>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.crl.CRLFinderFromHTTP"/>
+      
+        </rev>
+    </find>
+    <save/>
+    <match>
+        <certificate>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.match.certificate.IssuerSubjectMatcher"/>
+            <!--class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.match.certificate.KeyIDMatcher"/-->
+        </certificate>
+        <crl>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.match.crl.CRLIssuerMatcher"/>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.match.crl.CRLDistributionPointOnlyContainsMatcher"/>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.match.crl.CRLDistributionPointMatcher"/>
+        </crl>
+    </match>
+    <validate>
+        <certificate>
+            <self>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.SignatureAlgConsistencyChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.PositiveSerialNumberChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.CertificateExtensionChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.CertificateDateChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.VersionChecker"/>
+            </self>
+            <issuer>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.BasicConstraintCAChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.KeyIdentifierChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.CertificateKeyUsageChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.CertificateNameChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.PathLenConstraintChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.CertificateSignatureChecker"/>
+            </issuer>
+            <revocation>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.revocation.RevocationFromOCSPChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.revocation.RevocationFromCRLChecker"/>
+            </revocation>
+        </certificate>
+        <crl>
+            <crlself>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.crl.self.CRLDateChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.crl.self.CRLExtensionChecker"/>
+            </crlself>
+            <crlissuer>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.crl.issuer.CRLSignatureChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.crl.issuer.CRLKeyUsageChecker"/>
+            </crlissuer>
+        </crl>
+        <oscp>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.ocsp.OCSPSignatureChecker"/>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.ocsp.SigningCertificateChecker"/>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.ocsp.ResponseStatusChecker"/>
+        </oscp>
+    </validate>
+    <parameters>
+        <UserPolicySet value="2.5.29.32.0"/>
+        <InitialExplicitPolicy value="false"/>
+        <InitialAnyPolicyInhibit value="false"/>
+        <InitialPolicyMappingInhibit value="false"/>
+    </parameters>
+</policy>

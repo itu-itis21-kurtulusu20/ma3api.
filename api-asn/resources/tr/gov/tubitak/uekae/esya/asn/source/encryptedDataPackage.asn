@@ -1,0 +1,18 @@
+encryptedDataPackage
+
+DEFINITIONS IMPLICIT TAGS ::=
+
+BEGIN
+
+-- EXPORTS ALL --
+
+EncryptedDataPackage ::= SEQUENCE
+{
+ 	version  	     [0] INTEGER,
+ 	wrappedKey       [1] OCTET STRING,
+ 	iv               [2] OCTET STRING,
+ 	aad              [3] OCTET STRING OPTIONAL,
+	encryptedData    [4] OCTET STRING
+}
+
+END

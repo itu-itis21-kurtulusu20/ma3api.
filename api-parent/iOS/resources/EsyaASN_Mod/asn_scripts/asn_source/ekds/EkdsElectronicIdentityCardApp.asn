@@ -1,0 +1,225 @@
+EkdsElectronicIdentityCardApp
+
+DEFINITIONS IMPLICIT TAGS ::= 
+
+BEGIN
+
+IMPORTS
+
+	Certificate		              FROM Explicit
+	CardHolderName	              FROM EkdsBaseDataDefs
+	CardValidityDate              FROM EkdsBaseDataDefs
+	DataObjectDigitalSignature    FROM EkdsCommonDataObjectDefs
+	DataObjectErrorDetectionCode  FROM EkdsCommonDataObjectDefs;
+
+--
+--
+-- APPLICATION (MF)
+--
+--
+
+ElectronicIdentityCardApplication ::= SET
+{
+  cardHolderUID          CardHolderUniqueIdentifierDataObject,
+  cardIssuerCert         CardIssuerCertificateDataObject,
+  cardHolderFingerprint  FingerPrintDataObject,
+  cardHolderVeinPrint    VeinPrintDataObject,
+  cardHolderFacialImage  FacialImageDataObject,
+  cardHolderIdentity			PersonalInformationDataObject,
+  cardHolderDataAvailability	CardHolderDataAvailabilityDataObject
+}
+
+--
+--
+-- DATA OBJECTS (DF'S)
+--
+--
+
+CardHolderUniqueIdentifierDataObject ::= [APPLICATION 1] SEQUENCE
+{
+  chuidData        [0] CHUIDData,
+  digitalSignature [1] DataObjectDigitalSignature,
+  errDetectionCode [2] DataObjectErrorDetectionCode
+}
+
+CHUIDData ::= SEQUENCE
+{
+  cardSerialNo     [0] CardSerialNumber,
+  cardHolderID     [1] CardHolderIdentifier,
+  cardHolderName   [2] CardHolderName,
+  cardValidThru    [3] CardValidityDate
+}
+
+CardIssuerCertificateDataObject ::= [APPLICATION 2] Certificate  -- Bkz. ITU-T X.509
+
+FingerPrintDataObject ::= [APPLICATION 3] SEQUENCE
+{
+  cardHolderExcused     [0] CardHolderExcused, 
+  fingerPrintData       [1] FPData,
+  dataObjectAttributes  [2] DataObjectAttributes,
+  errDetectionCode      [3] DataObjectErrorDetectionCode
+}
+
+FPData ::=SEQUENCE
+{
+  cardDesc              [0] CardDescriptor,
+  leftHandFingerPrint   [1] FingerPrintData,
+  rightHandFingerPrint  [2] FingerPrintData
+}
+
+CardHolderExcused ::= BOOLEAN
+
+VeinPrintDataObject ::= [APPLICATION 4] SEQUENCE
+{
+  cardHolderExcused    [0] CardHolderExcused,
+  veinPrintData        [1] VPData,
+  dataObjectAttributes [2] DataObjectAttributes,
+  errDetectionCode     [3] DataObjectErrorDetectionCode
+}
+
+VPData ::= SEQUENCE
+{
+  cardDesc             [0] CardDescriptor,
+  leftHandVeinPrint    [1] VeinPrintData,
+  rigthHandVeinPrint   [2] VeinPrintData
+}
+
+FacialImageDataObject ::= [APPLICATION 5] SEQUENCE
+{
+  facialImageData      [0] FIData,
+  dataObjectAttributes [1] DataObjectAttributes,
+  errDetectionCode     [2] DataObjectErrorDetectionCode
+}
+
+FIData ::= SEQUENCE
+{
+  cardDesc             [0] CardDescriptor,
+  imageData            [1] FacialImageData
+}
+
+PersonalInformationDataObject ::= [APPLICATION 6] SEQUENCE
+{
+  personelInfoData     [0] PIData,
+  dataObjectAttributes [1] DataObjectAttributes,
+  errDetectionCode     [2] DataObjectErrorDetectionCode
+}
+
+PIData ::= SEQUENCE
+{
+  cardDescriptor       [0] CardDescriptor,
+  identityData         [1] IdentityData,
+  registryData         [2] IdentityRegistryData
+}
+
+CardHolderDataAvailabilityDataObject ::= [APPLICATION 11] SEQUENCE
+{
+  fingerPrintAvailable  [0] BOOLEAN,
+  veinPrintAvailable    [1] BOOLEAN,
+  facialImageAvailable  [2] BOOLEAN,
+  identityDataAvailable [3] BOOLEAN
+}
+
+
+--
+--
+-- SUB DATA DEFINITIONS
+--
+--
+
+IdentityRegistryData ::= SEQUENCE
+{
+  bookletSerialNumber [0]  UTF8String    (SIZE(1..3)),	 -- Cüzdan seri no
+  bookletNumber       [1]  UTF8String    (SIZE(1..6)),	 -- Cüzdan numarasý
+  registryNumber      [2]  NumericString (SIZE(1..7)),	 -- Kayýt numarasý
+  city                [3]  UTF8String    (SIZE(2..32)),	 -- Kayýtlý olduðu il
+  cityCode            [4]  NumericString (SIZE(1..3)),	 -- Kayýtlý olduðu ilin (trafik) kodu
+  cityWard            [5]  UTF8String    (SIZE(2..64)),	 -- Kayýtlý olduðu ilçe
+  cityWardCode        [6]  NumericString (SIZE(1..6)),	 -- Kayýtlý olduðu ilçe kodu
+  district            [7]  UTF8String    (SIZE(2..32)),	 -- Kayýtlý olduðu mahalle/köy (cilt tipi)
+  volumeNumber        [8]  NumericString (SIZE(1..6)),	 -- Cilt numarasý
+  familyRowNumber     [9]  NumericString (SIZE(1..6)),	 -- Aile sýra numarasý
+  personRowNumber     [10] NumericString (SIZE(1..6)),	 -- Birey sýra numarasý
+  registeredIn        [11] UTF8String    (SIZE(2..32)),	 -- Verildiði yer
+  registryReason      [12] UTF8String    (SIZE(2..24)),	 -- Veriliþ nedeni
+  registryDate        [13] GeneralizedTime				 -- Veriliþ tarihi
+}
+
+IdentityData ::= SEQUENCE
+{
+  citizenNumber       [0] NumericString (SIZE(1..12)),   -- T.C. kimlik numarasý
+  citizenName			[1] UTF8String    (SIZE(2..64)), -- Adý
+  citizenSurname		[2] UTF8String    (SIZE(2..64)), -- Soyadý   
+  citizenFatherName		[3] UTF8String    (SIZE(0..64)), -- Baba adý  
+  citizenFatherSurname	[4] UTF8String    (SIZE(0..64)), -- Baba soyadý  
+  citizenMotherName		[5] UTF8String    (SIZE(0..64)), -- Ana adý  
+  citizenMotherSurname	[6] UTF8String    (SIZE(0..64)), -- Ana soyadý  
+  citizenBirthplace		[7] UTF8String    (SIZE(2..64)), -- Doðum yeri 
+  citizenBirthDate		[8] GeneralizedTime,             -- Doðum tarihi  
+
+  citizenSexuality	    [9] ENUMERATED {				 -- Cinsiyeti
+  							male(0),
+  							female(1),
+							notInitialized(2)},
+
+  citizenMaritalStatus  [10] ENUMERATED {			  	 -- Medeni hali
+  							  single(0),                 -- Bekar
+  							  married(1),                -- Evli
+  							  widowed(2),                -- Dul
+  							  divorced(3),               -- Boþanmýþ
+							cancelled(4),             -- Evliliðin Ýptali
+							annulment(5),             -- Evliliðin Feshi
+							notInitialized(6)},
+
+  citizenStatus         [11] UTF8String (SIZE(0..24)),   -- Durumu
+  citizenFormerSurname  [12] UTF8String (SIZE(0..64)),   -- Önceki soyadý
+  citizenReligion       [13] UTF8String (SIZE(0..32)),   -- Dini
+  citizenHandicap	    [14] INTEGER (0..100),           -- Özürlülük oraný
+
+  citizenBloodGroup	    [15] ENUMERATED {				 -- Kan grubu
+  								group_O(0),
+  								group_A(1),
+  								group_B(2),
+  								group_AB(3),
+								notInitialized(4)},
+
+  citizenBloodRhesusFactor [16] ENUMERATED {			 -- Kan RH faktoru
+  								positive(0),
+  								negative(1),
+								notInitialized(2)}
+}
+
+-- Sayýsal parmakizi verisi için Bkz. ISO-1974, Part 4
+-- Sayýsal yüz resmi kodlamasý için Bkz. JPEG 2000, ISO-19794, Part 5
+-- Sayýsal damarizi verisi için Bkz. ???
+
+FingerPrintData ::= SEQUENCE
+{
+  finger    [0] ENUMERATED { 
+				  thumb		  (0), 
+				  pointerFinger (1), 
+				  middleFinger  (2), 
+				  ringFinger    (3), 
+				  littleFinger  (4),
+				  notInitialized(5)},
+
+  imageData [1] OCTET STRING (SIZE(0..8192))
+}
+
+FacialImageData ::= OCTET STRING (SIZE(0..12288))
+
+VeinPrintData ::= SEQUENCE
+{
+  finger    [0] ENUMERATED { 
+				  thumb		    (0), 
+				  pointerFinger (1), 
+				  middleFinger  (2), 
+				  ringFinger    (3), 
+				  littleFinger  (4),
+				  notInitialized(5)},
+
+  imageData [1] OCTET STRING (SIZE(0..512))
+}
+
+
+
+END

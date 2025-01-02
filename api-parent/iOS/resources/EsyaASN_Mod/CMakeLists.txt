@@ -1,0 +1,16 @@
+PROJECT(EsyaASN)
+
+SET(KERMEN_MAIN_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../)
+include("${CMAKE_CURRENT_SOURCE_DIR}/../cmake/version.cmake") 
+include("${CMAKE_CURRENT_SOURCE_DIR}/../cmake/KermenCMakeLib.cmake") 
+include("${CMAKE_CURRENT_SOURCE_DIR}/../cmake/includeHeaders.cmake") 
+SET(KERMEN_CMAKE_LIB_TANIMLANDI TRUE)
+
+libOlustur(EsyaASN SHARED
+	WINLIBS EsyaOrtakDLL asn
+	LNXLIBS EsyaOrtakDLL asn1ber asn1rt
+	WINDEFS -DASN_LIB /wd4996 -DBUILDDLL
+	LNXDEFS -DASN_LIB -DBUILDDLL 
+	TESTIMYOK
+    )
+

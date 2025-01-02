@@ -1,0 +1,77 @@
+ASN_SertifikaDeposu
+
+DEFINITIONS IMPLICIT TAGS ::=
+
+BEGIN
+
+-- EXPORTS ALL --
+
+IMPORTS 
+	CertificateSerialNumber,Time FROM Explicit
+
+	KeyUsage, SubjectKeyIdentifier FROM Implicit;
+
+DepoASNKokSertifikalar ::= SEQUENCE OF DepoASNKokSertifika
+	
+DepoASNKokSertifika ::= CHOICE
+{
+	eklenecekSertifika [0] DepoASNEklenecekKokSertifika,
+	silinecekSertifika [1] DepoASNSilinecekKokSertifika
+}
+
+
+DepoASNEklenecekKokSertifika ::= SEQUENCE
+{
+ 	kokSertifikaValue  	 	[0] OCTET STRING,
+	kokSertifikaHash    	[1] OCTET STRING,
+	kokSerialNumber		 	[2] CertificateSerialNumber,
+	kokIssuerName			[3] Name,
+	kokSubjectName			[4] Name,
+	kokStartDate 			[5] Time,
+ 	kokEndDate     			[6] Time,
+	kokKeyUsage 			[7] KeyUsage,
+	kokSubjectKeyIdentifier [8] SubjectKeyIdentifier, 
+	kokSertifikaTipi  		[9] KokSertifikaTipi,
+	kokGuvenSeviyesi  		[10] KOKGuvenSeviyesi
+}
+
+
+KokSertifikaTipi ::= ENUMERATED
+{
+  kokSertifika            	(1),
+  caprazSertifika 		(2),
+  smSertifikasi   		(3),
+  hizmetSertifikasi 		(4)
+}
+
+KOKGuvenSeviyesi ::= ENUMERATED
+{
+  kanuni     		(1),
+  kurumsal 		(2),
+  kisisel 		(3)
+}
+
+DepoASNSilinecekKokSertifika ::= SEQUENCE
+{
+	kokSertifikaValue  	[0] OCTET STRING,
+	kokSerialNumber		[1] CertificateSerialNumber,
+	kokIssuerName		[2] Name,
+	kokSubjectName		[3] Name
+}
+
+DepoASNImzalar ::= SEQUENCE OF DepoASNImza
+
+DepoASNImza ::= SEQUENCE 
+{
+	imzalanan	[0] DepoASNKokSertifika,
+	imza		[1] DepoASNRawImza
+}
+
+DepoASNRawImza::= SEQUENCE
+{
+	publicKeyHash	[0] OCTET STRING,
+	imza		[1] OCTET STRING
+}
+
+
+END

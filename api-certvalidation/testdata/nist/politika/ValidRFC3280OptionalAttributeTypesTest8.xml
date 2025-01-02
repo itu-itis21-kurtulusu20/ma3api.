@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policy>
+    <find>
+        <trustedcertificate>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.certificate.trusted.TrustedCertificateFinderFromFileSystem">
+                <param name="dizin" value="T:\api-certvalidation\testdata\nist\kok"></param>
+            </class>
+        </trustedcertificate>
+        <certificate>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.certificate.CertificateFinderFromFile">
+                <param name="dosyayolu"
+                       value="T:\api-certvalidation\testdata\nist\certs\RFC3280OptionalAttributeTypesCACert.crt"></param>
+            </class>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.certificate.CertificateFinderFromFile">
+                <param name="dosyayolu"
+                       value="T:\api-certvalidation\testdata\nist\certs\TrustAnchorRootCertificate.crt"></param>
+            </class>
+        </certificate>
+        <oscp>
+        </oscp>
+    </find>
+    <save/>
+    <match>
+        <certificate>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.match.certificate.IssuerSubjectMatcher"/>
+        </certificate>
+        <crl>
+            <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.match.crl.CRLIssuerMatcher"/>
+        </crl>
+    </match>
+    <validate>
+        <certificate>
+            <self>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.SignatureAlgConsistencyChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.PositiveSerialNumberChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.CertificateExtensionChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.CertificateDateChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.self.VersionChecker"/>
+            </self>
+            <issuer>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.BasicConstraintCAChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.KeyIdentifierChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.CertificateKeyUsageChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.CertificateNameChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.PathLenConstraintChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.issuer.CertificateSignatureChecker"/>
+            </issuer>
+            <revocation>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.certificate.revocation.RevocationFromCRLChecker">
+					<find>
+						<class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.crl.CRLFinderFromFile">
+							<param name="dosyayolu"
+								   value="T:\api-certvalidation\testdata\nist\crls\RFC3280OptionalAttributeTypesCACRL.crl">
+							</param>
+						</class>
+						<class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.find.crl.CRLFinderFromFile">
+							<param name="dosyayolu"
+								   value="T:\api-certvalidation\testdata\nist\crls\TrustAnchorRootCRL.crl">
+							</param>
+						</class>
+					</find>
+				</class>
+            </revocation>
+        </certificate>
+        <crl>
+            <crlself>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.crl.self.CRLDateChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.crl.self.CRLExtensionChecker"/>
+            </crlself>
+            <crlissuer>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.crl.issuer.CRLSignatureChecker"/>
+                <class name="tr.gov.tubitak.uekae.esya.api.certificate.validation.check.crl.issuer.CRLKeyUsageChecker"/>
+            </crlissuer>
+        </crl>
+        <oscp>
+
+        </oscp>
+    </validate>
+</policy>

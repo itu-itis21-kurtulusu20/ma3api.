@@ -1,0 +1,34 @@
+<asn1config>
+  <module>
+    <name>crlfinder</name>
+    <sourceFile>crlfinder.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.esya.crlfinder</pkgName>
+    <production name="CRLNumber">
+	<isBigInteger/>
+    </production>
+  </module>
+  <module>
+    <name>Explicit</name>
+    <sourceFile>Explicit.asn</sourceFile>    
+    <include types="AlgorithmIdentifier,Name,CertificateSerialNumber,Certificate"/>
+    <production name="CertificateSerialNumber">
+	<isBigInteger/>
+    </production>
+     <pkgName>tr.gov.tubitak.uekae.esya.asn.x509</pkgName>
+  </module>
+  <module>
+    <name>cms</name>
+    <sourceFile>CMS.asn</sourceFile>
+    <include types = "IssuerAndSerialNumber"/>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.cms</pkgName>
+  </module>
+  <module>
+    <name>algorithms</name>
+    <sourceFile>Algorithms.asn</sourceFile>
+    <include types = "sha-1,id-sha256"/>
+    <production name="ECParameters">
+	<isBigInteger/>
+    </production>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.algorithms</pkgName>
+  </module>
+</asn1config> 

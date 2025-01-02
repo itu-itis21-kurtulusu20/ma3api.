@@ -1,0 +1,24 @@
+Kerberos {
+iso(1) identified-organization(3) dod(6) internet(1)
+security(5) kerberosV5(2) modules(4) krb5spec2(2)
+} 
+
+DEFINITIONS EXPLICIT TAGS ::= BEGIN
+
+Int32 ::= INTEGER (-2147483648..2147483647)
+
+KerberosString ::= GeneralString (IA5String)
+
+Realm ::= KerberosString
+
+PrincipalName ::= SEQUENCE {
+name-type [0] Int32,
+name-string [1] SEQUENCE OF KerberosString
+}
+
+KRB5PrincipalName ::= SEQUENCE {
+realm [0] Realm,
+principalName [1] PrincipalName
+}
+
+END

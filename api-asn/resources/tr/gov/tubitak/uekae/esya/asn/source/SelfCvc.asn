@@ -1,0 +1,69 @@
+-- CVC data types according to EN 419212-1:2014(E)
+-- Based on Travel Machine Readable Documents for TcPasaport, after project NonSelfCvc should change.
+SelfCvc DEFINITIONS IMPLICIT TAGS ::= BEGIN
+
+
+
+
+Cpi ::= [APPLICATION 41] INTEGER
+
+Car ::= [APPLICATION 2] OCTET STRING (SIZE(8..16))
+
+Chr ::= [APPLICATION 32] OCTET STRING -- (SIZE(12))
+Ced ::= [APPLICATION 37] OCTET STRING
+Cxd ::= [APPLICATION 36] OCTET STRING
+
+Chat ::= [APPLICATION 76] SEQUENCE{
+    oid OBJECT IDENTIFIER,
+    value DiscretionaryDO
+}
+
+Signature ::= [APPLICATION 55] OCTET STRING
+
+
+DiscretionaryDO ::= [APPLICATION 19] OCTET STRING
+
+PuKRemainder ::= [APPLICATION 56] OCTET STRING
+
+AlgId ::= [UNIVERSAL 6] OCTET STRING
+AlgRef ::= [0] OCTET STRING
+
+
+--CertContentTemplate ::= [APPLICATION 78] SEQUENCE{
+
+
+PassportCVCerticate ::= [APPLICATION 33] SEQUENCE{
+    certificateBody PassportCVCertificateBody,
+    signature Signature
+}
+
+PassportCVCertificateBody ::= [APPLICATION 78] SEQUENCE{
+	cpi Cpi,
+	car Car,
+	puk ElcPuK,
+	chr Chr,
+	chat Chat,
+	ced Ced OPTIONAL,
+	cxd Cxd OPTIONAL
+}
+
+ElcPuK ::= [APPLICATION 73] SEQUENCE{
+	oid OBJECT IDENTIFIER ,
+	p P OPTIONAL, --prime modulus
+	a A OPTIONAL, --first coefficient
+	b B OPTIONAL, --second coefficient
+	g G OPTIONAL, --base point
+	r R OPTIONAL, --order of the base
+	y Y,          --public point
+	f F OPTIONAL  --Cofactor
+}
+P ::= [1] OCTET STRING
+A ::= [2] OCTET STRING
+B ::= [3] OCTET STRING
+G ::= [4] OCTET STRING
+R ::= [5] OCTET STRING
+Y ::= [6] OCTET STRING
+F ::= [7] INTEGER
+
+
+END

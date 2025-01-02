@@ -1,0 +1,83 @@
+pkcs5v2 {iso(1) member-body(2) us(840) rsadsi(113549)
+pkcs(1) pkcs-5(5) modules(16) pkcs5v2(1)}
+
+DEFINITIONS ::= BEGIN
+
+IMPORTS
+	AlgorithmIdentifier 
+	FROM Explicit
+                   { iso(1) identified-organization(3) dod(6)
+                     internet(1) security(5) mechanisms(5) pkix(7)
+                     mod(0) pkix1-explicit(18) }
+;
+
+-- Basic object identifiers
+rsadsi OBJECT IDENTIFIER ::= {iso(1) member-body(2) us(840) 113549}
+pkcs OBJECT IDENTIFIER ::= {rsadsi 1}
+pkcs-5 OBJECT IDENTIFIER ::= {pkcs 5}
+
+-- PBKDF2
+
+algid-hmacWithSHA1 AlgorithmIdentifier ::={ algorithm id-hmacWithSHA1, 
+							parameters NULL : NULL }
+
+id-PBKDF2 OBJECT IDENTIFIER ::= {pkcs-5 12}
+PBKDF2-params ::= SEQUENCE {
+	salt CHOICE {
+		specified OCTET STRING,
+		otherSource AlgorithmIdentifier
+	},
+	iterationCount INTEGER (1..MAX),
+	keyLength INTEGER (1..MAX) OPTIONAL,
+	prf AlgorithmIdentifier DEFAULT algid-hmacWithSHA1
+}
+
+--PBKDF2-PRFs TYPE-IDENTIFIER::={{NULL IDENTIFIED BY id-hmacWithSHA1}, ...}
+
+-- PBES1
+pbeWithMD2AndDES-CBC OBJECT IDENTIFIER ::= {pkcs-5 1}
+pbeWithMD2AndRC2-CBC OBJECT IDENTIFIER ::= {pkcs-5 4}
+pbeWithMD5AndDES-CBC OBJECT IDENTIFIER ::= {pkcs-5 3}
+pbeWithMD5AndRC2-CBC OBJECT IDENTIFIER ::= {pkcs-5 6}
+pbeWithSHA1AndDES-CBC OBJECT IDENTIFIER ::= {pkcs-5 10}
+pbeWithSHA1AndRC2-CBC OBJECT IDENTIFIER ::= {pkcs-5 11}
+PBEParameter ::= SEQUENCE {
+	salt OCTET STRING (SIZE(8)),
+	iterationCount INTEGER
+}
+-- PBES2
+id-PBES2 OBJECT IDENTIFIER ::= {pkcs-5 13}
+PBES2-params ::= SEQUENCE {
+	keyDerivationFunc AlgorithmIdentifier ,
+	encryptionScheme AlgorithmIdentifier 
+}
+
+-- PBMAC1
+id-PBMAC1 OBJECT IDENTIFIER ::= {pkcs-5 14}
+PBMAC1-params ::= SEQUENCE {
+	keyDerivationFunc AlgorithmIdentifier,
+	messageAuthScheme AlgorithmIdentifier
+	}
+
+-- Supporting techniques
+digestAlgorithm OBJECT IDENTIFIER ::= {rsadsi 2}
+encryptionAlgorithm OBJECT IDENTIFIER ::= {rsadsi 3}
+id-hmacWithSHA1 OBJECT IDENTIFIER ::= {digestAlgorithm 7}
+id-hmacWithSHA224 OBJECT IDENTIFIER ::= {digestAlgorithm 8}
+id-hmacWithSHA256 OBJECT IDENTIFIER ::= {digestAlgorithm 9}
+id-hmacWithSHA384 OBJECT IDENTIFIER ::= {digestAlgorithm 10}
+id-hmacWithSHA512 OBJECT IDENTIFIER ::= {digestAlgorithm 11}
+rc2CBC OBJECT IDENTIFIER ::= {encryptionAlgorithm 2}
+RC2-CBC-Parameter ::= SEQUENCE {
+	rc2ParameterVersion INTEGER OPTIONAL,
+	iv OCTET STRING (SIZE(8))
+}
+rc5-CBC-PAD OBJECT IDENTIFIER ::= {encryptionAlgorithm 9}
+RC5-CBC-Parameters ::= SEQUENCE {
+	version INTEGER {v1-0(16)} (v1-0),
+	rounds INTEGER (8..127),
+	blockSizeInBits INTEGER (64 | 128),
+	iv OCTET STRING OPTIONAL
+}
+END
+

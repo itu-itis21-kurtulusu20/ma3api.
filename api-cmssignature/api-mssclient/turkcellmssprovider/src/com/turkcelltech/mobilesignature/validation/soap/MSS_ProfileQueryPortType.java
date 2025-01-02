@@ -1,0 +1,12 @@
+/**
+ * MSS_ProfileQueryPortType.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package com.turkcelltech.mobilesignature.validation.soap;
+
+public interface MSS_ProfileQueryPortType extends java.rmi.Remote {
+    public org.etsi.uri.TS102204.v1_1_2.MSS_ProfileRespType MSS_ProfileQuery(org.etsi.uri.TS102204.v1_1_2.MSS_ProfileReqType MSS_ProfileReq) throws java.rmi.RemoteException;
+}

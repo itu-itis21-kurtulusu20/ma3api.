@@ -1,0 +1,52 @@
+<asn1config>
+  
+  <module>
+    <name>EkdsBaseDataDefs</name>
+    <sourceFile>EkdsBaseDataDefs.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.ekds.asn.EkdsBaseDataDefs</pkgName>
+  </module>
+
+  <module>
+    <name>EkdsCommonDataObjectDefs</name>
+    <sourceFile>EkdsCommonDataObjectDefs.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.ekds.asn.EkdsCommonDataObjectDefs</pkgName>
+  </module>
+
+  <module>
+    <name>EkdsElectronicIdentityCardApp</name>
+    <sourceFile>EkdsElectronicIdentityCardApp.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.ekds.asn.EkdsElectronicIdentityCardApp</pkgName>
+  </module>
+
+  <module>
+    <name>EkdsEmergencyDataApp</name>
+    <sourceFile>EkdsEmergencyDataApp.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.ekds.asn.EkdsEmergencyDataApp</pkgName>
+  </module>
+
+  <module>
+    <name>EkdsMediaDefs</name>
+    <sourceFile>EkdsMediaDefs.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.ekds.asn.EkdsMediaDefs</pkgName>
+  </module>
+
+  <module>
+    <name>EkdsRemoteAuthenticationApp</name>
+    <sourceFile>EkdsRemoteAuthenticationApp.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.ekds.asn.EkdsRemoteAuthenticationApp</pkgName>
+  </module>  
+
+  <module>
+    <name>StandardRemoteAuthenticationApp</name>
+    <sourceFile>StandardRemoteAuthenticationApp.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.StandardRemoteAuthenticationApp</pkgName>
+  </module>
+  
+  
+  <module>
+    <name>Explicit</name>
+    <sourceFile>Explicit.asn</sourceFile>
+    <pkgName>tr.gov.tubitak.uekae.esya.asn.x509</pkgName>
+  </module>
+
+</asn1config>
