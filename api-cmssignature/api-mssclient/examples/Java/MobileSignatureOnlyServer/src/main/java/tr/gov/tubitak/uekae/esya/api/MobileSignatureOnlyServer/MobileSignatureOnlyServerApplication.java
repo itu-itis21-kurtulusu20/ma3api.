@@ -86,7 +86,7 @@ public class MobileSignatureOnlyServerApplication {
 		loadLicense();
 
 		try {
-			String phoneNumber= "05*********";
+			String phoneNumber= "05318230547";
 			Operator operator = Operator.TURKCELL;
 
 			PhoneNumberAndOperator phoneNumberAndOperator = new PhoneNumberAndOperator(phoneNumber, operator);
@@ -110,7 +110,7 @@ public class MobileSignatureOnlyServerApplication {
 
 		MSSParams mobileParams = null;
 		if(operator == Operator.TURKCELL){
-			mobileParams = new MSSParams("http://MImzaTubitak", "*****", "www.turkcelltech.com");
+			mobileParams = new MSSParams("http://MImzaTubitak", "IITHC30G", "www.turkcelltech.com");
             mobileParams.setMsspSignatureQueryUrl("https://msign.turkcell.com.tr/MSSP2/services/MSS_Signature");
             mobileParams.setMsspProfileQueryUrl("https://msign.turkcell.com.tr/MSSP2/services/MSS_ProfileQueryPort");
 		} else if (operator == Operator.TURKTELEKOM){
@@ -255,8 +255,7 @@ public class MobileSignatureOnlyServerApplication {
 
 	public static String getLicenseFilePath() throws ESYAException
 	{
-		throw new ESYAException("Set licenseFilePath!");
-		//return licenseFilePath;
+		return licenseFilePath;
 	}
 
 	private static void loadLicense() {

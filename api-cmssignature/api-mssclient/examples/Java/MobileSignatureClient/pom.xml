@@ -34,9 +34,7 @@
 			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
 			<artifactId>asn1rt</artifactId>
 			<version>6.6.4</version>
-			<scope>system</scope>
-            <systemPath>${libdirectory}/asn1rt-6.6.4.jar</systemPath>
-		</dependency>	
+		</dependency>
 		
 		<dependency>
 			<groupId>commons-logging</groupId>
@@ -65,96 +63,72 @@
 			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
 			<artifactId>ma3api-asn</artifactId>
 			<version>${ma3api.version}</version>
-			<scope>system</scope>
-            <systemPath>${libdirectory}/ma3api-asn-${ma3api.version}.jar</systemPath>
 		</dependency>
 		
 		<dependency>
 			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
 			<artifactId>ma3api-cmssignature</artifactId>
 			<version>${ma3api.version}</version>
-			<scope>system</scope>
-            <systemPath>${libdirectory}/ma3api-cmssignature-${ma3api.version}.jar</systemPath>
 		</dependency>
 		
 		<dependency>
 			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
 			<artifactId>ma3api-certvalidation</artifactId>
 			<version>${ma3api.version}</version>
-			<scope>system</scope>
-            <systemPath>${libdirectory}/ma3api-certvalidation-${ma3api.version}.jar</systemPath>
 		</dependency>
 		
 		<dependency>
 			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
 			<artifactId>ma3api-certstore</artifactId>
 			<version>${ma3api.version}</version>
-			<scope>system</scope>
-            <systemPath>${libdirectory}/ma3api-certstore-${ma3api.version}.jar</systemPath>
 		</dependency>
 			
 		<dependency>
 			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
 			<artifactId>ma3api-common</artifactId>
 			<version>${ma3api.version}</version>
-			<scope>system</scope>
-            <systemPath>${libdirectory}/ma3api-common-${ma3api.version}.jar</systemPath>
 		</dependency>
 		
 		<dependency>
 			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
 			<artifactId>ma3api-crypto</artifactId>
 			<version>${ma3api.version}</version>
-			<scope>system</scope>
-            <systemPath>${libdirectory}/ma3api-crypto-${ma3api.version}.jar</systemPath>
 		</dependency>
 		
 		<dependency>
 			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
 			<artifactId>ma3api-crypto-gnuprovider</artifactId>
 			<version>${ma3api.version}</version>
-			<scope>system</scope>
-            <systemPath>${libdirectory}/ma3api-crypto-gnuprovider-${ma3api.version}.jar</systemPath>
 		</dependency>
 		
 		<dependency>
 			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
 			<artifactId>ma3api-infra</artifactId>
 			<version>${ma3api.version}</version>
-			<scope>system</scope>
-            <systemPath>${libdirectory}/ma3api-infra-${ma3api.version}.jar</systemPath>
 		</dependency>
 		
 		<dependency>
 			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
 			<artifactId>ma3api-mssclient</artifactId>
 			<version>${ma3api.version}</version>
-			<scope>system</scope>
-            <systemPath>${libdirectory}/ma3api-mssclient-${ma3api.version}.jar</systemPath>
 		</dependency>
 		
 		<dependency>
 			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
 			<artifactId>ma3api-signature</artifactId>
 			<version>${ma3api.version}</version>
-			<scope>system</scope>
-            <systemPath>${libdirectory}/ma3api-signature-${ma3api.version}.jar</systemPath>
 		</dependency>
 		
 		<dependency>
 			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
 			<artifactId>ma3api-turkcellmssprovider</artifactId>
 			<version>${ma3api.version}</version>
-			<scope>system</scope>
-            <systemPath>${libdirectory}/ma3api-turkcellmssprovider-${ma3api.version}.jar</systemPath>
 		</dependency>
 
 		<dependency>
 			<groupId>tr.gov.tubitak.uekae.esya.api</groupId>
 			<artifactId>ma3api-turktelekommssprovider</artifactId>
 			<version>${ma3api.version}</version>
-			<scope>system</scope>
-			<systemPath>${libdirectory}/ma3api-turktelekommssprovider-${ma3api.version}.jar</systemPath>
 		</dependency>
 	</dependencies>
 
